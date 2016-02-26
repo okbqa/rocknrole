@@ -4,7 +4,7 @@ import de.citec.sc.rocknrole.graph.Graph;
 import de.citec.sc.rocknrole.parsing.ParseResult;
 import de.citec.sc.rocknrole.parsing.Parser;
 import de.citec.sc.rocknrole.parsing.Stanford;
-import de.citec.sc.rocknrole.transforming.RuleTransformer;
+import de.citec.sc.rocknrole.transforming.RuleTransformerSem;
 import de.citec.sc.rocknrole.transforming.Transformer;
 import java.io.File;
 import java.util.logging.Level;
@@ -15,6 +15,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import de.citec.sc.rocknrole.transforming.RuleTransformerSRL;
 
 /**
  *
@@ -32,7 +33,8 @@ public class Process {
         JsonParser json = new JsonParser();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         
-        Transformer transformer = new RuleTransformer();
+        Transformer sem_transformer = new RuleTransformerSem();
+        Transformer srl_transformer = new RuleTransformerSRL();
                             
         int i = 0;
         
@@ -55,10 +57,12 @@ public class Process {
                  
                  try {
                     Graph depGraph = parse.toGraph();
-                    Graph semGraph = transformer.transform(depGraph);
+                    Graph semGraph = sem_transformer.transform(depGraph);
+                    Graph srlGraph = srl_transformer.transform(depGraph);
                  
-                    question.addProperty("parse",depGraph.toString());
-                    question.addProperty("graph",semGraph.toString());
+                    question.addProperty("DEPparse",depGraph.toString());
+                    question.addProperty("SEMgraph",semGraph.toString());
+                    question.addProperty("SRLgraph",srlGraph.toString());
                  } 
                  catch (Exception e) {
                  }

@@ -98,6 +98,15 @@ public class Node {
         return true;
     }
     
+    
+    // Copy 
+    
+    public Node copy() {
+        
+        return new Node(id,form,pos);
+    }
+    
+    
     // Show 
     
     @Override

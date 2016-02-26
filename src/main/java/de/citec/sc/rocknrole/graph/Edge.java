@@ -7,7 +7,7 @@ package de.citec.sc.rocknrole.graph;
 public class Edge {    
     
     
-    public enum Color { SYN, SEM }
+    public enum Color { DEP, SEM, SRL }
     
     
     Color  color;
@@ -35,6 +35,9 @@ public class Edge {
     public void setLabel(String s) {
         label = s;
     }
+    public void setColor(Color c) {
+        color = c;
+    }
     
     public int getHead() {
         return head;
@@ -58,11 +61,18 @@ public class Edge {
              && label.equals(e.getLabel()));
     }
     
+    // Copy 
+    
+    public Edge copy() {
+        
+        return new Edge(color,head,label,dependent);
+    }
+    
     // Show 
     
     @Override
     public String toString() {
-           return " " + dependent + " <--"+label+"-- " + head;
+           return " " + head + " --"+label+"--> " + dependent;
     }
     
 }

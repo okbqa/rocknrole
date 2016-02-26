@@ -294,6 +294,27 @@ public class Graph {
         return matches;
     }
     
+    
+    // Copy
+    
+    public Graph copy() {
+        
+        Graph copy = new Graph();
+        
+        for (int i  : this.roots) {
+             copy.addRoot(i);
+        }
+        for (Node n : this.nodes) {
+             copy.addNode(n.copy());
+        }
+        for (Edge e : this.edges) {
+             copy.addEdge(e.copy());
+        }
+        
+        return copy;
+    }
+    
+    
     // Show 
     
     @Override   
