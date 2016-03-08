@@ -26,8 +26,8 @@ public class Process {
     
     public static void main(String[] args) {
         
-        String file_in  = "src/main/resources/visualqa/OpenEnded_mscoco_train2014_questions.json";
-        String file_out = "src/main/resources/visualqa/OpenEnded_mscoco_train2014_questions_parsed.json";
+        String file_in  = "src/main/resources/visualqa/train2014_selected.json";
+        String file_out = "src/main/resources/visualqa/train2014_selected_parsed.json";
         
         Parser stanford = new Stanford();
         JsonParser json = new JsonParser();
@@ -35,9 +35,7 @@ public class Process {
         
         Transformer sem_transformer = new RuleTransformerSem();
         Transformer srl_transformer = new RuleTransformerSRL();
-                            
-        int i = 0;
-        
+                                   
         try {
             
             String input = FileUtils.readFileToString(new File(file_in));
@@ -46,9 +44,6 @@ public class Process {
             JsonArray questions = doc.getAsJsonArray("questions");
             for (int n = 0; n < questions.size(); n++) {
                 JsonObject question = questions.get(n).getAsJsonObject();
-                
-                if (i > 100) break;
-                i++;
                                 
                  String q = question.getAsJsonPrimitive("question").getAsString();
                  q = q.replace("-","_");
@@ -58,11 +53,11 @@ public class Process {
                  try {
                     Graph depGraph = parse.toGraph();
                     Graph semGraph = sem_transformer.transform(depGraph);
-                    Graph srlGraph = srl_transformer.transform(depGraph);
+                    //Graph srlGraph = srl_transformer.transform(depGraph);
                  
                     question.addProperty("DEPparse",depGraph.toString());
                     question.addProperty("SEMgraph",semGraph.toString());
-                    question.addProperty("SRLgraph",srlGraph.toString());
+                    //question.addProperty("SRLgraph",srlGraph.toString());
                  } 
                  catch (Exception e) {
                  }

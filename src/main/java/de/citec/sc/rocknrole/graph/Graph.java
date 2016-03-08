@@ -124,9 +124,9 @@ public class Graph {
     }
     
     public void delete(Graph g) {
-//      for (Node n : g.getNodes()) {
-//          deleteNode(n);
-//      }
+        for (Node n : g.getNodes()) {
+            deleteNode(n);
+        }
         for (Edge e : g.getEdges()) {
             deleteEdge(e);
         }

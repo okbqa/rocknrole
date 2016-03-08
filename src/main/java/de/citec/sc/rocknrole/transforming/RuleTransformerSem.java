@@ -39,14 +39,20 @@ public class RuleTransformerSem implements Transformer {
         COP.add("were");
         
         List<String> DTs = new ArrayList<>();
-        DTs.add("the");
         DTs.add("this");
         DTs.add("these");
+        DTs.add("those");
         
         List<String> WDTs = new ArrayList<>();
         WDTs.add("what");
         WDTs.add("which");
  
+        
+        // Normalizing edges 
+        
+        for (Edge e : graph.getEdges()) {
+             if (e.getLabel().equals("poss")) graph.addEdge(new Edge(Edge.Color.SEM,e.getHead(),"POSS",e.getDependent()));
+        }
         
         // Normalizing nodes
 
@@ -54,11 +60,13 @@ public class RuleTransformerSem implements Transformer {
         for (String s : COP)  normalize.put(s,"BE");
         for (String s : DTs)  normalize.put(s,"THIS");
         for (String s : WDTs) normalize.put(s,"WH");
-
         
         for (Node n : graph.getNodes()) {
             if (normalize.containsKey(n.getForm().toLowerCase())) {
                 n.setForm(normalize.get(n.getForm().toLowerCase()));
+            }
+            if (n.getForm().toLowerCase().equals("how")) {
+                n.setForm("HOW");
             }
         }
         
@@ -84,6 +92,7 @@ public class RuleTransformerSem implements Transformer {
         
         // Determiners 
         
+        // this 
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"det(*-2,THIS-1)")) {
                         
             Graph g = subgraph.getLeft();
@@ -91,27 +100,85 @@ public class RuleTransformerSem implements Transformer {
             
             graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),"SPEC",m.get(1)));
         }
-        
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"det(*-2,WH-1)")) {
+               
+        // what kind of        
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"det(*-2,WH-1) \n prep(*-2,of-3) \n pobj(of-3,*-4)")) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            Node n = graph.getNode(m.get(2));
-            n.setForm("RETURN:" + n.getForm());
+            Node old_4 = graph.getNode(m.get(4));
+            Node old_2 = graph.getNode(m.get(2));
+            String f = old_2.getForm(); 
+            if (f.endsWith("s")) f = f.substring(0,f.length()-2);
+            if (f.equals("kind") || f.equals("sort") || f.equals("type")) {
+            
+                graph.delete(g);
+                                               
+                Node new_2 = new Node(m.get(4),"RETURN:KIND");
+                Node new_4 = new Node(m.get(2),old_4.getForm(),old_4.getPOS());
+
+                graph.addNode(new_2);
+                graph.addNode(new_4);
+                graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),"SPEC",m.get(4)));
+            }
         }
         
-        // TODO how many
+        // what, which
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"det(*-2,WH-1)")) {
+                    
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            Node n = graph.getNode(m.get(2));
+            String f = n.getForm(); 
+            if (f.endsWith("s")) f = f.substring(0,f.length()-2);
+            // specific attributes
+            if (f.equals("color")) {
+                n.setForm("COLOR");
+            } 
+            if (f.equals("shape")) {
+                n.setForm("SHAPE");
+            } 
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),"SPEC",m.get(1)));
+        }
+        
+        // how many 
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(many-2,HOW-3) \n amod(*-1,many-2)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            Node n = graph.getNode(m.get(3));
+            n.setForm("COUNT");
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),"SPEC",m.get(3)));
+            
+            graph.delete(g);
+        }
+        
         // TODO advmod(*/JJ-1,how-2)
+        
+        // is there / there is
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"expl(BE-1,there-2) \n nsubj(BE-1,*-3)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            Node n = graph.getNode(m.get(1));
+            n.setForm("EXIST");
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(3),"SPEC",m.get(1)));
+            
+            graph.delete(g);
+        }
         
         for (Node n : graph.getNodes()) {
              
             switch (n.getForm()) {
                 
-                case who:   n.setForm("RETURN:agent"); break;
-                case when:  n.setForm("RETURN:datetime"); break;
-                case where: n.setForm("RETURN:location"); break;
-                case why:   n.setForm("RETURN:reason"); break;
+                case who:   n.setForm("RETURN:AGENT"); break;
+                case when:  n.setForm("RETURN:DATETIME"); break;
+                case where: n.setForm("RETURN:LOCATION"); break;
+                case why:   n.setForm("RETURN:REASON"); break;
                 case "WH":  n.setForm("RETURN"); break;
             }
         }
@@ -121,8 +188,8 @@ public class RuleTransformerSem implements Transformer {
         
         String[] subs = { "cop(BE-2,*-1) \n nsubj(*-1,*-3)", 
                           "cop(*-1,BE-2) \n nsubj(*-1,*-3)", 
-                          "dep(BE-2,*-1) \n nsubj(BE-2,*-3)",
-                          "aux(*-1,BE-2) \n nsubj(*-1,*-3)"
+                          "dep(BE-2,*-1) \n nsubj(BE-2,*-3)"
+                      //  "aux(*-1,BE-2) \n nsubj(*-1,*-3)"
                         };
         for (String sub : subs) {
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,sub)) {
@@ -159,8 +226,7 @@ public class RuleTransformerSem implements Transformer {
             
             graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
         }
-
-        
+       
         // Passives 
         
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"auxpass(*-1,BE-2) \n nsubjpass(*-1,*-3) \n dobj(*-1,*-4)")) {
@@ -177,6 +243,16 @@ public class RuleTransformerSem implements Transformer {
             Map<Integer,Integer> m = subgraph.getRight();
             
             graph.addEdge(new Edge(Edge.Color.SEM,m.get(3),"COP",m.get(1)));
+        }
+        
+        // Gerunds 
+        
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"nsubj(*-1,*-2) \n rcmod(*-3,*-1)")) {
+                       
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
         }
         
         
@@ -228,7 +304,7 @@ public class RuleTransformerSem implements Transformer {
         }
         
         // and clean up errors 
-        // TODO 
+        // TODO
         
         for (Edge e : graph.getEdges()) {
              if (graph.getNode(e.getHead()).getForm().equals("BE") || 
