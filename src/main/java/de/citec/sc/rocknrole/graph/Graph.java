@@ -116,6 +116,10 @@ public class Graph {
         
     // Manipulate graph 
     
+    public void initRoots() {
+        roots = new ArrayList<>();
+    }
+    
     public void deleteNode(Node n) {
         nodes.remove(n);
     }
@@ -124,12 +128,20 @@ public class Graph {
     }
     
     public void delete(Graph g) {
-        for (Node n : g.getNodes()) {
-            deleteNode(n);
-        }
         for (Edge e : g.getEdges()) {
             deleteEdge(e);
         }
+        List<Integer> ids = new ArrayList<>();
+        for (Edge e : this.getEdges()) {
+             ids.add(e.head);
+             ids.add(e.dependent);
+        }
+        ids.addAll(this.roots);
+        for (Node n : g.getNodes()) {
+            if (!ids.contains(n.id)) {
+                deleteNode(n);
+            }
+        }        
     }
     
     // Merging with another graph 
@@ -319,21 +331,30 @@ public class Graph {
     
     @Override   
     public String toString() {
+        return toString(true);
+    }
+
+    public String toString(boolean full) {
                 
         String out = "";
+
+        if (full) {
         for (int i : roots) {
             Node r = getNode(i);
             out += "root(ROOT-0," + r.form;
             if (r.getPOS() != null) out += "/" + r.pos;
             out += "-" + r.id + ")\n";
-        }
+        }}
+        
         for (Edge e : edges) {
             String head = "";
             for (Node n : nodes) { 
                  if (n.id == e.getHead()) {
                      head = n.form;
+                     if (full) {
                      if (n.getPOS() != null) head += "/" + n.getPOS(); 
                      head += "-" + n.id;
+                     }
                      break;
                  }
             }
@@ -341,13 +362,24 @@ public class Graph {
             for (Node n : nodes) { 
                  if (n.id == e.getDependent()) {
                      dpnd = n.form;
+                     if (full) {
                      if (n.getPOS() != null) dpnd += "/" + n.getPOS(); 
                      dpnd += "-" + n.id;
+                     }
                      break;
                  }
             }            
-            out += e.label + "(" + head + "," + dpnd + ")\n";
+            out += e.label + "(" + head + "," + dpnd + ")";
+            if (full) out += "\n"; 
+            else      out += " ";
         }
+        
+        if (edges.isEmpty()) {
+            for (int i : roots) {
+                 out += this.getNode(i).getForm() + " ";
+            }
+        }
+        
         return out.trim();
     }
     

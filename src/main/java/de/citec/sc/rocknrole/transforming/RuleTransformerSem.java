@@ -50,10 +50,14 @@ public class RuleTransformerSem implements Transformer {
         
         // Normalizing edges 
         
+        List<Edge> new_edges = new ArrayList<>();
         for (Edge e : graph.getEdges()) {
-             if (e.getLabel().equals("poss")) graph.addEdge(new Edge(Edge.Color.SEM,e.getHead(),"POSS",e.getDependent()));
+             if (e.getLabel().equals("poss")) {
+                 new_edges.add(new Edge(Edge.Color.SEM,e.getHead(),"RELATED",e.getDependent()));
+             }
         }
-        
+        for (Edge e : new_edges) graph.addEdge(e);
+                
         // Normalizing nodes
 
         Map<String,String> normalize = new HashMap<>();
@@ -144,14 +148,19 @@ public class RuleTransformerSem implements Transformer {
         }
         
         // how many 
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(many-2,HOW-3) \n amod(*-1,many-2)")) {
+        List<Pair<Graph,Map<Integer,Integer>>> howmany_subgraphs = new ArrayList<>();
+        howmany_subgraphs.addAll(getSubgraphs(graph,"advmod(many-2,HOW-3) \n amod(*-1,many-2)"));
+        howmany_subgraphs.addAll(getSubgraphs(graph,"dep(many-2,HOW-3) \n amod(*-1,many-2)"));
+        howmany_subgraphs.addAll(getSubgraphs(graph,"advmod(many-2,HOW-3) \n dep(*-1,many-2)"));
+                
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : howmany_subgraphs) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            Node n = graph.getNode(m.get(3));
-            n.setForm("COUNT");
-            graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),"SPEC",m.get(3)));
+            Node n = graph.getNode(m.get(1));
+            n.setForm("COUNT:" + n.getForm());
+            graph.addRoot(n.getId());
             
             graph.delete(g);
         }

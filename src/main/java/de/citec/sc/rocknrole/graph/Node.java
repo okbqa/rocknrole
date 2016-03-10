@@ -56,7 +56,7 @@ public class Node {
     // Matching 
     
     public boolean matches(Node n) {
-                            
+                                    
         if (getPOS() != null && n.getPOS() != null && !getPOS().equals(n.getPOS())) {
             return false;
         }

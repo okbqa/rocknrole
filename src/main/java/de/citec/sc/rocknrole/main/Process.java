@@ -15,7 +15,9 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import de.citec.sc.rocknrole.parsing.Preprocessor;
 import de.citec.sc.rocknrole.transforming.RuleTransformerSRL;
+import de.citec.sc.rocknrole.transforming.RuleTransformerVisual;
 
 /**
  *
@@ -26,15 +28,15 @@ public class Process {
     
     public static void main(String[] args) {
         
-        String file_in  = "src/main/resources/visualqa/train2014_selected.json";
-        String file_out = "src/main/resources/visualqa/train2014_selected_parsed.json";
+        String file_in  = "src/main/resources/visualqa/mscoco_2014_train_ISTHERE.json";
+        String file_out = "src/main/resources/visualqa/target/mscoco_2014_train_ISTHERE.json";
         
-        Parser stanford = new Stanford();
-        JsonParser json = new JsonParser();
+        Preprocessor pre = new Preprocessor();
+        Parser stanford  = new Stanford();
+        JsonParser json  = new JsonParser();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         
-        Transformer sem_transformer = new RuleTransformerSem();
-        Transformer srl_transformer = new RuleTransformerSRL();
+        Transformer transformer = new RuleTransformerVisual();
                                    
         try {
             
@@ -43,23 +45,23 @@ public class Process {
                        
             JsonArray questions = doc.getAsJsonArray("questions");
             for (int n = 0; n < questions.size(); n++) {
-                JsonObject question = questions.get(n).getAsJsonObject();
+                 JsonObject question = questions.get(n).getAsJsonObject();
                                 
                  String q = question.getAsJsonPrimitive("question").getAsString();
-                 q = q.replace("-","_");
+                 q = pre.preprocess(q.replace("-","_"));
                 
                  ParseResult parse = stanford.parse(q);
                  
                  try {
                     Graph depGraph = parse.toGraph();
-                    Graph semGraph = sem_transformer.transform(depGraph);
-                    //Graph srlGraph = srl_transformer.transform(depGraph);
+                    Graph semGraph = transformer.transform(depGraph);
                  
-                    question.addProperty("DEPparse",depGraph.toString());
-                    question.addProperty("SEMgraph",semGraph.toString());
-                    //question.addProperty("SRLgraph",srlGraph.toString());
+                    question.addProperty("parse",depGraph.toString());
+                    question.addProperty("graph",semGraph.toString(false));
                  } 
                  catch (Exception e) {
+                     System.out.println("[ERROR] " + q);
+                     e.printStackTrace();
                  }
             }
                         
