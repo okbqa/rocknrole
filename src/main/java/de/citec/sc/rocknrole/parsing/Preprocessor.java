@@ -22,6 +22,8 @@ public class Preprocessor {
         redundants.add(" evidence of");
         redundants.add(" in this picture");
         redundants.add(" in the picture");
+        redundants.add(" in the image");
+        redundants.add(" in this image");
         redundants.add(" in this photo");
         redundants.add(" in the photo");
         redundants.add(" in this photograph");

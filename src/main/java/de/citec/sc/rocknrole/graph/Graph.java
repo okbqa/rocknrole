@@ -74,6 +74,13 @@ public class Graph {
         }
     }
     
+    public boolean isConnected(int i) {
+        for (Edge e : edges) {
+            if (e.head == i || e.dependent == i) return true;
+        }
+        return false;
+    }
+    
     public List<Edge> getEdges(String label) {
         
         List<Edge> results = new ArrayList<>();
@@ -370,13 +377,14 @@ public class Graph {
                  }
             }            
             out += e.label + "(" + head + "," + dpnd + ")";
-            if (full) out += "\n"; 
-            else      out += " ";
+            out += "\n"; 
         }
         
-        if (edges.isEmpty()) {
-            for (int i : roots) {
-                 out += this.getNode(i).getForm() + " ";
+        // unconnected nodes
+        for (Node n : nodes) {
+            int i = n.getId();
+            if (!this.isConnected(i)) {
+                out += this.getNode(i).getForm() + "\n";
             }
         }
         

@@ -106,7 +106,6 @@ public class Node {
         return new Node(id,form,pos);
     }
     
-    
     // Show 
     
     @Override

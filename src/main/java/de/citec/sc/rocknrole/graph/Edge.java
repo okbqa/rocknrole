@@ -7,7 +7,7 @@ package de.citec.sc.rocknrole.graph;
 public class Edge {    
     
     
-    public enum Color { DEP, SEM, SRL }
+    public enum Color { LIN, DEP, SEM, SRL }
     
     
     Color  color;

@@ -17,7 +17,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import de.citec.sc.rocknrole.parsing.Preprocessor;
 import de.citec.sc.rocknrole.transforming.RuleTransformerSRL;
-import de.citec.sc.rocknrole.transforming.RuleTransformerVisual;
+import de.citec.sc.rocknrole.transforming.RuleTransformerPOS;
 
 /**
  *
@@ -36,7 +36,7 @@ public class Process {
         JsonParser json  = new JsonParser();
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         
-        Transformer transformer = new RuleTransformerVisual();
+        Transformer transformer = new RuleTransformerPOS();
                                    
         try {
             
@@ -53,10 +53,10 @@ public class Process {
                  ParseResult parse = stanford.parse(q);
                  
                  try {
-                    Graph depGraph = parse.toGraph();
-                    Graph semGraph = transformer.transform(depGraph);
+                    String postagged = parse.toString_withPOS();
+                    Graph semGraph = transformer.transform(parse.toGraph());
                  
-                    question.addProperty("parse",depGraph.toString());
+                    question.addProperty("parse",postagged);
                     question.addProperty("graph",semGraph.toString(false));
                  } 
                  catch (Exception e) {

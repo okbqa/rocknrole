@@ -1,11 +1,7 @@
 package de.citec.sc.rocknrole.parsing;
 
-import edu.stanford.nlp.dcoref.CorefChain;
-import edu.stanford.nlp.dcoref.CorefChain.CorefMention;
-import edu.stanford.nlp.dcoref.CorefCoreAnnotations.CorefChainAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
-import edu.stanford.nlp.ling.CoreAnnotations.TextAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -14,9 +10,7 @@ import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.BasicDependenciesAnnotation;
 import edu.stanford.nlp.util.CoreMap;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Properties;
 
 
@@ -51,8 +45,9 @@ public class Stanford implements Parser {
             // Sentence string
             result.addSentence(i,s.toString());
 
-            // POS tags
+            // Tokens and POS tags
             for (CoreLabel token: s.get(TokensAnnotation.class)) {
+            result.addToken(i,token.index(),token.originalText());
             result.addPOS(i,token.index(),token.getString(PartOfSpeechAnnotation.class));
             }
             

@@ -1,12 +1,12 @@
 package de.citec.sc.rocknrole.parsing;
 
+import de.citec.sc.rocknrole.graph.Edge;
 import de.citec.sc.rocknrole.graph.Graph;
 import de.citec.sc.rocknrole.graph.Node;
 import de.citec.sc.rocknrole.graph.interpreter.GraphReader;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  *
@@ -15,6 +15,7 @@ import java.util.Map;
 public class ParseResult {
 
     Map<Integer,String> sentences;
+    Map<Integer,Map<Integer,String>> tokens;
     Map<Integer,String> parses;
     Map<Integer,Map<Integer,String>> pos;
     
@@ -24,6 +25,7 @@ public class ParseResult {
     public ParseResult() {
         parses      = new HashMap<>();
         sentences   = new HashMap<>();
+        tokens      = new HashMap<>();
         pos         = new HashMap<>();
         interpreter = new GraphReader();
     }
@@ -35,15 +37,61 @@ public class ParseResult {
     public void addSentence(int i, String s) {
         sentences.put(i,s);
     }
+       
     public void addParse(int i, String s) {
         parses.put(i,s);
     }
+    
+    public void addToken(int i, int j, String l) {
+        if (!tokens.containsKey(i)) tokens.put(i,new TreeMap<Integer,String>());
+        tokens.get(i).put(j,l);
+    }
+    
     public void addPOS(int i, int j, String p) {
-        if (!pos.containsKey(i)) pos.put(i,new HashMap<Integer,String>());
+        if (!pos.containsKey(i)) pos.put(i,new TreeMap<Integer,String>());
         pos.get(i).put(j,p);
     }
     
+    // Show 
+    
+    public String toString_withPOS() {
+        
+        String tagged = "";
+        
+        for (int i : sentences.keySet()) {
+            for (int j : tokens.get(i).keySet()) {
+                tagged += tokens.get(i).get(j); 
+                if (pos.get(i).containsKey(j)) tagged += "/" + pos.get(i).get(j); 
+                tagged += " ";
+            }
+        }
+        
+        return tagged;
+    }
+    
+    // Graph
+    
     public Graph toGraph() {
+        
+        Graph graph = new Graph();
+        
+        for (int i : sentences.keySet()) {
+             
+            Graph g = new Graph(); 
+            Map<Integer,String> ts = tokens.get(i);
+            Map<Integer,String> ps = pos.get(i);
+            for (int j : ts.keySet()) {
+                 g.addNode(new Node(j,ts.get(j),ps.get(j)));
+                 if (ts.containsKey(j-1)) g.addEdge(new Edge(Edge.Color.LIN,j-1,"tt",j));
+            }
+            
+            graph.merge(g);
+        }
+        
+        return graph;
+    }
+    
+    public Graph toDependencyGraph() {
         
         Graph graph = new Graph();
 
