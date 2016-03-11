@@ -14,7 +14,7 @@ import java.util.Map;
  */
 public class RuleTransformerPOS implements Transformer {
     
-    boolean verbose = true;
+    boolean verbose = false;
     
     GraphReader reader = new GraphReader();
         
@@ -35,10 +35,11 @@ public class RuleTransformerPOS implements Transformer {
         
         for (Node n : graph.getNodes()) {
             if (n.getPOS() != null) {
-                if (n.getPOS().startsWith("NN")) n.setPOS("N"); // nominal
-                if (n.getPOS().startsWith("JJ")) n.setPOS("A"); // adjectival
-                if (n.getPOS().startsWith("V"))  n.setPOS("V"); // verbal
-                if (n.getPOS().startsWith("IN")) n.setPOS("P"); // preposition
+                if (n.getPOS().startsWith("NN"))  n.setPOS("N"); // nominal
+                if (n.getPOS().startsWith("PRP")) n.setPOS("N"); // nominal
+                if (n.getPOS().startsWith("JJ"))  n.setPOS("A"); // adjectival
+                if (n.getPOS().startsWith("V"))   n.setPOS("V"); // verbal
+                if (n.getPOS().startsWith("IN"))  n.setPOS("P"); // preposition
             }
         }
                 
@@ -113,6 +114,15 @@ public class RuleTransformerPOS implements Transformer {
             
             con_graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),con_graph.getNode(m.get(2)).getForm(),m.get(3)));
         }}
+        
+        // Noun + Verb + Preposition + Noun
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(con_graph,"tt(*/N-1,*/V-2) \n tt(*/V-2,*/P-3) \n tt(*/P-3,*/N-4)")) {
+            
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            con_graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),con_graph.getNode(m.get(2)).getForm()+" "+con_graph.getNode(m.get(3)).getForm(),m.get(4)));
+        }
         
         // con_graph -> sem_graph
                
