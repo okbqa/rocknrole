@@ -28,8 +28,8 @@ public class Process {
     
     public static void main(String[] args) {
         
-        String file_in  = "src/main/resources/visualqa/mscoco_2014_train_ISTHERE.json";
-        String file_out = "src/main/resources/visualqa/target/mscoco_2014_train_ISTHERE.json";
+        String file_in  = "src/main/resources/visualqa/mscoco_2014_train_ISTHEREA.json";
+        String file_out = "src/main/resources/visualqa/target/mscoco_2014_train_ISTHEREA.json";
         
         Preprocessor pre = new Preprocessor();
         Parser stanford  = new Stanford();

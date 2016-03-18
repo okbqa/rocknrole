@@ -9,7 +9,6 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.BasicDependenciesAnnotation;
 import edu.stanford.nlp.util.CoreMap;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 

@@ -29,7 +29,12 @@ public class Preprocessor {
         redundants.add(" in this photograph");
         redundants.add(" of this picture");
         redundants.add(" in the scene");
+        redundants.add(" in this scene");
         redundants.add(" shown");
+        // 
+        redundants.add(" in the foreground");
+        redundants.add(" in the background");
+        redundants.add(" in the distance");
         
         String output = input;
         
