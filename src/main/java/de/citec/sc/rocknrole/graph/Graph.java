@@ -110,9 +110,12 @@ public class Graph {
     // Build graph
     
     public void addNode(Node n) {
-        if (!nodes.contains(n)) {
-             nodes.add(n);
-        }
+        addNode(n,false);
+    }
+    public void addNode(Node n, boolean overwrite) {
+                
+        if (overwrite) deleteNode(getNode(n.getId()));
+        if (!nodes.contains(n)) nodes.add(n);
     }
     public void addEdge(Edge e) {
         edges.add(e);
@@ -135,15 +138,18 @@ public class Graph {
     }
     
     public void delete(Graph g) {
+        
         for (Edge e : g.getEdges()) {
             deleteEdge(e);
         }
+        
         List<Integer> ids = new ArrayList<>();
         for (Edge e : this.getEdges()) {
              ids.add(e.head);
              ids.add(e.dependent);
         }
         ids.addAll(this.roots);
+        
         for (Node n : g.getNodes()) {
             if (!ids.contains(n.id)) {
                 deleteNode(n);
