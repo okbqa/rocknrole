@@ -53,7 +53,7 @@ public class TemplatorPipeline {
         
         if (verbose) {
             System.out.println("\n----------Final JSON Output-----------");
-            System.out.println(output.getAsString());
+            System.out.println(output.toString());
         }
         
         return output;
