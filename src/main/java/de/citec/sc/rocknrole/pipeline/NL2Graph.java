@@ -5,7 +5,6 @@ import de.citec.sc.rocknrole.graph.Graph;
 import de.citec.sc.rocknrole.parsing.ETRI;
 import de.citec.sc.rocknrole.parsing.ParseResult;
 import de.citec.sc.rocknrole.parsing.Parser;
-import de.citec.sc.rocknrole.parsing.Preprocessor;
 import de.citec.sc.rocknrole.parsing.Stanford;
 import de.citec.sc.rocknrole.transforming.RuleTransformerPipeline;
 import de.citec.sc.rocknrole.transforming.Transformer;
@@ -19,7 +18,6 @@ public class NL2Graph {
     
     String language;
     
-    Preprocessor pre;
     Parser parser;
     Transformer transformer;
     
@@ -31,9 +29,7 @@ public class NL2Graph {
     public NL2Graph(String l) {
         
         language = l;
-        
-        pre = new Preprocessor(language);
-        
+                
         switch (language) {
             case "en": parser = new Stanford(); break;
             case "ko": parser = new ETRI(); break;
@@ -56,12 +52,6 @@ public class NL2Graph {
         
         if (verbose) {
             System.out.println("\n------ INPUT ------\n");
-            System.out.println(input);
-        }
-        
-        input = pre.preprocess(input.replace("-","_"));
-
-        if (verbose) {
             System.out.println(input);
         }
         

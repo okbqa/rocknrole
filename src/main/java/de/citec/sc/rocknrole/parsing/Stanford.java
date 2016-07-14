@@ -9,6 +9,7 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.BasicDependenciesAnnotation;
 import edu.stanford.nlp.util.CoreMap;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -27,8 +28,8 @@ public class Stanford implements Parser {
         props.put("annotators", "tokenize, ssplit, pos, lemma, parse");
         pipeline = new StanfordCoreNLP(props);
     }
-
-    
+   
+    @Override
     public ParseResult parse(String text) {
         
         ParseResult result = new ParseResult();
@@ -57,5 +58,29 @@ public class Stanford implements Parser {
         
         return result;
     }
+    
+//    
+//    private String preprocess(String sentence) {
+//                
+//        sentence = sentence.toLowerCase();
+//        
+//        List<String> prefixes = new ArrayList();
+//        prefixes.add("give me a list of");
+//        prefixes.add("show me a list of");
+//        prefixes.add("give me");
+//        prefixes.add("show me");
+//        prefixes.add("list");
+//        
+//        String qprefix = "give me";
+//        
+//        for (String prefix : prefixes) {
+//            if (sentence.startsWith(prefix)) {
+//                sentence = sentence.replace(prefix,qprefix);
+//                break;
+//            }
+//        }
+//        
+//        return sentence;
+//    }
 
 }

@@ -1,5 +1,6 @@
 package de.citec.sc.rocknrole.pipeline;
 
+import com.hp.hpl.jena.graph.NodeFactory;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.sparql.core.Var;
 import de.citec.sc.rocknrole.graph.Edge;
@@ -17,20 +18,13 @@ import java.util.List;
  */
 public class Graph2Template {
     
-    int i = 0; // for fresh variable supply
+    int i; // for fresh variable supply
     
     public Template constructTemplate(Graph graph) {
         
-        i = 0;
+        i = graph.getMaxId()+1;
         
         Template template = new Template();
-        
-        // projection variables 
-        for (int i : graph.getRoots()) {
-             template.addProjVar(varString(i));
-        }
-        
-        // counts 
         
         // triples
         
@@ -41,6 +35,16 @@ public class Graph2Template {
             Node s = graph.getNode(e.getHead());
             Node o = graph.getNode(e.getDependent());
             
+            if (e.getLabel().equals("SELECT")) {
+                template.addProjVar(varString(s.getId()));
+                continue;
+            } 
+            
+            if (e.getLabel().equals("SELECT_COUNT")) {
+                template.addCountVar(varString(s.getId()));
+                continue;
+            } 
+            
             coveredNodes.add(s.getId());
             coveredNodes.add(o.getId());
             
@@ -48,30 +52,40 @@ public class Graph2Template {
             String vp = varString(fresh());
             String vo = varString(e.getDependent());
             
+            if (e.getLabel().equals("EQUALS")) {
+                template.addTriple(new Triple(Var.alloc(vs),NodeFactory.createURI("http://www.w3.org/2002/07/owl#sameAs"),Var.alloc(vo)));                
+                continue;
+            } 
+            
             template.addTriple(new Triple(Var.alloc(vs),Var.alloc(vp),Var.alloc(vo)));
             
             // subject
-            addTypeTriple(template,vs,s.getForm());
+            add(template,s);
             
             // object
-            if (!o.getForm().equals("LITERAL")) {
-                addTypeTriple(template,vo,o.getForm()); 
+            if (!o.getForm().equals("RESOURCE") && 
+                !o.getForm().equals("LITERAL")  && 
+                !o.getForm().equals("RESOURCEorLITERAL")) {
+                add(template,o); 
             } 
             
             // poperty 
+            String label = e.getLabel();
+            if (label.equals("REL")) label = "";
+            
             if (o.getForm().equals("LITERAL")) {
-                template.addSlot(new Slot(vp,e.getLabel(),SlotType.DATAPROPERTY));
+                template.addSlot(new Slot(vp,label,SlotType.DATAPROPERTY));
             } else {
-                template.addSlot(new Slot(vp,e.getLabel(),SlotType.PROPERTY));
+                template.addSlot(new Slot(vp,label,SlotType.PROPERTY));
+            }          
+        }
+        
+        // unconnected nodes
+        
+        for (Node n : graph.getNodes()) {
+            if (!coveredNodes.contains(n.getId())) {
+                add(template,n);
             }
-            
-            // unconnected nodes
-            for (Node n : graph.getNodes()) {
-                if (!coveredNodes.contains(n.getId())) {
-                    addTypeTriple(template,varString(n.getId()),n.getForm());
-                }
-            }
-            
         }
         
         template.assemble();
@@ -80,13 +94,19 @@ public class Graph2Template {
     }
     
     
-    private void addTypeTriple(Template template, String s, String c) {
+    private void add(Template template, Node n) {
         
-        String vc = varString(fresh());
-        String vp = varString(fresh());
-        template.addTriple(new Triple(Var.alloc(s),Var.alloc(vp),Var.alloc(vc)));
-        template.addSlot(new Slot(vc,c,SlotType.CLASS));
-        template.addSlot(new Slot(vp,"",SlotType.SORTAL));
+        if (n.getPOS() != null && n.getPOS().startsWith("NNP")) {
+            template.addSlot(new Slot(varString(n.getId()),n.getForm(),SlotType.RESOURCE));
+        } 
+        else {        
+            String vs = varString(n.getId());
+            String vc = varString(fresh());
+            String vp = varString(fresh());
+            template.addTriple(new Triple(Var.alloc(vs),Var.alloc(vp),Var.alloc(vc)));
+            template.addSlot(new Slot(vc,n.getForm(),SlotType.CLASS));
+            template.addSlot(new Slot(vp,"",SlotType.SORTAL));
+        }
     }
     
     

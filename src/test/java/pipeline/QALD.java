@@ -15,7 +15,8 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
-import de.citec.sc.rocknrole.parsing.Preprocessor;
+import de.citec.sc.rocknrole.pipeline.Graph2Template;
+import de.citec.sc.rocknrole.template.Template;
 
 /**
  *
@@ -31,14 +32,15 @@ public class QALD {
         String file_in  = "src/main/resources/qald/qald-6-train-multilingual-raw.json";
         String file_out = "src/main/resources/qald/target/qald-6-train-multilingual-raw.json";
         
-        Preprocessor pre = new Preprocessor(language);
         Parser stanford  = new Stanford();
         JsonParser json  = new JsonParser();
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson       gson  = new GsonBuilder().setPrettyPrinting().create();
         
         Transformer transformer = new RuleTransformerPipeline();
         transformer.setLanguage(language);
-        transformer.setVerbose(true);
+//        transformer.setVerbose(true);
+        
+        Graph2Template templator = new Graph2Template();
                                    
         try {
             
@@ -56,7 +58,7 @@ public class QALD {
                      JsonObject o = questionstrings.get(m).getAsJsonObject();
                      if (o.getAsJsonPrimitive("language").getAsString().equals(language)) {
                          q = o.getAsJsonPrimitive("string").getAsString();
-                         q = pre.preprocess(q.replace("-","_"));
+                         q = q.replace("-","_");
                          break;
                      }
                  }
@@ -64,9 +66,10 @@ public class QALD {
                  ParseResult parse = stanford.parse(q);
                  
                  try {
-                    String postagged = parse.toString_withPOS();
-                    Graph  synGraph  = parse.toDependencyGraph();
-                    Graph  semGraph  = transformer.transform(synGraph);
+                    String   postagged = parse.toString_withPOS();
+                    Graph    synGraph  = parse.toDependencyGraph();
+                    Graph    semGraph  = transformer.transform(synGraph);
+                    Template template  = templator.constructTemplate(semGraph);
                  
                     JsonArray annotations = new JsonArray();
                     
@@ -85,9 +88,15 @@ public class QALD {
                     sem_annotation.add("value",new JsonPrimitive(semGraph.toString(false)));
                     sem_annotation.add("creator",new JsonPrimitive("rocknrole"));
                     
+                    JsonObject temp_annotation = new JsonObject();
+                    temp_annotation.add("type",new JsonPrimitive("Template"));
+                    temp_annotation.add("value",new JsonPrimitive(template.toString()));
+                    temp_annotation.add("creator",new JsonPrimitive("rocknrole"));
+                    
                     annotations.add(pos_annotation);
                     annotations.add(syn_annotation);
                     annotations.add(sem_annotation);
+                    annotations.add(temp_annotation);
                     
                     question.add("annotations",annotations);
                  } 

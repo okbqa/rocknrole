@@ -67,33 +67,33 @@ public class RuleTransformer_general extends RuleTransformer {
             graph.delete(g);
         }
         
-                
+        String[] prepArgs = { "ARG0(*-1,*-2) \n ARGP(*-1,*-3)", 
+                              "cop(*-2,*-1) \n ARGP(*-1,*-3)",
+                              "ARG1(*-1,*-2) \n ARGP(*-1,*-3)"
+                            };
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,prepArgs)) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
+            graph.delete(g);
+        }
+        
         // Copulative constructions
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"cop(*-1,*-2) \n ARG0(*-2,*-3)")) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"cop",m.get(3)));
-            graph.delete(g);
-        }
+        String[] copulatives = { "cop(*-1,*-2) \n ARG0(*-2,*-3)", 
+                                 "cop(*-1,*-2) \n ARG0(*-1,*-3)",
+                                 "ARG0(BE-2,*-1) \n ARG1(BE-2,*-3)"
+                               };
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"cop(*-1,*-2) \n ARG0(*-1,*-3)")) {
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,copulatives)) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"cop",m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"EQUALS",m.get(3)));
             graph.delete(g);
-        }
-        
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(BE-1,*-2) \n ARG1(BE-1,*-3)")) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"cop",m.get(3)));
         }
         
         // Argument structure
@@ -103,33 +103,56 @@ public class RuleTransformer_general extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm().toLowerCase(),m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
             graph.delete(g);
         }
         
-        List<Pair<Graph,Map<Integer,Integer>>> subgraphs = new ArrayList<>();
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2) \n ARGP(*-1,*-3)")) {
-             subgraphs.add(subgraph);
-        }
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"cop(*-2,*-1) \n ARGP(*-1,*-3)")) {
-             subgraphs.add(subgraph);
-        }
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG1(*-1,*-2) \n ARGP(*-1,*-3)")) {
-             subgraphs.add(subgraph);
-        }
-        
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : subgraphs) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm().toLowerCase(),m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
             graph.delete(g);
         }
         
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARGP(*-1,*-2)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"REL",m.get(2)));
+            graph.delete(g);
+        }
+                
         // Relative clauses 
         
         // TODO
+        
+        // HAVE 
+        // Note: It's important that this is applied after the argument structure rules.
+        
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"HAVE(*-1,*-2)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),graph.getNode(m.get(2)).getForm(),m.get(2)));
+            graph.getNode(m.get(2)).setForm("RESOURCEorLITERAL");
+            graph.delete(g);
+        }
+        
+        // MOD (interpret modifier as restriction class)
+        
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"MOD(*-1,*-2)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"REL",m.get(2)));
+            graph.getNode(m.get(2)).setPOS("NNP");
+            graph.delete(g);
+        }
         
         // Coordination
         
@@ -152,5 +175,16 @@ public class RuleTransformer_general extends RuleTransformer {
         Graph subgraph = reader.interpret(regex);
                 
         return subgraph.subGraphMatches(graph);
+    }
+    
+    private List<Pair<Graph,Map<Integer,Integer>>> getSubgraphs(Graph graph, String[] regexes) {
+        
+        List<Pair<Graph,Map<Integer,Integer>>> subgraphs = new ArrayList<>();
+        
+        for (String regex : regexes) {
+            subgraphs.addAll(getSubgraphs(graph,regex));
+        }
+        
+        return subgraphs;
     }
 }

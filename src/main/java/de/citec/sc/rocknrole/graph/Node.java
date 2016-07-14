@@ -38,7 +38,7 @@ public class Node {
     public String getPOS() {
         return pos;   
     }
-    
+     
     // Setter 
     
     public void setId(int i) {

@@ -7,7 +7,7 @@ package de.citec.sc.rocknrole.template;
 public enum SlotType {
     
     CLASS, 
-    PROPERTY, OBJECTPROPERTY, DATAPROPERTY, SORTAL, 
+    PROPERTY, OBJECTPROPERTY, DATAPROPERTY, SORTAL,
     RESOURCE, LITERAL, RESOURCEorLITERAL;
     
     @Override

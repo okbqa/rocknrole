@@ -27,16 +27,16 @@ public class Interactive_en {
         pipeline.debugMode();
         Scanner scanner = new Scanner(System.in);
         
-        String input = null;
+        String input;
         
         while (true) {
             
-            if (input != null && input.isEmpty()) {
-                System.exit(0);
-            }
-            
             System.out.print("\n> ");
             input = scanner.nextLine();
+                        
+            if (input.isEmpty()) {
+                System.exit(0);
+            }
             
             pipeline.run(input);
         }

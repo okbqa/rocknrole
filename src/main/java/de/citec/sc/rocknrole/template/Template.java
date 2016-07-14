@@ -179,9 +179,9 @@ public class Template {
         
         Set<String> nodes = new HashSet<>();
         for (Triple t : triples) {
-            nodes.add(t.getSubject().getName());
-            nodes.add(t.getPredicate().getName());
-            nodes.add(t.getObject().getName());
+            if (t.getSubject().isVariable())   nodes.add(t.getSubject().getName());
+            if (t.getPredicate().isVariable()) nodes.add(t.getPredicate().getName());
+            if (t.getObject().isVariable())    nodes.add(t.getObject().getName());
         }
         
         double numberOfKnownNodes = 0.0;

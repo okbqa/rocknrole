@@ -44,6 +44,11 @@ public class TemplatorPipeline {
         Template t = graph2template.constructTemplate(g);
         output.add(t.toJSON());
         
+        if (verbose) {
+            System.out.println("\n----------Template-----------");
+            System.out.println(t.toString());
+        }
+        
         // 3. Template rewriting
         
         // Set<Template> variations = rewriter.rewrite(t);
