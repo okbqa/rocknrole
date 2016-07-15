@@ -69,6 +69,23 @@
           "string": "대한민국의 지방법원은 민사 및 형사 사건을 1심으로 재판한다. 전국의 지방법원 수는 18개이며, 지방법원은 지방법원장과 대법원 규칙으로 정한 수의 판사로 구성된다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(개인-2,지방-1) \n AP(개인-2,모두-3) \n DP(개인-2,몇-4)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "개인(지방-1,RESOURCE-5)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v1  ?v7  ?v5 .} \n  \n  v5 - (rdfs:Resource) \n  v1 지방 (rdfs:Class|rdfs:Resource) \n  v7 개인 (rdf:Property) \n  \n Score: 0.6666666666666666",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -118,6 +135,23 @@
           "type": "1-2",
           "string": "노무현(盧武鉉, 1946년 9월 1일 ~ 2009년 5월 23일)은 대한민국의 제16대 대통령이다.[1] 2009년 5월 23일에 과거 사시 공부를 했던 정토원의 법당에 모셔진 부모와 장인의 위패에 예를 표한 뒤 그 옆의 부엉이 바위에서 투신자살하였다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(는-2,대통령-1) \n MOD(ㄴ-3,사망-4) \n SBJ(는-2,ㄴ-3) \n ARG0(사망-4,대통령-1) \n ARG1(사망-4,ㄴ-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(대통령-1,RESOURCE-5) \n 는(ㄴ-3,RESOURCE-6) \n 사망(대통령-1,RESOURCE-7) \n 사망(RESOURCE-8,ㄴ-3) \n REL(ㄴ-3,사망/NNP-4)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v1  ?v12  ?v7 . \n     ?v8  ?v13  ?v3 . \n     ?v3  ?v14  ?v4 . \n     ?v1  ?v10  ?v5 . \n     ?v3  ?v11  ?v6 . \n   } \n  \n  v1 대통령 (rdfs:Class|rdfs:Resource) \n  v5 - (rdfs:Resource) \n  v12 사망 (rdf:Property) \n  v4 사망 (rdfs:Resource) \n  v10 는 (rdf:Property) \n  v7 - (rdfs:Resource) \n  v14 - (rdf:Property) \n  v13 사망 (rdf:Property) \n  v3 ㄴ (rdfs:Class|rdfs:Resource) \n  v11 는 (rdf:Property) \n  v6 - (rdfs:Resource) \n  v8 - (rdfs:Resource) \n  \n Score: 0.5833333333333334",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -169,6 +203,23 @@
           "string": "김대중(金大中, 1924년 1월 6일 ~ 2009년 8월 18일)은 대한민국의 제15대 대통령이다. 대내외적으로는 민주화를 지지했으나,[2][3][4][5] 인권 향상과 남북 관계의 진전에 기여한 공로로 2000년 임기 중에 한국인 역사상 최초로 노벨 평화상을 수상하였다.[6]",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(는-2,대통령-1) \n NP(평화-3,노벨-4) \n OBJ(수상-5,평화-3) \n MOD(ㄴ-6,수상-5) \n SBJ(는-2,ㄴ-6) \n ARG0(수상-5,대통령-1) \n ARG1(수상-5,평화-3) \n ARG0(수상-5,ㄴ-6)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(대통령-1,RESOURCE-7) \n 는(ㄴ-6,RESOURCE-8) \n 수상(대통령-1,RESOURCE-9) \n 수상(ㄴ-6,RESOURCE-10) \n 수상(RESOURCE-11,평화-3) \n REL(ㄴ-6,수상/NNP-5)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v1   ?v13  ?v7 . \n     ?v6   ?v18  ?v5 ; \n           ?v16  ?v10 . \n     ?v11  ?v17  ?v3 . \n     ?v1   ?v15  ?v9 . \n     ?v6   ?v14  ?v8 . \n   } \n  \n  v5 수상 (rdfs:Resource) \n  v7 - (rdfs:Resource) \n  v15 수상 (rdf:Property) \n  v3 평화 (rdfs:Class|rdfs:Resource) \n  v16 수상 (rdf:Property) \n  v1 대통령 (rdfs:Class|rdfs:Resource) \n  v6 ㄴ (rdfs:Class|rdfs:Resource) \n  v18 - (rdf:Property) \n  v11 - (rdfs:Resource) \n  v14 는 (rdf:Property) \n  v9 - (rdfs:Resource) \n  v17 수상 (rdf:Property) \n  v10 - (rdfs:Resource) \n  v13 는 (rdf:Property) \n  v8 - (rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -213,6 +264,23 @@
           "string": "화성(華城)은 경기도 수원시 팔달구와 장안구에 걸쳐 있는 길이 5.4킬로미터의 성곽이다. 조선 후기 정조 때인 1794년 착공하여 1796년 9월 10일(음력)에 준공되었다. 화성은 군사적 방어기능과 상업적 기능을 함께 보유하고 있으며 실용적인 구조로 되어 있어 동양 성곽의 백미로 평가 받는다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "AJT(착공-2,1794-3) \n VP(준공-4,착공-2) \n NP(9-5,1796-6) \n NP(10-7,9-5) \n AJT(준공-4,10-7) \n MOD(의-8,준공-4) \n MOD(의-8,ㄴ-9) \n SBJ(은-1,의-8) \n ARG1(착공-2,1794-3) \n ARGMTMP(준공-4,10-7) \n ARG1(준공-4,의-8) \n AJT(착공-11,1794-12) \n VP(준공-13,착공-11) \n NP(9-14,1796-15) \n NP(10-16,9-14) \n AJT(준공-13,10-16) \n MOD(의-17,준공-13) \n MOD(의-17,ㄴ-18) \n SBJ(는-10,의-17) \n MOD(하-19,이-20) \n SBJ(는-10,하-19) \n ARG1(착공-11,1794-12) \n ARGMTMP(준공-13,10-16) \n ARG1(준공-13,의-17) \n ARG1(이-20,의-17) \n ARG1(이-20,하-19)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(의-8,RESOURCE-21) \n 는(의-17,RESOURCE-22) \n 는(하-19,RESOURCE-23) \n 준공(RESOURCE-24,의-8) \n 준공(RESOURCE-25,의-17) \n THIS(RESOURCE-26,의-17) \n THIS(RESOURCE-27,하-19) \n REL(착공-2,1794/NNP-3) \n REL(준공/NNP-4,10/NNP-7) \n REL(의-8,준공/NNP-4) \n REL(의-8,ㄴ/NNP-9) \n REL(착공-11,1794/NNP-12) \n REL(준공/NNP-13,10/NNP-16) \n REL(의-17,준공/NNP-13) \n REL(의-17,ㄴ/NNP-18) \n REL(하-19,THIS/NNP-20)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v19  ?v44  ?v20 . \n     ?v26  ?v34  ?v17 . \n     ?v11  ?v40  ?v12 . \n     ?v17  ?v30  ?v22 . \n     ?v8   ?v38  ?v4 . \n     ?v4   ?v37  ?v7 . \n     ?v19  ?v31  ?v23 . \n     ?v17  ?v42  ?v13 . \n     ?v8   ?v29  ?v21 . \n     ?v25  ?v33  ?v17 . \n     ?v13  ?v41  ?v16 . \n     ?v8   ?v39  ?v9 . \n     ?v2   ?v36  ?v3 . \n     ?v24  ?v32  ?v8 . \n     ?v17  ?v43  ?v18 . \n     ?v27  ?v35  ?v19 . \n   } \n  \n  v33 준공 (rdf:Property) \n  v35 THIS (rdf:Property) \n  v20 THIS (rdfs:Resource) \n  v11 착공 (rdfs:Class|rdfs:Resource) \n  v17 의 (rdfs:Class|rdfs:Resource) \n  v23 - (rdfs:Resource) \n  v38 - (rdf:Property) \n  v42 - (rdf:Property) \n  v19 하 (rdfs:Class|rdfs:Resource) \n  v22 - (rdfs:Resource) \n  v30 는 (rdf:Property) \n  v25 - (rdfs:Resource) \n  v36 - (rdf:Property) \n  v3 1794 (rdfs:Resource) \n  v29 은 (rdf:Property) \n  v13 준공 (rdfs:Resource) \n  v40 - (rdf:Property) \n  v16 10 (rdfs:Resource) \n  v24 - (rdfs:Resource) \n  v9 ㄴ (rdfs:Resource) \n  v43 - (rdf:Property) \n  v31 는 (rdf:Property) \n  v4 준공 (rdfs:Resource) \n  v39 - (rdf:Property) \n  v27 - (rdfs:Resource) \n  v18 ㄴ (rdfs:Resource) \n  v12 1794 (rdfs:Resource) \n  v7 10 (rdfs:Resource) \n  v37 - (rdf:Property) \n  v26 - (rdfs:Resource) \n  v41 - (rdf:Property) \n  v2 착공 (rdfs:Class|rdfs:Resource) \n  v44 - (rdf:Property) \n  v21 - (rdfs:Resource) \n  v32 준공 (rdf:Property) \n  v8 의 (rdfs:Class|rdfs:Resource) \n  v34 THIS (rdf:Property) \n  \n Score: 0.5675675675675675",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -256,6 +324,23 @@
           "type": "1-3",
           "string": "덕혜옹주(德惠翁主, 1912년 5월 25일 ~ 1989년 4월 21일)는 조선의 제26대 왕이자 대한제국의 초대 황제였던 고종과 귀인 양씨 사이에서 태어난 딸이다. 고종(高宗, 1852년(철종 3년) 9월 8일(음력 7월 25일) ~ 1919년 1월 21일)은 대한제국의 건국조, 초대 황제 광무제(光武帝, 재위: 1897년 ~ 1907년)이며, 조선의 제26대이자 마지막 임금(재위: 1863년 ~ 1897년)이다. 고종은 총 9남 4녀의 자녀가 있었지만 3남 1녀만이 성년이 될 때까지 생존하여 덕혜옹주가 사실상 유일한 딸이 되었다.[6]",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(황녀-1,마지막-2) \n SBJ(누구-3,황녀-1)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(AGENT-3,AGENT-3) \n AGENT(황녀-1,RESOURCE-4)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v1  ?v6  ?v4 .} \n  \n  v3 AGENT (rdfs:Class|rdfs:Resource) \n  v6 AGENT (rdf:Property) \n  v1 황녀 (rdfs:Class|rdfs:Resource) \n  v4 - (rdfs:Resource) \n  \n Score: 0.6666666666666666",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -361,6 +446,23 @@
           "string": "아돌프 히틀러(독일어: Adolf Hitler, 1889년 4월 20일 ~ 1945년 4월 30일)는 독일의 나치의 지도자 이자 정치가이다. 뛰어난 웅변술과 감각의 소유자인 히틀러는 제1차 세계 대전의 패전국으로 베르사유 체제 이후 피폐해진 독일을 경제 발전으로 이끌었다. 이후 독일 민족 생존권 수립 정책을 주장하며 자를란트의 영유권 회복과 오스트리아 병합, 체코슬로바키아 점령, 폴란드 침공 등을 일으키며 제2차 세계 대전을 일으켰다. \n  \n 프랭클린 델러노 루스벨트(Franklin Delano Roosevelt, 1882년 1월 30일 ~ 1945년 4월 12일)는 미국의 32번째 대통령(재임 1933년 ~ 1945년)이다. 그는 임기 동안 대공황과 제2차 세계 대전을 모두 경험한, 20세기의 중심인물 중 한 사람이라고 할 수 있다. 루스벨트의 리더쉽은 뉴딜 정책을 통하여 미국이 대공황에서 벗어나도록 도왔으며, 제2차 세계 대전 때 연합군에 동참하여 나치 독일과 이탈리아 왕국, 그리고 일본 제국을 상대로 전쟁을 수행하여 승리로 이끌었다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(대전-2,제-3) \n NP(대전-2,세계-4) \n AJT(이끌-5,대전-2) \n NP(히틀러-6,아돌프-7) \n SBJ(이끌-5,히틀러-6) \n MOD(ㄴ-8,이끌-5) \n SBJ(는-1,ㄴ-8) \n ARGMLOC(이끌-5,대전-2) \n ARG0(이끌-5,히틀러-6) \n ARG1(이끌-5,ㄴ-8) \n NP(대전-10,제-11) \n NP(대전-10,세계-12) \n AJT(이끌-13,대전-10) \n OBJ(이끌-13,독일-14) \n MOD(ㄴ-15,이끌-13) \n SBJ(은-9,ㄴ-15) \n ARGMLOC(이끌-13,대전-10) \n ARG1(이끌-13,독일-14) \n ARG1(이끌-13,ㄴ-15) \n NP(대전-17,제-18) \n NP(대전-17,세계-19) \n AJT(D-16,대전-17) \n NP(D-16,프랭클린-20) \n MOD(ㄴ-22,이끌-21) \n SBJ(는-23,ㄴ-22) \n ARG1(이끌-21,ㄴ-22) \n NP(대전-25,제-26) \n NP(대전-25,세계-27) \n AJT(이끌-28,대전-25) \n OBJ(이끌-28,미국-29) \n MOD(ㄴ-30,이끌-28) \n SBJ(은-24,ㄴ-30) \n ARGMLOC(이끌-28,대전-25) \n ARG1(이끌-28,미국-29) \n ARG1(이끌-28,ㄴ-30) \n NP(대전-32,제-33) \n NP(대전-32,세계-34) \n AJT(이끌-35,대전-32) \n OBJ(이끌-35,영국-36) \n MOD(ㄴ-37,이끌-35) \n SBJ(은-31,ㄴ-37) \n ARGMLOC(이끌-35,대전-32) \n ARG1(이끌-35,영국-36) \n ARG1(이끌-35,ㄴ-37)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "이끌(히틀러-6,ㄴ-8) \n 는(ㄴ-8,RESOURCE-38) \n 은(ㄴ-15,RESOURCE-39) \n 는(ㄴ-22,RESOURCE-40) \n 은(ㄴ-30,RESOURCE-41) \n 은(ㄴ-37,RESOURCE-42) \n 이끌(RESOURCE-43,독일-14) \n 이끌(RESOURCE-44,ㄴ-15) \n 이끌(RESOURCE-45,ㄴ-22) \n 이끌(RESOURCE-46,미국-29) \n 이끌(RESOURCE-47,ㄴ-30) \n 이끌(RESOURCE-48,영국-36) \n 이끌(RESOURCE-49,ㄴ-37) \n REL(이끌/NNP-5,대전/NNP-2) \n REL(ㄴ-8,이끌/NNP-5) \n REL(이끌/NNP-13,대전/NNP-10) \n REL(ㄴ-15,이끌/NNP-13) \n REL(D-16,대전/NNP-17) \n REL(ㄴ-22,이끌/NNP-21) \n REL(이끌/NNP-28,대전/NNP-25) \n REL(ㄴ-30,이끌/NNP-28) \n REL(이끌/NNP-35,대전/NNP-32) \n REL(ㄴ-37,이끌/NNP-35)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v5   ?v64  ?v2 . \n     ?v8   ?v52  ?v38 . \n     ?v48  ?v62  ?v36 . \n     ?v37  ?v56  ?v42 . \n     ?v8   ?v65  ?v5 . \n     ?v16  ?v68  ?v17 . \n     ?v6   ?v51  ?v8 . \n     ?v45  ?v59  ?v22 . \n     ?v47  ?v61  ?v30 . \n     ?v13  ?v66  ?v10 . \n     ?v15  ?v67  ?v13 . \n     ?v35  ?v72  ?v32 . \n     ?v37  ?v73  ?v35 . \n     ?v44  ?v58  ?v15 . \n     ?v43  ?v57  ?v14 . \n     ?v49  ?v63  ?v37 . \n     ?v22  ?v54  ?v40 . \n     ?v46  ?v60  ?v29 . \n     ?v22  ?v69  ?v21 . \n     ?v15  ?v53  ?v39 . \n     ?v30  ?v55  ?v41 . \n     ?v28  ?v70  ?v25 . \n     ?v30  ?v71  ?v28 . \n   } \n  \n  v70 - (rdf:Property) \n  v8 ㄴ (rdfs:Class|rdfs:Resource) \n  v63 이끌 (rdf:Property) \n  v54 는 (rdf:Property) \n  v13 이끌 (rdfs:Resource) \n  v51 이끌 (rdf:Property) \n  v69 - (rdf:Property) \n  v38 - (rdfs:Resource) \n  v44 - (rdfs:Resource) \n  v32 대전 (rdfs:Resource) \n  v56 은 (rdf:Property) \n  v30 ㄴ (rdfs:Class|rdfs:Resource) \n  v57 이끌 (rdf:Property) \n  v45 - (rdfs:Resource) \n  v29 미국 (rdfs:Class|rdfs:Resource) \n  v68 - (rdf:Property) \n  v21 이끌 (rdfs:Resource) \n  v40 - (rdfs:Resource) \n  v58 이끌 (rdf:Property) \n  v6 히틀러 (rdfs:Class|rdfs:Resource) \n  v37 ㄴ (rdfs:Class|rdfs:Resource) \n  v64 - (rdf:Property) \n  v71 - (rdf:Property) \n  v36 영국 (rdfs:Class|rdfs:Resource) \n  v2 대전 (rdfs:Resource) \n  v46 - (rdfs:Resource) \n  v39 - (rdfs:Resource) \n  v66 - (rdf:Property) \n  v28 이끌 (rdfs:Resource) \n  v73 - (rdf:Property) \n  v47 - (rdfs:Resource) \n  v35 이끌 (rdfs:Resource) \n  v60 이끌 (rdf:Property) \n  v41 - (rdfs:Resource) \n  v10 대전 (rdfs:Resource) \n  v61 이끌 (rdf:Property) \n  v53 은 (rdf:Property) \n  v15 ㄴ (rdfs:Class|rdfs:Resource) \n  v65 - (rdf:Property) \n  v42 - (rdfs:Resource) \n  v52 는 (rdf:Property) \n  v59 이끌 (rdf:Property) \n  v72 - (rdf:Property) \n  v43 - (rdfs:Resource) \n  v55 은 (rdf:Property) \n  v22 ㄴ (rdfs:Class|rdfs:Resource) \n  v14 독일 (rdfs:Class|rdfs:Resource) \n  v67 - (rdf:Property) \n  v48 - (rdfs:Resource) \n  v16 D (rdfs:Class|rdfs:Resource) \n  v17 대전 (rdfs:Resource) \n  v49 - (rdfs:Resource) \n  v5 이끌 (rdfs:Resource) \n  v25 대전 (rdfs:Resource) \n  v62 이끌 (rdf:Property) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -453,6 +555,23 @@
           "string": "메카(아랍어: مكة المكرمة) 또는 마카(Makkah Al Mukarrammah)는 과거에 히자즈로 알려졌던 사우디아라비아의 마카 주의 수도이다.[2]",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(ㄴ-2,위치-1) \n SBJ(는-3,ㄴ-2) \n ARG1(위치-1,ㄴ-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(ㄴ-2,RESOURCE-4) \n 위치(RESOURCE-5,ㄴ-2) \n REL(ㄴ-2,위치/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v5  ?v8  ?v2 . \n     ?v2  ?v9  ?v1 ; \n          ?v7  ?v4 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v2 ㄴ (rdfs:Class|rdfs:Resource) \n  v8 위치 (rdf:Property) \n  v7 는 (rdf:Property) \n  v4 - (rdfs:Resource) \n  v9 - (rdf:Property) \n  v1 위치 (rdfs:Resource) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -533,6 +652,23 @@
           "string": "삼별초(三別抄)는 몽골 침략기에 그에 대항하던 고려의 무장 세력이며, 원래는 하나의 단일한 단체가 아니었다. 1270년 개경 환도가 임박하자 삼별초는 몽골과 결탁한 왕에게 운명을 맡길 수 없었고, 내부에서 동요하기 시작했다. 1270년 음력 6월 초, 개경 환도를 앞둔 시점에서 삼별초의 지도자였던 배중손과 노영희 등 삼별초 지휘자들은 항전을 결정한다.[2] 삼별초는 왕족 승화후 왕온을 추대하여 황제로 삼고, 대 선단을 이끌고 진도로 도착했다. 1270년 음력 11월 이르러 삼별초군은 제주도까지 점령하였다.[2]",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "AJT(항쟁-1,몽골-2) \n VP(이동-3,항쟁-1) \n MOD(ㄴ-4,이동-3) \n SBJ(은-5,ㄴ-4) \n ARG2(항쟁-1,몽골-2) \n ARGMDIS(이동-3,항쟁-1) \n ARG1(이동-3,ㄴ-4)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(ㄴ-4,RESOURCE-6) \n 이동(RESOURCE-7,ㄴ-4) \n REL(항쟁-1,몽골/NNP-2) \n REL(ㄴ-4,이동/NNP-3)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v7  ?v10  ?v4 . \n     ?v1  ?v11  ?v2 . \n     ?v4  ?v12  ?v3 ; \n          ?v9   ?v6 . \n   } \n  \n  v3 이동 (rdfs:Resource) \n  v4 ㄴ (rdfs:Class|rdfs:Resource) \n  v11 - (rdf:Property) \n  v1 항쟁 (rdfs:Class|rdfs:Resource) \n  v7 - (rdfs:Resource) \n  v2 몽골 (rdfs:Resource) \n  v12 - (rdf:Property) \n  v6 - (rdfs:Resource) \n  v9 은 (rdf:Property) \n  v10 이동 (rdf:Property) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -576,6 +712,23 @@
           "type": "1-3",
           "string": "국회의원(國會議員)은 대한민국 국회의 의원으로, 국회의 구성원이다. 국회의원 피선거권의 자격은 공직선거법이 다음과 같이 규정하고 있다. 선거일 25세 이상의 국민 (제 16조 및 제 17조).",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(수-2,학생-1) \n MOD(선거-3,대한민국-4) \n NP(선거-3,국회-5) \n AJT(출마-6,선거-3) \n MOD(ㄹ-7,출마-6) \n SBJ(수-2,ㄹ-7) \n ARG0(출마-6,학생-1) \n ARG2(출마-6,선거-3) \n AUX(출마-6,수-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "수(학생-1,RESOURCE-8) \n 수(ㄹ-7,RESOURCE-9) \n 출마(학생-1,RESOURCE-10) \n REL(선거/NNP-3,대한민국/NNP-4) \n REL(출마/NNP-6,선거/NNP-3) \n REL(ㄹ-7,출마/NNP-6)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v1  ?v12  ?v8 . \n     ?v3  ?v15  ?v4 . \n     ?v6  ?v16  ?v3 . \n     ?v7  ?v13  ?v9 . \n     ?v1  ?v14  ?v10 . \n     ?v7  ?v17  ?v6 . \n   } \n  \n  v12 수 (rdf:Property) \n  v4 대한민국 (rdfs:Resource) \n  v14 출마 (rdf:Property) \n  v16 - (rdf:Property) \n  v7 ㄹ (rdfs:Class|rdfs:Resource) \n  v17 - (rdf:Property) \n  v3 선거 (rdfs:Resource) \n  v6 출마 (rdfs:Resource) \n  v13 수 (rdf:Property) \n  v9 - (rdfs:Resource) \n  v10 - (rdfs:Resource) \n  v1 학생 (rdfs:Class|rdfs:Resource) \n  v15 - (rdf:Property) \n  v8 - (rdfs:Resource) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -621,6 +774,23 @@
           "string": "김정일[2](金正日, 1941년 2월 16일 ~ 2011년 12월 17일)은 조선민주주의인민공화국의 정치인이다. 김정일은 1941년 2월 16일 김일성과 김정숙의 아들로 태어났다. 조선민주주의인민공화국 국방위원회의 위원장이었으며 김일성과 김정숙 사이의 첫째 아들이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(회-2,출생-1) \n NP(국방-3,ㄴ-4) \n NP(회-2,국방-3) \n SBJ(은-5,회-2) \n ARG1(출생-1,회-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(회-2,RESOURCE-6) \n 출생(RESOURCE-7,회-2) \n REL(회-2,출생/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2  ?v11  ?v1 . \n     ?v7  ?v10  ?v2 . \n     ?v2  ?v9   ?v6 . \n   } \n  \n  v1 출생 (rdfs:Resource) \n  v11 - (rdf:Property) \n  v7 - (rdfs:Resource) \n  v10 출생 (rdf:Property) \n  v2 회 (rdfs:Class|rdfs:Resource) \n  v6 - (rdfs:Resource) \n  v9 은 (rdf:Property) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -665,6 +835,23 @@
           "string": "남이섬 (南怡—섬)은 강원도 춘천시 남산면 방하리[1] 에 있는 섬이다. 남이 장군의 묘역이 있는 문화유적지이지만 유원지로 개발되었다.[2] 드라마 겨울연가에서 배용준과 최지우가 남이섬의 메타세쿼이아 가로수길과 은행나무길을 걸었다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "AJT(있-2,남이-3) \n SBJ(있-2,관련-4) \n MOD(섬-5,있-2) \n SBJ(어디-1,섬-5) \n ARG2(있-2,남이-3) \n ARG1(있-2,관련-4) \n ARG1(있-2,섬-5) \n AJT(있-7,겨울-8) \n SBJ(있-7,관련-9) \n MOD(섬-10,있-7) \n SBJ(어디-6,섬-10) \n ARG2(있-7,겨울-8) \n ARG1(있-7,관련-9) \n ARG1(있-7,섬-10) \n AJT(있-12,연가-13) \n SBJ(있-12,관련-14) \n MOD(섬-15,있-12) \n SBJ(어디-11,섬-15) \n ARG2(있-12,연가-13) \n ARG1(있-12,관련-14) \n ARG1(있-12,섬-15)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(LOCATION-1,LOCATION-1) \n SELECT(LOCATION-6,LOCATION-6) \n SELECT(LOCATION-11,LOCATION-11) \n LOCATION(섬-5,RESOURCE-16) \n LOCATION(RESOURCEorLITERAL-10,RESOURCE-18) \n LOCATION(RESOURCEorLITERAL-15,RESOURCE-20) \n (관련-4,섬-5) \n 관련(RESOURCE-17,RESOURCEorLITERAL-9) \n 관련(RESOURCE-19,RESOURCEorLITERAL-14) \n 섬(RESOURCE-21,RESOURCEorLITERAL-10) \n 섬(RESOURCE-22,RESOURCEorLITERAL-15) \n REL(HAVE/NNP-2,남이/NNP-3) \n REL(섬-5,HAVE/NNP-2) \n REL(HAVE/NNP-7,겨울/NNP-8) \n REL(RESOURCEorLITERAL-10,HAVE/NNP-7) \n REL(HAVE/NNP-12,연가/NNP-13) \n REL(RESOURCEorLITERAL-15,HAVE/NNP-12)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v17  ?v28  ?v9 . \n     ?v22  ?v31  ?v15 . \n     ?v10  ?v25  ?v18 . \n     ?v15  ?v37  ?v12 . \n     ?v5   ?v33  ?v2 ; \n           ?v24  ?v16 . \n     ?v15  ?v26  ?v20 . \n     ?v21  ?v30  ?v10 . \n     ?v7   ?v34  ?v8 . \n     ?v12  ?v36  ?v13 . \n     ?v4   ?v27  ?v5 . \n     ?v2   ?v32  ?v3 . \n     ?v19  ?v29  ?v14 . \n     ?v10  ?v35  ?v7 . \n   } \n  \n  v5 섬 (rdfs:Class|rdfs:Resource) \n  v2 HAVE (rdfs:Resource) \n  v10 - (rdfs:Resource|rdfs:Literal) \n  v20 - (rdfs:Resource) \n  v35 - (rdf:Property) \n  v32 - (rdf:Property) \n  v28 관련 (rdf:Property) \n  v19 - (rdfs:Resource) \n  v26 LOCATION (rdf:Property) \n  v16 - (rdfs:Resource) \n  v4 관련 (rdfs:Class|rdfs:Resource) \n  v6 LOCATION (rdfs:Class|rdfs:Resource) \n  v18 - (rdfs:Resource) \n  v22 - (rdfs:Resource) \n  v24 LOCATION (rdf:Property) \n  v9 - (rdfs:Resource|rdfs:Literal) \n  v3 남이 (rdfs:Resource) \n  v11 LOCATION (rdfs:Class|rdfs:Resource) \n  v30 섬 (rdf:Property) \n  v8 겨울 (rdfs:Resource) \n  v1 LOCATION (rdfs:Class|rdfs:Resource) \n  v36 - (rdf:Property) \n  v33 - (rdf:Property) \n  v7 HAVE (rdfs:Resource) \n  v31 섬 (rdf:Property) \n  v29 관련 (rdf:Property) \n  v25 LOCATION (rdf:Property) \n  v14 - (rdfs:Resource|rdfs:Literal) \n  v27 - (rdf:Property) \n  v12 HAVE (rdfs:Resource) \n  v15 - (rdfs:Resource|rdfs:Literal) \n  v37 - (rdf:Property) \n  v34 - (rdf:Property) \n  v17 - (rdfs:Resource) \n  v13 연가 (rdfs:Resource) \n  v21 - (rdfs:Resource) \n  \n Score: 0.45454545454545453",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -708,6 +895,23 @@
           "type": "1-2",
           "string": "부처님 오신 날, 대한민국의 법정 명칭으로 석가탄신일(釋迦誕辰日)은 불교에서 석가모니가 탄생한 날로, 음력 4월 8일이다. \n  \n 현충일(顯忠日)은 국가를 위해 목숨을 바친 순국선열(殉國先烈)과 전몰(戰歿) 장병들의 충렬을 기리고 얼을 위로하는 대한민국의 기념일이다. 매년 6월 6일로, 전국 각지에서 나라를 위하여 목숨을 바친 애국선열과 국군장병들의 넋을 위로하고 그 충절을 추모하는 행사를 거행한다. \n  \n 추석(秋夕)은 한가위, 중추(仲秋), 중추절(仲秋節), 가배일(嘉俳日)로 부르기도 하며, 음력 8월 15일에 치르는 명절로서 설날과 더불어 한국인에게 전통적으로 가장 중요한 명절이다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(날-2,부처-3) \n NP(날-2,오신-4) \n MOD(날짜-5,날-2) \n SBJ(언제-1,날짜-5) \n NP(4-7,음력-8) \n NP(8-9,4-7) \n AJT(해당-10,8-9) \n MOD(공휴-11,해당-10) \n MOD(공휴-11,대한민국-12) \n SBJ(무엇-6,공휴-11) \n ARGMTMP(해당-10,8-9) \n ARG1(해당-10,공휴-11) \n MOD(날짜-14,현충-15) \n SBJ(언제-13,날짜-14) \n NP(6-17,6-18) \n AJT(해당-19,6-17) \n MOD(공휴-20,해당-19) \n MOD(공휴-20,대한민국-21) \n SBJ(무엇-16,공휴-20) \n ARG2(해당-19,6-17) \n MOD(날짜-23,한글-24) \n SBJ(언제-22,날짜-23) \n NP(10-26,10-27) \n AJT(해당-28,10-26) \n MOD(공휴-29,해당-28) \n MOD(공휴-29,대한민국-30) \n SBJ(무엇-25,공휴-29) \n ARG2(해당-28,10-26) \n ARG1(해당-28,공휴-29) \n MOD(날짜-32,추석-33) \n SBJ(언제-31,날짜-32) \n NP(8-35,음력-36) \n NP(15-37,8-35) \n AJT(해당-38,15-37) \n MOD(공휴-39,해당-38) \n MOD(공휴-39,대한민국-40) \n SBJ(무엇-34,공휴-39) \n ARG2(해당-38,15-37) \n ARG1(해당-38,공휴-39)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(DATETIME-1,DATETIME-1) \n SELECT(DATETIME-13,DATETIME-13) \n SELECT(DATETIME-22,DATETIME-22) \n SELECT(DATETIME-31,DATETIME-31) \n DATETIME(날짜-5,RESOURCE-41) \n THING(공휴-11,RESOURCE-42) \n DATETIME(날짜-14,RESOURCE-43) \n THING(공휴-20,RESOURCE-44) \n DATETIME(날짜-23,RESOURCE-45) \n THING(공휴-29,RESOURCE-46) \n DATETIME(날짜-32,RESOURCE-47) \n THING(공휴-39,RESOURCE-48) \n 해당(RESOURCE-49,공휴-11) \n 해당(RESOURCE-50,공휴-29) \n 해당(RESOURCE-51,공휴-39) \n REL(날짜-5,날/NNP-2) \n REL(해당/NNP-10,8/NNP-9) \n REL(공휴-11,해당/NNP-10) \n REL(공휴-11,대한민국/NNP-12) \n REL(날짜-14,현충/NNP-15) \n REL(해당/NNP-19,6/NNP-17) \n REL(공휴-20,해당/NNP-19) \n REL(공휴-20,대한민국/NNP-21) \n REL(날짜-23,한글/NNP-24) \n REL(해당/NNP-28,10/NNP-26) \n REL(공휴-29,해당/NNP-28) \n REL(공휴-29,대한민국/NNP-30) \n REL(날짜-32,추석/NNP-33) \n REL(해당/NNP-38,15/NNP-37) \n REL(공휴-39,해당/NNP-38) \n REL(공휴-39,대한민국/NNP-40)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v5   ?v64  ?v2 . \n     ?v20  ?v71  ?v21 . \n     ?v28  ?v73  ?v26 . \n     ?v14  ?v68  ?v15 . \n     ?v29  ?v75  ?v30 . \n     ?v11  ?v54  ?v42 . \n     ?v49  ?v61  ?v11 . \n     ?v11  ?v66  ?v10 . \n     ?v23  ?v72  ?v24 . \n     ?v32  ?v59  ?v47 . \n     ?v50  ?v62  ?v29 . \n     ?v39  ?v60  ?v48 ; \n           ?v78  ?v38 . \n     ?v5   ?v53  ?v41 . \n     ?v38  ?v77  ?v37 . \n     ?v29  ?v58  ?v46 . \n     ?v39  ?v79  ?v40 . \n     ?v23  ?v57  ?v45 . \n     ?v11  ?v67  ?v12 . \n     ?v20  ?v70  ?v19 . \n     ?v51  ?v63  ?v39 . \n     ?v29  ?v74  ?v28 . \n     ?v20  ?v56  ?v44 . \n     ?v10  ?v65  ?v9 . \n     ?v32  ?v76  ?v33 . \n     ?v14  ?v55  ?v43 . \n     ?v19  ?v69  ?v17 . \n   } \n  \n  v70 - (rdf:Property) \n  v51 - (rdfs:Resource) \n  v23 날짜 (rdfs:Class|rdfs:Resource) \n  v69 - (rdf:Property) \n  v19 해당 (rdfs:Resource) \n  v26 10 (rdfs:Resource) \n  v33 추석 (rdfs:Resource) \n  v11 공휴 (rdfs:Class|rdfs:Resource) \n  v44 - (rdfs:Resource) \n  v63 해당 (rdf:Property) \n  v38 해당 (rdfs:Resource) \n  v55 DATETIME (rdf:Property) \n  v45 - (rdfs:Resource) \n  v21 대한민국 (rdfs:Resource) \n  v56 THING (rdf:Property) \n  v40 대한민국 (rdfs:Resource) \n  v75 - (rdf:Property) \n  v68 - (rdf:Property) \n  v2 날 (rdfs:Resource) \n  v58 THING (rdf:Property) \n  v77 - (rdf:Property) \n  v15 현충 (rdfs:Resource) \n  v64 - (rdf:Property) \n  v31 DATETIME (rdfs:Class|rdfs:Resource) \n  v76 - (rdf:Property) \n  v12 대한민국 (rdfs:Resource) \n  v29 공휴 (rdfs:Class|rdfs:Resource) \n  v71 - (rdf:Property) \n  v24 한글 (rdfs:Resource) \n  v46 - (rdfs:Resource) \n  v66 - (rdf:Property) \n  v54 THING (rdf:Property) \n  v20 공휴 (rdfs:Class|rdfs:Resource) \n  v73 - (rdf:Property) \n  v30 대한민국 (rdfs:Resource) \n  v14 날짜 (rdfs:Class|rdfs:Resource) \n  v47 - (rdfs:Resource) \n  v61 해당 (rdf:Property) \n  v78 - (rdf:Property) \n  v28 해당 (rdfs:Resource) \n  v41 - (rdfs:Resource) \n  v9 8 (rdfs:Resource) \n  v57 DATETIME (rdf:Property) \n  v32 날짜 (rdfs:Class|rdfs:Resource) \n  v10 해당 (rdfs:Resource) \n  v65 - (rdf:Property) \n  v42 - (rdfs:Resource) \n  v37 15 (rdfs:Resource) \n  v5 날짜 (rdfs:Class|rdfs:Resource) \n  v60 THING (rdf:Property) \n  v62 해당 (rdf:Property) \n  v72 - (rdf:Property) \n  v13 DATETIME (rdfs:Class|rdfs:Resource) \n  v53 DATETIME (rdf:Property) \n  v43 - (rdfs:Resource) \n  v74 - (rdf:Property) \n  v1 DATETIME (rdfs:Class|rdfs:Resource) \n  v39 공휴 (rdfs:Class|rdfs:Resource) \n  v67 - (rdf:Property) \n  v22 DATETIME (rdfs:Class|rdfs:Resource) \n  v48 - (rdfs:Resource) \n  v79 - (rdf:Property) \n  v49 - (rdfs:Resource) \n  v50 - (rdfs:Resource) \n  v17 6 (rdfs:Resource) \n  v59 DATETIME (rdf:Property) \n  \n Score: 0.5645161290322581",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -801,6 +1005,23 @@
           "string": "사천 해전(泗川海戰)은 1592년 음력 5월 29일(양력 7월 8일)에 사천에서 왜수군 13척을 전멸시킨 해전으로, 이순신은 여기서 거북선을 처음으로 실전 투입했다.[1]",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "AJT(사용-1,최초-2) \n MOD(ㄴ-3,사용-1) \n SBJ(은-4,ㄴ-3) \n ARGMMNR(사용-1,최초-2) \n ARG1(사용-1,ㄴ-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(ㄴ-3,RESOURCE-5) \n 사용(RESOURCE-6,ㄴ-3) \n REL(사용/NNP-1,최초/NNP-2) \n REL(ㄴ-3,사용/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v1  ?v10  ?v2 . \n     ?v3  ?v11  ?v1 . \n     ?v6  ?v9   ?v3 . \n     ?v3  ?v8   ?v5 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v11 - (rdf:Property) \n  v8 은 (rdf:Property) \n  v9 사용 (rdf:Property) \n  v1 사용 (rdfs:Resource) \n  v10 - (rdf:Property) \n  v3 ㄴ (rdfs:Class|rdfs:Resource) \n  v6 - (rdfs:Resource) \n  v2 최초 (rdfs:Resource) \n  \n Score: 0.5555555555555556",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -845,6 +1066,23 @@
           "string": "고려(高麗, 918년~1392년)는 918년 태조 왕건이 건국한 이후, 1392년 조선 왕조에게 멸망하기까지[1] 474년간(약500년)을 한반도를 지배하였던 국가이다. \n  \n 발해(渤海, 698년 ~ 926년)는 고구려를 계승하여 대조영이 건국한 국가이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "OBJ(건국-2,고려-3) \n MOD(ㄴ-4,건국-2) \n SBJ(은-1,ㄴ-4) \n ARG1(건국-2,고려-3) \n ARG0(건국-2,ㄴ-4) \n SBJ(건국-6,왕건-7) \n MOD(ㄴ-8,건국-6) \n SBJ(는-5,ㄴ-8) \n ARG0(건국-6,왕건-7) \n ARG1(건국-6,ㄴ-8) \n OBJ(건국-10,발해-11) \n MOD(ㄴ-12,건국-10) \n SBJ(은-9,ㄴ-12) \n ARG1(건국-10,발해-11) \n ARG0(건국-10,ㄴ-12) \n SBJ(건국-14,대조영-15) \n MOD(ㄴ-16,건국-14) \n SBJ(는-13,ㄴ-16) \n ARG0(건국-14,대조영-15) \n ARG1(건국-14,ㄴ-16) \n OBJ(건국-18,조선-19) \n MOD(ㄴ-20,건국-18) \n SBJ(은-17,ㄴ-20) \n ARG1(건국-18,조선-19) \n ARG0(건국-18,ㄴ-20) \n SBJ(건국-22,광개토-23) \n MOD(ㄴ-24,건국-22) \n SBJ(는-21,ㄴ-24) \n ARG0(건국-22,광개토-23) \n ARG1(건국-22,ㄴ-24)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(ㄴ-4,RESOURCE-25) \n 건국(ㄴ-4,RESOURCE-26) \n 건국(왕건-7,RESOURCE-27) \n 는(ㄴ-8,RESOURCE-28) \n 은(ㄴ-12,RESOURCE-29) \n 건국(ㄴ-12,RESOURCE-30) \n 건국(대조영-15,RESOURCE-31) \n 는(ㄴ-16,RESOURCE-32) \n 은(ㄴ-20,RESOURCE-33) \n 건국(ㄴ-20,RESOURCE-34) \n 건국(광개토-23,RESOURCE-35) \n 는(ㄴ-24,RESOURCE-36) \n 건국(RESOURCE-37,고려-3) \n 건국(RESOURCE-38,ㄴ-8) \n 건국(RESOURCE-39,발해-11) \n 건국(RESOURCE-40,ㄴ-16) \n 건국(RESOURCE-41,조선-19) \n 건국(RESOURCE-42,ㄴ-24) \n REL(ㄴ-4,건국/NNP-2) \n REL(ㄴ-8,건국/NNP-6) \n REL(ㄴ-12,건국/NNP-10) \n REL(ㄴ-16,건국/NNP-14) \n REL(ㄴ-20,건국/NNP-18) \n REL(ㄴ-24,건국/NNP-22)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v39  ?v58  ?v11 . \n     ?v24  ?v55  ?v36 . \n     ?v41  ?v60  ?v19 . \n     ?v12  ?v48  ?v29 . \n     ?v15  ?v50  ?v31 . \n     ?v16  ?v65  ?v14 . \n     ?v8   ?v63  ?v6 ; \n           ?v47  ?v28 . \n     ?v40  ?v59  ?v16 . \n     ?v20  ?v66  ?v18 . \n     ?v23  ?v54  ?v35 . \n     ?v37  ?v56  ?v3 . \n     ?v4   ?v62  ?v2 . \n     ?v7   ?v46  ?v27 . \n     ?v38  ?v57  ?v8 . \n     ?v42  ?v61  ?v24 . \n     ?v24  ?v67  ?v22 . \n     ?v20  ?v53  ?v34 . \n     ?v12  ?v49  ?v30 . \n     ?v16  ?v51  ?v32 . \n     ?v4   ?v45  ?v26 . \n     ?v20  ?v52  ?v33 . \n     ?v4   ?v44  ?v25 . \n     ?v12  ?v64  ?v10 . \n   } \n  \n  v8 ㄴ (rdfs:Class|rdfs:Resource) \n  v47 는 (rdf:Property) \n  v54 건국 (rdf:Property) \n  v38 - (rdfs:Resource) \n  v10 건국 (rdfs:Resource) \n  v60 건국 (rdf:Property) \n  v19 조선 (rdfs:Class|rdfs:Resource) \n  v63 - (rdf:Property) \n  v12 ㄴ (rdfs:Class|rdfs:Resource) \n  v37 - (rdfs:Resource) \n  v25 - (rdfs:Resource) \n  v55 는 (rdf:Property) \n  v22 건국 (rdfs:Resource) \n  v2 건국 (rdfs:Resource) \n  v32 - (rdfs:Resource) \n  v4 ㄴ (rdfs:Class|rdfs:Resource) \n  v58 건국 (rdf:Property) \n  v40 - (rdfs:Resource) \n  v46 건국 (rdf:Property) \n  v52 은 (rdf:Property) \n  v27 - (rdfs:Resource) \n  v34 - (rdfs:Resource) \n  v16 ㄴ (rdfs:Class|rdfs:Resource) \n  v64 - (rdf:Property) \n  v53 건국 (rdf:Property) \n  v26 - (rdfs:Resource) \n  v33 - (rdfs:Resource) \n  v24 ㄴ (rdfs:Class|rdfs:Resource) \n  v61 건국 (rdf:Property) \n  v44 은 (rdf:Property) \n  v59 건국 (rdf:Property) \n  v39 - (rdfs:Resource) \n  v66 - (rdf:Property) \n  v35 - (rdfs:Resource) \n  v51 는 (rdf:Property) \n  v57 건국 (rdf:Property) \n  v41 - (rdfs:Resource) \n  v45 건국 (rdf:Property) \n  v20 ㄴ (rdfs:Class|rdfs:Resource) \n  v18 건국 (rdfs:Resource) \n  v48 은 (rdf:Property) \n  v65 - (rdf:Property) \n  v42 - (rdfs:Resource) \n  v23 광개토 (rdfs:Class|rdfs:Resource) \n  v28 - (rdfs:Resource) \n  v62 - (rdf:Property) \n  v31 - (rdfs:Resource) \n  v11 발해 (rdfs:Class|rdfs:Resource) \n  v50 건국 (rdf:Property) \n  v67 - (rdf:Property) \n  v3 고려 (rdfs:Class|rdfs:Resource) \n  v30 - (rdfs:Resource) \n  v49 건국 (rdf:Property) \n  v29 - (rdfs:Resource) \n  v56 건국 (rdf:Property) \n  v14 건국 (rdfs:Resource) \n  v7 왕건 (rdfs:Class|rdfs:Resource) \n  v6 건국 (rdfs:Resource) \n  v15 대조영 (rdfs:Class|rdfs:Resource) \n  v36 - (rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -888,6 +1126,23 @@
           "type": "1-2",
           "string": "이명박 정부가 한국형 녹색 뉴딜을 내세워 \u00274대강 살리기 사업\u0027이라고 이름 붙인 4대강 사업[1] 은 2008년 12월 29일 낙동강지구 착공식을 시작으로 2012년 4월 22일[2] 까지 22조원의 예산을 투입해 추진한 대하천 정비 사업이다. \n  \n 노무현 대통령 탄핵 소추(盧武鉉 大統領 彈劾 訴追)는 2004년 3월 12일에 국회에서 노무현 대통령의 \u0027정치적 중립성\u0027을 이유로 여당인 열린우리당이 반발하는 가운데 새천년민주당과 한나라당, 자유민주연합의 주도하에 찬성 193표, 반대 2표로 대통령을 대상으로 탄핵 소추안을 통과시킨 사건을 말한다. \n  \n 김대중(金大中, 1924년 1월 6일 ~ 2009년 8월 18일)은 대한민국의 제15대 대통령이다. 대내외적으로는 민주화를 지지했으나,[2][3][4][5] 인권 향상과 남북 관계의 진전에 기여한 공로로 2000년 임기 중에 한국인 역사상 최초로 노벨 평화상을 수상하였다.[6]",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(대통령-2,이명박-3) \n MOD(임기-4,대통령-2) \n NP(중-5,임기-4) \n AJT(발생-6,중-5) \n MOD(ㄴ-7,발생-6) \n SBJ(은-1,ㄴ-7) \n ARG2(발생-6,중-5) \n ARG1(발생-6,ㄴ-7) \n NP(정비-9,4-10) \n NP(사업-11,정비-9) \n SBJ(발생-8,사업-11) \n DP(대통령-12,어느-13) \n MOD(임기-14,대통령-12) \n NP(중-15,임기-14) \n AJT(발생-8,중-15) \n MOD(ㄴ-16,발생-8) \n ARG2(발생-8,중-15) \n NP(대통령-18,노무현-19) \n MOD(임기-20,대통령-18) \n NP(중-21,임기-20) \n AJT(발생-22,중-21) \n MOD(ㄴ-23,발생-22) \n SBJ(은-17,ㄴ-23) \n ARG2(발생-22,중-21) \n ARG1(발생-22,ㄴ-23) \n SBJ(발생-24,탄핵-25) \n DP(대통령-26,어느-27) \n MOD(임기-28,대통령-26) \n NP(중-29,임기-28) \n AJT(발생-24,중-29) \n MOD(ㄴ-30,발생-24) \n ARG2(발생-24,중-29) \n NP(대통령-32,김대중-33) \n MOD(임기-34,대통령-32) \n NP(중-35,임기-34) \n AJT(발생-36,중-35) \n MOD(ㄴ-37,발생-36) \n SBJ(은-31,ㄴ-37) \n ARG2(발생-36,중-35) \n ARG1(발생-36,ㄴ-37) \n NP(평화-39,노벨-40) \n NP(수상-41,평화-39) \n SBJ(발생-38,수상-41) \n DP(대통령-42,어느-43) \n MOD(임기-44,대통령-42) \n NP(중-45,임기-44) \n AJT(발생-38,중-45) \n MOD(ㄴ-46,발생-38) \n ARG2(발생-38,중-45) \n NP(대통령-48,전두환-49) \n MOD(임기-50,대통령-48) \n NP(중-51,임기-50) \n AJT(발생-52,중-51) \n MOD(ㄴ-53,발생-52) \n SBJ(은-47,ㄴ-53) \n ARG2(발생-52,중-51) \n ARG1(발생-52,ㄴ-53) \n NP(운동-55,새마을-56) \n SBJ(발생-54,운동-55) \n DP(대통령-57,어느-58) \n MOD(임기-59,대통령-57) \n NP(중-60,임기-59) \n AJT(발생-54,중-60) \n MOD(ㄴ-61,발생-54) \n ARG2(발생-54,중-60)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(대통령/NNP-12,대통령/NNP-12) \n SELECT(대통령/NNP-26,대통령/NNP-26) \n SELECT(대통령/NNP-42,대통령/NNP-42) \n SELECT(대통령/NNP-57,대통령/NNP-57) \n 은(ㄴ-7,RESOURCE-62) \n 발생(사업-11,RESOURCE-63) \n 은(ㄴ-23,RESOURCE-64) \n 발생(탄핵-25,RESOURCE-65) \n 은(ㄴ-37,RESOURCE-66) \n 발생(수상-41,RESOURCE-67) \n 은(ㄴ-53,RESOURCE-68) \n 발생(운동-55,RESOURCE-69) \n 발생(RESOURCE-70,ㄴ-7) \n 발생(RESOURCE-71,ㄴ-23) \n 발생(RESOURCE-72,ㄴ-37) \n 발생(RESOURCE-73,ㄴ-53) \n REL(임기-4,대통령/NNP-2) \n REL(발생/NNP-6,중/NNP-5) \n REL(ㄴ-7,발생/NNP-6) \n REL(임기-14,대통령/NNP-12) \n REL(발생/NNP-8,중/NNP-15) \n REL(ㄴ-16,발생/NNP-8) \n REL(임기-20,대통령/NNP-18) \n REL(발생/NNP-22,중/NNP-21) \n REL(ㄴ-23,발생/NNP-22) \n REL(임기-28,대통령/NNP-26) \n REL(발생/NNP-24,중/NNP-29) \n REL(ㄴ-30,발생/NNP-24) \n REL(임기-34,대통령/NNP-32) \n REL(발생/NNP-36,중/NNP-35) \n REL(ㄴ-37,발생/NNP-36) \n REL(임기-44,대통령/NNP-42) \n REL(발생/NNP-38,중/NNP-45) \n REL(ㄴ-46,발생/NNP-38) \n REL(임기-50,대통령/NNP-48) \n REL(발생/NNP-52,중/NNP-51) \n REL(ㄴ-53,발생/NNP-52) \n REL(임기-59,대통령/NNP-57) \n REL(발생/NNP-54,중/NNP-60) \n REL(ㄴ-61,발생/NNP-54)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "SELECT  ?v42 ?v12 ?v57 ?v26 \n WHERE \n   { ?v14  ?v90   ?v12 . \n     ?v11  ?v76   ?v63 . \n     ?v71  ?v84   ?v23 . \n     ?v72  ?v85   ?v37 . \n     ?v52  ?v106  ?v51 . \n     ?v55  ?v82   ?v69 . \n     ?v46  ?v104  ?v38 . \n     ?v37  ?v79   ?v66 . \n     ?v24  ?v97   ?v29 . \n     ?v20  ?v93   ?v18 . \n     ?v7   ?v89   ?v6 . \n     ?v53  ?v81   ?v68 . \n     ?v37  ?v101  ?v36 . \n     ?v30  ?v98   ?v24 . \n     ?v22  ?v94   ?v21 . \n     ?v16  ?v92   ?v8 . \n     ?v73  ?v86   ?v53 . \n     ?v28  ?v96   ?v26 . \n     ?v7   ?v75   ?v62 . \n     ?v61  ?v110  ?v54 . \n     ?v23  ?v77   ?v64 . \n     ?v50  ?v105  ?v48 . \n     ?v25  ?v78   ?v65 . \n     ?v23  ?v95   ?v22 . \n     ?v38  ?v103  ?v45 . \n     ?v53  ?v107  ?v52 . \n     ?v36  ?v100  ?v35 . \n     ?v41  ?v80   ?v67 . \n     ?v70  ?v83   ?v7 . \n     ?v4   ?v87   ?v2 . \n     ?v34  ?v99   ?v32 . \n     ?v8   ?v91   ?v15 . \n     ?v54  ?v109  ?v60 . \n     ?v44  ?v102  ?v42 . \n     ?v59  ?v108  ?v57 . \n     ?v6   ?v88   ?v5 . \n   } \n  \n  v70 - (rdfs:Resource) \n  v28 임기 (rdfs:Class|rdfs:Resource) \n  v63 - (rdfs:Resource) \n  v23 ㄴ (rdfs:Class|rdfs:Resource) \n  v69 - (rdfs:Resource) \n  v95 - (rdf:Property) \n  v48 대통령 (rdfs:Resource) \n  v88 - (rdf:Property) \n  v25 탄핵 (rdfs:Class|rdfs:Resource) \n  v102 - (rdf:Property) \n  v82 발생 (rdf:Property) \n  v30 ㄴ (rdfs:Class|rdfs:Resource) \n  v2 대통령 (rdfs:Resource) \n  v64 - (rdfs:Resource) \n  v24 발생 (rdfs:Resource) \n  v34 임기 (rdfs:Class|rdfs:Resource) \n  v87 - (rdf:Property) \n  v61 ㄴ (rdfs:Class|rdfs:Resource) \n  v94 - (rdf:Property) \n  v101 - (rdf:Property) \n  v71 - (rdfs:Resource) \n  v18 대통령 (rdfs:Resource) \n  v107 - (rdf:Property) \n  v59 임기 (rdfs:Class|rdfs:Resource) \n  v75 은 (rdf:Property) \n  v35 중 (rdfs:Resource) \n  v8 발생 (rdfs:Resource) \n  v106 - (rdf:Property) \n  v89 - (rdf:Property) \n  v96 - (rdf:Property) \n  v65 - (rdfs:Resource) \n  v50 임기 (rdfs:Class|rdfs:Resource) \n  v86 발생 (rdf:Property) \n  v37 ㄴ (rdfs:Class|rdfs:Resource) \n  v16 ㄴ (rdfs:Class|rdfs:Resource) \n  v77 은 (rdf:Property) \n  v72 - (rdfs:Resource) \n  v29 중 (rdfs:Resource) \n  v85 발생 (rdf:Property) \n  v36 발생 (rdfs:Resource) \n  v100 - (rdf:Property) \n  v11 사업 (rdfs:Class|rdfs:Resource) \n  v90 - (rdf:Property) \n  v80 발생 (rdf:Property) \n  v22 발생 (rdfs:Resource) \n  v66 - (rdfs:Resource) \n  v20 임기 (rdfs:Class|rdfs:Resource) \n  v92 - (rdf:Property) \n  v73 - (rdfs:Resource) \n  v78 발생 (rdf:Property) \n  v44 임기 (rdfs:Class|rdfs:Resource) \n  v105 - (rdf:Property) \n  v41 수상 (rdfs:Class|rdfs:Resource) \n  v51 중 (rdfs:Resource) \n  v91 - (rdf:Property) \n  v54 발생 (rdfs:Resource) \n  v5 중 (rdfs:Resource) \n  v14 임기 (rdfs:Class|rdfs:Resource) \n  v45 중 (rdfs:Resource) \n  v4 임기 (rdfs:Class|rdfs:Resource) \n  v84 발생 (rdf:Property) \n  v67 - (rdfs:Resource) \n  v97 - (rdf:Property) \n  v104 - (rdf:Property) \n  v32 대통령 (rdfs:Resource) \n  v83 발생 (rdf:Property) \n  v52 발생 (rdfs:Resource) \n  v110 - (rdf:Property) \n  v103 - (rdf:Property) \n  v7 ㄴ (rdfs:Class|rdfs:Resource) \n  v109 - (rdf:Property) \n  v99 - (rdf:Property) \n  v38 발생 (rdfs:Resource) \n  v55 운동 (rdfs:Class|rdfs:Resource) \n  v15 중 (rdfs:Resource) \n  v81 은 (rdf:Property) \n  v62 - (rdfs:Resource) \n  v108 - (rdf:Property) \n  v79 은 (rdf:Property) \n  v98 - (rdf:Property) \n  v68 - (rdfs:Resource) \n  v53 ㄴ (rdfs:Class|rdfs:Resource) \n  v21 중 (rdfs:Resource) \n  v76 발생 (rdf:Property) \n  v6 발생 (rdfs:Resource) \n  v93 - (rdf:Property) \n  v60 중 (rdfs:Resource) \n  v46 ㄴ (rdfs:Class|rdfs:Resource) \n  \n Score: 0.6086956521739131",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1005,6 +1260,23 @@
           "string": "기획재정부(企劃財政部, Ministry of Strategy and Finance, 약칭: 기재부, MOSF)는 중장기 국가발전전략수립, 경제·재정정책의 수립·총괄·조정, 예산·기금의 편성·집행·성과관리, 화폐·외환·국고·정부회계·내국세제·관세·국제금융, 공공기관 관리, 경제협력·국유재산·민간투자 및 국가채무에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 산하 기관: 국세청, 조달청, 통계청. \n  \n 국세청(國稅廳, National Tax Service, 약칭 : NTS)은 내국세의 부과‧감면 및 징수에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 상급 기관: 기획재정부. \n  \n 조달청(調達廳, Public Procurement Service, 약칭 : PPS)은 정부가 행하는 물자의 구매·공급 및 관리에 관한 사무와 정부의 주요 시설공사 계약에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 상급 기관: 기획재정부. \n  \n 통계청(統計廳, Korea National Statistical Office, 약칭 : KOSTAT)은 통계의 기준설정과 인구조사 및 각종 통계에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 상급 기관: 기획재정부.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(산하-2,기획-1) \n MOD(기관-3,산하-2) \n SBJ(무엇-4,기관-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(기관-3,RESOURCE-5) \n REL(기관-3,산하/NNP-2)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v3  ?v8  ?v2 ; \n          ?v7  ?v5 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v7 THING (rdf:Property) \n  v3 기관 (rdfs:Class|rdfs:Resource) \n  v2 산하 (rdfs:Resource) \n  v8 - (rdf:Property) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1048,6 +1320,23 @@
           "type": "1-1",
           "string": "주요 8개국 정상회담(통칭 G8, 지에이트, Group of Eight)은 세계 정치와 경제를 주도하는 주요 8개국(독일, 러시아, 미국, 영국, 이탈리아, 일본, 캐나다, 프랑스)의 모임이다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(국가-2,속하-1) \n MOD(국가-2,8-3) \n SBJ(무엇-4,국가-2) \n ARG1(속하-1,국가-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(국가-2,RESOURCE-5) \n 속하(RESOURCE-6,국가-2) \n REL(국가-2,속하/NNP-1) \n REL(국가-2,8/NNP-3)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2  ?v10  ?v1 . \n     ?v6  ?v9   ?v2 . \n     ?v2  ?v11  ?v3 ; \n          ?v8   ?v5 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v11 - (rdf:Property) \n  v9 속하 (rdf:Property) \n  v3 8 (rdfs:Resource) \n  v10 - (rdf:Property) \n  v8 THING (rdf:Property) \n  v6 - (rdfs:Resource) \n  v2 국가 (rdfs:Class|rdfs:Resource) \n  v1 속하 (rdfs:Resource) \n  \n Score: 0.5555555555555556",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1140,6 +1429,23 @@
           "type": "1-1",
           "string": "6자 회담(六者會談, 문화어: 륙자 회담, 영어: Six-party Talks, 중국어: 六方会谈 듣기 (도움말·정보), 일본어: 六者会合, 러시아어: Шестисторонние переговоры)은 북한의 핵 문제 해결을 위해 2003년 8월 27일에 처음 열린 한반도 주변 6개국의 회담이다. 6자회담 참가국은 대한민국, 러시아, 미국, 일본, 조선민주주의인민공화국, 중국이다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "AJT(참가-2,회담-1) \n MOD(ㄴ-3,참가-2) \n SBJ(는-4,ㄴ-3) \n ARG1(참가-2,회담-1) \n ARG0(참가-2,ㄴ-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(ㄴ-3,RESOURCE-5) \n 참가(ㄴ-3,RESOURCE-6) \n REL(참가/NNP-2,회담/NNP-1) \n REL(ㄴ-3,참가/NNP-2)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2  ?v10  ?v1 . \n     ?v3  ?v11  ?v2 ; \n          ?v9   ?v6 ; \n          ?v8   ?v5 . \n   } \n  \n  v1 회담 (rdfs:Resource) \n  v8 는 (rdf:Property) \n  v5 - (rdfs:Resource) \n  v9 참가 (rdf:Property) \n  v11 - (rdf:Property) \n  v10 - (rdf:Property) \n  v3 ㄴ (rdfs:Class|rdfs:Resource) \n  v6 - (rdfs:Resource) \n  v2 참가 (rdfs:Resource) \n  \n Score: 0.5555555555555556",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1257,6 +1563,23 @@
           "string": "LG 트윈스(LG Twins)는 대한민국 서울특별시를 연고지로 하는 한국야구위원회 소속 프로 야구단이다. \n  \n 두산 베어스(Doosan Bears)는 대한민국 서울특별시를 연고지로 하는 한국야구위원회 소속 KBO 리그 팀이다. \n  \n 넥센 히어로즈(Nexen Heroes)는 대한민국 서울특별시를 연고지로 하는 프로 야구팀이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "AJT(하-1,연고-2) \n MOD(팀-3,하-1) \n NP(야구-4,프로-5) \n NP(팀-3,야구-4) \n SBJ(무엇-6,팀-3) \n ARG2(하-1,연고-2) \n ARG0(하-1,팀-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(팀-3,RESOURCE-7) \n 하(팀-3,RESOURCE-8) \n REL(하/NNP-1,연고/NNP-2) \n REL(팀-3,하/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v3  ?v10  ?v7 ; \n          ?v11  ?v8 . \n     ?v1  ?v12  ?v2 . \n     ?v3  ?v13  ?v1 . \n   } \n  \n  v1 하 (rdfs:Resource) \n  v10 THING (rdf:Property) \n  v7 - (rdfs:Resource) \n  v2 연고 (rdfs:Resource) \n  v11 하 (rdf:Property) \n  v12 - (rdf:Property) \n  v3 팀 (rdfs:Class|rdfs:Resource) \n  v13 - (rdf:Property) \n  v8 - (rdfs:Resource) \n  \n Score: 0.5555555555555556",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1300,6 +1623,23 @@
           "type": "1-2",
           "string": "강남구(江南區)는 서울특별시의 남동부에 있는 구이다. 강남구의 면적은 서울특별시 전체의 6.53%에 해당하는 39.50㎢이며, 강남구의 인구는 2012년 12월 31일을 기준으로 230,755세대, 569,997명이다.[7] \n  \n 노원구(蘆原區)는 대한민국 서울특별시 북동부에 있는 자치구이다. 노원구의 면적은 35.44㎢로 서울시 전체 면적의 5.85%를 차지한다. \n  \n 서초구(瑞草區)는 대한민국 서울특별시 남부에 있는 구이다. 면적은 약 47㎢로 서울특별시에서 가장 넓다. \n  \n 강서구(江西區)는 대한민국 서울특별시의 서쪽 끝에 있는 구이다. 강서구의 면적은 41.42㎢로 서초구에 이어서 서울특별시에서 두 번째로 넓다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(넓이-2,강남-3) \n SBJ(무엇-1,넓이-2) \n MOD(넓이-5,노원-6) \n SBJ(무엇-4,넓이-5) \n MOD(넓이-8,서초-9) \n SBJ(무엇-7,넓이-8) \n MOD(넓이-11,강서-12) \n SBJ(무엇-10,넓이-11)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(넓이-2,RESOURCE-13) \n THING(넓이-5,RESOURCE-14) \n THING(넓이-8,RESOURCE-15) \n THING(넓이-11,RESOURCE-16) \n REL(넓이-2,강남/NNP-3) \n REL(넓이-5,노원/NNP-6) \n REL(넓이-8,서초/NNP-9) \n REL(넓이-11,강서/NNP-12)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v11  ?v25  ?v12 . \n     ?v8   ?v20  ?v15 . \n     ?v11  ?v21  ?v16 . \n     ?v5   ?v19  ?v14 . \n     ?v8   ?v24  ?v9 . \n     ?v2   ?v18  ?v13 ; \n           ?v22  ?v3 . \n     ?v5   ?v23  ?v6 . \n   } \n  \n  v12 강서 (rdfs:Resource) \n  v2 넓이 (rdfs:Class|rdfs:Resource) \n  v9 서초 (rdfs:Resource) \n  v13 - (rdfs:Resource) \n  v20 THING (rdf:Property) \n  v19 THING (rdf:Property) \n  v6 노원 (rdfs:Resource) \n  v16 - (rdfs:Resource) \n  v24 - (rdf:Property) \n  v22 - (rdf:Property) \n  v15 - (rdfs:Resource) \n  v3 강남 (rdfs:Resource) \n  v25 - (rdf:Property) \n  v23 - (rdf:Property) \n  v5 넓이 (rdfs:Class|rdfs:Resource) \n  v18 THING (rdf:Property) \n  v8 넓이 (rdfs:Class|rdfs:Resource) \n  v14 - (rdfs:Resource) \n  v11 넓이 (rdfs:Class|rdfs:Resource) \n  v21 THING (rdf:Property) \n  \n Score: 0.6",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1345,6 +1685,23 @@
           "string": "NC 다이노스(NC Dinos)는 경상남도 창원시를 연고지로 하는 한국야구위원회 소속 프로 야구 팀이다. \n  \n 두산 베어스(Doosan Bears)는 대한민국 서울특별시를 연고지로 하는 한국야구위원회 소속 KBO 리그 팀이다. \n  \n KIA 타이거즈(KIA Tigers)는 대한민국 광주광역시, 전라남도, 전라북도를 연고지로 하는 한국야구위원회 소속 프로야구 팀이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(다이노스-2,NC-3) \n SBJ(하-4,다이노스-2) \n AJT(하-4,연고-5) \n MOD(도시-6,하-4) \n SBJ(어디-1,도시-6) \n ARG0(하-4,다이노스-2) \n ARG2(하-4,연고-5) \n ARG0(하-4,도시-6) \n OBJ(하-8,창원-9) \n AJT(하-8,연고-10) \n MOD(팀-11,하-8) \n NP(야구-12,프로-13) \n NP(팀-11,야구-12) \n SBJ(무엇-7,팀-11) \n ARG1(하-8,창원-9) \n ARG2(하-8,연고-10) \n ARG0(하-8,팀-11) \n NP(히어로즈-15,넥센-16) \n SBJ(하-17,히어로즈-15) \n AJT(하-17,연고-18) \n MOD(도시-19,하-17) \n SBJ(어디-14,도시-19) \n ARG0(하-17,히어로즈-15) \n ARG2(하-17,연고-18) \n ARG0(하-17,도시-19) \n OBJ(하-21,수원-22) \n AJT(하-21,연고-23) \n MOD(팀-24,하-21) \n NP(야구-25,프로-26) \n NP(팀-24,야구-25) \n SBJ(무엇-20,팀-24) \n ARG1(하-21,수원-22) \n ARG2(하-21,연고-23) \n ARG0(하-21,팀-24) \n NP(베어스-28,두산-29) \n SBJ(하-30,베어스-28) \n AJT(하-30,연고-31) \n MOD(도시-32,하-30) \n SBJ(어디-27,도시-32) \n ARG0(하-30,베어스-28) \n ARG2(하-30,연고-31) \n ARG0(하-30,도시-32) \n OBJ(하-34,서울-35) \n AJT(하-34,연고-36) \n MOD(팀-37,하-34) \n NP(야구-38,프로-39) \n NP(팀-37,야구-38) \n SBJ(무엇-33,팀-37) \n ARG1(하-34,서울-35) \n ARG2(하-34,연고-36) \n ARG0(하-34,팀-37) \n NP(타이거즈-41,KIA-42) \n SBJ(하-43,타이거즈-41) \n AJT(하-43,연고-44) \n MOD(도시-45,하-43) \n SBJ(어디-40,도시-45) \n ARG0(하-43,타이거즈-41) \n ARG2(하-43,연고-44) \n ARG0(하-43,도시-45) \n OBJ(하-47,광주-48) \n AJT(하-47,연고-49) \n MOD(팀-50,하-47) \n NP(야구-51,프로-52) \n NP(팀-50,야구-51) \n SBJ(무엇-46,팀-50) \n ARG1(하-47,광주-48) \n ARG2(하-47,연고-49) \n ARG0(하-47,팀-50)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(LOCATION-1,LOCATION-1) \n SELECT(LOCATION-14,LOCATION-14) \n SELECT(LOCATION-27,LOCATION-27) \n SELECT(LOCATION-40,LOCATION-40) \n 하(다이노스-2,RESOURCE-53) \n LOCATION(도시-6,RESOURCE-54) \n 하(도시-6,RESOURCE-55) \n THING(팀-11,RESOURCE-56) \n 하(팀-11,RESOURCE-57) \n 하(히어로즈-15,RESOURCE-58) \n LOCATION(도시-19,RESOURCE-59) \n 하(도시-19,RESOURCE-60) \n THING(팀-24,RESOURCE-61) \n 하(팀-24,RESOURCE-62) \n 하(베어스-28,RESOURCE-63) \n LOCATION(도시-32,RESOURCE-64) \n 하(도시-32,RESOURCE-65) \n THING(팀-37,RESOURCE-66) \n 하(팀-37,RESOURCE-67) \n 하(타이거즈-41,RESOURCE-68) \n LOCATION(도시-45,RESOURCE-69) \n 하(도시-45,RESOURCE-70) \n THING(팀-50,RESOURCE-71) \n 하(팀-50,RESOURCE-72) \n 하(RESOURCE-73,창원-9) \n 하(RESOURCE-74,수원-22) \n 하(RESOURCE-75,서울-35) \n 하(RESOURCE-76,광주-48) \n REL(하/NNP-4,연고/NNP-5) \n REL(도시-6,하/NNP-4) \n REL(하/NNP-8,연고/NNP-10) \n REL(팀-11,하/NNP-8) \n REL(하/NNP-17,연고/NNP-18) \n REL(도시-19,하/NNP-17) \n REL(하/NNP-21,연고/NNP-23) \n REL(팀-24,하/NNP-21) \n REL(하/NNP-30,연고/NNP-31) \n REL(도시-32,하/NNP-30) \n REL(하/NNP-34,연고/NNP-36) \n REL(팀-37,하/NNP-34) \n REL(하/NNP-43,연고/NNP-44) \n REL(도시-45,하/NNP-43) \n REL(하/NNP-47,연고/NNP-49) \n REL(팀-50,하/NNP-47)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v37  ?v113  ?v34 . \n     ?v75  ?v100  ?v35 . \n     ?v43  ?v114  ?v44 . \n     ?v45  ?v115  ?v43 . \n     ?v19  ?v107  ?v17 . \n     ?v2   ?v78   ?v53 . \n     ?v17  ?v106  ?v18 . \n     ?v34  ?v112  ?v36 . \n     ?v76  ?v101  ?v48 . \n     ?v6   ?v103  ?v4 . \n     ?v8   ?v104  ?v10 . \n     ?v19  ?v84   ?v59 . \n     ?v24  ?v87   ?v62 . \n     ?v11  ?v82   ?v57 . \n     ?v37  ?v91   ?v66 . \n     ?v50  ?v117  ?v47 . \n     ?v32  ?v89   ?v64 . \n     ?v4   ?v102  ?v5 . \n     ?v41  ?v93   ?v68 . \n     ?v21  ?v108  ?v23 . \n     ?v32  ?v111  ?v30 . \n     ?v30  ?v110  ?v31 . \n     ?v47  ?v116  ?v49 . \n     ?v6   ?v80   ?v55 . \n     ?v19  ?v85   ?v60 . \n     ?v32  ?v90   ?v65 . \n     ?v6   ?v79   ?v54 . \n     ?v11  ?v105  ?v8 . \n     ?v73  ?v98   ?v9 . \n     ?v50  ?v96   ?v71 . \n     ?v24  ?v109  ?v21 . \n     ?v37  ?v92   ?v67 . \n     ?v15  ?v83   ?v58 . \n     ?v28  ?v88   ?v63 . \n     ?v45  ?v94   ?v69 . \n     ?v50  ?v97   ?v72 . \n     ?v11  ?v81   ?v56 . \n     ?v24  ?v86   ?v61 . \n     ?v45  ?v95   ?v70 . \n     ?v74  ?v99   ?v22 . \n   } \n  \n  v85 하 (rdf:Property) \n  v19 도시 (rdfs:Class|rdfs:Resource) \n  v35 서울 (rdfs:Class|rdfs:Resource) \n  v63 - (rdfs:Resource) \n  v97 하 (rdf:Property) \n  v36 연고 (rdfs:Resource) \n  v32 도시 (rdfs:Class|rdfs:Resource) \n  v76 - (rdfs:Resource) \n  v64 - (rdfs:Resource) \n  v98 하 (rdf:Property) \n  v30 하 (rdfs:Resource) \n  v107 - (rdf:Property) \n  v23 연고 (rdfs:Resource) \n  v9 창원 (rdfs:Class|rdfs:Resource) \n  v106 - (rdf:Property) \n  v94 LOCATION (rdf:Property) \n  v6 도시 (rdfs:Class|rdfs:Resource) \n  v49 연고 (rdfs:Resource) \n  v28 베어스 (rdfs:Class|rdfs:Resource) \n  v65 - (rdfs:Resource) \n  v43 하 (rdfs:Resource) \n  v4 하 (rdfs:Resource) \n  v87 하 (rdf:Property) \n  v17 하 (rdfs:Resource) \n  v96 THING (rdf:Property) \n  v99 하 (rdf:Property) \n  v45 도시 (rdfs:Class|rdfs:Resource) \n  v53 - (rdfs:Resource) \n  v2 다이노스 (rdfs:Class|rdfs:Resource) \n  v79 LOCATION (rdf:Property) \n  v66 - (rdfs:Resource) \n  v54 - (rdfs:Resource) \n  v117 - (rdf:Property) \n  v82 하 (rdf:Property) \n  v105 - (rdf:Property) \n  v5 연고 (rdfs:Resource) \n  v83 하 (rdf:Property) \n  v95 하 (rdf:Property) \n  v67 - (rdfs:Resource) \n  v50 팀 (rdfs:Class|rdfs:Resource) \n  v104 - (rdf:Property) \n  v103 - (rdf:Property) \n  v100 하 (rdf:Property) \n  v24 팀 (rdfs:Class|rdfs:Resource) \n  v116 - (rdf:Property) \n  v55 - (rdfs:Resource) \n  v101 하 (rdf:Property) \n  v56 - (rdfs:Resource) \n  v68 - (rdfs:Resource) \n  v89 LOCATION (rdf:Property) \n  v37 팀 (rdfs:Class|rdfs:Resource) \n  v115 - (rdf:Property) \n  v81 THING (rdf:Property) \n  v70 - (rdfs:Resource) \n  v114 - (rdf:Property) \n  v40 LOCATION (rdfs:Class|rdfs:Resource) \n  v47 하 (rdfs:Resource) \n  v69 - (rdfs:Resource) \n  v102 - (rdf:Property) \n  v8 하 (rdfs:Resource) \n  v27 LOCATION (rdfs:Class|rdfs:Resource) \n  v80 하 (rdf:Property) \n  v71 - (rdfs:Resource) \n  v1 LOCATION (rdfs:Class|rdfs:Resource) \n  v78 하 (rdf:Property) \n  v11 팀 (rdfs:Class|rdfs:Resource) \n  v57 - (rdfs:Resource) \n  v92 하 (rdf:Property) \n  v14 LOCATION (rdfs:Class|rdfs:Resource) \n  v58 - (rdfs:Resource) \n  v91 THING (rdf:Property) \n  v93 하 (rdf:Property) \n  v113 - (rdf:Property) \n  v18 연고 (rdfs:Resource) \n  v72 - (rdfs:Resource) \n  v112 - (rdf:Property) \n  v31 연고 (rdfs:Resource) \n  v44 연고 (rdfs:Resource) \n  v60 - (rdfs:Resource) \n  v59 - (rdfs:Resource) \n  v73 - (rdfs:Resource) \n  v61 - (rdfs:Resource) \n  v111 - (rdf:Property) \n  v88 하 (rdf:Property) \n  v41 타이거즈 (rdfs:Class|rdfs:Resource) \n  v22 수원 (rdfs:Class|rdfs:Resource) \n  v74 - (rdfs:Resource) \n  v10 연고 (rdfs:Resource) \n  v110 - (rdf:Property) \n  v109 - (rdf:Property) \n  v21 하 (rdfs:Resource) \n  v62 - (rdfs:Resource) \n  v90 하 (rdf:Property) \n  v15 히어로즈 (rdfs:Class|rdfs:Resource) \n  v108 - (rdf:Property) \n  v86 THING (rdf:Property) \n  v75 - (rdfs:Resource) \n  v84 LOCATION (rdf:Property) \n  v48 광주 (rdfs:Class|rdfs:Resource) \n  v34 하 (rdfs:Resource) \n  \n Score: 0.5833333333333334",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1388,6 +1745,23 @@
           "type": "1-2",
           "string": "국제 사법 재판소(國際司法裁判所, 영어: International Court of Justice, ICJ, 프랑스어: Cour internationale de Justice, CIJ)는 상설 국제 법원으로서 유엔헌장에 근거하여 1945년에 설립된 유엔 자체의 사법 기관이며 6개 주요 기관 중의 하나이다. 재판소는 네덜란드 헤이그의 평화궁에 소재한다. \n  \n 유엔 안전 보장 이사회 또는 국제 연합 안전 보장 이사회(國際聯合安全保障理事會, 영어: United Nations Security Council, UNSC, 프랑스어: Conseil de sécurité des Nations unies, 중국어: 联合国安全理事会, 러시아어: Совет Безопасности Организации Объединённых Наций, 스페인어: Consejo de Seguridad de las Naciones Unidas, 아랍어: مجلس أمن الأمم المتحدة)는 회원국의 평화와 안보를 담당하는 유엔의 한 기관이다. 유엔 본부(United Nations Headquarters)는 미국 뉴욕에 있는 유엔의 본부 건물이며, 1952년 완공 이래 유엔의 공식 본부로 쓰여왔다. 유엔은 3개의 부가적인 사무소를 두고 있으며, 제네바, 빈, 나이로비에 있다. 그러나 뉴욕에 있는 본부 건물 만이 총회와 안전보장이사회 같은 유엔의 주요 기관을 갖추고 있다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(사법-2,국제-3) \n NP(재판-4,사법-2) \n SBJ(위치-5,재판-4) \n MOD(ㄴ-6,위치-5) \n SBJ(는-1,ㄴ-6) \n ARG0(위치-5,재판-4) \n ARG1(위치-5,ㄴ-6) \n NP(헤이그-8,네덜란드-9) \n AJT(위치-10,헤이그-8) \n MOD(기구-11,위치-10) \n NP(연합-12,ㄴ-13) \n NP(산하-14,연합-12) \n MOD(기구-11,산하-14) \n NP(기구-11,의-15) \n SBJ(는-7,기구-11) \n ARG2(위치-10,헤이그-8) \n ARG1(위치-10,산하-14) \n ARG1(위치-10,기구-11) \n NP(연합-17,국제-18) \n NP(안전-19,연합-17) \n NP(보장-20,안전-19) \n NP(이사-21,보장-20) \n SBJ(위치-22,이사-21) \n MOD(ㄴ-23,위치-22) \n SBJ(는-16,ㄴ-23) \n ARG0(위치-22,이사-21) \n ARG1(위치-22,ㄴ-23) \n NP(뉴욕-25,미국-26) \n AJT(위치-27,뉴욕-25) \n MOD(기구-28,위치-27) \n NP(연합-29,ㄴ-30) \n NP(산하-31,연합-29) \n MOD(기구-28,산하-31) \n NP(기구-28,의-32) \n SBJ(는-24,기구-28) \n ARG2(위치-27,뉴욕-25) \n ARG1(위치-27,산하-31) \n ARG1(위치-27,기구-28) \n NP(연합-34,국제-35) \n NP(신탁-36,연합-34) \n NP(통치-37,신탁-36) \n NP(이사-38,통치-37) \n SBJ(위치-39,이사-38) \n MOD(ㄴ-40,위치-39) \n SBJ(는-33,ㄴ-40) \n ARG0(위치-39,이사-38) \n ARG1(위치-39,ㄴ-40) \n NP(브뤼셀-42,벨기에-43) \n AJT(위치-44,브뤼셀-42) \n MOD(기구-45,위치-44) \n NP(연합-46,ㄴ-47) \n NP(산하-48,연합-46) \n MOD(기구-45,산하-48) \n NP(기구-45,의-49) \n SBJ(는-41,기구-45) \n ARG2(위치-44,브뤼셀-42) \n ARG1(위치-44,산하-48) \n ARG1(위치-44,기구-45)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "위치(재판-4,ㄴ-6) \n 는(ㄴ-6,RESOURCE-50) \n 는(기구-11,RESOURCE-51) \n 위치(이사-21,RESOURCE-52) \n 는(ㄴ-23,RESOURCE-53) \n 는(기구-28,RESOURCE-54) \n 위치(이사-38,RESOURCE-55) \n 는(ㄴ-40,RESOURCE-56) \n 는(기구-45,RESOURCE-57) \n 위치(RESOURCE-58,산하/NNP-14) \n 위치(RESOURCE-59,기구-11) \n 위치(RESOURCE-60,ㄴ-23) \n 위치(RESOURCE-61,산하/NNP-31) \n 위치(RESOURCE-62,기구-28) \n 위치(RESOURCE-63,ㄴ-40) \n 위치(RESOURCE-64,산하/NNP-48) \n 위치(RESOURCE-65,기구-45) \n REL(ㄴ-6,위치/NNP-5) \n REL(위치/NNP-10,헤이그/NNP-8) \n REL(기구-11,위치/NNP-10) \n REL(기구-11,산하/NNP-14) \n REL(ㄴ-23,위치/NNP-22) \n REL(위치/NNP-27,뉴욕/NNP-25) \n REL(기구-28,위치/NNP-27) \n REL(기구-28,산하/NNP-31) \n REL(ㄴ-40,위치/NNP-39) \n REL(위치/NNP-44,브뤼셀/NNP-42) \n REL(기구-45,위치/NNP-44) \n REL(기구-45,산하/NNP-48)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v61  ?v79  ?v31 . \n     ?v58  ?v76  ?v14 . \n     ?v45  ?v75  ?v57 . \n     ?v65  ?v83  ?v45 . \n     ?v28  ?v91  ?v31 . \n     ?v23  ?v88  ?v22 . \n     ?v6   ?v68  ?v50 . \n     ?v44  ?v93  ?v42 . \n     ?v11  ?v86  ?v10 . \n     ?v45  ?v95  ?v48 . \n     ?v62  ?v80  ?v28 . \n     ?v59  ?v77  ?v11 . \n     ?v45  ?v94  ?v44 . \n     ?v11  ?v69  ?v51 ; \n           ?v87  ?v14 . \n     ?v60  ?v78  ?v23 . \n     ?v27  ?v89  ?v25 . \n     ?v38  ?v73  ?v55 . \n     ?v40  ?v74  ?v56 . \n     ?v6   ?v84  ?v5 . \n     ?v28  ?v72  ?v54 . \n     ?v63  ?v81  ?v40 . \n     ?v10  ?v85  ?v8 . \n     ?v28  ?v90  ?v27 . \n     ?v64  ?v82  ?v48 . \n     ?v4   ?v67  ?v6 . \n     ?v23  ?v71  ?v53 . \n     ?v21  ?v70  ?v52 . \n     ?v40  ?v92  ?v39 . \n   } \n  \n  v51 - (rdfs:Resource) \n  v63 - (rdfs:Resource) \n  v25 뉴욕 (rdfs:Resource) \n  v8 헤이그 (rdfs:Resource) \n  v22 위치 (rdfs:Resource) \n  v23 ㄴ (rdfs:Class|rdfs:Resource) \n  v95 - (rdf:Property) \n  v21 이사 (rdfs:Class|rdfs:Resource) \n  v88 - (rdf:Property) \n  v39 위치 (rdfs:Resource) \n  v78 위치 (rdf:Property) \n  v64 - (rdfs:Resource) \n  v72 는 (rdf:Property) \n  v10 위치 (rdfs:Resource) \n  v87 - (rdf:Property) \n  v38 이사 (rdfs:Class|rdfs:Resource) \n  v94 - (rdf:Property) \n  v57 - (rdfs:Resource) \n  v42 브뤼셀 (rdfs:Resource) \n  v11 기구 (rdfs:Class|rdfs:Resource) \n  v45 기구 (rdfs:Class|rdfs:Resource) \n  v58 - (rdfs:Resource) \n  v80 위치 (rdf:Property) \n  v89 - (rdf:Property) \n  v73 위치 (rdf:Property) \n  v74 는 (rdf:Property) \n  v4 재판 (rdfs:Class|rdfs:Resource) \n  v65 - (rdfs:Resource) \n  v84 - (rdf:Property) \n  v52 - (rdfs:Resource) \n  v5 위치 (rdfs:Resource) \n  v79 위치 (rdf:Property) \n  v67 위치 (rdf:Property) \n  v44 위치 (rdfs:Resource) \n  v90 - (rdf:Property) \n  v60 - (rdfs:Resource) \n  v53 - (rdfs:Resource) \n  v81 위치 (rdf:Property) \n  v85 - (rdf:Property) \n  v69 는 (rdf:Property) \n  v54 - (rdfs:Resource) \n  v31 산하 (rdfs:Resource) \n  v59 - (rdfs:Resource) \n  v40 ㄴ (rdfs:Class|rdfs:Resource) \n  v92 - (rdf:Property) \n  v91 - (rdf:Property) \n  v75 는 (rdf:Property) \n  v82 위치 (rdf:Property) \n  v61 - (rdfs:Resource) \n  v70 위치 (rdf:Property) \n  v48 산하 (rdfs:Resource) \n  v76 위치 (rdf:Property) \n  v68 는 (rdf:Property) \n  v83 위치 (rdf:Property) \n  v71 는 (rdf:Property) \n  v62 - (rdfs:Resource) \n  v55 - (rdfs:Resource) \n  v6 ㄴ (rdfs:Class|rdfs:Resource) \n  v28 기구 (rdfs:Class|rdfs:Resource) \n  v14 산하 (rdfs:Resource) \n  v56 - (rdfs:Resource) \n  v50 - (rdfs:Resource) \n  v77 위치 (rdf:Property) \n  v27 위치 (rdfs:Resource) \n  v93 - (rdf:Property) \n  v86 - (rdf:Property) \n  \n Score: 0.5757575757575758",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1469,6 +1843,23 @@
           "string": "린 놀런 라이언 주니어 (영어: Lynn Nolan Ryan, Jr., 1947년 1월 31일 ~ ) 는 미국의 전 메이저 리그 선수(투수)이자, 전 텍사스 레인저스의 구단주, CEO이다. 1966년부터 1993년까지 27년 동안 뉴욕 메츠, 캘리포니아 에인절스, 휴스턴 애스트로스, 텍사스 레인저스에서 활동했으며 1999년 미국 야구 명예의 전당에 98.79%의 득표율로 이름을 올렸다.[2][3] 2008년 2월에 텍사스 레인저스의 구단주로 취임했다. 2010년 8월 텍사스 레인저스가 레이 데이비스와 밥 심슨의 공동 구단주 체제로 재편되자 구단주에서 CEO로 승진했으며, 2013년 10월 18일에 CEO직에서 은퇴한다는 의사를 밝히고 야구계를 완전히 떠났다.[5] \n  \n 이케르 카시야스 페르난데스 (스페인어: Iker Casillas Fernández, 1981년 5월 20일, 스페인 모스톨레스 ~ )는 스페인의 축구 선수로, 현재 레알 마드리드와 스페인 축구 국가대표팀의 주전 골키퍼이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "DP(라이언-2,놀런-3) \n SBJ(무엇-1,라이언-2) \n AJT(활동-4,선수-5) \n MOD(스포츠-6,활동-4) \n SBJ(무엇-1,스포츠-6) \n ARG0(활동-4,라이언-2) \n ARG1(활동-4,선수-5) \n ARG0(활동-4,스포츠-6) \n NP(마르티네스-8,페드로-9) \n SBJ(무엇-7,마르티네스-8) \n AJT(활동-10,선수-11) \n MOD(스포츠-12,활동-10) \n SBJ(무엇-7,스포츠-12) \n ARG0(활동-10,마르티네스-8) \n ARG1(활동-10,선수-11) \n ARG0(활동-10,스포츠-12) \n NP(카시야스-14,이케르-15) \n SBJ(무엇-13,카시야스-14) \n AJT(활동-16,선수-17) \n MOD(스포츠-18,활동-16) \n SBJ(무엇-13,스포츠-18) \n ARG0(활동-16,카시야스-14) \n ARG1(활동-16,선수-17) \n ARG0(활동-16,스포츠-18)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(라이언-2,RESOURCE-19) \n THING(스포츠-6,RESOURCE-20) \n 활동(라이언-2,RESOURCE-21) \n 활동(스포츠-6,RESOURCE-22) \n THING(마르티네스-8,RESOURCE-23) \n THING(스포츠-12,RESOURCE-24) \n 활동(마르티네스-8,RESOURCE-25) \n 활동(스포츠-12,RESOURCE-26) \n THING(카시야스-14,RESOURCE-27) \n THING(스포츠-18,RESOURCE-28) \n 활동(카시야스-14,RESOURCE-29) \n 활동(스포츠-18,RESOURCE-30) \n REL(활동/NNP-4,선수/NNP-5) \n REL(스포츠-6,활동/NNP-4) \n REL(활동/NNP-10,선수/NNP-11) \n REL(스포츠-12,활동/NNP-10) \n REL(활동/NNP-16,선수/NNP-17) \n REL(스포츠-18,활동/NNP-16)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v18  ?v41  ?v28 . \n     ?v6   ?v35  ?v22 . \n     ?v14  ?v40  ?v27 . \n     ?v2   ?v34  ?v21 . \n     ?v6   ?v33  ?v20 . \n     ?v14  ?v42  ?v29 . \n     ?v12  ?v39  ?v26 . \n     ?v16  ?v48  ?v17 . \n     ?v8   ?v38  ?v25 . \n     ?v18  ?v49  ?v16 . \n     ?v8   ?v36  ?v23 . \n     ?v18  ?v43  ?v30 . \n     ?v12  ?v37  ?v24 ; \n           ?v47  ?v10 . \n     ?v2   ?v32  ?v19 . \n     ?v6   ?v45  ?v4 . \n     ?v10  ?v46  ?v11 . \n     ?v4   ?v44  ?v5 . \n   } \n  \n  v20 - (rdfs:Resource) \n  v39 활동 (rdf:Property) \n  v17 선수 (rdfs:Resource) \n  v43 활동 (rdf:Property) \n  v23 - (rdfs:Resource) \n  v34 활동 (rdf:Property) \n  v19 - (rdfs:Resource) \n  v33 THING (rdf:Property) \n  v8 마르티네스 (rdfs:Class|rdfs:Resource) \n  v36 THING (rdf:Property) \n  v22 - (rdfs:Resource) \n  v45 - (rdf:Property) \n  v6 스포츠 (rdfs:Class|rdfs:Resource) \n  v40 THING (rdf:Property) \n  v48 - (rdf:Property) \n  v14 카시야스 (rdfs:Class|rdfs:Resource) \n  v4 활동 (rdfs:Resource) \n  v25 - (rdfs:Resource) \n  v42 활동 (rdf:Property) \n  v2 라이언 (rdfs:Class|rdfs:Resource) \n  v38 활동 (rdf:Property) \n  v28 - (rdfs:Resource) \n  v5 선수 (rdfs:Resource) \n  v35 활동 (rdf:Property) \n  v24 - (rdfs:Resource) \n  v16 활동 (rdfs:Resource) \n  v46 - (rdf:Property) \n  v27 - (rdfs:Resource) \n  v41 THING (rdf:Property) \n  v49 - (rdf:Property) \n  v37 THING (rdf:Property) \n  v30 - (rdfs:Resource) \n  v12 스포츠 (rdfs:Class|rdfs:Resource) \n  v26 - (rdfs:Resource) \n  v29 - (rdfs:Resource) \n  v10 활동 (rdfs:Resource) \n  v44 - (rdf:Property) \n  v18 스포츠 (rdfs:Class|rdfs:Resource) \n  v21 - (rdfs:Resource) \n  v32 THING (rdf:Property) \n  v11 선수 (rdfs:Resource) \n  v47 - (rdf:Property) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1537,6 +1928,23 @@
           "string": "5·18 광주 민주화 운동(五一八光州民主化運動) 혹은 광주민중항쟁(光州民衆抗爭)은 1980년 5월 18일부터 5월 27일까지 광주시민과 전라남도민이 중심이 되어, 조속한 민주 정부 수립, 전두환 보안사령관을 비롯한 신군부 세력의 퇴진 및 계엄령 철폐 등을 요구하며 전개한 대한민국의 민주화 운동이다.[3] \n  \n 새마을 운동( - 運動, 영어: Saemaul Undong, New Community Movement, New Village Movement, Saemaul Movement)은 1970년 초 대한민국 농촌의 현대화를 위해 시작되어 범국가적으로 시행된 운동이다.[1] 이 운동은 1971년 새마을 운동으로 명명되었고, 전국적으로 시행, 1975년에는 도시와 공장으로도 확대되었다. \n  \n 한국 전쟁(韓國戰爭, 표준어: 6·25 전쟁[5], 문화어: 조선 전쟁/조국해방전쟁[6], 영어: Korean War, 중국어: 朝鮮戰爭, 朝戰, 일본어: 朝鮮戦争, 러시아어: Корейская война)은 이승만 정부의 대한민국과 김일성이 내각총리였던 조선민주주의인민공화국이 각자 자기 주도의 민족통일을 이루고자 다툼이 있을 때, 38선 부근에서 간헐적으로 국지전을 벌이다가 1950년 6월 25일 새벽에 대한민국에 대한 조선민주주의인민공화국의 기습적인 침공을 감행하면서 한반도를 전장으로 하는 전면전으로 확대되다가, 1953년 7월 27일에 채결된 정전협정으로 휴전 중인 전쟁이다. \n  \n 3·1 운동(三一運動) 또는 3·1 만세 운동(三一萬歲運動)은 일제 강점기에 있던 한국인들이 일제의 지배에 항거하여 1919년 3월 1일 독립을 선언하고 비폭력 만세운동을 시작한 사건이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(운동-2,5-3) \n NP(운동-2,광주-4) \n NP(운동-2,민주-5) \n SBJ(발생-6,운동-2) \n MOD(ㄴ-7,발생-6) \n SBJ(는-1,ㄴ-7) \n ARG1(발생-6,운동-2) \n ARG1(발생-6,ㄴ-7) \n NP(운동-9,새마을-10) \n SBJ(발생-11,운동-9) \n MOD(ㄴ-12,발생-11) \n SBJ(는-8,ㄴ-12) \n ARG1(발생-11,운동-9) \n ARG1(발생-11,ㄴ-12) \n NP(전쟁-14,한국-15) \n SBJ(발생-16,전쟁-14) \n MOD(ㄴ-17,발생-16) \n SBJ(는-13,ㄴ-17) \n ARG1(발생-16,전쟁-14) \n ARG1(발생-16,ㄴ-17) \n NP(운동-19,3-20) \n SBJ(발생-21,운동-19) \n MOD(ㄴ-22,발생-21) \n SBJ(는-18,ㄴ-22) \n ARG1(발생-21,운동-19) \n ARG1(발생-21,ㄴ-22)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "발생(운동-2,ㄴ-7) \n 는(ㄴ-7,RESOURCE-23) \n 발생(운동-9,RESOURCE-24) \n 는(ㄴ-12,RESOURCE-25) \n 발생(전쟁-14,RESOURCE-26) \n 는(ㄴ-17,RESOURCE-27) \n 발생(운동-19,RESOURCE-28) \n 는(ㄴ-22,RESOURCE-29) \n 발생(RESOURCE-30,ㄴ-12) \n 발생(RESOURCE-31,ㄴ-17) \n 발생(RESOURCE-32,ㄴ-22) \n REL(ㄴ-7,발생/NNP-6) \n REL(ㄴ-12,발생/NNP-11) \n REL(ㄴ-17,발생/NNP-16) \n REL(ㄴ-22,발생/NNP-21)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2   ?v34  ?v7 . \n     ?v9   ?v36  ?v24 . \n     ?v14  ?v38  ?v26 . \n     ?v12  ?v37  ?v25 . \n     ?v7   ?v35  ?v23 . \n     ?v22  ?v41  ?v29 . \n     ?v7   ?v45  ?v6 . \n     ?v31  ?v43  ?v17 . \n     ?v22  ?v48  ?v21 . \n     ?v19  ?v40  ?v28 . \n     ?v30  ?v42  ?v12 . \n     ?v12  ?v46  ?v11 . \n     ?v32  ?v44  ?v22 . \n     ?v17  ?v39  ?v27 ; \n           ?v47  ?v16 . \n   } \n  \n  v35 는 (rdf:Property) \n  v17 ㄴ (rdfs:Class|rdfs:Resource) \n  v19 운동 (rdfs:Class|rdfs:Resource) \n  v44 발생 (rdf:Property) \n  v23 - (rdfs:Resource) \n  v12 ㄴ (rdfs:Class|rdfs:Resource) \n  v45 - (rdf:Property) \n  v48 - (rdf:Property) \n  v42 발생 (rdf:Property) \n  v25 - (rdfs:Resource) \n  v9 운동 (rdfs:Class|rdfs:Resource) \n  v38 발생 (rdf:Property) \n  v28 - (rdfs:Resource) \n  v32 - (rdfs:Resource) \n  v24 - (rdfs:Resource) \n  v14 전쟁 (rdfs:Class|rdfs:Resource) \n  v11 발생 (rdfs:Resource) \n  v46 - (rdf:Property) \n  v7 ㄴ (rdfs:Class|rdfs:Resource) \n  v22 ㄴ (rdfs:Class|rdfs:Resource) \n  v31 - (rdfs:Resource) \n  v36 발생 (rdf:Property) \n  v21 발생 (rdfs:Resource) \n  v27 - (rdfs:Resource) \n  v40 발생 (rdf:Property) \n  v39 는 (rdf:Property) \n  v43 발생 (rdf:Property) \n  v41 는 (rdf:Property) \n  v16 발생 (rdfs:Resource) \n  v30 - (rdfs:Resource) \n  v26 - (rdfs:Resource) \n  v37 는 (rdf:Property) \n  v29 - (rdfs:Resource) \n  v2 운동 (rdfs:Class|rdfs:Resource) \n  v6 발생 (rdfs:Resource) \n  v34 발생 (rdf:Property) \n  v47 - (rdf:Property) \n  \n Score: 0.6216216216216216",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1580,6 +1988,23 @@
           "type": "1-2",
           "string": "1994년 FIFA 월드컵(영어: 1994 FIFA World Cup)은 통산 15번째로 열린 FIFA 월드컵으로, 1988년에 유치 신청을 한 미국에서 1994년 6월 17일부터 7월 17일까지 개최되었다. \n  \n 2010년 FIFA 월드컵(영어: 2010 FIFA World Cup, 아프리칸스어: FIFA Sokker-Wêreldbekertoernooi in 2010)은 19번째 FIFA 월드컵이자, 아프리카에서 열린 첫 FIFA 월드컵으로, 남아프리카 공화국의 요하네스버그(경기장 두 곳), 포트엘리자베스, 음봄벨라, 케이프타운, 더반, 폴로콰네, 블룸폰테인, 프리토리아, 루스텐버그 등 총 아홉 도시의 경기장 열 곳에서 6월 11일부터 7월 11일까지 열렸다.[1] \n  \n 2014년 FIFA 월드컵(영어: 2014 FIFA World Cup, 포르투갈어: Copa do Mundo FIFA de 2014)은 2014년 6월 12일부터 7월 13일까지 브라질에서 열린 20번째 FIFA 월드컵이다.[1]",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(는-1,미국-2) \n NP(월드컵-3,FIFA-4) \n OBJ(개최-5,월드컵-3) \n MOD(ㄴ-6,개최-5) \n SBJ(는-1,ㄴ-6) \n ARG0(개최-5,미국-2) \n ARG1(개최-5,월드컵-3) \n ARG0(개최-5,ㄴ-6) \n AJT(개최-8,1994-9) \n NP(월드컵-10,FIFA-11) \n OBJ(개최-8,월드컵-10) \n MOD(ㄴ-12,개최-8) \n SBJ(는-7,ㄴ-12) \n ARGMTMP(개최-8,1994-9) \n ARG1(개최-8,월드컵-10) \n ARG0(개최-8,ㄴ-12) \n SBJ(는-13,대한민국-14) \n NP(월드컵-15,FIFA-16) \n OBJ(개최-17,월드컵-15) \n MOD(ㄴ-18,개최-17) \n SBJ(는-13,ㄴ-18) \n ARG0(개최-17,대한민국-14) \n ARG1(개최-17,월드컵-15) \n ARG0(개최-17,ㄴ-18) \n AJT(개최-20,2002-21) \n NP(월드컵-22,FIFA-23) \n OBJ(개최-20,월드컵-22) \n MOD(ㄴ-24,개최-20) \n SBJ(는-19,ㄴ-24) \n ARGMTMP(개최-20,2002-21) \n ARG1(개최-20,월드컵-22) \n ARG0(개최-20,ㄴ-24) \n NP(공화-26,남-27) \n SBJ(는-25,공화-26) \n NP(월드컵-28,FIFA-29) \n OBJ(개최-30,월드컵-28) \n MOD(ㄴ-31,개최-30) \n SBJ(는-25,ㄴ-31) \n ARG0(개최-30,공화-26) \n ARG1(개최-30,월드컵-28) \n ARG0(개최-30,ㄴ-31) \n AJT(개최-33,2010-34) \n NP(월드컵-35,FIFA-36) \n OBJ(개최-33,월드컵-35) \n MOD(ㄴ-37,개최-33) \n SBJ(는-32,ㄴ-37) \n ARGMTMP(개최-33,2010-34) \n ARG1(개최-33,월드컵-35) \n ARG0(개최-33,ㄴ-37) \n SBJ(는-38,브라질-39) \n NP(월드컵-40,FIFA-41) \n OBJ(개최-42,월드컵-40) \n MOD(ㄴ-43,개최-42) \n SBJ(는-38,ㄴ-43) \n ARG0(개최-42,브라질-39) \n ARG1(개최-42,월드컵-40) \n ARG0(개최-42,ㄴ-43) \n AJT(개최-45,2014-46) \n NP(월드컵-47,FIFA-48) \n OBJ(개최-45,월드컵-47) \n MOD(ㄴ-49,개최-45) \n SBJ(는-44,ㄴ-49) \n ARGMTMP(개최-45,2014-46) \n ARG1(개최-45,월드컵-47) \n ARG0(개최-45,ㄴ-49)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(미국-2,RESOURCE-50) \n 는(ㄴ-6,RESOURCE-51) \n 개최(미국-2,RESOURCE-52) \n 개최(ㄴ-6,RESOURCE-53) \n 는(ㄴ-12,RESOURCE-54) \n 개최(ㄴ-12,RESOURCE-55) \n 는(대한민국-14,RESOURCE-56) \n 는(ㄴ-18,RESOURCE-57) \n 개최(대한민국-14,RESOURCE-58) \n 개최(ㄴ-18,RESOURCE-59) \n 는(ㄴ-24,RESOURCE-60) \n 개최(ㄴ-24,RESOURCE-61) \n 는(공화-26,RESOURCE-62) \n 는(ㄴ-31,RESOURCE-63) \n 개최(공화-26,RESOURCE-64) \n 개최(ㄴ-31,RESOURCE-65) \n 는(ㄴ-37,RESOURCE-66) \n 개최(ㄴ-37,RESOURCE-67) \n 는(브라질-39,RESOURCE-68) \n 는(ㄴ-43,RESOURCE-69) \n 개최(브라질-39,RESOURCE-70) \n 개최(ㄴ-43,RESOURCE-71) \n 는(ㄴ-49,RESOURCE-72) \n 개최(ㄴ-49,RESOURCE-73) \n 개최(RESOURCE-74,월드컵-3) \n 개최(RESOURCE-75,월드컵-10) \n 개최(RESOURCE-76,월드컵-15) \n 개최(RESOURCE-77,월드컵-22) \n 개최(RESOURCE-78,월드컵-28) \n 개최(RESOURCE-79,월드컵-35) \n 개최(RESOURCE-80,월드컵-40) \n 개최(RESOURCE-81,월드컵-47) \n REL(ㄴ-6,개최/NNP-5) \n REL(개최/NNP-8,1994/NNP-9) \n REL(ㄴ-12,개최/NNP-8) \n REL(ㄴ-18,개최/NNP-17) \n REL(개최/NNP-20,2002/NNP-21) \n REL(ㄴ-24,개최/NNP-20) \n REL(ㄴ-31,개최/NNP-30) \n REL(개최/NNP-33,2010/NNP-34) \n REL(ㄴ-37,개최/NNP-33) \n REL(ㄴ-43,개최/NNP-42) \n REL(개최/NNP-45,2014/NNP-46) \n REL(ㄴ-49,개최/NNP-45)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v31  ?v96   ?v63 . \n     ?v37  ?v123  ?v33 . \n     ?v79  ?v112  ?v35 . \n     ?v18  ?v90   ?v57 . \n     ?v45  ?v125  ?v46 . \n     ?v6   ?v84   ?v51 . \n     ?v31  ?v98   ?v65 . \n     ?v37  ?v99   ?v66 . \n     ?v43  ?v124  ?v42 . \n     ?v6   ?v86   ?v53 . \n     ?v49  ?v105  ?v72 . \n     ?v39  ?v103  ?v70 . \n     ?v49  ?v106  ?v73 . \n     ?v8   ?v116  ?v9 . \n     ?v80  ?v113  ?v40 . \n     ?v6   ?v115  ?v5 . \n     ?v12  ?v87   ?v54 . \n     ?v43  ?v102  ?v69 . \n     ?v18  ?v92   ?v59 . \n     ?v33  ?v122  ?v34 . \n     ?v49  ?v126  ?v45 . \n     ?v39  ?v101  ?v68 . \n     ?v77  ?v110  ?v22 . \n     ?v37  ?v100  ?v67 . \n     ?v31  ?v121  ?v30 . \n     ?v2   ?v83   ?v50 . \n     ?v12  ?v117  ?v8 . \n     ?v78  ?v111  ?v28 . \n     ?v2   ?v85   ?v52 . \n     ?v20  ?v119  ?v21 . \n     ?v26  ?v95   ?v62 . \n     ?v74  ?v107  ?v3 . \n     ?v24  ?v94   ?v61 ; \n           ?v93   ?v60 . \n     ?v18  ?v118  ?v17 . \n     ?v26  ?v97   ?v64 . \n     ?v43  ?v104  ?v71 . \n     ?v81  ?v114  ?v47 . \n     ?v76  ?v109  ?v15 . \n     ?v14  ?v89   ?v56 . \n     ?v24  ?v120  ?v20 . \n     ?v12  ?v88   ?v55 . \n     ?v14  ?v91   ?v58 . \n     ?v75  ?v108  ?v10 . \n   } \n  \n  v111 개최 (rdf:Property) \n  v51 - (rdfs:Resource) \n  v85 개최 (rdf:Property) \n  v63 - (rdfs:Resource) \n  v97 개최 (rdf:Property) \n  v76 - (rdfs:Resource) \n  v64 - (rdfs:Resource) \n  v119 - (rdf:Property) \n  v21 2002 (rdfs:Resource) \n  v26 공화 (rdfs:Class|rdfs:Resource) \n  v18 ㄴ (rdfs:Class|rdfs:Resource) \n  v121 - (rdf:Property) \n  v42 개최 (rdfs:Resource) \n  v93 는 (rdf:Property) \n  v77 - (rdfs:Resource) \n  v65 - (rdfs:Resource) \n  v52 - (rdfs:Resource) \n  v108 개최 (rdf:Property) \n  v22 월드컵 (rdfs:Class|rdfs:Resource) \n  v30 개최 (rdfs:Resource) \n  v98 개최 (rdf:Property) \n  v120 - (rdf:Property) \n  v43 ㄴ (rdfs:Class|rdfs:Resource) \n  v109 개최 (rdf:Property) \n  v31 ㄴ (rdfs:Class|rdfs:Resource) \n  v110 개최 (rdf:Property) \n  v86 개최 (rdf:Property) \n  v53 - (rdfs:Resource) \n  v17 개최 (rdfs:Resource) \n  v118 - (rdf:Property) \n  v78 - (rdfs:Resource) \n  v107 개최 (rdf:Property) \n  v66 - (rdfs:Resource) \n  v54 - (rdfs:Resource) \n  v117 - (rdf:Property) \n  v80 - (rdfs:Resource) \n  v79 - (rdfs:Resource) \n  v45 개최 (rdfs:Resource) \n  v88 개최 (rdf:Property) \n  v20 개최 (rdfs:Resource) \n  v67 - (rdfs:Resource) \n  v28 월드컵 (rdfs:Class|rdfs:Resource) \n  v87 는 (rdf:Property) \n  v34 2010 (rdfs:Resource) \n  v81 - (rdfs:Resource) \n  v33 개최 (rdfs:Resource) \n  v89 는 (rdf:Property) \n  v116 - (rdf:Property) \n  v55 - (rdfs:Resource) \n  v56 - (rdfs:Resource) \n  v68 - (rdfs:Resource) \n  v90 는 (rdf:Property) \n  v105 는 (rdf:Property) \n  v106 개최 (rdf:Property) \n  v115 - (rdf:Property) \n  v70 - (rdfs:Resource) \n  v126 - (rdf:Property) \n  v14 대한민국 (rdfs:Class|rdfs:Resource) \n  v91 개최 (rdf:Property) \n  v69 - (rdfs:Resource) \n  v12 ㄴ (rdfs:Class|rdfs:Resource) \n  v92 개최 (rdf:Property) \n  v71 - (rdfs:Resource) \n  v104 개최 (rdf:Property) \n  v8 개최 (rdfs:Resource) \n  v57 - (rdfs:Resource) \n  v84 는 (rdf:Property) \n  v103 개최 (rdf:Property) \n  v58 - (rdfs:Resource) \n  v99 는 (rdf:Property) \n  v37 ㄴ (rdfs:Class|rdfs:Resource) \n  v15 월드컵 (rdfs:Class|rdfs:Resource) \n  v40 월드컵 (rdfs:Class|rdfs:Resource) \n  v72 - (rdfs:Resource) \n  v9 1994 (rdfs:Resource) \n  v46 2014 (rdfs:Resource) \n  v24 ㄴ (rdfs:Class|rdfs:Resource) \n  v49 ㄴ (rdfs:Class|rdfs:Resource) \n  v60 - (rdfs:Resource) \n  v125 - (rdf:Property) \n  v35 월드컵 (rdfs:Class|rdfs:Resource) \n  v102 는 (rdf:Property) \n  v59 - (rdfs:Resource) \n  v47 월드컵 (rdfs:Class|rdfs:Resource) \n  v73 - (rdfs:Resource) \n  v94 개최 (rdf:Property) \n  v123 - (rdf:Property) \n  v61 - (rdfs:Resource) \n  v5 개최 (rdfs:Resource) \n  v124 - (rdf:Property) \n  v101 는 (rdf:Property) \n  v114 개최 (rdf:Property) \n  v39 브라질 (rdfs:Class|rdfs:Resource) \n  v10 월드컵 (rdfs:Class|rdfs:Resource) \n  v122 - (rdf:Property) \n  v74 - (rdfs:Resource) \n  v3 월드컵 (rdfs:Class|rdfs:Resource) \n  v62 - (rdfs:Resource) \n  v112 개최 (rdf:Property) \n  v96 는 (rdf:Property) \n  v83 는 (rdf:Property) \n  v6 ㄴ (rdfs:Class|rdfs:Resource) \n  v75 - (rdfs:Resource) \n  v2 미국 (rdfs:Class|rdfs:Resource) \n  v95 는 (rdf:Property) \n  v113 개최 (rdf:Property) \n  v50 - (rdfs:Resource) \n  v100 개최 (rdf:Property) \n  \n Score: 0.5925925925925926",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1649,6 +2074,23 @@
           "string": "대한수중핀수영협회(Korea Underwater Association, KUA)는 수중 스포츠 보급을 통한 국민체력 향상과 우수 선수 양성으로 국민체육 발전에 이바지할 목적으로 1997년 4월 7일 설립된 대한민국 문화체육관광부 소관의 사단법인이다. \n - 1973년 3월 2일 : 한국스쿠버다이빙협회 개칭 \n - 1982년 6월 5일 : 세계수중연맹(CMAS) 가입 \n - 1992년 2월 24일 : 대한체육회 정식 가입 \n - 2010년 5월 3일 : 사단법인 대한수중핀수영협회로 명칭 변경",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(가입-2,대한-3) \n AJT(가입-2,대한-4) \n MOD(ㄴ-5,가입-2) \n SBJ(는-1,ㄴ-5) \n ARG0(가입-2,대한-3) \n ARG2(가입-2,대한-4) \n ARG1(가입-2,ㄴ-5) \n SBJ(는-6,대한-7) \n NP(대한-8,사단-9) \n AJT(변경-10,대한-8) \n OBJ(변경-10,이름-11) \n MOD(ㄴ-12,변경-10) \n SBJ(는-6,ㄴ-12) \n ARG0(변경-10,대한-7) \n ARG3(변경-10,대한-8) \n ARG1(변경-10,이름-11) \n ARG0(변경-10,ㄴ-12) \n SBJ(는-13,대한-14) \n NP(스쿠버-15,한국-16) \n NP(다이빙-17,스쿠버-15) \n NP(협회-18,다이빙-17) \n AJT(변경-19,협회-18) \n OBJ(변경-19,이름-20) \n MOD(ㄴ-21,변경-19) \n SBJ(는-13,ㄴ-21) \n ARG0(변경-19,대한-14) \n ARGMINS(변경-19,협회-18) \n ARG1(변경-19,이름-20) \n ARG0(변경-19,ㄴ-21) \n SBJ(가입-23,대한-24) \n NP(수중-25,세계-26) \n NP(연맹-27,수중-25) \n AJT(가입-23,연맹-27) \n MOD(ㄴ-28,가입-23) \n SBJ(는-22,ㄴ-28) \n ARG0(가입-23,대한-24) \n ARG2(가입-23,연맹-27) \n ARG1(가입-23,ㄴ-28)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "가입(대한-3,ㄴ-5) \n 는(ㄴ-5,RESOURCE-29) \n 는(대한-7,RESOURCE-30) \n 는(ㄴ-12,RESOURCE-31) \n 변경(대한-7,RESOURCE-32) \n 변경(ㄴ-12,RESOURCE-33) \n 는(대한-14,RESOURCE-34) \n 는(ㄴ-21,RESOURCE-35) \n 변경(대한-14,RESOURCE-36) \n 변경(ㄴ-21,RESOURCE-37) \n 가입(대한-24,RESOURCE-38) \n 는(ㄴ-28,RESOURCE-39) \n 변경(RESOURCE-40,이름-11) \n 변경(RESOURCE-41,이름-20) \n 가입(RESOURCE-42,ㄴ-28) \n REL(가입/NNP-2,대한/NNP-4) \n REL(ㄴ-5,가입/NNP-2) \n REL(변경/NNP-10,대한/NNP-8) \n REL(ㄴ-12,변경/NNP-10) \n REL(변경/NNP-19,협회/NNP-18) \n REL(ㄴ-21,변경/NNP-19) \n REL(가입/NNP-23,연맹/NNP-27) \n REL(ㄴ-28,가입/NNP-23)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v14  ?v52  ?v36 . \n     ?v28  ?v55  ?v39 . \n     ?v24  ?v54  ?v38 . \n     ?v5   ?v45  ?v29 . \n     ?v7   ?v48  ?v32 ; \n           ?v46  ?v30 . \n     ?v41  ?v57  ?v20 . \n     ?v42  ?v58  ?v28 . \n     ?v21  ?v51  ?v35 . \n     ?v3   ?v44  ?v5 . \n     ?v12  ?v49  ?v33 . \n     ?v21  ?v53  ?v37 . \n     ?v23  ?v65  ?v27 . \n     ?v2   ?v59  ?v4 . \n     ?v10  ?v61  ?v8 . \n     ?v12  ?v47  ?v31 . \n     ?v40  ?v56  ?v11 . \n     ?v19  ?v63  ?v18 . \n     ?v28  ?v66  ?v23 . \n     ?v21  ?v64  ?v19 . \n     ?v5   ?v60  ?v2 . \n     ?v12  ?v62  ?v10 . \n     ?v14  ?v50  ?v34 . \n   } \n  \n  v14 대한 (rdfs:Class|rdfs:Resource) \n  v58 가입 (rdf:Property) \n  v47 는 (rdf:Property) \n  v49 변경 (rdf:Property) \n  v38 - (rdfs:Resource) \n  v63 - (rdf:Property) \n  v12 ㄴ (rdfs:Class|rdfs:Resource) \n  v37 - (rdfs:Resource) \n  v4 대한 (rdfs:Resource) \n  v28 ㄴ (rdfs:Class|rdfs:Resource) \n  v55 는 (rdf:Property) \n  v32 - (rdfs:Resource) \n  v40 - (rdfs:Resource) \n  v7 대한 (rdfs:Class|rdfs:Resource) \n  v46 는 (rdf:Property) \n  v34 - (rdfs:Resource) \n  v18 협회 (rdfs:Resource) \n  v23 가입 (rdfs:Resource) \n  v64 - (rdf:Property) \n  v10 변경 (rdfs:Resource) \n  v33 - (rdfs:Resource) \n  v2 가입 (rdfs:Resource) \n  v53 변경 (rdf:Property) \n  v8 대한 (rdfs:Resource) \n  v39 - (rdfs:Resource) \n  v66 - (rdf:Property) \n  v35 - (rdfs:Resource) \n  v51 는 (rdf:Property) \n  v59 - (rdf:Property) \n  v41 - (rdfs:Resource) \n  v52 변경 (rdf:Property) \n  v24 대한 (rdfs:Class|rdfs:Resource) \n  v45 는 (rdf:Property) \n  v60 - (rdf:Property) \n  v5 ㄴ (rdfs:Class|rdfs:Resource) \n  v65 - (rdf:Property) \n  v44 가입 (rdf:Property) \n  v42 - (rdfs:Resource) \n  v27 연맹 (rdfs:Resource) \n  v57 변경 (rdf:Property) \n  v54 가입 (rdf:Property) \n  v19 변경 (rdfs:Resource) \n  v20 이름 (rdfs:Class|rdfs:Resource) \n  v11 이름 (rdfs:Class|rdfs:Resource) \n  v62 - (rdf:Property) \n  v31 - (rdfs:Resource) \n  v48 변경 (rdf:Property) \n  v50 는 (rdf:Property) \n  v30 - (rdfs:Resource) \n  v56 변경 (rdf:Property) \n  v29 - (rdfs:Resource) \n  v3 대한 (rdfs:Class|rdfs:Resource) \n  v36 - (rdfs:Resource) \n  v21 ㄴ (rdfs:Class|rdfs:Resource) \n  v61 - (rdf:Property) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1692,6 +2134,23 @@
           "type": "1-2",
           "string": "필리핀 공화국(필리핀어: Republika ng Pilipinas 레푸블리카 낭 필리피나스, 영어: Republic of the Philippines 리퍼블릭 오브 더 필리핀스[*]), 약칭 필리핀(필리핀어: Pilipinas 필리피나스, 영어: Philippines 필리핀스[*])은 서태평양에 있는 동남아시아의 섬나라이다. 수도는 마닐라이며, 공용어는 필리핀어와 영어이다. \n  \n 대한민국[듣기 (도움말·정보)], 영어: Republic of Korea)은 동아시아의 한반도 남부에 자리한 공화국이다. 서울특별시(서울特別市)는 대한민국의 수도이자 최대 도시이다. \n  \n 일본국(일본어: 日本国 にほんこく 니혼코쿠[*][2]、にっぽんこく 닛폰코쿠[*]), 약칭 일본(일본어: 日本 にほん 니혼[*]、にっぽん 닛폰[*])은 동아시아에 있는 국가이다. 도쿄 도(일본어: 東京都 とうきょうと 도쿄토[*], 동경도)는 일본의 47개 도도부현 중 하나로 메이지 시대 이후 사실상 일본의 수도이다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(수도-2,필리핀-3) \n SBJ(어디-1,수도-2) \n SBJ(수도-4,마닐라-5) \n DP(국가-6,어느-7) \n MOD(수도-4,국가-6) \n MOD(수도-9,대한민국-10) \n SBJ(어디-8,수도-9) \n SBJ(수도-11,서울-12) \n DP(국가-13,어느-14) \n MOD(수도-11,국가-13) \n MOD(수도-16,일본-17) \n SBJ(어디-15,수도-16) \n SBJ(수도-18,도쿄-19) \n DP(국가-20,어느-21) \n MOD(수도-18,국가-20) \n MOD(수도-23,이라크-24) \n SBJ(어디-22,수도-23) \n SBJ(수도-25,아부다비-26) \n DP(국가-27,어느-28) \n MOD(수도-25,국가-27)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(LOCATION-1,LOCATION-1) \n SELECT(LOCATION-8,LOCATION-8) \n SELECT(LOCATION-15,LOCATION-15) \n SELECT(LOCATION-22,LOCATION-22) \n SELECT(국가/NNP-6,국가/NNP-6) \n SELECT(국가/NNP-13,국가/NNP-13) \n SELECT(국가/NNP-20,국가/NNP-20) \n SELECT(국가/NNP-27,국가/NNP-27) \n LOCATION(수도-2,RESOURCE-28) \n 수도(마닐라-5,RESOURCE-29) \n LOCATION(수도-9,RESOURCE-30) \n 수도(서울-12,RESOURCE-31) \n LOCATION(수도-16,RESOURCE-32) \n 수도(도쿄-19,RESOURCE-33) \n LOCATION(수도-23,RESOURCE-34) \n 수도(아부다비-26,RESOURCE-35) \n REL(수도-2,필리핀/NNP-3) \n REL(수도-4,국가/NNP-6) \n REL(수도-9,대한민국/NNP-10) \n REL(수도-11,국가/NNP-13) \n REL(수도-16,일본/NNP-17) \n REL(수도-18,국가/NNP-20) \n REL(수도-23,이라크/NNP-24) \n REL(수도-25,국가/NNP-27)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "SELECT  ?v6 ?v20 ?v13 ?v27 \n WHERE \n   { ?v11  ?v48  ?v13 . \n     ?v9   ?v47  ?v10 . \n     ?v19  ?v42  ?v33 . \n     ?v5   ?v38  ?v29 . \n     ?v9   ?v39  ?v30 . \n     ?v23  ?v51  ?v24 ; \n           ?v43  ?v34 . \n     ?v16  ?v49  ?v17 . \n     ?v12  ?v40  ?v31 . \n     ?v25  ?v52  ?v27 . \n     ?v2   ?v37  ?v28 . \n     ?v18  ?v50  ?v20 . \n     ?v16  ?v41  ?v32 . \n     ?v26  ?v44  ?v35 . \n     ?v2   ?v45  ?v3 . \n     ?v4   ?v46  ?v6 . \n   } \n  \n  v35 - (rdfs:Resource) \n  v51 - (rdf:Property) \n  v25 수도 (rdfs:Class|rdfs:Resource) \n  v18 수도 (rdfs:Class|rdfs:Resource) \n  v5 마닐라 (rdfs:Class|rdfs:Resource) \n  v4 수도 (rdfs:Class|rdfs:Resource) \n  v45 - (rdf:Property) \n  v39 LOCATION (rdf:Property) \n  v48 - (rdf:Property) \n  v43 LOCATION (rdf:Property) \n  v50 - (rdf:Property) \n  v1 LOCATION (rdfs:Class|rdfs:Resource) \n  v2 수도 (rdfs:Class|rdfs:Resource) \n  v28 - (rdfs:Resource) \n  v24 이라크 (rdfs:Resource) \n  v44 수도 (rdf:Property) \n  v32 - (rdfs:Resource) \n  v26 아부다비 (rdfs:Class|rdfs:Resource) \n  v37 LOCATION (rdf:Property) \n  v41 LOCATION (rdf:Property) \n  v12 서울 (rdfs:Class|rdfs:Resource) \n  v38 수도 (rdf:Property) \n  v10 대한민국 (rdfs:Resource) \n  v46 - (rdf:Property) \n  v31 - (rdfs:Resource) \n  v11 수도 (rdfs:Class|rdfs:Resource) \n  v52 - (rdf:Property) \n  v34 - (rdfs:Resource) \n  v49 - (rdf:Property) \n  v42 수도 (rdf:Property) \n  v40 수도 (rdf:Property) \n  v19 도쿄 (rdfs:Class|rdfs:Resource) \n  v15 LOCATION (rdfs:Class|rdfs:Resource) \n  v30 - (rdfs:Resource) \n  v16 수도 (rdfs:Class|rdfs:Resource) \n  v29 - (rdfs:Resource) \n  v33 - (rdfs:Resource) \n  v22 LOCATION (rdfs:Class|rdfs:Resource) \n  v3 필리핀 (rdfs:Resource) \n  v8 LOCATION (rdfs:Class|rdfs:Resource) \n  v9 수도 (rdfs:Class|rdfs:Resource) \n  v23 수도 (rdfs:Class|rdfs:Resource) \n  v47 - (rdf:Property) \n  v17 일본 (rdfs:Resource) \n  \n Score: 0.6363636363636364",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1737,6 +2196,23 @@
           "string": "《해리 포터》(Harry Potter)는 조앤 K. 롤링이 쓴 판타지 소설이다. \n  \n 해리 포터 (소설 시리즈): \n - 《해리 포터와 마법사의 돌》 \n - 《해리 포터와 비밀의 방》 \n - 《해리 포터와 아즈카반의 죄수》 \n - 《해리 포터와 불의 잔》 \n - 《해리 포터와 불사조 기사단》 \n - 《해리 포터와 혼혈 왕자》 \n - 《해리 포터와 죽음의 성물》",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(포터-1,\u0027-2) \n MOD(부-3,포터-1) \n SBJ(무엇-4,부-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(부-3,RESOURCE-5) \n REL(부-3,포터/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v3  ?v8  ?v1 ; \n          ?v7  ?v5 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v3 부 (rdfs:Class|rdfs:Resource) \n  v7 THING (rdf:Property) \n  v8 - (rdf:Property) \n  v1 포터 (rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1780,6 +2256,23 @@
           "type": "1-2",
           "string": "스티븐 폴 \"\"스티브\"\" 잡스(영어: Steven Paul \"\"Steve\"\" Jobs 스티븐 폴 \"\"스티브\"\" 조브스[*], 1955년 2월 24일 ~ 2011년 10월 5일)는 미국의 기업인이었다. 1972년 리드 대학교에 다니다 1학기만 수강한 후 중퇴하였으며, 1974년에는 캘리포니아로 돌아와 아타리에서 일을 하였다. 1976년 스티브 워즈니악, 로널드 웨인과 함께 애플을 공동 창업하고, 애플 2를 통해 개인용 컴퓨터를 대중화했다. 한편 그는 2004년 무렵부터 췌장암으로 투병생활을 이어왔다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(대-2,리드-3) \n OBJ(중퇴-4,대-2) \n MOD(ㄴ-5,중퇴-4) \n SBJ(은-1,ㄴ-5) \n ARG1(중퇴-4,대-2) \n ARG0(중퇴-4,ㄴ-5) \n AJT(투병-7,췌장-8) \n MOD(ㄴ-9,투병-7) \n SBJ(은-6,ㄴ-9) \n ARG0(투병-7,췌장-8) \n ARG1(투병-7,ㄴ-9) \n OBJ(창업-11,애플-12) \n MOD(ㄴ-13,창업-11) \n SBJ(은-10,ㄴ-13) \n ARG1(창업-11,애플-12) \n ARG0(창업-11,ㄴ-13)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(ㄴ-5,RESOURCE-14) \n 중퇴(ㄴ-5,RESOURCE-15) \n 은(ㄴ-9,RESOURCE-16) \n 은(ㄴ-13,RESOURCE-17) \n 창업(ㄴ-13,RESOURCE-18) \n 중퇴(RESOURCE-19,대-2) \n 투병(RESOURCE-20,ㄴ-9) \n 창업(RESOURCE-21,애플-12) \n REL(ㄴ-5,중퇴/NNP-4) \n REL(투병/NNP-7,췌장/NNP-8) \n REL(ㄴ-9,투병/NNP-7) \n REL(ㄴ-13,창업/NNP-11)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v20  ?v29  ?v9 . \n     ?v19  ?v28  ?v2 . \n     ?v13  ?v27  ?v18 ; \n           ?v34  ?v11 . \n     ?v9   ?v25  ?v16 . \n     ?v13  ?v26  ?v17 . \n     ?v21  ?v30  ?v12 . \n     ?v5   ?v23  ?v14 ; \n           ?v31  ?v4 . \n     ?v7   ?v32  ?v8 . \n     ?v5   ?v24  ?v15 . \n     ?v9   ?v33  ?v7 . \n   } \n  \n  v20 - (rdfs:Resource) \n  v2 대 (rdfs:Class|rdfs:Resource) \n  v32 - (rdf:Property) \n  v19 - (rdfs:Resource) \n  v7 투병 (rdfs:Resource) \n  v16 - (rdfs:Resource) \n  v8 췌장 (rdfs:Resource) \n  v18 - (rdfs:Resource) \n  v29 투병 (rdf:Property) \n  v26 은 (rdf:Property) \n  v28 중퇴 (rdf:Property) \n  v15 - (rdfs:Resource) \n  v23 은 (rdf:Property) \n  v5 ㄴ (rdfs:Class|rdfs:Resource) \n  v4 중퇴 (rdfs:Resource) \n  v30 창업 (rdf:Property) \n  v33 - (rdf:Property) \n  v12 애플 (rdfs:Class|rdfs:Resource) \n  v13 ㄴ (rdfs:Class|rdfs:Resource) \n  v9 ㄴ (rdfs:Class|rdfs:Resource) \n  v31 - (rdf:Property) \n  v24 중퇴 (rdf:Property) \n  v34 - (rdf:Property) \n  v27 창업 (rdf:Property) \n  v25 은 (rdf:Property) \n  v17 - (rdfs:Resource) \n  v21 - (rdfs:Resource) \n  v14 - (rdfs:Resource) \n  v11 창업 (rdfs:Resource) \n  \n Score: 0.5862068965517241",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1825,6 +2318,23 @@
           "string": "버락 후세인 오바마 주니어(영어: Barack Hussein Obama, Jr., 문화어: 버라크 오바마, 1961년 8월 4일 ~ , 미국 하와이 주 호놀룰루 출생)는 미국의 정치인으로 제44대 대통령이다. 그리고 2009년에는 노벨 평화상을 수상하였다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(평화-2,노벨-3) \n OBJ(수상-1,평화-2) \n MOD(ㄴ-4,수상-1) \n SBJ(은-5,ㄴ-4) \n ARG1(수상-1,평화-2) \n ARG0(수상-1,ㄴ-4)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(ㄴ-4,RESOURCE-6) \n 수상(ㄴ-4,RESOURCE-7) \n 수상(RESOURCE-8,평화-2) \n REL(ㄴ-4,수상/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v4  ?v11  ?v7 ; \n          ?v13  ?v1 . \n     ?v8  ?v12  ?v2 . \n     ?v4  ?v10  ?v6 . \n   } \n  \n  v11 수상 (rdf:Property) \n  v4 ㄴ (rdfs:Class|rdfs:Resource) \n  v7 - (rdfs:Resource) \n  v1 수상 (rdfs:Resource) \n  v2 평화 (rdfs:Class|rdfs:Resource) \n  v10 은 (rdf:Property) \n  v12 수상 (rdf:Property) \n  v13 - (rdf:Property) \n  v6 - (rdfs:Resource) \n  v8 - (rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1868,6 +2378,23 @@
           "type": "1-2",
           "string": "고선지(高仙芝, ? 702년~755년 나이 54세)는 고구려 유민 출신 당나라 장군이다. 1만명의 군사를 이끌고 파미르 고원을 넘어 서역을 정벌한 석국전쟁을 통해 여러제국의 조공을 받게 했다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "OBJ(넘-2,고원-1) \n MOD(장군-3,넘-2) \n NP(유민-4,고구려-5) \n NP(출신-6,유민-4) \n MOD(장군-3,출신-6) \n NP(장군-3,당-7) \n SBJ(누구-8,장군-3) \n ARG2(넘-2,고원-1)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(AGENT-8,AGENT-8) \n AGENT(장군-3,RESOURCE-9) \n 넘(RESOURCE-10,고원-1) \n REL(장군-3,넘/NNP-2) \n REL(장군-3,출신/NNP-6)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v3   ?v15  ?v6 ; \n           ?v12  ?v9 . \n     ?v10  ?v13  ?v1 . \n     ?v3   ?v14  ?v2 . \n   } \n  \n  v8 AGENT (rdfs:Class|rdfs:Resource) \n  v9 - (rdfs:Resource) \n  v12 AGENT (rdf:Property) \n  v14 - (rdf:Property) \n  v3 장군 (rdfs:Class|rdfs:Resource) \n  v10 - (rdfs:Resource) \n  v2 넘 (rdfs:Resource) \n  v6 출신 (rdfs:Resource) \n  v13 넘 (rdf:Property) \n  v15 - (rdf:Property) \n  v1 고원 (rdfs:Class|rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -1931,6 +2458,23 @@
           "string": "루트비히 판 베토벤(독일어: Ludwig van Beethoven, 1770년 12월 17일 ~ 1827년 3월 26일)은 독일의 서양 고전 음악 작곡가이다. \n  \n 빈센트 반 고흐는 1853년 3월 30일, 네덜란드의 준데르트에서 출생하였다. \n  \n 레오나르도 다 빈치는 1452년 4월 15일 새벽 3시에 토스카나 지방의 산골 마을 빈치에서 유명한 가문의 공증인인 피에르 다 빈치(Ser Piero da Vinci)와 가난한 농부의 딸인 카타리나(Catarina) 사이에서 사생아로 태어났다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(베토벤-2,루트비히-3) \n NP(베토벤-2,판-4) \n SBJ(는-1,베토벤-2) \n MOD(ㄴ-5,출생-6) \n SBJ(는-1,ㄴ-5) \n ARG0(출생-6,베토벤-2) \n ARG1(출생-6,ㄴ-5) \n NP(반-8,빈센트-9) \n NP(고흐-10,반-8) \n SBJ(는-7,고흐-10) \n MOD(ㄴ-11,출생-12) \n SBJ(는-7,ㄴ-11) \n ARG1(출생-12,고흐-10) \n ARG1(출생-12,ㄴ-11) \n SBJ(는-13,레오나르도-14) \n AP(는-13,다-15) \n SBJ(는-13,빈치-16) \n MOD(ㄴ-17,출생-18) \n SBJ(는-13,ㄴ-17) \n ARG0(출생-18,빈치-16) \n ARG1(출생-18,ㄴ-17)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(베토벤-2,RESOURCE-19) \n 는(ㄴ-5,RESOURCE-20) \n 출생(베토벤-2,RESOURCE-21) \n 는(고흐-10,RESOURCE-22) \n 는(ㄴ-11,RESOURCE-23) \n 는(레오나르도-14,RESOURCE-24) \n 는(빈치-16,RESOURCE-25) \n 는(ㄴ-17,RESOURCE-26) \n 출생(빈치-16,RESOURCE-27) \n 출생(RESOURCE-28,ㄴ-5) \n 출생(RESOURCE-29,고흐-10) \n 출생(RESOURCE-30,ㄴ-11) \n 출생(RESOURCE-31,ㄴ-17) \n REL(ㄴ-5,출생/NNP-6) \n REL(ㄴ-11,출생/NNP-12) \n REL(ㄴ-17,출생/NNP-18)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v11  ?v37  ?v23 ; \n           ?v47  ?v12 . \n     ?v28  ?v42  ?v5 . \n     ?v16  ?v41  ?v27 . \n     ?v2   ?v35  ?v21 . \n     ?v16  ?v39  ?v25 . \n     ?v29  ?v43  ?v10 . \n     ?v5   ?v46  ?v6 . \n     ?v17  ?v40  ?v26 ; \n           ?v48  ?v18 . \n     ?v2   ?v33  ?v19 . \n     ?v31  ?v45  ?v17 . \n     ?v10  ?v36  ?v22 . \n     ?v14  ?v38  ?v24 . \n     ?v30  ?v44  ?v11 . \n     ?v5   ?v34  ?v20 . \n   } \n  \n  v20 - (rdfs:Resource) \n  v17 ㄴ (rdfs:Class|rdfs:Resource) \n  v35 출생 (rdf:Property) \n  v23 - (rdfs:Resource) \n  v42 출생 (rdf:Property) \n  v19 - (rdfs:Resource) \n  v16 빈치 (rdfs:Class|rdfs:Resource) \n  v45 출생 (rdf:Property) \n  v41 출생 (rdf:Property) \n  v22 - (rdfs:Resource) \n  v14 레오나르도 (rdfs:Class|rdfs:Resource) \n  v48 - (rdf:Property) \n  v33 는 (rdf:Property) \n  v44 출생 (rdf:Property) \n  v5 ㄴ (rdfs:Class|rdfs:Resource) \n  v25 - (rdfs:Resource) \n  v38 는 (rdf:Property) \n  v28 - (rdfs:Resource) \n  v24 - (rdfs:Resource) \n  v2 베토벤 (rdfs:Class|rdfs:Resource) \n  v46 - (rdf:Property) \n  v31 - (rdfs:Resource) \n  v36 는 (rdf:Property) \n  v40 는 (rdf:Property) \n  v27 - (rdfs:Resource) \n  v10 고흐 (rdfs:Class|rdfs:Resource) \n  v39 는 (rdf:Property) \n  v6 출생 (rdfs:Resource) \n  v12 출생 (rdfs:Resource) \n  v30 - (rdfs:Resource) \n  v26 - (rdfs:Resource) \n  v37 는 (rdf:Property) \n  v29 - (rdfs:Resource) \n  v18 출생 (rdfs:Resource) \n  v21 - (rdfs:Resource) \n  v11 ㄴ (rdfs:Class|rdfs:Resource) \n  v34 는 (rdf:Property) \n  v43 출생 (rdf:Property) \n  v47 - (rdf:Property) \n  \n Score: 0.5897435897435898",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -1974,6 +2518,23 @@
           "type": "1-1",
           "string": "마그레브 (المغرب العربي)는 아랍어로 \"\"해가 지는 지역\"\" 또는 \"\"서쪽\"\" 이란 뜻으로 대체로 오늘날의 북아프리카 지역, 즉, 모로코, 알제리, 튀니지를 아우르는 지역을 말한다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(지-1,“-2) \n MOD(지역-3,지-1) \n NP(지역-3,지역-4) \n AP(의미-5,또는-6) \n OBJ(의미-5,“-7) \n MOD(북-8,의미-5) \n MOD(지역-3,북-8) \n SBJ(어디-9,지역-3) \n ARG0(지-1,“-2) \n ARG2(의미-5,“-7)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(LOCATION-9,LOCATION-9) \n 지(“-2,RESOURCE-10) \n LOCATION(지역-3,RESOURCE-11) \n 의미(RESOURCE-12,“-7) \n REL(지역-3,지/NNP-1) \n REL(북/NNP-8,의미/NNP-5) \n REL(지역-3,북/NNP-8)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v12  ?v16  ?v7 . \n     ?v2   ?v14  ?v10 . \n     ?v3   ?v15  ?v11 ; \n           ?v17  ?v1 ; \n           ?v19  ?v8 . \n     ?v8   ?v18  ?v5 . \n   } \n  \n  v5 의미 (rdfs:Resource) \n  v17 - (rdf:Property) \n  v7 “ (rdfs:Class|rdfs:Resource) \n  v15 LOCATION (rdf:Property) \n  v12 - (rdfs:Resource) \n  v8 북 (rdfs:Resource) \n  v9 LOCATION (rdfs:Class|rdfs:Resource) \n  v18 - (rdf:Property) \n  v11 - (rdfs:Resource) \n  v14 지 (rdf:Property) \n  v3 지역 (rdfs:Class|rdfs:Resource) \n  v16 의미 (rdf:Property) \n  v10 - (rdfs:Resource) \n  v2 “ (rdfs:Class|rdfs:Resource) \n  v19 - (rdf:Property) \n  v1 지 (rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -2091,6 +2652,23 @@
           "string": "더블딥(Double dip) 혹은 W자형 불황(W-shaped recession)은 경제가 불황으로부터 벗어나 짧은 기간의 성장을 기록한 뒤, 얼마 지나지 않고 다시 불황에 빠지는 현상이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "AJT(기록-2,후-1) \n MOD(성장-3,짧-4) \n OBJ(기록-2,성장-3) \n MOD(ㄴ-5,기록-2) \n AJT(에-6,ㄴ-5) \n AP(에-6,뒤-7) \n AJT(에-6,경기-8) \n MOD(의미-9,에-6) \n MOD(경제-10,의미-9) \n NP(경제-10,의-11) \n SBJ(는-12,경제-10) \n ARG1(짧-4,성장-3) \n ARGMTMP(기록-2,후-1) \n ARG1(기록-2,성장-3) \n ARGMTMP(에-6,ㄴ-5) \n ARGMTMP(에-6,뒤-7) \n ARG2(에-6,경기-8)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(경제-10,RESOURCE-13) \n 기록(RESOURCE-14,성장-3) \n 짧(RESOURCE-15,성장-3) \n REL(기록/NNP-2,후/NNP-1) \n REL(성장-3,짧/NNP-4) \n REL(ㄴ/NNP-5,기록/NNP-2) \n REL(에/NNP-6,ㄴ/NNP-5) \n REL(에/NNP-6,경기/NNP-8) \n REL(의미/NNP-9,에/NNP-6) \n REL(경제-10,의미/NNP-9)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v10  ?v17  ?v13 . \n     ?v2   ?v20  ?v1 . \n     ?v6   ?v24  ?v8 . \n     ?v5   ?v22  ?v2 . \n     ?v10  ?v26  ?v9 . \n     ?v14  ?v18  ?v3 . \n     ?v15  ?v19  ?v3 . \n     ?v3   ?v21  ?v4 . \n     ?v9   ?v25  ?v6 . \n     ?v6   ?v23  ?v5 . \n   } \n  \n  v20 - (rdf:Property) \n  v13 - (rdfs:Resource) \n  v19 짧 (rdf:Property) \n  v9 의미 (rdfs:Resource) \n  v21 - (rdf:Property) \n  v2 기록 (rdfs:Resource) \n  v1 후 (rdfs:Resource) \n  v5 ㄴ (rdfs:Resource) \n  v24 - (rdf:Property) \n  v22 - (rdf:Property) \n  v3 성장 (rdfs:Class|rdfs:Resource) \n  v8 경기 (rdfs:Resource) \n  v17 는 (rdf:Property) \n  v15 - (rdfs:Resource) \n  v25 - (rdf:Property) \n  v23 - (rdf:Property) \n  v10 경제 (rdfs:Class|rdfs:Resource) \n  v18 기록 (rdf:Property) \n  v4 짧 (rdfs:Resource) \n  v14 - (rdfs:Resource) \n  v6 에 (rdfs:Resource) \n  v26 - (rdf:Property) \n  \n Score: 0.5454545454545454",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2141,6 +2719,23 @@
           "string": "동명성왕(東明聖王) 또는 추모대왕(鄒牟王, 기원전 58년 ~ 기원전 19년 음력 9월)은 고구려의 개국 시조이자 초대 군주(재위: 기원전 37년 ~ 기원전 19년)이다. 부여의 금와왕 재위 시 금와왕의 아들 대소에 의해 핍박받던 주몽은 박해를 피해 남으로 내려와 고구려를 건국하였다.[1]",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(ㄴ-2,건국-1) \n SBJ(은-3,ㄴ-2) \n ARG0(건국-1,ㄴ-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(ㄴ-2,RESOURCE-4) \n 건국(ㄴ-2,RESOURCE-5) \n REL(ㄴ-2,건국/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2  ?v9  ?v1 ; \n          ?v7  ?v4 ; \n          ?v8  ?v5 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v2 ㄴ (rdfs:Class|rdfs:Resource) \n  v1 건국 (rdfs:Resource) \n  v4 - (rdfs:Resource) \n  v8 건국 (rdf:Property) \n  v9 - (rdf:Property) \n  v7 은 (rdf:Property) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2185,6 +2780,23 @@
           "string": "독립신문(獨立新聞)은 1896년 4월 7일에 한국에서 최초로 발간된 민간 신문이자 한글, 영문판 신문이었다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(신문-2,최초-1) \n NP(신문-2,민간-3) \n SBJ(무엇-4,신문-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(신문-2,RESOURCE-5) \n REL(신문-2,최초/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2  ?v8  ?v1 ; \n          ?v7  ?v5 . \n   } \n  \n  v1 최초 (rdfs:Resource) \n  v5 - (rdfs:Resource) \n  v2 신문 (rdfs:Class|rdfs:Resource) \n  v7 THING (rdf:Property) \n  v8 - (rdf:Property) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2228,6 +2840,23 @@
           "type": "3-2",
           "string": "돌리(Dolly, 1996년 7월 5일 - 2003년 2월 14일)는 세계 최초로 체세포 복제를 통해 태어난 포유류이다. 난자에서 핵을 제거하고 성숙한 양의 젖샘세포 핵을 이식하는 방식으로 탄생시켰다. 이런 과정을 통해 만들어진 양(돌리)은 핵을 제공한 양(Finn-Dorset)와 유전적으로 동일하다. \n  \n 호돌이는 제24회 1988년서울 올림픽의 공식 마스코트이다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(돌리-2,최초-1) \n NP(돌리-2,복제-3) \n AJT(를-4,돌리-2) \n MOD(ㄴ-5,유명-6) \n CNJ(의-7,ㄴ-5) \n NP(올림픽-8,과-9) \n NP(올림픽-8,년-10) \n MOD(호돌이-11,올림픽-8) \n NP(호돌이-11,의-12) \n MOD(의-7,호돌이-11) \n NP(글자-13,의-7) \n DP(글자-13,첫-14) \n OBJ(를-4,글자-13) \n VP(여-15,를-4) \n MOD(ㄹ-16,여-15) \n SBJ(수-17,ㄹ-16) \n MOD(있-18,수-17) \n SBJ(은-19,있-18) \n ARG1(유명-6,ㄴ-5) \n ARG1(를-4,글자-13) \n ARG1(여-15,를-4) \n AUX(여-15,수-17) \n ARG1(여-15,있-18)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "수(ㄹ-16,RESOURCE-20) \n 은(HAVE-18,RESOURCE-21) \n 를(RESOURCE-22,글자-13) \n 유명(RESOURCE-23,ㄴ-5) \n 여(RESOURCE-24,HAVE-18) \n REL(돌리/NNP-2,최초/NNP-1) \n REL(를-4,돌리/NNP-2) \n REL(ㄴ-5,유명/NNP-6) \n REL(호돌이/NNP-11,올림픽/NNP-8) \n REL(의-7,호돌이/NNP-11) \n REL(ㄹ-16,여/NNP-15) \n REL(HAVE-18,수/NNP-17)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v22  ?v28  ?v13 . \n     ?v2   ?v31  ?v1 . \n     ?v18  ?v27  ?v21 . \n     ?v4   ?v32  ?v2 . \n     ?v16  ?v36  ?v15 . \n     ?v7   ?v35  ?v11 . \n     ?v23  ?v29  ?v5 . \n     ?v16  ?v26  ?v20 . \n     ?v24  ?v30  ?v18 . \n     ?v11  ?v34  ?v8 . \n     ?v18  ?v37  ?v17 . \n     ?v5   ?v33  ?v6 . \n   } \n  \n  v1 최초 (rdfs:Resource) \n  v20 - (rdfs:Resource) \n  v35 - (rdf:Property) \n  v26 수 (rdf:Property) \n  v28 를 (rdf:Property) \n  v8 올림픽 (rdfs:Resource) \n  v32 - (rdf:Property) \n  v23 - (rdfs:Resource) \n  v11 호돌이 (rdfs:Resource) \n  v16 ㄹ (rdfs:Class|rdfs:Resource) \n  v22 - (rdfs:Resource) \n  v2 돌리 (rdfs:Resource) \n  v6 유명 (rdfs:Resource) \n  v7 의 (rdfs:Class|rdfs:Resource) \n  v30 여 (rdf:Property) \n  v5 ㄴ (rdfs:Class|rdfs:Resource) \n  v36 - (rdf:Property) \n  v33 - (rdf:Property) \n  v18 HAVE (rdfs:Class|rdfs:Resource) \n  v24 - (rdfs:Resource) \n  v29 유명 (rdf:Property) \n  v27 은 (rdf:Property) \n  v15 여 (rdfs:Resource) \n  v31 - (rdf:Property) \n  v13 글자 (rdfs:Class|rdfs:Resource) \n  v17 수 (rdfs:Resource) \n  v37 - (rdf:Property) \n  v34 - (rdf:Property) \n  v21 - (rdfs:Resource) \n  v4 를 (rdfs:Class|rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -2369,6 +2998,23 @@
           "string": "기묘사화 (己卯士禍)는 1519년(중종 14) 음력 11월에 남곤(南袞), 심정(沈貞), 홍경주(洪景舟), 김전(金詮), 중종(中宗) 등이 조광조(趙光祖), 김식 등 핵심인물을 몰아내어 죽이고 혹은 귀양보낸 사건이다. \n  \n 갑자사화 (甲子士禍)는 1504년(연산군 10년) 연산군의 어머니 폐비 윤씨의 복위 문제로 인하여 일어난 사화이다. \n  \n 무오사화(戊午士禍)는 1498년 음력 7월 유자광과 연산군이 김일손 등의 신진세력인 사림파를 제거한 사화이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(발생-2,기묘사화-3) \n MOD(ㄴ-4,발생-2) \n SBJ(는-1,ㄴ-4) \n ARG0(발생-2,기묘사화-3) \n ARG1(발생-2,ㄴ-4) \n AJT(발생-6,1519-7) \n MOD(ㄴ-8,발생-6) \n SBJ(은-5,ㄴ-8) \n ARGMTMP(발생-6,1519-7) \n ARG1(발생-6,ㄴ-8) \n SBJ(발생-10,갑자-11) \n MOD(ㄴ-12,발생-10) \n SBJ(는-9,ㄴ-12) \n ARG1(발생-10,갑자-11) \n ARG1(발생-10,ㄴ-12) \n AJT(발생-14,1504-15) \n MOD(ㄴ-16,발생-14) \n SBJ(은-13,ㄴ-16) \n ARGMTMP(발생-14,1504-15) \n ARG1(발생-14,ㄴ-16) \n SBJ(발생-18,무오사화-19) \n MOD(ㄴ-20,발생-18) \n SBJ(는-17,ㄴ-20) \n ARG0(발생-18,무오사화-19) \n ARG1(발생-18,ㄴ-20) \n AJT(발생-22,1498-23) \n MOD(ㄴ-24,발생-22) \n SBJ(은-21,ㄴ-24) \n ARGMTMP(발생-22,1498-23) \n ARG1(발생-22,ㄴ-24) \n SBJ(발생-26,을사사화-27) \n MOD(ㄴ-28,발생-26) \n SBJ(는-25,ㄴ-28) \n ARG0(발생-26,을사사화-27) \n ARG1(발생-26,ㄴ-28) \n AJT(발생-30,1497-31) \n MOD(ㄴ-32,발생-30) \n SBJ(은-29,ㄴ-32) \n ARGMTMP(발생-30,1497-31) \n ARG1(발생-30,ㄴ-32)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "발생(기묘사화-3,ㄴ-4) \n 는(ㄴ-4,RESOURCE-33) \n 은(ㄴ-8,RESOURCE-34) \n 발생(갑자-11,RESOURCE-35) \n 는(ㄴ-12,RESOURCE-36) \n 은(ㄴ-16,RESOURCE-37) \n 발생(무오사화-19,RESOURCE-38) \n 는(ㄴ-20,RESOURCE-39) \n 은(ㄴ-24,RESOURCE-40) \n 발생(을사사화-27,RESOURCE-41) \n 는(ㄴ-28,RESOURCE-42) \n 은(ㄴ-32,RESOURCE-43) \n 발생(RESOURCE-44,ㄴ-8) \n 발생(RESOURCE-45,ㄴ-12) \n 발생(RESOURCE-46,ㄴ-16) \n 발생(RESOURCE-47,ㄴ-20) \n 발생(RESOURCE-48,ㄴ-24) \n 발생(RESOURCE-49,ㄴ-28) \n 발생(RESOURCE-50,ㄴ-32) \n REL(ㄴ-4,발생/NNP-2) \n REL(발생/NNP-6,1519/NNP-7) \n REL(ㄴ-8,발생/NNP-6) \n REL(ㄴ-12,발생/NNP-10) \n REL(발생/NNP-14,1504/NNP-15) \n REL(ㄴ-16,발생/NNP-14) \n REL(ㄴ-20,발생/NNP-18) \n REL(발생/NNP-22,1498/NNP-23) \n REL(ㄴ-24,발생/NNP-22) \n REL(ㄴ-28,발생/NNP-26) \n REL(발생/NNP-30,1497/NNP-31) \n REL(ㄴ-32,발생/NNP-30)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v50  ?v70  ?v32 . \n     ?v4   ?v53  ?v33 . \n     ?v6   ?v72  ?v7 . \n     ?v8   ?v73  ?v6 . \n     ?v46  ?v66  ?v16 . \n     ?v16  ?v57  ?v37 . \n     ?v20  ?v59  ?v39 ; \n           ?v77  ?v18 . \n     ?v45  ?v65  ?v12 . \n     ?v24  ?v79  ?v22 . \n     ?v8   ?v54  ?v34 . \n     ?v49  ?v69  ?v28 . \n     ?v19  ?v58  ?v38 . \n     ?v32  ?v63  ?v43 . \n     ?v22  ?v78  ?v23 . \n     ?v12  ?v56  ?v36 . \n     ?v14  ?v75  ?v15 . \n     ?v47  ?v67  ?v20 . \n     ?v27  ?v61  ?v41 . \n     ?v16  ?v76  ?v14 . \n     ?v24  ?v60  ?v40 . \n     ?v4   ?v71  ?v2 . \n     ?v3   ?v52  ?v4 . \n     ?v11  ?v55  ?v35 . \n     ?v30  ?v81  ?v31 . \n     ?v32  ?v82  ?v30 . \n     ?v28  ?v62  ?v42 . \n     ?v48  ?v68  ?v24 . \n     ?v44  ?v64  ?v8 . \n     ?v28  ?v80  ?v26 . \n     ?v12  ?v74  ?v10 . \n   } \n  \n  v8 ㄴ (rdfs:Class|rdfs:Resource) \n  v27 을사사화 (rdfs:Class|rdfs:Resource) \n  v18 발생 (rdfs:Resource) \n  v38 - (rdfs:Resource) \n  v44 - (rdfs:Resource) \n  v68 발생 (rdf:Property) \n  v63 은 (rdf:Property) \n  v12 ㄴ (rdfs:Class|rdfs:Resource) \n  v37 - (rdfs:Resource) \n  v45 - (rdfs:Resource) \n  v7 1519 (rdfs:Resource) \n  v28 ㄴ (rdfs:Class|rdfs:Resource) \n  v55 발생 (rdf:Property) \n  v82 - (rdf:Property) \n  v75 - (rdf:Property) \n  v4 ㄴ (rdfs:Class|rdfs:Resource) \n  v30 발생 (rdfs:Resource) \n  v40 - (rdfs:Resource) \n  v67 발생 (rdf:Property) \n  v61 발생 (rdf:Property) \n  v53 는 (rdf:Property) \n  v34 - (rdfs:Resource) \n  v16 ㄴ (rdfs:Class|rdfs:Resource) \n  v77 - (rdf:Property) \n  v23 1498 (rdfs:Resource) \n  v31 1497 (rdfs:Resource) \n  v33 - (rdfs:Resource) \n  v24 ㄴ (rdfs:Class|rdfs:Resource) \n  v76 - (rdf:Property) \n  v71 - (rdf:Property) \n  v57 은 (rdf:Property) \n  v59 는 (rdf:Property) \n  v46 - (rdfs:Resource) \n  v39 - (rdfs:Resource) \n  v66 발생 (rdf:Property) \n  v22 발생 (rdfs:Resource) \n  v35 - (rdfs:Resource) \n  v73 - (rdf:Property) \n  v11 갑자 (rdfs:Class|rdfs:Resource) \n  v47 - (rdfs:Resource) \n  v78 - (rdf:Property) \n  v3 기묘사화 (rdfs:Class|rdfs:Resource) \n  v41 - (rdfs:Resource) \n  v10 발생 (rdfs:Resource) \n  v20 ㄴ (rdfs:Class|rdfs:Resource) \n  v15 1504 (rdfs:Resource) \n  v60 은 (rdf:Property) \n  v65 발생 (rdf:Property) \n  v58 발생 (rdf:Property) \n  v32 ㄴ (rdfs:Class|rdfs:Resource) \n  v2 발생 (rdfs:Resource) \n  v42 - (rdfs:Resource) \n  v52 발생 (rdf:Property) \n  v72 - (rdf:Property) \n  v62 는 (rdf:Property) \n  v64 발생 (rdf:Property) \n  v14 발생 (rdfs:Resource) \n  v43 - (rdfs:Resource) \n  v74 - (rdf:Property) \n  v48 - (rdfs:Resource) \n  v81 - (rdf:Property) \n  v56 는 (rdf:Property) \n  v79 - (rdf:Property) \n  v69 발생 (rdf:Property) \n  v70 발생 (rdf:Property) \n  v19 무오사화 (rdfs:Class|rdfs:Resource) \n  v49 - (rdfs:Resource) \n  v80 - (rdf:Property) \n  v50 - (rdfs:Resource) \n  v36 - (rdfs:Resource) \n  v26 발생 (rdfs:Resource) \n  v6 발생 (rdfs:Resource) \n  v54 은 (rdf:Property) \n  \n Score: 0.589041095890411",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2418,6 +3064,23 @@
           "type": "1-1",
           "string": "애플(Apple Inc.)은 스티브 잡스와 스티브 워즈니악과 론 웨인이 1976년에 설립한 컴퓨터 회사이다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "CNJ(웨인-2,잡스-1) \n NP(워즈니악-3,스티브-4) \n CNJ(웨인-2,워즈니악-3) \n NP(웨인-2,로널드-5) \n SBJ(는-6,웨인-2) \n OBJ(창업-7,애플-8) \n MOD(ㄴ-9,창업-7) \n SBJ(는-6,ㄴ-9) \n ARG0(창업-7,웨인-2) \n ARG1(창업-7,애플-8) \n ARG0(창업-7,ㄴ-9)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(웨인-2,RESOURCE-10) \n 는(ㄴ-9,RESOURCE-11) \n 창업(웨인-2,RESOURCE-12) \n 창업(ㄴ-9,RESOURCE-13) \n 창업(RESOURCE-14,애플-8) \n REL(ㄴ-9,창업/NNP-7)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v9   ?v17  ?v11 ; \n           ?v19  ?v13 . \n     ?v2   ?v18  ?v12 ; \n           ?v16  ?v10 . \n     ?v14  ?v20  ?v8 . \n     ?v9   ?v21  ?v7 . \n   } \n  \n  v2 웨인 (rdfs:Class|rdfs:Resource) \n  v16 는 (rdf:Property) \n  v18 창업 (rdf:Property) \n  v13 - (rdfs:Resource) \n  v9 ㄴ (rdfs:Class|rdfs:Resource) \n  v21 - (rdf:Property) \n  v12 - (rdfs:Resource) \n  v7 창업 (rdfs:Resource) \n  v20 창업 (rdf:Property) \n  v11 - (rdfs:Resource) \n  v17 는 (rdf:Property) \n  v10 - (rdfs:Resource) \n  v14 - (rdfs:Resource) \n  v8 애플 (rdfs:Class|rdfs:Resource) \n  v19 창업 (rdf:Property) \n  \n Score: 0.6",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -2522,6 +3185,23 @@
           "type": "1-2",
           "string": "라빈드라나트 타고르(벵골어: রবীন্দ্রনাথ ঠাকুর [ɹobin̪d̪ɾonat̪ʰ ʈʰakuɹ]듣기 (도움말·정보), 1861년 5월 7일 ~ 1941년 8월 7일)는 인도의 시인이자 철학자이다. 1913년 아시아에서는 처음으로 노벨 문학상을 수상했다. \n  \n 앙드레 지드(Andre Gide, 1869년 11월 22일 ~ 1951년 2월 19일)는 프랑스의 소설가·비평가이다. 1947년 노벨 문학상을 받았다. \n  \n 펄 사이든스트리커 벅(Pearl Sydenstricker Buck, 1892년 6월 26일 ∼ 1973년 3월 6일)은 《대지의 집》 3부작을 쓴 미국의 여류 소설가이다. 1938년에는 미국의 여성 작가로서는 처음으로 노벨 문학상을 수상하였다. \n  \n 헤르만 헤세(독일어: Hermann Hesse, 1877년 7월 2일 ~ 1962년 8월 9일)는 독일계 스위스인이며, 시인, 소설가, 화가이다. 1946년에 유리알 유희로 노벨 문학상을 수상했다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(수상-2,문학-1) \n SBJ(누구-3,수상-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(AGENT-3,AGENT-3) \n AGENT(수상-2,RESOURCE-4)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2  ?v6  ?v4 .} \n  \n  v3 AGENT (rdfs:Class|rdfs:Resource) \n  v6 AGENT (rdf:Property) \n  v2 수상 (rdfs:Class|rdfs:Resource) \n  v4 - (rdfs:Resource) \n  \n Score: 0.6666666666666666",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -2663,6 +3343,23 @@
           "string": "신간회(新幹會)는 1927년 2월 15일에 사회주의, 민족주의 세력들이 결집해서 창립한 항일단체로, 1931년 5월까지 지속한 한국의 좌우합작 독립운동단체이다. 당시 창립인은 소설 《임꺽정》의 작가로 유명한 사회주의 문인인 벽초 홍명희 선생이었으며 역사학자이자 언론인 안재홍, 백관수, 독립운동가 신채호선생 등 34명이 발기인으로 이름을 올렸고, 월남 이상재선생이 초대 중앙집행위원장에 추대되었다. \n  \n 한국국민당(韓國國民黨)은 대한민국의 민족주의 정당이자 한국의 독립운동단체로 1935년 김구를 중심으로 이동녕, 이시영, 조완구, 차이석, 송병조, 김봉준, 엄항섭, 조성환 등이 함께 설립하였다. \n  \n 자립단(自立團)은 일제 강점기에 민족 운동을 위해 결성된 비밀 결사 단체이다. 방주익, 강명환등의 기독교인들이 활동하였다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(구성-2,신간-3) \n SBJ(누구-1,구성-2) \n SBJ(는-4,홍명희-5) \n MOD(단체-6,구성-7) \n MOD(단체-6,ㄴ-8) \n NP(단체-6,의-9) \n SBJ(는-4,단체-6) \n MOD(구성-11,한국-12) \n SBJ(누구-10,구성-11) \n SBJ(는-13,김구-14) \n MOD(단체-15,구성-16) \n MOD(단체-15,ㄴ-17) \n NP(단체-15,의-18) \n SBJ(는-13,단체-15) \n MOD(구성-20,자립단-21) \n SBJ(누구-19,구성-20) \n SBJ(구성-23,방주익-24) \n MOD(단체-25,구성-23) \n MOD(단체-25,ㄴ-26) \n NP(단체-25,의-27) \n SBJ(는-22,단체-25) \n MOD(구성-29,건국-30) \n SBJ(누구-28,구성-29) \n SBJ(는-31,유자명-32) \n MOD(단체-33,구성-34) \n MOD(단체-33,ㄴ-35) \n NP(단체-33,의-36) \n SBJ(는-31,단체-33)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "SELECT(AGENT-1,AGENT-1) \n SELECT(AGENT-10,AGENT-10) \n SELECT(AGENT-19,AGENT-19) \n SELECT(AGENT-28,AGENT-28) \n AGENT(구성-2,RESOURCE-37) \n 는(홍명희-5,RESOURCE-38) \n 는(단체-6,RESOURCE-39) \n AGENT(구성-11,RESOURCE-40) \n 는(김구-14,RESOURCE-41) \n 는(단체-15,RESOURCE-42) \n AGENT(구성-20,RESOURCE-43) \n 구성(방주익-24,RESOURCE-44) \n 는(단체-25,RESOURCE-45) \n AGENT(구성-29,RESOURCE-46) \n 는(유자명-32,RESOURCE-47) \n 는(단체-33,RESOURCE-48) \n REL(구성-2,신간/NNP-3) \n REL(단체-6,구성/NNP-7) \n REL(단체-6,ㄴ/NNP-8) \n REL(구성-11,한국/NNP-12) \n REL(단체-15,구성/NNP-16) \n REL(단체-15,ㄴ/NNP-17) \n REL(구성-20,자립단/NNP-21) \n REL(단체-25,구성/NNP-23) \n REL(단체-25,ㄴ/NNP-26) \n REL(구성-29,건국/NNP-30) \n REL(단체-33,구성/NNP-34) \n REL(단체-33,ㄴ/NNP-35)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v15  ?v55  ?v42 . \n     ?v11  ?v53  ?v40 . \n     ?v6   ?v64  ?v8 . \n     ?v29  ?v59  ?v46 . \n     ?v6   ?v63  ?v7 . \n     ?v25  ?v58  ?v45 ; \n           ?v69  ?v23 . \n     ?v33  ?v72  ?v34 ; \n           ?v73  ?v35 . \n     ?v11  ?v65  ?v12 . \n     ?v5   ?v51  ?v38 . \n     ?v25  ?v70  ?v26 . \n     ?v15  ?v66  ?v16 . \n     ?v14  ?v54  ?v41 . \n     ?v15  ?v67  ?v17 . \n     ?v33  ?v61  ?v48 . \n     ?v20  ?v56  ?v43 . \n     ?v24  ?v57  ?v44 . \n     ?v20  ?v68  ?v21 . \n     ?v32  ?v60  ?v47 . \n     ?v29  ?v71  ?v30 . \n     ?v2   ?v50  ?v37 . \n     ?v6   ?v52  ?v39 . \n     ?v2   ?v62  ?v3 . \n   } \n  \n  v70 - (rdf:Property) \n  v21 자립단 (rdfs:Resource) \n  v54 는 (rdf:Property) \n  v69 - (rdf:Property) \n  v56 AGENT (rdf:Property) \n  v19 AGENT (rdfs:Class|rdfs:Resource) \n  v29 구성 (rdfs:Class|rdfs:Resource) \n  v12 한국 (rdfs:Resource) \n  v38 - (rdfs:Resource) \n  v44 - (rdfs:Resource) \n  v61 는 (rdf:Property) \n  v8 ㄴ (rdfs:Resource) \n  v63 - (rdf:Property) \n  v50 AGENT (rdf:Property) \n  v37 - (rdfs:Resource) \n  v45 - (rdfs:Resource) \n  v25 단체 (rdfs:Class|rdfs:Resource) \n  v3 신간 (rdfs:Resource) \n  v2 구성 (rdfs:Class|rdfs:Resource) \n  v17 ㄴ (rdfs:Resource) \n  v55 는 (rdf:Property) \n  v7 구성 (rdfs:Resource) \n  v5 홍명희 (rdfs:Class|rdfs:Resource) \n  v68 - (rdf:Property) \n  v40 - (rdfs:Resource) \n  v58 는 (rdf:Property) \n  v64 - (rdf:Property) \n  v60 는 (rdf:Property) \n  v11 구성 (rdfs:Class|rdfs:Resource) \n  v30 건국 (rdfs:Resource) \n  v71 - (rdf:Property) \n  v24 방주익 (rdfs:Class|rdfs:Resource) \n  v46 - (rdfs:Resource) \n  v39 - (rdfs:Resource) \n  v59 AGENT (rdf:Property) \n  v66 - (rdf:Property) \n  v51 는 (rdf:Property) \n  v73 - (rdf:Property) \n  v15 단체 (rdfs:Class|rdfs:Resource) \n  v26 ㄴ (rdfs:Resource) \n  v47 - (rdfs:Resource) \n  v28 AGENT (rdfs:Class|rdfs:Resource) \n  v10 AGENT (rdfs:Class|rdfs:Resource) \n  v41 - (rdfs:Resource) \n  v6 단체 (rdfs:Class|rdfs:Resource) \n  v1 AGENT (rdfs:Class|rdfs:Resource) \n  v14 김구 (rdfs:Class|rdfs:Resource) \n  v57 구성 (rdf:Property) \n  v65 - (rdf:Property) \n  v42 - (rdfs:Resource) \n  v53 AGENT (rdf:Property) \n  v52 는 (rdf:Property) \n  v72 - (rdf:Property) \n  v34 구성 (rdfs:Resource) \n  v43 - (rdfs:Resource) \n  v62 - (rdf:Property) \n  v20 구성 (rdfs:Class|rdfs:Resource) \n  v67 - (rdf:Property) \n  v48 - (rdfs:Resource) \n  v32 유자명 (rdfs:Class|rdfs:Resource) \n  v33 단체 (rdfs:Class|rdfs:Resource) \n  v16 구성 (rdfs:Resource) \n  v35 ㄴ (rdfs:Resource) \n  v23 구성 (rdfs:Resource) \n  \n Score: 0.6",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2803,6 +3500,23 @@
           "string": "행주대첩(幸州大捷)은 임진왜란 때 행주산성에서 권율이 지휘하는 조선군과 백성들이 일본군과 싸워 크게 이긴 전투이다. \n  \n 살수 대첩(薩水大捷)은 제2차 고구려-수 전쟁을 고구려의 승리로 장식한 살수에서의 전투이다. 고구려의 수도 평양을 직공했던 수나라의 별동대가 살수에서 강을 건너 돌아오던 중 을지문덕의 습격을 받아 궤멸했다. \n  \n 한산도대첩은 임진왜란의 3대 대첩 중 하나로 1592년(선조 25) 8월 14일(음력 7월 8일) 한산도 앞바다에서 이순신 휘하의 조선 수군이 일본 수군을 크게 무찌른 해전으로, 이 전투에서 육전에서 사용하던 포위 섬멸 전술 형태인 학익진을 처음으로 펼쳤다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(지휘-2,권율-3) \n MOD(ㄴ-4,지휘-2) \n SBJ(는-1,ㄴ-4) \n ARG0(지휘-2,권율-3) \n ARG1(지휘-2,ㄴ-4) \n OBJ(지휘-6,행주-7) \n MOD(ㄴ-8,지휘-6) \n SBJ(은-5,ㄴ-8) \n ARG1(지휘-6,행주-7) \n ARG0(지휘-6,ㄴ-8) \n SBJ(지휘-10,을지문덕-11) \n MOD(ㄴ-12,지휘-10) \n SBJ(는-9,ㄴ-12) \n ARG0(지휘-10,을지문덕-11) \n ARG1(지휘-10,ㄴ-12) \n NP(대첩-14,살수-15) \n OBJ(지휘-16,대첩-14) \n MOD(ㄴ-17,지휘-16) \n SBJ(은-13,ㄴ-17) \n ARG1(지휘-16,대첩-14) \n ARG0(지휘-16,ㄴ-17) \n SBJ(지휘-19,이순신-20) \n MOD(ㄴ-21,지휘-19) \n SBJ(는-18,ㄴ-21) \n ARG0(지휘-19,이순신-20) \n ARG1(지휘-19,ㄴ-21) \n SBJ(은-22,한산-23) \n OBJ(지휘-24,전투-25) \n MOD(ㄴ-26,지휘-24) \n SBJ(은-22,ㄴ-26) \n ARG1(지휘-24,전투-25) \n ARG0(지휘-24,ㄴ-26) \n SBJ(지휘-28,김좌진-29) \n MOD(ㄴ-30,지휘-28) \n SBJ(는-27,ㄴ-30) \n ARG0(지휘-28,김좌진-29) \n ARG1(지휘-28,ㄴ-30) \n NP(전투-32,봉오-33) \n OBJ(지휘-34,전투-32) \n MOD(ㄴ-35,지휘-34) \n SBJ(은-31,ㄴ-35) \n ARG1(지휘-34,전투-32) \n ARG0(지휘-34,ㄴ-35)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "지휘(권율-3,ㄴ-4) \n 는(ㄴ-4,RESOURCE-36) \n 은(ㄴ-8,RESOURCE-37) \n 지휘(ㄴ-8,RESOURCE-38) \n 지휘(을지문덕-11,RESOURCE-39) \n 는(ㄴ-12,RESOURCE-40) \n 은(ㄴ-17,RESOURCE-41) \n 지휘(ㄴ-17,RESOURCE-42) \n 지휘(이순신-20,RESOURCE-43) \n 는(ㄴ-21,RESOURCE-44) \n 은(한산-23,RESOURCE-45) \n 은(ㄴ-26,RESOURCE-46) \n 지휘(ㄴ-26,RESOURCE-47) \n 지휘(김좌진-29,RESOURCE-48) \n 는(ㄴ-30,RESOURCE-49) \n 은(ㄴ-35,RESOURCE-50) \n 지휘(ㄴ-35,RESOURCE-51) \n 지휘(RESOURCE-52,행주-7) \n 지휘(RESOURCE-53,ㄴ-12) \n 지휘(RESOURCE-54,대첩-14) \n 지휘(RESOURCE-55,ㄴ-21) \n 지휘(RESOURCE-56,전투-25) \n 지휘(RESOURCE-57,ㄴ-30) \n 지휘(RESOURCE-58,전투-32) \n REL(ㄴ-4,지휘/NNP-2) \n REL(ㄴ-8,지휘/NNP-6) \n REL(ㄴ-12,지휘/NNP-10) \n REL(ㄴ-17,지휘/NNP-16) \n REL(ㄴ-21,지휘/NNP-19) \n REL(ㄴ-26,지휘/NNP-24) \n REL(ㄴ-30,지휘/NNP-28) \n REL(ㄴ-35,지휘/NNP-34)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v30  ?v74  ?v49 . \n     ?v17  ?v67  ?v42 . \n     ?v35  ?v76  ?v51 . \n     ?v26  ?v72  ?v47 . \n     ?v8   ?v62  ?v37 . \n     ?v21  ?v69  ?v44 . \n     ?v8   ?v85  ?v6 . \n     ?v11  ?v64  ?v39 . \n     ?v55  ?v80  ?v21 . \n     ?v12  ?v65  ?v40 . \n     ?v29  ?v73  ?v48 . \n     ?v4   ?v84  ?v2 . \n     ?v17  ?v87  ?v16 . \n     ?v23  ?v70  ?v45 . \n     ?v4   ?v61  ?v36 . \n     ?v56  ?v81  ?v25 . \n     ?v52  ?v77  ?v7 . \n     ?v30  ?v90  ?v28 . \n     ?v8   ?v63  ?v38 . \n     ?v26  ?v71  ?v46 . \n     ?v54  ?v79  ?v14 . \n     ?v17  ?v66  ?v41 . \n     ?v35  ?v75  ?v50 . \n     ?v53  ?v78  ?v12 . \n     ?v3   ?v60  ?v4 . \n     ?v35  ?v91  ?v34 . \n     ?v20  ?v68  ?v43 . \n     ?v21  ?v88  ?v19 . \n     ?v58  ?v83  ?v32 . \n     ?v26  ?v89  ?v24 . \n     ?v57  ?v82  ?v30 . \n     ?v12  ?v86  ?v10 . \n   } \n  \n  v8 ㄴ (rdfs:Class|rdfs:Resource) \n  v67 지휘 (rdf:Property) \n  v51 - (rdfs:Resource) \n  v17 ㄴ (rdfs:Class|rdfs:Resource) \n  v38 - (rdfs:Resource) \n  v44 - (rdfs:Resource) \n  v24 지휘 (rdfs:Resource) \n  v61 는 (rdf:Property) \n  v11 을지문덕 (rdfs:Class|rdfs:Resource) \n  v88 - (rdf:Property) \n  v20 이순신 (rdfs:Class|rdfs:Resource) \n  v70 은 (rdf:Property) \n  v30 ㄴ (rdfs:Class|rdfs:Resource) \n  v12 ㄴ (rdfs:Class|rdfs:Resource) \n  v37 - (rdfs:Resource) \n  v45 - (rdfs:Resource) \n  v35 ㄴ (rdfs:Class|rdfs:Resource) \n  v2 지휘 (rdfs:Resource) \n  v81 지휘 (rdf:Property) \n  v68 지휘 (rdf:Property) \n  v87 - (rdf:Property) \n  v14 대첩 (rdfs:Class|rdfs:Resource) \n  v57 - (rdfs:Resource) \n  v75 은 (rdf:Property) \n  v10 지휘 (rdfs:Resource) \n  v4 ㄴ (rdfs:Class|rdfs:Resource) \n  v58 - (rdfs:Resource) \n  v40 - (rdfs:Resource) \n  v89 - (rdf:Property) \n  v74 는 (rdf:Property) \n  v28 지휘 (rdfs:Resource) \n  v65 는 (rdf:Property) \n  v84 - (rdf:Property) \n  v52 - (rdfs:Resource) \n  v32 전투 (rdfs:Class|rdfs:Resource) \n  v25 전투 (rdfs:Class|rdfs:Resource) \n  v60 지휘 (rdf:Property) \n  v78 지휘 (rdf:Property) \n  v73 지휘 (rdf:Property) \n  v16 지휘 (rdfs:Resource) \n  v71 은 (rdf:Property) \n  v79 지휘 (rdf:Property) \n  v80 지휘 (rdf:Property) \n  v90 - (rdf:Property) \n  v53 - (rdfs:Resource) \n  v46 - (rdfs:Resource) \n  v39 - (rdfs:Resource) \n  v23 한산 (rdfs:Class|rdfs:Resource) \n  v85 - (rdf:Property) \n  v69 는 (rdf:Property) \n  v66 은 (rdf:Property) \n  v54 - (rdfs:Resource) \n  v47 - (rdfs:Resource) \n  v64 지휘 (rdf:Property) \n  v26 ㄴ (rdfs:Class|rdfs:Resource) \n  v41 - (rdfs:Resource) \n  v91 - (rdf:Property) \n  v7 행주 (rdfs:Class|rdfs:Resource) \n  v77 지휘 (rdf:Property) \n  v72 지휘 (rdf:Property) \n  v42 - (rdfs:Resource) \n  v43 - (rdfs:Resource) \n  v82 지휘 (rdf:Property) \n  v63 지휘 (rdf:Property) \n  v62 은 (rdf:Property) \n  v34 지휘 (rdfs:Resource) \n  v3 권율 (rdfs:Class|rdfs:Resource) \n  v48 - (rdfs:Resource) \n  v55 - (rdfs:Resource) \n  v19 지휘 (rdfs:Resource) \n  v49 - (rdfs:Resource) \n  v56 - (rdfs:Resource) \n  v29 김좌진 (rdfs:Class|rdfs:Resource) \n  v6 지휘 (rdfs:Resource) \n  v50 - (rdfs:Resource) \n  v36 - (rdfs:Resource) \n  v76 지휘 (rdf:Property) \n  v21 ㄴ (rdfs:Class|rdfs:Resource) \n  v83 지휘 (rdf:Property) \n  v86 - (rdf:Property) \n  \n Score: 0.6125",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2847,6 +3561,23 @@
           "string": "국제 통화 기금(國際通貨基金, International Monetary Fund, IMF)은 환율과 국제 수지를 감시함으로써 국제 금융 체계를 감독하는 것을 위임받은 국제 기구이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(기금-2,통화-1) \n SBJ(무엇-3,기금-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(기금-2,RESOURCE-4)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v2  ?v6  ?v4 .} \n  \n  v2 기금 (rdfs:Class|rdfs:Resource) \n  v4 - (rdfs:Resource) \n  v6 THING (rdf:Property) \n  \n Score: 0.6666666666666666",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2890,6 +3621,23 @@
           "type": "1-2",
           "string": "수에즈 운하(아랍어: قناة السويس)는 지중해와 홍해를 잇는 운하이다. 1869년 11월 17일에 개통되었다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(는-2,운하-1) \n AJT(개통-3,최초-4) \n MOD(ㄴ-5,개통-3) \n SBJ(는-2,ㄴ-5) \n ARG1(개통-3,운하-1) \n ARGMMNR(개통-3,최초-4) \n ARG1(개통-3,ㄴ-5)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(운하-1,RESOURCE-6) \n 는(ㄴ-5,RESOURCE-7) \n 개통(RESOURCE-8,운하-1) \n 개통(RESOURCE-9,ㄴ-5) \n REL(개통/NNP-3,최초/NNP-4) \n REL(ㄴ-5,개통/NNP-3)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v5  ?v12  ?v7 . \n     ?v3  ?v15  ?v4 . \n     ?v5  ?v16  ?v3 . \n     ?v8  ?v13  ?v1 . \n     ?v1  ?v11  ?v6 . \n     ?v9  ?v14  ?v5 . \n   } \n  \n  v7 - (rdfs:Resource) \n  v12 는 (rdf:Property) \n  v14 개통 (rdf:Property) \n  v16 - (rdf:Property) \n  v13 개통 (rdf:Property) \n  v4 최초 (rdfs:Resource) \n  v3 개통 (rdfs:Resource) \n  v11 는 (rdf:Property) \n  v6 - (rdfs:Resource) \n  v1 운하 (rdfs:Class|rdfs:Resource) \n  v9 - (rdfs:Resource) \n  v5 ㄴ (rdfs:Class|rdfs:Resource) \n  v15 - (rdf:Property) \n  v8 - (rdfs:Resource) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -2947,6 +3695,23 @@
           "string": "세계 교회 협의회(World Council of Churches. 약칭 WCC)는 세계적인 에큐메니컬 운동을 목적으로 하는 기독교 단체이다. 1948년에 네덜란드의 암스테르담에서 에큐메니컬 운동의 첫 총회를 시작으로 결성되었다. 본부는 스위스 제네바에 있다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(교회-2,세계-3) \n NP(협의-4,교회-2) \n SBJ(는-1,협의-4) \n MOD(ㄴ-5,조직-6) \n SBJ(는-1,ㄴ-5) \n ARG1(조직-6,협의-4) \n ARG1(조직-6,ㄴ-5) \n NP(교회-8,세계-9) \n NP(협의-10,교회-8) \n MOD(사령부-11,협의-10) \n SBJ(위치-12,사령부-11) \n MOD(ㄴ-13,위치-12) \n SBJ(는-7,ㄴ-13) \n ARG0(위치-12,사령부-11) \n ARG1(위치-12,ㄴ-13)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(협의-4,RESOURCE-14) \n 는(ㄴ-5,RESOURCE-15) \n 위치(사령부-11,RESOURCE-16) \n 는(ㄴ-13,RESOURCE-17) \n 조직(RESOURCE-18,협의-4) \n 조직(RESOURCE-19,ㄴ-5) \n 위치(RESOURCE-20,ㄴ-13) \n REL(ㄴ-5,조직/NNP-6) \n REL(사령부-11,협의/NNP-10) \n REL(ㄴ-13,위치/NNP-12)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v20  ?v28  ?v13 . \n     ?v11  ?v24  ?v16 . \n     ?v5   ?v29  ?v6 . \n     ?v19  ?v27  ?v5 . \n     ?v13  ?v25  ?v17 ; \n           ?v31  ?v12 . \n     ?v18  ?v26  ?v4 . \n     ?v4   ?v22  ?v14 . \n     ?v5   ?v23  ?v15 . \n     ?v11  ?v30  ?v10 . \n   } \n  \n  v27 조직 (rdf:Property) \n  v20 - (rdfs:Resource) \n  v12 위치 (rdfs:Resource) \n  v10 협의 (rdfs:Resource) \n  v13 ㄴ (rdfs:Class|rdfs:Resource) \n  v19 - (rdfs:Resource) \n  v25 는 (rdf:Property) \n  v16 - (rdfs:Resource) \n  v6 조직 (rdfs:Resource) \n  v31 - (rdf:Property) \n  v18 - (rdfs:Resource) \n  v4 협의 (rdfs:Class|rdfs:Resource) \n  v30 - (rdf:Property) \n  v22 는 (rdf:Property) \n  v28 위치 (rdf:Property) \n  v11 사령부 (rdfs:Class|rdfs:Resource) \n  v15 - (rdfs:Resource) \n  v5 ㄴ (rdfs:Class|rdfs:Resource) \n  v17 - (rdfs:Resource) \n  v23 는 (rdf:Property) \n  v26 조직 (rdf:Property) \n  v14 - (rdfs:Resource) \n  v29 - (rdf:Property) \n  v24 위치 (rdf:Property) \n  \n Score: 0.5833333333333334",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -2990,6 +3755,23 @@
           "type": "1-2",
           "string": "세종특별자치시(世宗特別自治市)는 대한민국 중부에 있는 특별자치시이다. 옛 충청남도 연기군 전체와 공주시 일부(현 장군면), 충청북도 청원군 일부(현 부강면)를 편입하여 2012년 7월 1일에 출범하였다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(ㄴ-2,출범-3) \n SBJ(는-1,ㄴ-2) \n ARG1(출범-3,ㄴ-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(ㄴ-2,RESOURCE-4) \n 출범(RESOURCE-5,ㄴ-2) \n REL(ㄴ-2,출범/NNP-3)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v5  ?v8  ?v2 . \n     ?v2  ?v7  ?v4 ; \n          ?v9  ?v3 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v2 ㄴ (rdfs:Class|rdfs:Resource) \n  v3 출범 (rdfs:Resource) \n  v7 는 (rdf:Property) \n  v4 - (rdfs:Resource) \n  v9 - (rdf:Property) \n  v8 출범 (rdf:Property) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
         }
       ]
     },
@@ -3143,6 +3925,23 @@
           "string": "오군영(五軍營)은 임진왜란을 계기로 설치된 조선의 수도와 그 일대를 방어하기 위해 조직된 훈련도감(訓鍊都監), 어영청(御營廳), 금위영(禁衛營), 총융청(摠戎廳), 수어청(守禦廳)의 5개 군영(軍營)을 말한다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "MOD(군영-2,속하-1) \n SBJ(무엇-3,군영-2) \n ARG1(속하-1,군영-2)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "THING(군영-2,RESOURCE-4) \n 속하(RESOURCE-5,군영-2) \n REL(군영-2,속하/NNP-1)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v5  ?v8  ?v2 . \n     ?v2  ?v9  ?v1 ; \n          ?v7  ?v4 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v7 THING (rdf:Property) \n  v8 속하 (rdf:Property) \n  v4 - (rdfs:Resource) \n  v2 군영 (rdfs:Class|rdfs:Resource) \n  v9 - (rdf:Property) \n  v1 속하 (rdfs:Resource) \n  \n Score: 0.5714285714285714",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -3277,6 +4076,23 @@
           "string": "제2차 세계 대전(한자: 第二次世界大戰, 영어: Second World War 또는 World War II)은 1939년 9월 1일부터 1945년 9월 2일까지 치러진, 인류 역사상 가장 많은 인명 피해와 재산 피해를 남긴 가장 파괴적인 전쟁이다. \n  \n 노르망디 상륙 작전은 1944년 6월 6일부터 1944년 7월 중순까지 이어진 전투이다. \n  \n 진주만 공격(한국 한자: 眞珠灣攻擊, 일본어: 真珠湾攻撃 しんじゅわんこうげき, 영어: Attack on Pearl Harbor)은 1941년 12월 7일 아침, 일본 제국 해군 비행기들이 미국 하와이 주의 오아후 섬 진주만에 있는 미국군 기지에 가한 기습 공격이다. \n  \n 홀로코스트(Holocaust, 그리스어 hólos(전체)+kaustós(타다)에서 유래) 또는 쇼아(히브리어: השואה, 이디시어: חורבן)는 제2차 세계 대전 중 아돌프 히틀러가 이끈 나치당이 독일 제국과 독일군 점령지 전반에 걸쳐 계획적으로 유태인과 슬라브족, 집시, 동성애자, 장애인, 정치범 등 약 1천1백만 명의 민간인과 전쟁포로를 학살한 사건을 의미한다.[1] \n  \n 포츠담 선언(Potsdam Declaration)은 1945년 7월 26일 미국, 영국, 중화민국, 소련이 독일의 포츠담에서 발표한 선언이다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "NP(대전-1,세계-2) \n NP(당시-3,대전-1) \n AJT(발생-4,당시-3) \n MOD(ㄴ-5,발생-4) \n SBJ(은-6,ㄴ-5) \n ARG2(발생-4,당시-3) \n ARG1(발생-4,ㄴ-5)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "은(ㄴ-5,RESOURCE-7) \n 발생(RESOURCE-8,ㄴ-5) \n REL(발생/NNP-4,당시/NNP-3) \n REL(ㄴ-5,발생/NNP-4)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v5  ?v10  ?v7 . \n     ?v8  ?v11  ?v5 . \n     ?v5  ?v13  ?v4 . \n     ?v4  ?v12  ?v3 . \n   } \n  \n  v7 - (rdfs:Resource) \n  v5 ㄴ (rdfs:Class|rdfs:Resource) \n  v10 은 (rdf:Property) \n  v12 - (rdf:Property) \n  v11 발생 (rdf:Property) \n  v13 - (rdf:Property) \n  v3 당시 (rdfs:Resource) \n  v8 - (rdfs:Resource) \n  v4 발생 (rdfs:Resource) \n  \n Score: 0.5555555555555556",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -3375,6 +4191,23 @@
           "string": "마릴린 먼로(Marilyn Monroe, 1926년 6월 1일 ~ 1962년 8월 5일)는 미국의 배우 겸 모델, 가수이다. 먼로는 1953년 작 《신사는 금발을 좋아해》에서 이른바 “백치 금발 미인”의 이미지를 만들어 내었다. 이후 1950년대 동안 《백만장자와 결혼하는 방법》, 《7년만의 외출》과 같은 영화에 출연하였다.",
           "language": "ko"
         }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(는-2,먼로-1) \n MOD(ㄴ-3,출연-4) \n SBJ(는-2,ㄴ-3) \n ARG0(출연-4,먼로-1) \n ARG1(출연-4,ㄴ-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "는(먼로-1,RESOURCE-5) \n 는(ㄴ-3,RESOURCE-6) \n 출연(먼로-1,RESOURCE-7) \n 출연(RESOURCE-8,ㄴ-3) \n REL(ㄴ-3,출연/NNP-4)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v1  ?v12  ?v7 . \n     ?v8  ?v13  ?v3 . \n     ?v3  ?v14  ?v4 . \n     ?v1  ?v10  ?v5 . \n     ?v3  ?v11  ?v6 . \n   } \n  \n  v5 - (rdfs:Resource) \n  v4 출연 (rdfs:Resource) \n  v13 출연 (rdf:Property) \n  v10 는 (rdf:Property) \n  v7 - (rdfs:Resource) \n  v14 - (rdf:Property) \n  v3 ㄴ (rdfs:Class|rdfs:Resource) \n  v1 먼로 (rdfs:Class|rdfs:Resource) \n  v11 는 (rdf:Property) \n  v6 - (rdfs:Resource) \n  v12 출연 (rdf:Property) \n  v8 - (rdfs:Resource) \n  \n Score: 0.5833333333333334",
+          "creator": "rocknrole"
+        }
       ]
     },
     {
@@ -3418,6 +4251,23 @@
           "type": "1-1",
           "string": "알자지라(아랍어: الجزيرة‎, Al Jazeera)는 카타르의 수도 도하에 세워진 아랍어와 영어의 텔레비전 방송사로, 현재 아랍권을 대표하는 방송사로 손꼽히고 있다.",
           "language": "ko"
+        }
+      ],
+      "annotations": [
+        {
+          "type": "DEP",
+          "value": "SBJ(위치-2,본사-1) \n MOD(ㄴ-3,위치-2) \n SBJ(는-4,ㄴ-3) \n ARG0(위치-2,본사-1) \n ARG1(위치-2,ㄴ-3)",
+          "creator": "ETRI"
+        },
+        {
+          "type": "SRL",
+          "value": "위치(본사-1,ㄴ-3) \n 는(ㄴ-3,RESOURCE-5) \n REL(ㄴ-3,위치/NNP-2)",
+          "creator": "rocknrole"
+        },
+        {
+          "type": "Template",
+          "value": "ASK \n WHERE \n   { ?v3  ?v9  ?v2 . \n     ?v1  ?v7  ?v3 . \n     ?v3  ?v8  ?v5 . \n   } \n  \n  v2 위치 (rdfs:Resource) \n  v8 는 (rdf:Property) \n  v5 - (rdfs:Resource) \n  v1 본사 (rdfs:Class|rdfs:Resource) \n  v3 ㄴ (rdfs:Class|rdfs:Resource) \n  v7 위치 (rdf:Property) \n  v9 - (rdf:Property) \n  \n Score: 0.7142857142857143",
+          "creator": "rocknrole"
         }
       ]
     }

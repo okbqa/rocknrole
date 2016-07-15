@@ -48,7 +48,7 @@ public class RuleTransformer_en extends RuleTransformer {
                 case when:  n.setForm("DATETIME"); graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
                 case where: n.setForm("LOCATION"); graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
                 case why:   n.setForm("REASON");   graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
-                case "wh":  n.setForm("THING");
+                case "wh":  n.setForm("THING");    graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
             }
         }
         
@@ -60,6 +60,7 @@ public class RuleTransformer_en extends RuleTransformer {
             Map<Integer,Integer> m = subgraph.getRight();
             
             graph.addEdge(new Edge(Color.SRL,m.get(1),"SELECT",m.get(1)));
+            graph.deleteEdge(new Edge(Color.SRL,m.get(2),"SELECT",m.get(2)));
             graph.delete(g);
         }
         
@@ -67,9 +68,9 @@ public class RuleTransformer_en extends RuleTransformer {
         
         String[] questionPrefixes = { "iobj(give-1,me-2) \n dobj(give-1,*-3)",
                                       "iobj(show-1,me-2) \n dobj(show-1,*-3)",
-                                      "iobj(give-1,me-2) \n det(list-4,a-5) \n dobj(give-1,list-4) \n prep(list-4,of-6) \n pobj(of-6,*-3)"
+                                      "iobj(give-1,me-2) \n det(list-4,a-5) \n dobj(give-1,list-4) \n prep(list-4,of-6) \n pobj(of-6,*-3)",
+                                      "dobj(list-1,*-3)"
                                     };
-        // TODO add: list all
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,questionPrefixes)) {
                         
             Graph g = subgraph.getLeft();
@@ -81,7 +82,7 @@ public class RuleTransformer_en extends RuleTransformer {
         
         // how many NN 
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(many-1,how-2) \n amod(*-3,many-1)")) {
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(many-1,how-2) \n MOD(*-3,many-1)")) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
@@ -91,8 +92,8 @@ public class RuleTransformer_en extends RuleTransformer {
         }
         
         // how JJ
-                
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(*-1,how-2) \n dep(BE-3,*-1) \n nsubj(BE-3,*-4)")) {
+                        
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(*-1,how-2) \n dep(BE-3,*-1) \n ARG0(BE-3,*-4)")) {
             // TODO this is probably not the only dependency structure for "how ADJ"
             
             Graph g = subgraph.getLeft();

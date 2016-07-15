@@ -53,7 +53,7 @@ public class RuleTransformer_ko extends RuleTransformer {
                 case "wh":  n.setForm("THING");
             }
         }
-        
+                
         // which NN, what NN
         
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"DP(*-1,THING-2)")) {

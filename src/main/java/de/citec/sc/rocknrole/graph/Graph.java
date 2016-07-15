@@ -193,18 +193,17 @@ public class Graph {
         return false;
     }
     
-    public Edge findEdgeBetween(Integer i1, Integer i2) {
+    public List<Edge> findEdgesBetween(Integer i1, Integer i2) {
         
-        Edge edge = null;
+        List<Edge> edges = new ArrayList<>();
         
         for (Edge e : this.getEdges()) {
              if ((e.getHead() == i1) && e.getDependent() == i2) {
-                 edge = e;
-                 break;
+                 edges.add(e);
              }
         }
         
-        return edge;
+        return edges;
     }
     
     public boolean containsEdgeBetween(Integer i1, Integer i2) {
@@ -344,7 +343,7 @@ public class Graph {
     
     @Override   
     public String toString() {
-        return toString(true);
+        return toString(false);
     }
 
     public String toString(boolean full) {
@@ -352,22 +351,16 @@ public class Graph {
         String out = "";
 
         if (full) {
-        for (int i : roots) {
-            Node r = getNode(i);
-            out += "root(ROOT-0," + r.form;
-            if (r.getPOS() != null) out += "/" + r.pos;
-            out += "-" + r.id + ")\n";
-        }}
+            out += "Root nodes: " + roots + "\n";
+        }
         
         for (Edge e : edges) {
             String head = "";
             for (Node n : nodes) { 
                  if (n.id == e.getHead()) {
                      head = n.form;
-                     if (full) {
                      if (n.getPOS() != null) head += "/" + n.getPOS(); 
                      head += "-" + n.id;
-                     }
                      break;
                  }
             }
@@ -375,13 +368,12 @@ public class Graph {
             for (Node n : nodes) { 
                  if (n.id == e.getDependent()) {
                      dpnd = n.form;
-                     if (full) {
                      if (n.getPOS() != null) dpnd += "/" + n.getPOS(); 
                      dpnd += "-" + n.id;
-                     }
                      break;
                  }
-            }            
+            }     
+            if (full) out+= e.color + ": ";
             out += e.label + "(" + head + "," + dpnd + ")";
             out += "\n"; 
         }

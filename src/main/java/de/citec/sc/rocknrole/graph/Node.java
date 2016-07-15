@@ -1,5 +1,6 @@
 package de.citec.sc.rocknrole.graph;
 
+import de.citec.sc.rocknrole.template.SlotType;
 import java.util.Objects;
 
 /**
@@ -51,6 +52,17 @@ public class Node {
     
     public void setPOS(String p) {
         pos = p;
+    }
+    
+    // Checks 
+    
+    public boolean hasProperForm() {
+        for (SlotType t : SlotType.values()) {
+            if (t.name().equals(form)) {
+                return false;
+            }
+        }
+        return true;
     }
     
     // Matching 

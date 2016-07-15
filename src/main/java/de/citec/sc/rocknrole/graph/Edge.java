@@ -1,5 +1,7 @@
 package de.citec.sc.rocknrole.graph;
 
+import java.util.Objects;
+
 /**
  *
  * @author cunger
@@ -73,6 +75,42 @@ public class Edge {
     @Override
     public String toString() {
            return " " + head + " --"+label+"--> " + dependent;
+    }
+
+    // Equals
+    
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 89 * hash + Objects.hashCode(this.color);
+        hash = 89 * hash + this.head;
+        hash = 89 * hash + this.dependent;
+        hash = 89 * hash + Objects.hashCode(this.label);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Edge other = (Edge) obj;
+        if (this.color != other.color) {
+            return false;
+        }
+        if (this.head != other.head) {
+            return false;
+        }
+        if (this.dependent != other.dependent) {
+            return false;
+        }
+        if (!Objects.equals(this.label, other.label)) {
+            return false;
+        }
+        return true;
     }
     
 }

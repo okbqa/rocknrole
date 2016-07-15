@@ -101,6 +101,10 @@ public class Template {
         countvars.add(var);
     }
     
+    public void addToBlackList(String var) {
+        blacklist.add(var);
+    }
+    
     
     // Tests 
     
@@ -163,7 +167,7 @@ public class Template {
         // delete slots that are on the blacklist
         List<Slot> blacklisted = new ArrayList<>();
         for (Slot s : slots) {
-            if (blacklist.contains(s.getForm().toLowerCase())) {
+            if (blacklist.contains(s.getVar())) {
                 blacklisted.add(s);
             }
         }

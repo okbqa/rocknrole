@@ -4,6 +4,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  *
@@ -86,8 +87,42 @@ public class Slot {
         return out;
     }
     
+    // Clone 
+    
     public Slot clone() {       
         return new Slot(var,form,type);
     }
 
+    // Equals 
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 83 * hash + Objects.hashCode(this.var);
+        hash = 83 * hash + Objects.hashCode(this.form);
+        hash = 83 * hash + Objects.hashCode(this.type);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Slot other = (Slot) obj;
+        if (!Objects.equals(this.var, other.var)) {
+            return false;
+        }
+        if (!Objects.equals(this.form, other.form)) {
+            return false;
+        }
+        if (this.type != other.type) {
+            return false;
+        }
+        return true;
+    }
+    
 }

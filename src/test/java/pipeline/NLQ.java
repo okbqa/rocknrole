@@ -29,8 +29,8 @@ public class NLQ {
         
         String language = "ko";
         
-        String file_in  = "src/main/resources/nlq/nlq1_raw.json";
-        String file_out = "src/main/resources/nlq/target/nlq1_raw.json";
+        String file_in  = "src/main/resources/nlq/nlq50_raw.json";
+        String file_out = "src/main/resources/nlq/target/nlq50_raw.json";
         
         Parser     etri  = new ETRI();
         JsonParser json  = new JsonParser();

@@ -10,52 +10,60 @@ import de.citec.sc.rocknrole.graph.Graph;
 public class RuleTransformerPipeline extends RuleTransformer {
 
     // language-specific rules
-    RuleTransformer_en      t_en      = new RuleTransformer_en();
-    RuleTransformer_ko      t_ko      = new RuleTransformer_ko();
+    RuleTransformer_en    t_en    = new RuleTransformer_en();
+    RuleTransformer_ko    t_ko    = new RuleTransformer_ko();
     
     // general, language-independent rules
-    RuleTransformer_general t_general = new RuleTransformer_general();
+    RuleTransformer_pre   t_pre   = new RuleTransformer_pre();
+    RuleTransformer_post  t_post  = new RuleTransformer_post();
     
     // final pruning rules
-    RuleTransformer_prune   t_prune   = new RuleTransformer_prune(); 
+    RuleTransformer_prune t_prune = new RuleTransformer_prune(); 
     
     
     @Override
     public Graph transform(Graph graph) {
            
-        graph.initRoots();
+        // Step 1 
         
-        // Step 1 (language-specific rules)
+        Graph g1 = t_pre.transform(graph);
         
-        Graph language_independent_graph = null;
+        if (verbose) { 
+            System.out.println("====== Step 1 (RuleTransformer_pre) =======");
+            System.out.println(g1.toString(true));
+        }
+        
+        // Step 2 (language-specific rules)
+        
+        Graph g2 = null;
         
         switch (language) {
             
-            case "en": language_independent_graph = t_en.transform(graph); break;
-            case "ko": language_independent_graph = t_ko.transform(graph); break;
+            case "en": g2 = t_en.transform(g1); break;
+            case "ko": g2 = t_ko.transform(g1); break;
         }
         
         if (verbose) { 
-            System.out.println("====== Step 1 (" + language + ") =======");
-            System.out.println(language_independent_graph.toString(true));
+            System.out.println("====== Step 2 (RuleTransformer_" + language + ") =======");
+            System.out.println(g2.toString(true));
         }
         
-        // Step 2 (general, language-independent rules)
+        // Step 3 
         
-        Graph transformed_graph = t_general.transform(language_independent_graph);
+        Graph g3 = t_post.transform(g2);
         
         if (verbose) { 
-            System.out.println("====== Step 2 (general) =======");
-            System.out.println(transformed_graph.toString(true));
+            System.out.println("====== Step 3 (RuleTransformer_post) =======");
+            System.out.println(g3.toString(true));
         }
         
-        // Step 3 (pruning)
+        // Step 4 (pruning)
         
-        Graph pruned_graph = t_prune.transform(transformed_graph);
+        Graph pruned_graph = t_prune.transform(g3);
         
         if (verbose) { 
             System.out.println("====== Step 3 (pruning) =======");
-            System.out.println(transformed_graph.toString(true));
+            System.out.println(pruned_graph.toString(true));
         }
         
         // Finally, keep only semantic edges

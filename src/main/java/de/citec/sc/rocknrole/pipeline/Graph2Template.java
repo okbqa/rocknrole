@@ -36,12 +36,22 @@ public class Graph2Template {
             Node o = graph.getNode(e.getDependent());
             
             if (e.getLabel().equals("SELECT")) {
-                template.addProjVar(varString(s.getId()));
+                Graph remainder = graph.copy();
+                remainder.deleteEdge(e);
+                if (remainder.isConnected(s.getId())) {
+                    template.addProjVar(varString(s.getId()));
+                    template.addToBlackList(varString(s.getId()));
+                }
                 continue;
             } 
             
             if (e.getLabel().equals("SELECT_COUNT")) {
-                template.addCountVar(varString(s.getId()));
+                Graph remainder = graph.copy();
+                remainder.deleteEdge(e);
+                if (remainder.isConnected(s.getId())) {
+                    template.addCountVar(varString(s.getId()));
+                    template.addToBlackList(varString(s.getId()));
+                }
                 continue;
             } 
             
@@ -63,14 +73,7 @@ public class Graph2Template {
             add(template,s);
             
             // object
-            if (!o.getForm().equals("RESOURCE") && 
-                !o.getForm().equals("LITERAL")  && 
-                !o.getForm().equals("RESOURCEorLITERAL")) {
-                add(template,o); 
-            } 
-            if (o.getForm().equals("RESOURCE")) {
-                template.addSlot(new Slot(vo,"",SlotType.RESOURCE)); 
-            }
+            add(template,o); 
             
             // poperty 
             String label = e.getLabel();
@@ -99,16 +102,31 @@ public class Graph2Template {
     
     private void add(Template template, Node n) {
         
-        if (n.getPOS() != null && n.getPOS().startsWith("NNP")) {
-            template.addSlot(new Slot(varString(n.getId()),n.getForm(),SlotType.RESOURCE));
-        } 
-        else {        
+        String   form;
+        SlotType type;
+        
+        if (!n.hasProperForm()) {
+            form = "";
+            type = SlotType.valueOf(n.getForm());
+        } else {
+            form = n.getForm();
+            type = SlotType.CLASSorRESOURCE; 
+        }
+    
+        if (n.getPOS() != null && n.getPOS().startsWith("NNP")) { 
+            type = SlotType.RESOURCE;
+        }
+
+        if (n.getPOS() != null && (n.getPOS().equals("NN") || n.getPOS().equals("NNS"))) {
             String vs = varString(n.getId());
             String vc = varString(fresh());
             String vp = varString(fresh());
             template.addTriple(new Triple(Var.alloc(vs),Var.alloc(vp),Var.alloc(vc)));
-            template.addSlot(new Slot(vc,n.getForm(),SlotType.CLASS));
+            template.addSlot(new Slot(vc,form,SlotType.CLASS));
             template.addSlot(new Slot(vp,"",SlotType.SORTAL));
+        }
+        else {
+            template.addSlot(new Slot(varString(n.getId()),form,type));
         }
     }
     
