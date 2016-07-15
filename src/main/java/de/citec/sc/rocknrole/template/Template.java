@@ -218,8 +218,10 @@ public class Template {
     // JSON
     
     public JsonObject toJSON() {
-        
+                
         JsonObject template = new JsonObject();
+        
+        if (query == null) return template;
         
         template.add("query",new JsonPrimitive(sanityCheck(query.toString())));
         
@@ -245,6 +247,8 @@ public class Template {
     public String toString() {
         
         String out = "";
+        
+        if (query == null) return out;
         
         out += query.toString();
         for (Slot slot : slots) {

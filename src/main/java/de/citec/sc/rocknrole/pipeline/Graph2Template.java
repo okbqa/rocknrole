@@ -22,6 +22,8 @@ public class Graph2Template {
     
     public Template constructTemplate(Graph graph) {
         
+        if (graph == null) return new Template();
+        
         i = graph.getMaxId()+1;
         
         Template template = new Template();

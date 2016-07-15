@@ -28,10 +28,10 @@ public class Test_ko {
         
         List<String> test = Arrays.asList(
              
+            "한국의 수도는 무엇인가?", // what is the capital of korea
             "카이스트는 얼마나 많은 학생이 있는가?", // how many students does kaist have? (얼마나 많은 = how many)
             "어떤 강이 군산을 흐르는가?", // which rivers flow through gunsan
             "군산에 흐르는 강은 무엇인가?", // which rivers flow through gunsan          
-            "한국의 수도는 무엇인가?", // what is the capital of korea
             "구글의 설립자는 누구인가?", // who is the founder of google 
             "대한민국에 있는 도시를 나열하라", // list cities in korea 
             "대한민국의 도시를 나열하라", // list cities in korea

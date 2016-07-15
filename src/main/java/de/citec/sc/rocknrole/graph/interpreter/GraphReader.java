@@ -34,13 +34,13 @@ public class GraphReader {
             DependenciesParser parser = new DependenciesParser(tokens);
             
             ParseTree tree = parser.graph(); 
-            
+                        
             // Constructor graph from parse tree 
             
             ParseTreeWalker walker = new ParseTreeWalker();
             GraphConstructor constructor = new GraphConstructor();
             walker.walk(constructor,tree);
-            
+                        
             return(constructor.graph);
 
         } catch (Exception e) {

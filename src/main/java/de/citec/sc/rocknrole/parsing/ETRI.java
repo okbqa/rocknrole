@@ -1,6 +1,7 @@
 package de.citec.sc.rocknrole.parsing;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import java.io.BufferedOutputStream;
@@ -12,9 +13,7 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -35,11 +34,17 @@ public class ETRI implements Parser {
     String url;
     String boundaries;
     
+    JsonParser parser;
+    
+    
     public ETRI() {
 
         ip = "143.248.135.60";
         url = "http://143.248.135.187:10117/controller/service/etri_parser";
-        boundaries = "\\.|\\?";
+        
+        boundaries = "\\.|\\?"; // TODO Do something more sophisticated?
+        
+        parser = new JsonParser();
     }
 
     
@@ -49,7 +54,7 @@ public class ETRI implements Parser {
         ParseResult result = new ParseResult();
         
         int i = 0;
-        for (String sentence : text.split(boundaries)) { // TODO Do something more sophisticated here!
+        for (String sentence : text.split(boundaries)) { 
             
             i++;
             result.addSentence(i,sentence);
@@ -140,108 +145,72 @@ public class ETRI implements Parser {
 
         String stanford = "";
         
-        JsonParser parser = new JsonParser();
-
         try {
-            JsonObject json = (JsonObject) parser.parse(etriResponse);
+            JsonObject json = parser.parse(etriResponse).getAsJsonObject();
 
-            JsonArray sentences = (JsonArray) json.get("sentence");
+            JsonArray sentences = json.getAsJsonArray("sentence");
 
-            for (Object sentence : sentences) {
-                JsonObject s = (JsonObject) sentence;
-                                
-                // Morphemes
+            for (JsonElement sentence : sentences) {
+                            
+                // Word stems with POS
+               
+                Map<Integer,String> nodenames = new HashMap<>();
                 
-                ArrayList<String> morphList = new ArrayList<>();
+                Map<String,String> lemmas = new HashMap<>();
+                JsonArray morps = sentence.getAsJsonObject().getAsJsonArray("morp");
+                for (JsonElement morp : morps) {
+                     lemmas.put( morp.getAsJsonObject().getAsJsonPrimitive("lemma").getAsString(),
+                                 morp.getAsJsonObject().getAsJsonPrimitive("type").getAsString() );
+                }
+               
+                JsonArray words = sentence.getAsJsonObject().getAsJsonArray("word");
+                for (JsonElement word : words) {
+                    
+                     int id = word.getAsJsonObject().getAsJsonPrimitive("id").getAsInt()+1;
+                     String nodename = "";
+                    
+                     String text = word.getAsJsonObject().getAsJsonPrimitive("text").getAsString();
+                     for (String lemma : lemmas.keySet()) {
+                          if (text.startsWith(lemma)) {
+                              nodename += lemma;
+                          if (!lemmas.get(lemma).isEmpty()) {
+                              nodename += "/" + lemmas.get(lemma);
+                          }
+                          break;
+                          }
+                     }
+                     if (nodename.isEmpty()) nodename += text;
 
-                JsonArray morphemes = (JsonArray) s.get("morp");
-                for (Object mo : morphemes) {
-                    JsonObject mor = (JsonObject)mo;
-                    String lemma = (String) mor.get("lemma").getAsString();
-                    morphList.add(lemma);
-    		}
-
-    		int morpCnt = 0; //count the number of characters of morphemes
-    		int wordCnt = 0;
-    			
-    		Iterator<String> morphListIter = morphList.iterator();
-                
-                // Words 
-                
-                Map<String,String> wordIndex = new HashMap<>();
-                
-                JsonArray words = (JsonArray) s.get("word");
-                
-                for (Object word : words) {                	
-                    JsonObject w = (JsonObject) word;                   
-                    String id = w.get("id").toString();
-                    String wordText = (String) w.get("text").getAsString();
-                	
-                    wordCnt += wordText.length();
-
-                    String firstMorph = morphListIter.next();
-                    morpCnt += firstMorph.length();
-            		
-                    while (morpCnt < wordCnt) {
-                        String morph = morphListIter.next();
-                	morpCnt += morph.length();
-                	}
-
-                    wordIndex.put(id,firstMorph);
+                     nodenames.put(id,nodename);
                 }
                 
                 // Dependency relations 
                 
-                JsonArray dependencies = (JsonArray) s.get("dependency");
-                
-                for (Object dependency : dependencies) {
-                    JsonObject d = (JsonObject) dependency;
-                    
-                    String dpnd  = d.get("id").toString();
-                    String head  = d.get("head").toString();
-                    String label = (String) d.get("label").getAsString();
-                    if (label.contains("_")) {
-                        label = label.split("_")[1];
-                    }
-                    label = label.replace("-","");
-                    
-                    if (head.equals("-1")) continue;
-                    
-                    stanford += "\n" + label + "(" + wordIndex.get(head) + "-" + head + "," 
-                                                   + wordIndex.get(dpnd) + "-" + dpnd + ")";
-                }
-                
-                // SRLs
-                
-                JsonArray srls = (JsonArray) s.get("SRL");
-                
-                for (Object srl : srls) {
-                    JsonObject r = (JsonObject) srl;
-                    
-                    String head = r.get("word_id").toString();
-                    
-                    JsonArray arguments = (JsonArray) r.get("argument");
-                    
-                    for (Object argument : arguments) {
-                        JsonObject a = (JsonObject) argument;
-                        
-                        String role = (String) a.get("type").getAsString();
-                        role = role.replace("-","");
-
-                        String dpnd = a.get("word_id").toString();
-                        
-                        stanford += "\n" + role + "(" + wordIndex.get(head) + "-" + head + ","
-                                                      + wordIndex.get(dpnd) + "-" + dpnd + ")";
-                    }
+                JsonArray dependencies = sentence.getAsJsonObject().getAsJsonArray("dependency");
+                for (JsonElement dependency : dependencies) {
+                     int    dpnd  = dependency.getAsJsonObject().getAsJsonPrimitive("id").getAsInt()+1;
+                     int    head  = dependency.getAsJsonObject().getAsJsonPrimitive("head").getAsInt()+1;
+                     String label = dependency.getAsJsonObject().getAsJsonPrimitive("label").getAsString();
+                     if (label.contains("_")) label = label.split("_")[1];
+                     
+                     if (nodenames.containsKey(dpnd)) {
+                         if (head == -1) { 
+                             stanford += "root(ROOT-0," 
+                                      + nodenames.get(dpnd) + "-" + dpnd + ")\n";
+                         } 
+                         else if (nodenames.containsKey(head)) {
+                             stanford += label + "(" + nodenames.get(head) + "-" + head 
+                                               + "," + nodenames.get(dpnd) + "-" + dpnd 
+                                               + ")\n";  
+                         }
+                     }
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
-            return null;
+            return "";
         }
-        
-        // System.out.println(stanford);
-        
+                
         return stanford.trim();
     }
 }
