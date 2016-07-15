@@ -1,7 +1,6 @@
 package de.citec.sc.rocknrole.transforming;
 
 import de.citec.sc.rocknrole.graph.*;
-import de.citec.sc.rocknrole.graph.Edge.Color;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;

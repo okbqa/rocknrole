@@ -48,7 +48,8 @@ public class ProcessRequest extends ServerResource {
         } catch (Exception ex) {
         }
     
-        return output.getAsString();
+        if (output == null) return "[]";
+        else return output.toString();
     }
     
 }
