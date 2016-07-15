@@ -59,33 +59,16 @@ public class RuleTransformerPipeline extends RuleTransformer {
         
         // Step 4 (pruning)
         
-        Graph pruned_graph = t_prune.transform(g3);
+        Graph g4 = t_prune.transform(g3);
         
         if (verbose) { 
             System.out.println("====== Step 3 (pruning) =======");
-            System.out.println(pruned_graph.toString(true));
-        }
-        
-        // Finally, keep only semantic edges
-        
-        Graph srl = new Graph();
-        
-        for (Edge e : pruned_graph.getEdges()) {
-             if (e.getColor() == Edge.Color.SRL) {
-                 srl.addEdge(e);
-                 srl.addNode(pruned_graph.getNode(e.getHead()));
-                 srl.addNode(pruned_graph.getNode(e.getDependent()));
-             }
-        }
-        
-        if (verbose) { 
-            System.out.println("====== Final graph =======");
-            System.out.println(srl.toString(true));
+            System.out.println(g4.toString(true));
         }
         
         // Done
         
-        return srl;
+        return g4;
         
     }
     

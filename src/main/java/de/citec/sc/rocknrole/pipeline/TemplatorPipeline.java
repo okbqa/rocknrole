@@ -43,14 +43,14 @@ public class TemplatorPipeline {
         output.add(t.toJSON());
         
         if (verbose) {
-            System.out.println("\n----------Template-----------");
+            System.out.println("\n----------Template-----------\n");
             System.out.println(t.toString());
         }
         
         // Done.
         
         if (verbose) {
-            System.out.println("\n----------Final JSON Output-----------");
+            System.out.println("\n----------Final JSON Output-----------\n");
             System.out.println(output.toString());
         }
         

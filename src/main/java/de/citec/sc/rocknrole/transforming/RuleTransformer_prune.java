@@ -12,13 +12,21 @@ public class RuleTransformer_prune extends RuleTransformer {
 
         
     @Override
-    public Graph transform(Graph g_in) {
+    public Graph transform(Graph graph) {
         
-        Graph graph = g_in.copy();
+        Graph g = new Graph();
                 
-        // TODO
+        // Keep only semantic edges
+                
+        for (Edge e : graph.getEdges()) {
+             if (e.getColor() == Edge.Color.SRL) {
+                 g.addEdge(e);
+                 g.addNode(graph.getNode(e.getHead()));
+                 g.addNode(graph.getNode(e.getDependent()));
+             }
+        }
         
-        return graph;
+        return g;
     }
     
     private List<Pair<Graph,Map<Integer,Integer>>> getSubgraphs(Graph graph, String regex) {
