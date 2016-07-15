@@ -16,11 +16,7 @@ public class RuleTransformer_general extends RuleTransformer {
     public Graph transform(Graph g_in) {
         
         Graph graph = g_in.copy();
-        
-        if (verbose) System.out.println("\n-------RuleTransformer_general.java--------");
-        if (verbose) System.out.println("\nInput graph:\n" + graph.toString());
-        
-        
+
         // Collapsing nodes
         
         String[] compoundLabels = {"nn","number","mwe","compound"};
@@ -42,6 +38,8 @@ public class RuleTransformer_general extends RuleTransformer {
             
             switch (e.getLabel()) {
                 
+                // Stanford dependencies
+                
                 case "nsubj":     e.setLabel("ARG0"); e.setColor(Edge.Color.SRL); break;
                 case "dobj":      e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
                 case "iobj":      e.setLabel("ARG2"); e.setColor(Edge.Color.SRL); break;
@@ -50,7 +48,15 @@ public class RuleTransformer_general extends RuleTransformer {
                 case "nsubjpass": e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
                 case "det":       e.setLabel("SPEC"); e.setColor(Edge.Color.DEP); break;
                 case "amod":      e.setLabel("MOD");  e.setColor(Edge.Color.SRL); break;
-                case "poss":      e.setLabel("REL");  e.setColor(Edge.Color.SRL); break;                
+                case "poss":      e.setLabel("REL");  e.setColor(Edge.Color.SRL); break;
+                  
+                // ETRI dependencies
+                    
+                case "AJT":       e.setLabel("MOD");  e.setColor(Edge.Color.SRL); break;
+                case "SBJ":       e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
+                case "OBJ":       e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
+                case "ARG0":      e.setColor(Edge.Color.SRL); break;
+                case "ARG1":      e.setColor(Edge.Color.SRL); break;
             }
         }
         
@@ -124,6 +130,18 @@ public class RuleTransformer_general extends RuleTransformer {
             graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"REL",m.get(2)));
             graph.delete(g);
         }
+        
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG1(*-1,*-2)")) {
+            // case where there is only an ARG1, but no ARG0
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            int new_n = graph.getMaxId()+1;
+            graph.addNode(new Node(new_n,"RESOURCE"));
+            graph.addEdge(new Edge(Edge.Color.SRL,new_n,graph.getNode(m.get(1)).getForm(),m.get(2)));
+            graph.delete(g);
+        }
                 
         // Relative clauses 
         
@@ -164,8 +182,6 @@ public class RuleTransformer_general extends RuleTransformer {
             graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),"conjunct",m.get(1)));            
             graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),"conjunct",m.get(3)));
         }
-
-        if (verbose) System.out.println("\nOutput graph:\n" + graph.toString());
 
         return graph;
     }

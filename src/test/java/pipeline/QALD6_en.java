@@ -22,7 +22,7 @@ import de.citec.sc.rocknrole.template.Template;
  *
  * @author cunger
  */
-public class QALD {
+public class QALD6_en {
 
     
     public static void main(String[] args) {
@@ -38,7 +38,7 @@ public class QALD {
         
         Transformer transformer = new RuleTransformerPipeline();
         transformer.setLanguage(language);
-//        transformer.setVerbose(true);
+//      transformer.setVerbose(true);
         
         Graph2Template templator = new Graph2Template();
                                    
@@ -109,7 +109,7 @@ public class QALD {
             FileUtils.writeStringToFile(new File(file_out),gson.toJson(doc).replace("\\/","/").replace("\\n"," \\n "));
             
         } catch (Exception ex) {
-            Logger.getLogger(QALD.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(QALD6_en.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     

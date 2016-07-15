@@ -21,7 +21,7 @@ public class GraphReader {
     public Graph interpret(String dependency) {
         
         try {
-                        
+                                    
             // Parse dependency string
                         
             InputStream stream = new ByteArrayInputStream(dependency.getBytes(StandardCharsets.UTF_8));

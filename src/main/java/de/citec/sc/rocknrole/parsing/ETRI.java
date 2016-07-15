@@ -152,7 +152,7 @@ public class ETRI implements Parser {
                                 
                 // Morphemes
                 
-                ArrayList<String> morphList = new ArrayList<String>();
+                ArrayList<String> morphList = new ArrayList<>();
 
                 JsonArray morphemes = (JsonArray) s.get("morp");
                 for (Object mo : morphemes) {

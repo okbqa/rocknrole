@@ -68,6 +68,9 @@ public class Graph2Template {
                 !o.getForm().equals("RESOURCEorLITERAL")) {
                 add(template,o); 
             } 
+            if (o.getForm().equals("RESOURCE")) {
+                template.addSlot(new Slot(vo,"",SlotType.RESOURCE)); 
+            }
             
             // poperty 
             String label = e.getLabel();

@@ -3,7 +3,6 @@ package de.citec.sc.rocknrole.pipeline;
 import com.google.gson.JsonArray;
 import de.citec.sc.rocknrole.graph.Graph;
 import de.citec.sc.rocknrole.template.Template;
-import java.util.Set;
 
 
 /**
@@ -22,7 +21,6 @@ public class TemplatorPipeline {
                 
         nl2graph       = new NL2Graph(language);
         graph2template = new Graph2Template();
-        //rewriter     = new TemplateRewriting();
     }
     
     public void debugMode() {
@@ -48,11 +46,6 @@ public class TemplatorPipeline {
             System.out.println("\n----------Template-----------");
             System.out.println(t.toString());
         }
-        
-        // 3. Template rewriting
-        
-        // Set<Template> variations = rewriter.rewrite(t);
-    
         
         // Done.
         

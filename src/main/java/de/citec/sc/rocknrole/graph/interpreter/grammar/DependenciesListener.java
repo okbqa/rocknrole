@@ -1,5 +1,6 @@
-// Generated from Dependencies.g4 by ANTLR 4.5.2
+// Generated from Dependencies.g4 by ANTLR 4.3
 package de.citec.sc.rocknrole.graph.interpreter.grammar;
+import org.antlr.v4.runtime.misc.NotNull;
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -8,33 +9,35 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface DependenciesListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link DependenciesParser#graph}.
-	 * @param ctx the parse tree
-	 */
-	void enterGraph(DependenciesParser.GraphContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link DependenciesParser#graph}.
-	 * @param ctx the parse tree
-	 */
-	void exitGraph(DependenciesParser.GraphContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link DependenciesParser#edge}.
-	 * @param ctx the parse tree
-	 */
-	void enterEdge(DependenciesParser.EdgeContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link DependenciesParser#edge}.
-	 * @param ctx the parse tree
-	 */
-	void exitEdge(DependenciesParser.EdgeContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link DependenciesParser#node}.
 	 * @param ctx the parse tree
 	 */
-	void enterNode(DependenciesParser.NodeContext ctx);
+	void enterNode(@NotNull DependenciesParser.NodeContext ctx);
 	/**
 	 * Exit a parse tree produced by {@link DependenciesParser#node}.
 	 * @param ctx the parse tree
 	 */
-	void exitNode(DependenciesParser.NodeContext ctx);
+	void exitNode(@NotNull DependenciesParser.NodeContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link DependenciesParser#edge}.
+	 * @param ctx the parse tree
+	 */
+	void enterEdge(@NotNull DependenciesParser.EdgeContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DependenciesParser#edge}.
+	 * @param ctx the parse tree
+	 */
+	void exitEdge(@NotNull DependenciesParser.EdgeContext ctx);
+
+	/**
+	 * Enter a parse tree produced by {@link DependenciesParser#graph}.
+	 * @param ctx the parse tree
+	 */
+	void enterGraph(@NotNull DependenciesParser.GraphContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link DependenciesParser#graph}.
+	 * @param ctx the parse tree
+	 */
+	void exitGraph(@NotNull DependenciesParser.GraphContext ctx);
 }

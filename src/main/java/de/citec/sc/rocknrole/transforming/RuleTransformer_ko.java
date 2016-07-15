@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author cunger
  */
-public class RuleTransformer_en extends RuleTransformer {
+public class RuleTransformer_ko extends RuleTransformer {
 
         
     @Override
@@ -19,21 +19,23 @@ public class RuleTransformer_en extends RuleTransformer {
         
         Graph graph = g_in.copy();
 
-        final String who   = "who";
-        final String when  = "when";
-        final String where = "where";
-        final String why   = "why";
+        final String who  = "누구";
+        final String when = "언제";
+        final String why   = "왜";
+        final String where = "어디";
         
-        String[] COP  = { "be", "is", "was", "are", "were" };
-        String[] DTs  = { "the", "this", "these", "those", "that" };
-        String[] WDTs = { "what", "which" };
-        String[] HAVE = { "have", "has", "had" };
+        String[] WHO   = { "누구", "누가", "누굴" };
+        String[] WHERE = { "어디", "어디에", "어디에서", "어디서" };
+        String[] DTs   = { "이", "그", "저" };
+        String[] WDTs  = { "뭐", "뭘", "무얼", "어느", "무엇", "무슨", "어떤" };
+        String[] HAVE  = { "있" }; // ETRI parser already separates stem and endings
  
         Map<String,String> normalize = new HashMap<>();
-        for (String s : COP)  normalize.put(s,"BE");
-        for (String s : DTs)  normalize.put(s,"THIS");
-        for (String s : WDTs) normalize.put(s,"WH");
-        for (String s : HAVE) normalize.put(s,"HAVE");
+        for (String s : WHO)   normalize.put(s,"누구");
+        for (String s : WHERE) normalize.put(s,"어디");
+        for (String s : DTs)   normalize.put(s,"THIS");
+        for (String s : WDTs)  normalize.put(s,"WH");
+        for (String s : HAVE)  normalize.put(s,"HAVE");
         
         // Renaming nodes
         
@@ -54,7 +56,7 @@ public class RuleTransformer_en extends RuleTransformer {
         
         // which NN, what NN
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"det(*-1,THING-2)")) {
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"DP(*-1,THING-2)")) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
@@ -63,25 +65,13 @@ public class RuleTransformer_en extends RuleTransformer {
             graph.delete(g);
         }
         
-        // give me NN
+        // give me, show me, list all NN
         
-        String[] questionPrefixes = { "iobj(give-1,me-2) \n dobj(give-1,*-3)",
-                                      "iobj(show-1,me-2) \n dobj(show-1,*-3)",
-                                      "iobj(give-1,me-2) \n det(list-4,a-5) \n dobj(give-1,list-4) \n prep(list-4,of-6) \n pobj(of-6,*-3)"
-                                    };
-        // TODO add: list all
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,questionPrefixes)) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Color.SRL,m.get(3),"SELECT",m.get(3)));
-            graph.delete(g);
-        }
+        // TODO
         
         // how many NN 
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(many-1,how-2) \n amod(*-3,many-1)")) {
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(많-1,얼마나-2) \n MOD(*-3,많-1) \n ARG1(많-1,*-3)")) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
@@ -92,8 +82,7 @@ public class RuleTransformer_en extends RuleTransformer {
         
         // how JJ
                 
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"advmod(*-1,how-2) \n dep(BE-3,*-1) \n nsubj(BE-3,*-4)")) {
-            // TODO this is probably not the only dependency structure for "how ADJ"
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(*-1,얼마나-2)")) {
             
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();

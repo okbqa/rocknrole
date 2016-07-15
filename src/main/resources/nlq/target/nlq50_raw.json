@@ -1,0 +1,3426 @@
+{
+  "date": "2015-08-26",
+  "author": "Sejin Nam",
+  "email": "namsejin@kaist.ac.kr",
+  "questions": [
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "대한민국의 지방법원은 민사 및 형사 사건을 1심으로 재판한다. 우리 나라의 지방법원의 수는 총 몇 개인가? \n  1. 15개 \n  2. 16개 \n  3. 17개 \n  4. 18개",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 지방법원은 모두 몇 개인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 지방법원은 모두 15개인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 지방법원은 모두 16개인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 지방법원은 모두 17개인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 지방법원은 모두 18개인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "The South Korean district courts are responsible for the first trial of criminal and civil suits. How many district courts are there in South Korea? \n 1. 15 \n 2. 16 \n 3. 17 \n 4. 18",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the total number of district courts in South Korea?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "4. 18개",
+          "language": "ko"
+        },
+        {
+          "string": "4. 18",
+          "language": "en"
+        }
+      ],
+      "qtype": "How many",
+      "id": "1",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "대한민국의 지방법원은 민사 및 형사 사건을 1심으로 재판한다. 전국의 지방법원 수는 18개이며, 지방법원은 지방법원장과 대법원 규칙으로 정한 수의 판사로 구성된다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "노무현 전대통령은 몇 년도에 사망하였는가?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노무현 대통령이 사망한 년도는 언제인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노무현 대통령은 몇 년도에 사망하였는가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "In what year did former president of South Korea Roh Moo-hyun pass away?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "When was the year that President Roh Moo-hyun died?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2009년",
+          "language": "ko"
+        },
+        {
+          "string": "2009",
+          "language": "en"
+        }
+      ],
+      "qtype": "When",
+      "id": "3",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "노무현(盧武鉉, 1946년 9월 1일 ~ 2009년 5월 23일)은 대한민국의 제16대 대통령이다.[1] 2009년 5월 23일에 과거 사시 공부를 했던 정토원의 법당에 모셔진 부모와 장인의 위패에 예를 표한 뒤 그 옆의 부엉이 바위에서 투신자살하였다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "김대중 전 대통령은 한국과 동아시아의 민주주의와 인권을 위한 노력을 인정 받아 우리나라 최초로 노벨평화상을 수상하였다. 이 상을 수상한 연도는 몇 년도인가?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "김대중 대통령이 노벨 평화상을 수상한 년도는 언제인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "김대중 대통령은 몇 년도에 노벨 평화상을 수상하였는가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Former South Korean president Kim Dae-jung was the first Korean to win the Nobel Peace Prize for his efforts to establish democracy and human rights in Korea and East Asia. In what year did he win the prize?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "When was the year that President Kim Dae-jung won the Nobel Peace Prize?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2000년",
+          "language": "ko"
+        },
+        {
+          "string": "2000",
+          "language": "en"
+        }
+      ],
+      "qtype": "When",
+      "id": "4",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "김대중(金大中, 1924년 1월 6일 ~ 2009년 8월 18일)은 대한민국의 제15대 대통령이다. 대내외적으로는 민주화를 지지했으나,[2][3][4][5] 인권 향상과 남북 관계의 진전에 기여한 공로로 2000년 임기 중에 한국인 역사상 최초로 노벨 평화상을 수상하였다.[6]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "조선 후기 정조때인 1794년 착공하여 1796년 9월 10일에 준공되었다. 이것은 무엇인가? 또 이것이 현대에 중요하게 평가받는 이유는 무엇인가?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 1794년에 착공하여 1796년 9월 10일에 준공된 한국의 성곽은 무엇인가? \n / 1794년에 착공하여 1796년 9월 10일에 준공된 한국의 성곽이 중요한 이유는 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "This work was begun in 1794 during the reign of King Jeongjo of late Joseon and completed on September 10, 1796. What is this? Why is this considered to be important in contemporary times?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What was the Korean fortress begun in 1794 and completed on September 10, 1796? \n / Why is the Korean fortress begun in 1794 and completed on September 10, 1796 considered to be important?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "수원 화성 / \n 군사적 방어기능과 상업적 기능을 함께 보유하고 있으며, 실용적인 구조로 되어 있기 때문에, 동양 성곽의 백미로 평가받고 있다.",
+          "language": "ko"
+        },
+        {
+          "string": "Hwaseong Fortress / \n The reason why Hwaseong Fortress is considered to be important in contemporary times is because the Fortress with its scientific, rational and practical structures not only includes the function of military defense but the commercial function as well. Hwaseong Fortress can be called the finest among the fortresses in Asia.",
+          "language": "en"
+        }
+      ],
+      "qtype": "What \n \u0026 \n Why",
+      "id": "6",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "화성(華城)은 경기도 수원시 팔달구와 장안구에 걸쳐 있는 길이 5.4킬로미터의 성곽이다. 조선 후기 정조 때인 1794년 착공하여 1796년 9월 10일(음력)에 준공되었다. 화성은 군사적 방어기능과 상업적 기능을 함께 보유하고 있으며 실용적인 구조로 되어 있어 동양 성곽의 백미로 평가 받는다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "이 사람은 누구일까? \n  - 1925년 강제로 일본에 끌려가게 되며, 19세 때 쓰시마 번주 가문의 당주이자 백작과 정략 결혼을 한 이 사람은 그 후 1962년 귀국할 때까지 비극적인 삶을 살았다.고종황제와 귀인 양씨의 황녀이며 조선의 마지막 황녀인 이 사람은 누구일까?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "조선의 마지막 황녀는 누구인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "This person was born a princess between Emperor Gojong and the noblewoman Yang, and was known as the last princess of Joseon. She was forcibly taken to Japan in 1925, and entered into a marriage of convenience at the age of 19 with the head of the family of the feudal lord of Tsushima. She led a tragic life until she returned to Korea in 1962.  Who was this person?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "Who was the last princess of Joseon?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "덕혜옹주",
+          "language": "ko"
+        },
+        {
+          "string": "Princess Deokhye",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who",
+      "id": "12",
+      "snippets": [
+        {
+          "type": "1-3",
+          "string": "덕혜옹주(德惠翁主, 1912년 5월 25일 ~ 1989년 4월 21일)는 조선의 제26대 왕이자 대한제국의 초대 황제였던 고종과 귀인 양씨 사이에서 태어난 딸이다. 고종(高宗, 1852년(철종 3년) 9월 8일(음력 7월 25일) ~ 1919년 1월 21일)은 대한제국의 건국조, 초대 황제 광무제(光武帝, 재위: 1897년 ~ 1907년)이며, 조선의 제26대이자 마지막 임금(재위: 1863년 ~ 1897년)이다. 고종은 총 9남 4녀의 자녀가 있었지만 3남 1녀만이 성년이 될 때까지 생존하여 덕혜옹주가 사실상 유일한 딸이 되었다.[6]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음은 2차 세계대전에서의 나라와 지휘관들이다. 이들에 대한 내용으로 다음 중 잘못 짝지어진 것은? \n  1. 독일 - 아돌프 히틀러  \n  2. 미국 - 프랭클린 루스벨트 \n  3. 영국 - 대처",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 제2차 세계 대전에서 아돌프 히틀러가 이끈 국가는 어디인가? \n / 제2차 세계 대전에서 독일을 이끈 지휘관은 누구인가? \n / 제2차 세계 대전에서 프랭클린 D. 루스벨트가 이끈 국가는 어디인가? \n / 제2차 세계 대전에서 미국을 이끈 지휘관은 누구인가? \n / 제2차 세계 대전에서 영국을 이끈 지휘관은 누구인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전에서 아돌프 히틀러가 이끈 국가는 독일인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "독일은 제2차 세계 대전에서 아돌프 히틀러가 이끈 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전에서 독일을 이끈 지휘관은 아돌프 히틀러인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "아돌프 히틀러는 제2차 세계 대전에서 독일을 이끈 지휘관인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전에서 프랭클린 D. 루스벨트가 이끈 국가는 미국인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "미국은 제2차 세계 대전에서 프랭클린 D. 루스벨트가 이끈 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전에서 미국을 이끈 지휘관은 프랭클린 D. 루스벨트인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "프랭클린 D. 루스벨트는 제2차 세계 대전에서 미국을 이끈 지휘관인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전에서 영국을 이끈 지휘관은 마거릿 대처인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "마거릿 대처는 제2차 세계 대전에서 영국을 이끈 지휘관인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "The following are some of the countries and commanders that participated in World War II. Which one of the following is NOT properly matched? \n 1. Germany - Adolf Hitler  \n 2. United States - Franklin D. Roosevelt \n 3. United Kingdom - Margaret Thatcher",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What was the country commanded by Adolf Hitler in World War II? \n / Who was the commander of Germany in World War II? \n / What was the country commanded by Franklin D. Roosevelt in World War II? \n / Who was the commander of the United States in World War II?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3. 영국 - 대처",
+          "language": "ko"
+        },
+        {
+          "string": "3. United Kingdom - Margaret Thatcher",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where \n \u0026 \n Who",
+      "id": "13",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "아돌프 히틀러(독일어: Adolf Hitler, 1889년 4월 20일 ~ 1945년 4월 30일)는 독일의 나치의 지도자 이자 정치가이다. 뛰어난 웅변술과 감각의 소유자인 히틀러는 제1차 세계 대전의 패전국으로 베르사유 체제 이후 피폐해진 독일을 경제 발전으로 이끌었다. 이후 독일 민족 생존권 수립 정책을 주장하며 자를란트의 영유권 회복과 오스트리아 병합, 체코슬로바키아 점령, 폴란드 침공 등을 일으키며 제2차 세계 대전을 일으켰다. \n  \n 프랭클린 델러노 루스벨트(Franklin Delano Roosevelt, 1882년 1월 30일 ~ 1945년 4월 12일)는 미국의 32번째 대통령(재임 1933년 ~ 1945년)이다. 그는 임기 동안 대공황과 제2차 세계 대전을 모두 경험한, 20세기의 중심인물 중 한 사람이라고 할 수 있다. 루스벨트의 리더쉽은 뉴딜 정책을 통하여 미국이 대공황에서 벗어나도록 도왔으며, 제2차 세계 대전 때 연합군에 동참하여 나치 독일과 이탈리아 왕국, 그리고 일본 제국을 상대로 전쟁을 수행하여 승리로 이끌었다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "메카\u0027는 이슬람교 교조인 마호메트의 탄생지로 이슬람교 최고의 성지로 알려진 곳입니다. 그렇다면 \u0027메카\u0027는 어느 나라에 있을까요? \n  ①사우디 아라비아 ②이스라엘 ③인도 ④이라크 공화국",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "메카가 위치한 국가는 어디인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "메카가 위치한 국가는 사우디아라비아인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "사우디아라비아는 메카가 위치한 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "메카가 위치한 국가는 이스라엘인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "이스라엘은 메카가 위치한 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "메카가 위치한 국가는 인도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "인도는 메카가 위치한 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "메카가 위치한 국가는 이라크인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "이라크는 메카가 위치한 국가인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Mecca was the birthplace of the Muslim prophet Muhammad, and is the most holy land in Islam. Where is \u0027Mecca\u0027 located? \n ① Saudi Arabia ② Israel ③ India ④ Iraq",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the country in which Mecca is located?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "① 사우디 아라비아",
+          "language": "ko"
+        },
+        {
+          "string": "① Saudi Arabia",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where",
+      "id": "16",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "메카(아랍어: مكة المكرمة) 또는 마카(Makkah Al Mukarrammah)는 과거에 히자즈로 알려졌던 사우디아라비아의 마카 주의 수도이다.[2]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "삼별초가 몽골에 항쟁하며 이동한 섬이 아닌 곳은? \n  1. 거문도 2. 진도 3. 제주도",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "삼별초가 몽골에 항쟁하며 이동한 섬은 어디인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "삼별초가 몽골에 항쟁하며 이동한 섬은 거문도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거문도는 삼별초가 몽골에 항쟁하며 이동한 섬인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "삼별초가 몽골에 항쟁하며 이동한 섬은 진도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "진도는 삼별초가 몽골에 항쟁하며 이동한 섬인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "삼별초가 몽골에 항쟁하며 이동한 섬은 제주도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제주도는 삼별초가 몽골에 항쟁하며 이동한 섬인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Among the following, which is NOT the island that Sambyeolcho moved while resisting against Mongolia? \n 1. Port Hamilton 2. Jindo 3. Jejudo",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What was the island that Sambyeolcho moved to while resisting against Mongolia?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "1. 거문도",
+          "language": "ko"
+        },
+        {
+          "string": "1. Port Hamilton",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where",
+      "id": "54",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "삼별초(三別抄)는 몽골 침략기에 그에 대항하던 고려의 무장 세력이며, 원래는 하나의 단일한 단체가 아니었다. 1270년 개경 환도가 임박하자 삼별초는 몽골과 결탁한 왕에게 운명을 맡길 수 없었고, 내부에서 동요하기 시작했다. 1270년 음력 6월 초, 개경 환도를 앞둔 시점에서 삼별초의 지도자였던 배중손과 노영희 등 삼별초 지휘자들은 항전을 결정한다.[2] 삼별초는 왕족 승화후 왕온을 추대하여 황제로 삼고, 대 선단을 이끌고 진도로 도착했다. 1270년 음력 11월 이르러 삼별초군은 제주도까지 점령하였다.[2]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "고등학생도 국회의원에 출마할 수 있다. 맞으면 O, 틀리면 X 를 말하시오.",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "고등학교 학생이 대한민국의 국회의원 선거에 출마할 수 있는가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "A high school student can apply for a member of Parliament in South Korea. If it is correct, O, and if not, X.",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "Can a high school student apply for a member of parliament in South Korea?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "X",
+          "language": "ko"
+        },
+        {
+          "string": "X",
+          "language": "en"
+        }
+      ],
+      "qtype": "OX",
+      "id": "74",
+      "snippets": [
+        {
+          "type": "1-3",
+          "string": "국회의원(國會議員)은 대한민국 국회의 의원으로, 국회의 구성원이다. 국회의원 피선거권의 자격은 공직선거법이 다음과 같이 규정하고 있다. 선거일 25세 이상의 국민 (제 16조 및 제 17조).",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "1941년 태어나 1992년부터 2011년까지 조선민주주의인민공화국 국방위원장을 지낸 이 사람은?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1941년에 출생한 조선민주주의인민공화국 국방위원회 위원장은 누구인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "What is the name of the person who were born in 1941 and serviced as Chairman of the National Defense Commission in North Korea between 1992 and 2011?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "Who was the chairman of the National Defence Commission of the Democratic People\u0027s Republic of Korea born in 1941?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "김정일",
+          "language": "ko"
+        },
+        {
+          "string": "Kim Jong-il",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who",
+      "id": "84",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "김정일[2](金正日, 1941년 2월 16일 ~ 2011년 12월 17일)은 조선민주주의인민공화국의 정치인이다. 김정일은 1941년 2월 16일 김일성과 김정숙의 아들로 태어났다. 조선민주주의인민공화국 국방위원회의 위원장이었으며 김일성과 김정숙 사이의 첫째 아들이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음단어들로 연상되는 장소는? \n  - 남이장군 \n  - 가을연가 \n  - 연가지가",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 남이장군과 관련 있는 섬은 어디인가? \n / 겨울연가와 관련 있는 섬은 어디인가? \n / 연가지가와 관련 있는 섬은 어디인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "What do the following bring to mind? \n - General Nami (남이장군(南怡將軍)) \n - Winter Sonata \n - Yeongajiga(연가지가)",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What is the island related to General Nami? \n / What is the island related to Winter Sonata? \n / What is the island related to Yeongajiga?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "남이섬",
+          "language": "ko"
+        },
+        {
+          "string": "Namiseom",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where",
+      "id": "114",
+      "snippets": [
+        {
+          "type": "3-1",
+          "string": "남이섬 (南怡—섬)은 강원도 춘천시 남산면 방하리[1] 에 있는 섬이다. 남이 장군의 묘역이 있는 문화유적지이지만 유원지로 개발되었다.[2] 드라마 겨울연가에서 배용준과 최지우가 남이섬의 메타세쿼이아 가로수길과 은행나무길을 걸었다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "우리나라 현행 공휴일과 날짜를 잘못 짝지은 것은? \n  석가탄신일-음력 4월 8일, 현충일-6월 6일, 한글날-10월 10일, 추석-음력 8월 15일",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 부처님 오신 날의 날짜는 언제인가? \n / 음력 4월 8일에 해당하는 대한민국의 공휴일은 무엇인가? \n / 현충일의 날짜는 언제인가? \n / 6월 6일에 해당하는 대한민국의 공휴일은 무엇인가? \n / 한글날의 날짜는 언제인가? \n / 10월 10일에 해당하는 대한민국의 공휴일은 무엇인가? \n / 추석의 날짜는 언제인가? \n / 음력 8월 15일에 해당하는 대한민국의 공휴일은 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one is NOT correctly linked among the following? \n Buddha\u0027s Birthday - April 8 in the lunar calendar, Memorial Day - June 6, Hangul Day - October 10, Mid-Autumn Festival - August 15 in the lunar calendar",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ When is the date of Buddha\u0027s Birthday? \n / What is the public holiday celebrated in South Korea on April 8 in the lunar calendar? \n / When is the date of South Korea\u0027s Memorial Day? \n / What is the public holiday celebrated in South Korea on June 6? \n / When is the date of Chuseok? \n / What is the public holiday celebrated in South Korea on August 15 in the lunar calendar?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "한글날 - 10월 10일",
+          "language": "ko"
+        },
+        {
+          "string": "Hangul Day - October 10",
+          "language": "en"
+        }
+      ],
+      "qtype": "What \n \u0026 \n When",
+      "id": "123",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "부처님 오신 날, 대한민국의 법정 명칭으로 석가탄신일(釋迦誕辰日)은 불교에서 석가모니가 탄생한 날로, 음력 4월 8일이다. \n  \n 현충일(顯忠日)은 국가를 위해 목숨을 바친 순국선열(殉國先烈)과 전몰(戰歿) 장병들의 충렬을 기리고 얼을 위로하는 대한민국의 기념일이다. 매년 6월 6일로, 전국 각지에서 나라를 위하여 목숨을 바친 애국선열과 국군장병들의 넋을 위로하고 그 충절을 추모하는 행사를 거행한다. \n  \n 추석(秋夕)은 한가위, 중추(仲秋), 중추절(仲秋節), 가배일(嘉俳日)로 부르기도 하며, 음력 8월 15일에 치르는 명절로서 설날과 더불어 한국인에게 전통적으로 가장 중요한 명절이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "임진왜란 당시 최초로 거북선이 사용된 해전은 어느 해전입니까? \n  1. 노량해전  \n  2. 사천해전  \n  3. 한산해전  \n  4. 명량해전",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거북선이 최초로 사용된 해전은 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거북선이 최초로 사용된 해전은 노량 해전인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노량 해전은 거북선이 최초로 사용된 해전인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거북선이 최초로 사용된 해전은 사천 해전인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "사천 해전은 거북선이 최초로 사용된 해전인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거북선이 최초로 사용된 해전은 한산도 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "한산도 전투는 거북선이 최초로 사용된 해전인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거북선이 최초로 사용된 해전은 명량 해전인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "명량 해전은 거북선이 최초로 사용된 해전인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Where was the Turtle Ship used first among the following sea battles during the Japanese invasions of Korea (1592–98)? \n 1. Battle of Noryang \n 2. Battle of Sacheon (1592) \n 3. Battle of Hansan  \n 4. Battle of Myeongnyang",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What was the naval warfare in which the Turtle Ship was first used?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2. 사천해전",
+          "language": "ko"
+        },
+        {
+          "string": "2. Battle of Sacheon (1592)",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "127",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "사천 해전(泗川海戰)은 1592년 음력 5월 29일(양력 7월 8일)에 사천에서 왜수군 13척을 전멸시킨 해전으로, 이순신은 여기서 거북선을 처음으로 실전 투입했다.[1]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 나라들의 건국에 대해 잘못 짝지어진 것은? \n  1. 고려 - 왕건 \n  2. 발해 - 대조영 \n  3. 조선 - 광개토대왕",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 고려를 건국한 사람은 누구인가? \n / 왕건이 건국한 국가는 무엇인가? \n / 발해를 건국한 사람은 누구인가? \n / 대조영이 건국한 국가는 무엇인가? \n / 조선을 건국한 사람은 누구인가? \n / 광개토왕이 건국한 국가는 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one of the following is an incorrect link between the country and the founder? \n 1. Goryeo - Wang Geon \n 2. Balhae - Dae Jo-yeong \n 3. Joseon - Gwanggaeto the Great",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ Who was the founder of Goryeo? \n / What was the country that Wang Geon founded? \n / Who was the founder of Balhae? \n / What was the country that Dae Jo-yeong founded?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3. 조선 - 광개토대왕",
+          "language": "ko"
+        },
+        {
+          "string": "3. Joseon - Gwanggaeto the Great",
+          "language": "en"
+        }
+      ],
+      "qtype": "What \n \u0026 \n Who",
+      "id": "141",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "고려(高麗, 918년~1392년)는 918년 태조 왕건이 건국한 이후, 1392년 조선 왕조에게 멸망하기까지[1] 474년간(약500년)을 한반도를 지배하였던 국가이다. \n  \n 발해(渤海, 698년 ~ 926년)는 고구려를 계승하여 대조영이 건국한 국가이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 인물과 사건이 잘못 짝지어진 것은? \n  1. 이명박 - 4대강 사업 2. 노무현 - 탄핵 3. 김대중 - 노벨평화상 4. 전두환 - 새마을운동",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 이명박 대통령의 임기 중에 발생한 사건은 무엇인가? \n / 4대강 정비 사업은 어느 대통령의 임기 중에 발생한 사건인가? \n / 노무현 대통령의 임기 중에 발생한 사건은 무엇인가? \n / 탄핵은 어느 대통령의 임기 중에 발생한 사건인가? \n / 김대중 대통령의 임기 중에 발생한 사건은 무엇인가? \n / 노벨 평화상 수상은 어느 대통령의 임기 중에 발생한 사건인가? \n / 전두환 대통령의 임기 중에 발생한 사건은 무엇인가? \n / 새마을 운동은 어느 대통령의 임기 중에 발생한 사건인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one of the following is an incorrect link between a person and an event? \n 1. Lee Myung-bak - the Four Major Rivers Project 2. Roh Moo-hyun - the Impeachment 3. Kim Dae-jung - the Nobel Peace Prize 4. Chun Doo-hwan - the New Community Movement",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What was the event that occurred during Lee Myung-bak\u0027s presidential term? \n / Who was the president of South Korea that pursued the Four Major Rivers Project? \n / What was the event that occurred during Roh Moo-hyun\u0027s presidential term? \n / Who was the president of South Korea that was subject to the impeachment? \n / What was the event that occurred during Kim Dae-jung\u0027s presidential term? \n / Who was the president of South Korea that received the Nobel Peace Prize?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "4. 전두환-새마을운동",
+          "language": "ko"
+        },
+        {
+          "string": "4. Chun Doo-hwan - New Community Movement",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who \n \u0026 \n What",
+      "id": "143",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "이명박 정부가 한국형 녹색 뉴딜을 내세워 \u00274대강 살리기 사업\u0027이라고 이름 붙인 4대강 사업[1] 은 2008년 12월 29일 낙동강지구 착공식을 시작으로 2012년 4월 22일[2] 까지 22조원의 예산을 투입해 추진한 대하천 정비 사업이다. \n  \n 노무현 대통령 탄핵 소추(盧武鉉 大統領 彈劾 訴追)는 2004년 3월 12일에 국회에서 노무현 대통령의 \u0027정치적 중립성\u0027을 이유로 여당인 열린우리당이 반발하는 가운데 새천년민주당과 한나라당, 자유민주연합의 주도하에 찬성 193표, 반대 2표로 대통령을 대상으로 탄핵 소추안을 통과시킨 사건을 말한다. \n  \n 김대중(金大中, 1924년 1월 6일 ~ 2009년 8월 18일)은 대한민국의 제15대 대통령이다. 대내외적으로는 민주화를 지지했으나,[2][3][4][5] 인권 향상과 남북 관계의 진전에 기여한 공로로 2000년 임기 중에 한국인 역사상 최초로 노벨 평화상을 수상하였다.[6]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 기획재정부 산하기관이 아닌 것은? \n  1. 국세청 \n  2. 조달청 \n  3. 중소기업청 \n  4. 통계청",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 기획재정부 산하의 기관은 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 기획재정부 산하의 기관은 국세청인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "국세청은 대한민국 기획재정부 산하의 기관인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "국세청은 어느 기관의 산하인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 기획재정부 산하의 기관은 조달청인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "조달청은 대한민국 기획재정부 산하의 기관인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "조달청은 어느 기관의 산하인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 기획재정부 산하의 기관은 중소기업청인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "중소기업청은 대한민국 기획재정부 산하의 기관인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "중소기업청은 어느 기관의 산하인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국 기획재정부 산하의 기관은 통계청인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "통계청은 대한민국 기획재정부 산하의 기관인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "통계청은 어느 기관의 산하인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT belong to the Ministry of Strategy and Finance? \n 1. National Tax Service \n 2. Public Procurement Service \n 3. Small and Medium Business Administration \n 4. Statistics Korea",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the affiliated organization of the Ministry of Strategy and Finance of South Korea?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3. 중소기업청",
+          "language": "ko"
+        },
+        {
+          "string": "3. Small and Medium Business Administration",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "168",
+      "snippets": [
+        {
+          "type": "2",
+          "string": "기획재정부(企劃財政部, Ministry of Strategy and Finance, 약칭: 기재부, MOSF)는 중장기 국가발전전략수립, 경제·재정정책의 수립·총괄·조정, 예산·기금의 편성·집행·성과관리, 화폐·외환·국고·정부회계·내국세제·관세·국제금융, 공공기관 관리, 경제협력·국유재산·민간투자 및 국가채무에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 산하 기관: 국세청, 조달청, 통계청. \n  \n 국세청(國稅廳, National Tax Service, 약칭 : NTS)은 내국세의 부과‧감면 및 징수에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 상급 기관: 기획재정부. \n  \n 조달청(調達廳, Public Procurement Service, 약칭 : PPS)은 정부가 행하는 물자의 구매·공급 및 관리에 관한 사무와 정부의 주요 시설공사 계약에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 상급 기관: 기획재정부. \n  \n 통계청(統計廳, Korea National Statistical Office, 약칭 : KOSTAT)은 통계의 기준설정과 인구조사 및 각종 통계에 관한 사무를 관장하는 대한민국의 중앙행정기관이다. 상급 기관: 기획재정부.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "주요 8개국 정상회담(통칭 G8)의 주요 8개 국가의 이름은 무엇인가?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "G8에 속하는 8개의 국가들은 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "What are the main 8 countries in so-called G8, a summit meeting of main 8 countries?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What are the eight countries that belong to G8?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "독일, 러시아, 미국, 영국, 이탈리아, 일본, 캐나다, 프랑스",
+          "language": "ko"
+        },
+        {
+          "string": "Germany, Russia, the United States, the United Kingdom, Italy, Japan, Canada, France",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where",
+      "id": "169",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "주요 8개국 정상회담(통칭 G8, 지에이트, Group of Eight)은 세계 정치와 경제를 주도하는 주요 8개국(독일, 러시아, 미국, 영국, 이탈리아, 일본, 캐나다, 프랑스)의 모임이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 북한의 핵 문제 해결을 위해 2003년 8월 27일에 처음 열린 한반도 주변 6개국의 회담인 6자회담의 참가국이 아닌 나라는? 1. 대한민국 2. 미국 3. 몽골 4. 일본",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "6자 회담에 참가한 국가는 어디인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "6자 회담에 참가한 국가는 대한민국인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한민국은 6자 회담에 참가한 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "6자 회담에 참가한 국가는 미국인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "미국은 6자 회담에 참가한 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "6자 회담에 참가한 국가는 몽골인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "몽골은 6자 회담에 참가한 국가인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "6자 회담에 참가한 국가는 일본인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "일본은 6자 회담에 참가한 국가인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Among the following, which country does NOT belong to the participating countries for the first 6-party talks among 6 countries surrounding Korean Peninsula to resolve a nuclear issue with North Korea on August 27, 2003? \n 1. South Korea. 2. United States 3. Mongolia 4. Japan",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What was the country that participated in the six-party talks?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3. 몽골",
+          "language": "ko"
+        },
+        {
+          "string": "3. Mongolia",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where",
+      "id": "170",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "6자 회담(六者會談, 문화어: 륙자 회담, 영어: Six-party Talks, 중국어: 六方会谈 듣기 (도움말·정보), 일본어: 六者会合, 러시아어: Шестисторонние переговоры)은 북한의 핵 문제 해결을 위해 2003년 8월 27일에 처음 열린 한반도 주변 6개국의 회담이다. 6자회담 참가국은 대한민국, 러시아, 미국, 일본, 조선민주주의인민공화국, 중국이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 프로야구팀 중 서울을 연고로 하지 않는 팀은? \n  1. LG 트윈스 \n  2. SK 와이번스 \n  3. 두산 베어스 \n  4. 넥센 히어로즈",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "서울특별시를 연고로 하는 프로 야구 팀은 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "서울특별시를 연고로 하는 프로 야구 팀은 LG 트윈스인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "LG 트윈스는 서울특별시를 연고로 하는 프로 야구 팀인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "LG 트윈스가 연고로 하는 도시는 어디인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "서울특별시를 연고로 하는 프로 야구 팀은 SK 와이번스인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "SK 와이번스는 서울특별시를 연고로 하는 프로 야구 팀인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "SK 와이번스가 연고로 하는 도시는 어디인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "서울특별시를 연고로 하는 프로 야구 팀은 두산 베어스인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "두산 베어스는 서울특별시를 연고로 하는 프로 야구 팀인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "두산 베어스가 연고로 하는 도시는 어디인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "서울특별시를 연고로 하는 프로 야구 팀은 넥센 히어로즈인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "넥센 히어로즈는 서울특별시를 연고로 하는 프로 야구 팀인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "넥센 히어로즈가 연고로 하는 도시는 어디인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which team does NOT belong to Seoul among the following? \n 1. LG Twins \n 2. SK Wyverns \n 3. Doosan Bears \n 4. Nexen Heroes",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the professional baseball team that belongs to Seoul?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2. SK 와이번스",
+          "language": "ko"
+        },
+        {
+          "string": "2. SK Wyverns",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "180",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "LG 트윈스(LG Twins)는 대한민국 서울특별시를 연고지로 하는 한국야구위원회 소속 프로 야구단이다. \n  \n 두산 베어스(Doosan Bears)는 대한민국 서울특별시를 연고지로 하는 한국야구위원회 소속 KBO 리그 팀이다. \n  \n 넥센 히어로즈(Nexen Heroes)는 대한민국 서울특별시를 연고지로 하는 프로 야구팀이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "서울특별시 행정구역의 크기 순서대로 다음을 나열하시오 [ 강남구, 노원구, 서초구, 강서구]",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 강남구의 넓이는 무엇인가? \n / 노원구의 넓이는 무엇인가? \n / 서초구의 넓이는 무엇인가? \n / 강서구의 넓이는 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Present administrative districts in Seoul metropolitan city in order of size from the biggest to the smallest. \n [Gangnam District, Nowon District, Seocho District, Gangseo District]",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What is the area of Gangnam District? \n / What is the area of Nowon District? \n / What is the area of Seocho District? \n / What is the area of Gangseo District?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "서초구 → 강서구 → 강남구 → 노원구",
+          "language": "ko"
+        },
+        {
+          "string": "Seocho District → Gangseo District → Gangnam District → Nowon District",
+          "language": "en"
+        }
+      ],
+      "qtype": "How big",
+      "id": "182",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "강남구(江南區)는 서울특별시의 남동부에 있는 구이다. 강남구의 면적은 서울특별시 전체의 6.53%에 해당하는 39.50㎢이며, 강남구의 인구는 2012년 12월 31일을 기준으로 230,755세대, 569,997명이다.[7] \n  \n 노원구(蘆原區)는 대한민국 서울특별시 북동부에 있는 자치구이다. 노원구의 면적은 35.44㎢로 서울시 전체 면적의 5.85%를 차지한다. \n  \n 서초구(瑞草區)는 대한민국 서울특별시 남부에 있는 구이다. 면적은 약 47㎢로 서울특별시에서 가장 넓다. \n  \n 강서구(江西區)는 대한민국 서울특별시의 서쪽 끝에 있는 구이다. 강서구의 면적은 41.42㎢로 서초구에 이어서 서울특별시에서 두 번째로 넓다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 프로야구 각 팀과, 연고지가 바르게 짝지어지지 않은 것은? \n  1. NC 다이노스 - 창원 \n  2. 넥센 히어로즈 - 수원 \n  3. 두산 베어스 - 서울 \n  4. KIA 타이거즈 - 광주",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ NC 다이노스가 연고로 하는 도시는 어디인가? \n / 창원시를 연고로 하는 프로 야구 팀은 무엇인가? \n / 넥센 히어로즈가 연고로 하는 도시는 어디인가? \n / 수원시를 연고로 하는 프로 야구 팀은 무엇인가? \n / 두산 베어스가 연고로 하는 도시는 어디인가? \n / 서울특별시를 연고로 하는 프로 야구 팀은 무엇인가? \n / KIA 타이거즈가 연고로 하는 도시는 어디인가? \n / 광주광역시를 연고로 하는 프로 야구 팀은 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT link correctly between a professional baseball team and where it belongs to? \n 1. NC Dinos - Changwon \n 2. Nexen Heroes - Suwon \n 3. Doosan Bears - Seoul \n 4. KIA Tigers - Gwangju",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What is the city that NC Dinos belongs to? \n / What is the professional baseball team that belongs to Changwon? \n / What is the city that Doosan Bears belongs to? \n / What is the professional baseball team that belongs to Seoul? \n / What is the city that KIA Tigers belongs to? \n / What is the professional baseball team that belongs to Gwangju?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2. 넥센 히어로즈 - 수원",
+          "language": "ko"
+        },
+        {
+          "string": "2. Nexen Heroes - Suwon",
+          "language": "en"
+        }
+      ],
+      "qtype": "What \n \u0026 \n Where",
+      "id": "183",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "NC 다이노스(NC Dinos)는 경상남도 창원시를 연고지로 하는 한국야구위원회 소속 프로 야구 팀이다. \n  \n 두산 베어스(Doosan Bears)는 대한민국 서울특별시를 연고지로 하는 한국야구위원회 소속 KBO 리그 팀이다. \n  \n KIA 타이거즈(KIA Tigers)는 대한민국 광주광역시, 전라남도, 전라북도를 연고지로 하는 한국야구위원회 소속 프로야구 팀이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 국제연합의 주요 기구의 위치가 잘못 짝지어진 것은? \n  1. 국제사법재판소 - 네덜란드 헤이그 \n  2. 안전보장이사회 - 미국 뉴욕 \n  3. 신탁통치이사회 - 벨기에 브뤼셀",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 국제 사법 재판소가 위치한 도시는 어디인가? \n / 네덜란드 헤이그에 위치한 국제 연합 산하의 국제 기구는 무엇인가? \n / 국제 연합 안전 보장 이사회가 위치한 도시는 어디인가? \n / 미국 뉴욕에 위치한 국제 연합 산하의 국제 기구는 무엇인가? \n / 국제 연합 신탁 통치 이사회가 위치한 도시는 어디인가? \n / 벨기에 브뤼셀에 위치한 국제 연합 산하의 국제 기구는 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT link correctly between main organization of the UN and its location? \n 1. International Court of Justice - Hague, Netherlands \n 2. The Security Council - New York, U.S.A \n 3. Trusteeship Council - Brussels, Belgium",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What is the city in which the International Court of Justice is located? \n / What is the international organization of the United Nations located in The Hague, Netherlands? \n / What is the city in which the United Nations Security Council is located? \n / What is the international organization of the United Nations located in New York City, United States?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3. 신탁통치이사회 - 벨기에 브뤼셀",
+          "language": "ko"
+        },
+        {
+          "string": "3. Trusteeship Council - Brussels, Belgium",
+          "language": "en"
+        }
+      ],
+      "qtype": "What \n \u0026 \n Where",
+      "id": "185",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "국제 사법 재판소(國際司法裁判所, 영어: International Court of Justice, ICJ, 프랑스어: Cour internationale de Justice, CIJ)는 상설 국제 법원으로서 유엔헌장에 근거하여 1945년에 설립된 유엔 자체의 사법 기관이며 6개 주요 기관 중의 하나이다. 재판소는 네덜란드 헤이그의 평화궁에 소재한다. \n  \n 유엔 안전 보장 이사회 또는 국제 연합 안전 보장 이사회(國際聯合安全保障理事會, 영어: United Nations Security Council, UNSC, 프랑스어: Conseil de sécurité des Nations unies, 중국어: 联合国安全理事会, 러시아어: Совет Безопасности Организации Объединённых Наций, 스페인어: Consejo de Seguridad de las Naciones Unidas, 아랍어: مجلس أمن الأمم المتحدة)는 회원국의 평화와 안보를 담당하는 유엔의 한 기관이다. 유엔 본부(United Nations Headquarters)는 미국 뉴욕에 있는 유엔의 본부 건물이며, 1952년 완공 이래 유엔의 공식 본부로 쓰여왔다. 유엔은 3개의 부가적인 사무소를 두고 있으며, 제네바, 빈, 나이로비에 있다. 그러나 뉴욕에 있는 본부 건물 만이 총회와 안전보장이사회 같은 유엔의 주요 기관을 갖추고 있다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 선수와 운동종목의 연결이 적절하지 않은것은? \n  1. 놀런 라이언 - 야구 \n  2. 페드로 마르티네스 - 축구 \n  3. 이케르 카시야스 - 축구",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 놀런 라이언이 선수로 활동하는 스포츠는 무엇인가? \n / 페드로 마르티네스가 선수로 활동하는 스포츠는 무엇인가? \n / 이케르 카시야스가 선수로 활동하는 스포츠는 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "놀런 라이언이 선수로 활동하는 스포츠는 야구인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "야구는 놀런 라이언이 선수로 활동하는 스포츠인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "페드로 마르티네스가 선수로 활동하는 스포츠는 축구인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "축구는 페드로 마르티네스가 선수로 활동하는 스포츠인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "이케르 카시야스가 선수로 활동하는 스포츠는 축구인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "축구는 이케르 카시야스가 선수로 활동하는 스포츠인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT link correctly between a player and the related game? \n 1. Nolan Ryan - Baseball \n 2. Pedro Martínez - Football \n 3. Iker Casillas - Football",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What is the sport that Nolan Ryan plays? \n / What is the sport that Iker Casillas plays?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2. 페드로 마르티네스 - 축구",
+          "language": "ko"
+        },
+        {
+          "string": "2. Pedro Martínez - Football",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who \n \u0026 \n What",
+      "id": "186",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "린 놀런 라이언 주니어 (영어: Lynn Nolan Ryan, Jr., 1947년 1월 31일 ~ ) 는 미국의 전 메이저 리그 선수(투수)이자, 전 텍사스 레인저스의 구단주, CEO이다. 1966년부터 1993년까지 27년 동안 뉴욕 메츠, 캘리포니아 에인절스, 휴스턴 애스트로스, 텍사스 레인저스에서 활동했으며 1999년 미국 야구 명예의 전당에 98.79%의 득표율로 이름을 올렸다.[2][3] 2008년 2월에 텍사스 레인저스의 구단주로 취임했다. 2010년 8월 텍사스 레인저스가 레이 데이비스와 밥 심슨의 공동 구단주 체제로 재편되자 구단주에서 CEO로 승진했으며, 2013년 10월 18일에 CEO직에서 은퇴한다는 의사를 밝히고 야구계를 완전히 떠났다.[5] \n  \n 이케르 카시야스 페르난데스 (스페인어: Iker Casillas Fernández, 1981년 5월 20일, 스페인 모스톨레스 ~ )는 스페인의 축구 선수로, 현재 레알 마드리드와 스페인 축구 국가대표팀의 주전 골키퍼이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음의 역사적인 사건들을 순서대로 나열하시오 [ 5.18 광주 민주화 운동, 새마을 운동, 6.25, 3.1운동 ]",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 5·18 광주 민주화 운동이 발생한 년도는 언제인가? \n / 새마을 운동이 발생한 년도는 언제인가? \n / 한국 전쟁이 발생한 년도는 언제인가? \n / 3·1 운동이 발생한 년도는 언제인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "5·18 광주 민주화 운동은 몇 년도에 발생하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "새마을 운동은 몇 년도에 발생하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "한국 전쟁은 몇 년도에 발생하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "3·1 운동은 몇 년도에 발생하였는가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "List the following historic events in timely manner. \n [Gwangju Massacre, New Community Movement, Korean War, March 1st Movement]",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ When was the year that the Gwangju Uprising occurred? \n / When was the year that the New Community Movement occurred? \n / When was the year that the Korean War occurred? \n / When was the year that the March 1st Movement occurred?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3·1 운동 → 한국 전쟁 → 새마을 운동 → 5·18 광주 민주화 운동",
+          "language": "ko"
+        },
+        {
+          "string": "March 1st Movement → Korean War → New Community Movement → Gwangju Uprising",
+          "language": "en"
+        }
+      ],
+      "qtype": "How old",
+      "id": "190",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "5·18 광주 민주화 운동(五一八光州民主化運動) 혹은 광주민중항쟁(光州民衆抗爭)은 1980년 5월 18일부터 5월 27일까지 광주시민과 전라남도민이 중심이 되어, 조속한 민주 정부 수립, 전두환 보안사령관을 비롯한 신군부 세력의 퇴진 및 계엄령 철폐 등을 요구하며 전개한 대한민국의 민주화 운동이다.[3] \n  \n 새마을 운동( - 運動, 영어: Saemaul Undong, New Community Movement, New Village Movement, Saemaul Movement)은 1970년 초 대한민국 농촌의 현대화를 위해 시작되어 범국가적으로 시행된 운동이다.[1] 이 운동은 1971년 새마을 운동으로 명명되었고, 전국적으로 시행, 1975년에는 도시와 공장으로도 확대되었다. \n  \n 한국 전쟁(韓國戰爭, 표준어: 6·25 전쟁[5], 문화어: 조선 전쟁/조국해방전쟁[6], 영어: Korean War, 중국어: 朝鮮戰爭, 朝戰, 일본어: 朝鮮戦争, 러시아어: Корейская война)은 이승만 정부의 대한민국과 김일성이 내각총리였던 조선민주주의인민공화국이 각자 자기 주도의 민족통일을 이루고자 다툼이 있을 때, 38선 부근에서 간헐적으로 국지전을 벌이다가 1950년 6월 25일 새벽에 대한민국에 대한 조선민주주의인민공화국의 기습적인 침공을 감행하면서 한반도를 전장으로 하는 전면전으로 확대되다가, 1953년 7월 27일에 채결된 정전협정으로 휴전 중인 전쟁이다. \n  \n 3·1 운동(三一運動) 또는 3·1 만세 운동(三一萬歲運動)은 일제 강점기에 있던 한국인들이 일제의 지배에 항거하여 1919년 3월 1일 독립을 선언하고 비폭력 만세운동을 시작한 사건이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 월드컵 개최 년도와 나라가 잘못 짝 지어진 것은?  \n  1. 1994년 - 미국 2. 2002년 - 대한민국 3. 2010년 - 남 아프리카 공화국 4. 2014년 - 브라질",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 미국이 FIFA 월드컵을 개최한 년도는 언제인가? \n / 1994년에 FIFA 월드컵을 개최한 국가는 어디인가? \n / 대한민국이 FIFA 월드컵을 개최한 년도는 언제인가? \n / 2002년에 FIFA 월드컵을 개최한 국가는 어디인가? \n / 남아프리카 공화국이 FIFA 월드컵을 개최한 년도는 언제인가? \n / 2010년에 FIFA 월드컵을 개최한 국가는 어디인가? \n / 브라질이 FIFA 월드컵을 개최한 년도는 언제인가? \n / 2014년에 FIFA 월드컵을 개최한 국가는 어디인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT link correctly between the hosting year of World Cup game and the country?  \n 1. 1994 - U.S.A 2. 2002 - South Korea 3. 2010 - South Africa 4. 2014 - Brazil",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ When was the year that the United States hosted the FIFA World Cup? \n / What was the country that hosted the 1994 FIFA World Cup? \n / When was the year that South Africa hosted the FIFA World Cup? \n / What was the country that hosted the 2010 FIFA World Cup? \n / When was the year that Brazil hosted the FIFA World Cup? \n / What was the country that hosted the 2014 FIFA World Cup?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2. 2002년 - 대한민국",
+          "language": "ko"
+        },
+        {
+          "string": "2. 2002 - South Korea",
+          "language": "en"
+        }
+      ],
+      "qtype": "When \n \u0026 \n Where",
+      "id": "193",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "1994년 FIFA 월드컵(영어: 1994 FIFA World Cup)은 통산 15번째로 열린 FIFA 월드컵으로, 1988년에 유치 신청을 한 미국에서 1994년 6월 17일부터 7월 17일까지 개최되었다. \n  \n 2010년 FIFA 월드컵(영어: 2010 FIFA World Cup, 아프리칸스어: FIFA Sokker-Wêreldbekertoernooi in 2010)은 19번째 FIFA 월드컵이자, 아프리카에서 열린 첫 FIFA 월드컵으로, 남아프리카 공화국의 요하네스버그(경기장 두 곳), 포트엘리자베스, 음봄벨라, 케이프타운, 더반, 폴로콰네, 블룸폰테인, 프리토리아, 루스텐버그 등 총 아홉 도시의 경기장 열 곳에서 6월 11일부터 7월 11일까지 열렸다.[1] \n  \n 2014년 FIFA 월드컵(영어: 2014 FIFA World Cup, 포르투갈어: Copa do Mundo FIFA de 2014)은 2014년 6월 12일부터 7월 13일까지 브라질에서 열린 20번째 FIFA 월드컵이다.[1]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "대한수중핀수영협회의 활동을 시간 순서대로 나열하시오. \n  1. 대한체육회 정식 가입 \n  2. 사단법인 대한수중핀수영협회로 명칭 변경 \n  3. 한국스쿠버다이빙협회 개칭 \n  4. 세계수중연맹(CMAS) 가입",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 대한수중핀수영협회가 대한체육회에 가입한 년도는 언제인가? \n / 대한수중핀수영협회가 사단법인 대한수중핀수영협회로 이름을 변경한 년도는 언제인가? \n / 대한수중핀수영협회가 한국 스쿠버 다이빙 협회로 이름을 변경한 년도는 언제인가? \n / 대한수중핀수영협회가 세계 수중 연맹에 가입한 년도는 언제인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한수중핀수영협회는 몇 년도에 대한체육회에 가입하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한수중핀수영협회는 몇 년도에 사단법인 대한수중핀수영협회로 이름을 변경하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한수중핀수영협회는 몇 년도에 한국 스쿠버 다이빙 협회로 이름을 변경하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "대한수중핀수영협회는 몇 년도에 세계 수중 연맹에 가입하였는가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "List activities of the Korea Underwater Association in timely order. \n 1. Officially joined the Korea Sports Council. \n 2. Changed the name to Korea Underwater Association Corporation. \n 3. Changed the name to Korea Scuba Diving Association. \n 4. Joined Confédération Mondiale des Activités Subaquatiques (CMAS).",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ When was the year that the Korea Underwater Association joined the Korean Olympic Committee? \n / When was the year that the Korea Underwater Association changed its name to \"\"Korea Underwater Association\"\"? \n / When was the year that the Korea Underwater Association changed its name to \"\"Korea Scuba Diving Association\"\"? \n / When was the year that the Korea Underwater Association joined the Confédération Mondiale des Activités Subaquatiques?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3. 한국 스쿠버 다이빙 협회로 명칭 변경 → 4. 세계 수중 연맹 (CMAS) 가입 → 1. 대한체육회 가입 → 2. 사단법인 대한수중핀수영협회로 명칭 변경",
+          "language": "ko"
+        },
+        {
+          "string": "3. Changed the name to Korea Scuba Diving Association. → 4. Joined the Confédération Mondiale des Activités Subaquatiques (CMAS). → 1. Officially joined the Korean Olympic Committee. → 2. Changed the name to Korea Underwater Association.",
+          "language": "en"
+        }
+      ],
+      "qtype": "How old",
+      "id": "200",
+      "snippets": [
+        {
+          "type": "2",
+          "string": "대한수중핀수영협회(Korea Underwater Association, KUA)는 수중 스포츠 보급을 통한 국민체력 향상과 우수 선수 양성으로 국민체육 발전에 이바지할 목적으로 1997년 4월 7일 설립된 대한민국 문화체육관광부 소관의 사단법인이다. \n - 1973년 3월 2일 : 한국스쿠버다이빙협회 개칭 \n - 1982년 6월 5일 : 세계수중연맹(CMAS) 가입 \n - 1992년 2월 24일 : 대한체육회 정식 가입 \n - 2010년 5월 3일 : 사단법인 대한수중핀수영협회로 명칭 변경",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "국가와 해당 나라의 수도가 잘 못 짝지어진 것은? \n   1. 필리핀 - 마닐라 \n   2. 대한민국 - 서울 \n   3. 일본 - 도쿄 \n   4. 이라크 - 아부다비",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 필리핀의 수도는 어디인가? \n / 마닐라는 어느 국가의 수도인가? \n / 대한민국의 수도는 어디인가? \n / 서울은 어느 국가의 수도인가? \n / 일본의 수도는 어디인가? \n / 도쿄는 어느 국가의 수도인가? \n / 이라크의 수도는 어디인가? \n / 아부다비는 어느 국가의 수도인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT correctly link between a nation and its capital? \n 1. Philippines - Manila \n 2. South Korea - Seoul \n 3. Japan - Tokyo \n 4. Iraq - Abu Dhabi",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What is the capital city of the Philippines? \n / What is the country whose capital city is Manila? \n / What is the capital city of South Korea? \n / What is the country whose capital city is Seoul? \n / What is the capital city of Japan? \n / What is the country whose capital city is Tokyo?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "4. 이라크 - 아부다비",
+          "language": "ko"
+        },
+        {
+          "string": "4. Iraq - Abu Dhabi",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where \n \u0026 \n Where",
+      "id": "211",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "필리핀 공화국(필리핀어: Republika ng Pilipinas 레푸블리카 낭 필리피나스, 영어: Republic of the Philippines 리퍼블릭 오브 더 필리핀스[*]), 약칭 필리핀(필리핀어: Pilipinas 필리피나스, 영어: Philippines 필리핀스[*])은 서태평양에 있는 동남아시아의 섬나라이다. 수도는 마닐라이며, 공용어는 필리핀어와 영어이다. \n  \n 대한민국[듣기 (도움말·정보)], 영어: Republic of Korea)은 동아시아의 한반도 남부에 자리한 공화국이다. 서울특별시(서울特別市)는 대한민국의 수도이자 최대 도시이다. \n  \n 일본국(일본어: 日本国 にほんこく 니혼코쿠[*][2]、にっぽんこく 닛폰코쿠[*]), 약칭 일본(일본어: 日本 にほん 니혼[*]、にっぽん 닛폰[*])은 동아시아에 있는 국가이다. 도쿄 도(일본어: 東京都 とうきょうと 도쿄토[*], 동경도)는 일본의 47개 도도부현 중 하나로 메이지 시대 이후 사실상 일본의 수도이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "J. K. 롤링의 주요 저서인 해리포터의 부제를 나열하여라",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "소설 \u0027해리 포터\u0027의 부제목은 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "List the subtitle of Harry Potter, the main novel of J.K. Rowling.",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the subtitle of the novel \u0027Harry Potter\u0027?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "마법사의 돌, 비밀의 방, 아즈카반의 죄수, 불의 잔, 불사조 기사단, 혼혈왕자, 죽음의 성물",
+          "language": "ko"
+        },
+        {
+          "string": "Philosopher\u0027s Stone, Chamber of Secrets, Prisoner of Azkaban, Goblet of Fire, Order of the Phoenix, Half-Blood Prince, Deathly Hallows",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "218",
+      "snippets": [
+        {
+          "type": "2",
+          "string": "《해리 포터》(Harry Potter)는 조앤 K. 롤링이 쓴 판타지 소설이다. \n  \n 해리 포터 (소설 시리즈): \n - 《해리 포터와 마법사의 돌》 \n - 《해리 포터와 비밀의 방》 \n - 《해리 포터와 아즈카반의 죄수》 \n - 《해리 포터와 불의 잔》 \n - 《해리 포터와 불사조 기사단》 \n - 《해리 포터와 혼혈 왕자》 \n - 《해리 포터와 죽음의 성물》",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음에서 연상되는 사람은? [리드 대학교 중퇴 / 췌장암 투병 / 애플의 창업자]",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 리드 대학교를 중퇴한 사람은 누구인가? \n / 췌장암으로 투병한 사람은 누구인가? \n / 애플을 창업한 사람은 누구인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Who is associated with the following? \n [Dropping out of Reed College / Fighting against pancreatic cancer / a founder of Apple Inc.]",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ Who was the person that dropped out of Reed College? \n / Who was the person that fought against pancreatic cancer? \n / Who was the person that founded Apple Inc.?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "스티브 잡스",
+          "language": "ko"
+        },
+        {
+          "string": "Steve Jobs",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who",
+      "id": "230",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "스티븐 폴 \"\"스티브\"\" 잡스(영어: Steven Paul \"\"Steve\"\" Jobs 스티븐 폴 \"\"스티브\"\" 조브스[*], 1955년 2월 24일 ~ 2011년 10월 5일)는 미국의 기업인이었다. 1972년 리드 대학교에 다니다 1학기만 수강한 후 중퇴하였으며, 1974년에는 캘리포니아로 돌아와 아타리에서 일을 하였다. 1976년 스티브 워즈니악, 로널드 웨인과 함께 애플을 공동 창업하고, 애플 2를 통해 개인용 컴퓨터를 대중화했다. 한편 그는 2004년 무렵부터 췌장암으로 투병생활을 이어왔다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "2009년도 노벨 평화상 수상자는?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "2009년에 노벨 평화상을 수상한 사람은 누구인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Who was the winner of 2009 Nobel Peace Prize?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "Who was the winner of the 2009 Nobel Peace Prize?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "버락 오바마",
+          "language": "ko"
+        },
+        {
+          "string": "Barack Obama",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who",
+      "id": "248",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "버락 후세인 오바마 주니어(영어: Barack Hussein Obama, Jr., 문화어: 버라크 오바마, 1961년 8월 4일 ~ , 미국 하와이 주 호놀룰루 출생)는 미국의 정치인으로 제44대 대통령이다. 그리고 2009년에는 노벨 평화상을 수상하였다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "( )은 고구려 유민으로 20세에 당나라의 장군이 되어 파미르 고원을 넘기도 하였다. 빈칸에 들어갈 인물은?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "파미르 고원을 넘은 고구려 유민 출신의 당나라 장군은 누구인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "( ) was a refugee of Goguryeo and became a general of Tang, passing the Pamir Mountains. Who is the person in the blank?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "Who was the Tang general of Goguryeo descent that conquered the Pamir Mountains?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "고선지",
+          "language": "ko"
+        },
+        {
+          "string": "Gao Xianzhi",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who",
+      "id": "249",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "고선지(高仙芝, ? 702년~755년 나이 54세)는 고구려 유민 출신 당나라 장군이다. 1만명의 군사를 이끌고 파미르 고원을 넘어 서역을 정벌한 석국전쟁을 통해 여러제국의 조공을 받게 했다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 인물이 태어난 순서대로 말하시오. [루트비히 판 베토벤, 빈센트 반 고흐, 레오나르도 다빈치]",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 루트비히 판 베토벤이 출생한 년도는 언제인가? \n / 빈센트 반 고흐가 출생한 년도는 언제인가? \n / 레오나르도 다 빈치가 출생한 년도는 언제인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "루트비히 판 베토벤은 몇 년도에 출생하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "빈센트 반 고흐는 몇 년도에 출생하였는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "레오나르도 다 빈치는 몇 년도에 출생하였는가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "List the following figures in timely order as born. \n [Ludwig van Beethoven, Vincent van Gogh, Leonardo da Vinci]",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ When was the year that Ludwig van Beethoven was born? \n / When was the year that Vincent van Gogh was born? \n / When was the year that Leonardo da Vinci was born?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "레오나르도 다빈치 → 루트비히 판 베토벤 → 빈센트 반 고흐",
+          "language": "ko"
+        },
+        {
+          "string": "Leonardo da Vinci → Ludwig van Beethoven → Vincent van Gogh",
+          "language": "en"
+        }
+      ],
+      "qtype": "How old",
+      "id": "258",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "루트비히 판 베토벤(독일어: Ludwig van Beethoven, 1770년 12월 17일 ~ 1827년 3월 26일)은 독일의 서양 고전 음악 작곡가이다. \n  \n 빈센트 반 고흐는 1853년 3월 30일, 네덜란드의 준데르트에서 출생하였다. \n  \n 레오나르도 다 빈치는 1452년 4월 15일 새벽 3시에 토스카나 지방의 산골 마을 빈치에서 유명한 가문의 공증인인 피에르 다 빈치(Ser Piero da Vinci)와 가난한 농부의 딸인 카타리나(Catarina) 사이에서 사생아로 태어났다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "( )는 아랍어로 \"\"해가 지는 지역\"\" 또는 \"\"서쪽\"\" 이란 뜻으로 오늘날의 북아프리카 지역, 즉, 리비아, 모로코, 알제리, 튀니지 등을 가리킨다.",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "아랍어로 “태양이 지는 지역” 또는 “서쪽”을 의미하는 북아프리카의 지역은 어디인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "( ) has meaning of “the area where the sun set” or “west” in Arabic and refers to today’s North Africa region, such as Libya, Morocco, Algeria and Tunisia.",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the region of North Africa whose name is Arabic for \"\"west\"\" or \"\"where the sun sets\"\"?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "마그레브",
+          "language": "ko"
+        },
+        {
+          "string": "Maghreb",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where",
+      "id": "270",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "마그레브 (المغرب العربي)는 아랍어로 \"\"해가 지는 지역\"\" 또는 \"\"서쪽\"\" 이란 뜻으로 대체로 오늘날의 북아프리카 지역, 즉, 모로코, 알제리, 튀니지를 아우르는 지역을 말한다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "경제 분양의 용어로서 경제가 불황으로부터 벗어나 짧은 기간의 성장을 기록한 뒤 얼마 지난지 않고 다시 불황에 빠지는 현상을 일컫는 말은? \n  1. 인플레이션 \n  2. 디플레이션 \n  3. 더블딥 \n  4. 버블",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어는 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어는 인플레이션인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "인플레이션은 어떤 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "인플레이션은 경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어는 디플레이션인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "디플레이션은 어떤 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "디플레이션은 경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어는 더블딥인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "더블딥은 어떤 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "더블딥은 경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어는 거품 경제인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거품 경제는 어떤 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "거품 경제는 경기후퇴 후에 짧은 성장을 기록한 뒤 다시 경기후퇴에 빠진다는 의미의 경제 용어인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "It is a term in economics, in which economy is recovered from recession and grown in a short term, and then again goes into recession. Which term is used to describe the phenomena?   \n 1. Inflation \n 2. Deflation \n 3. Double dip \n 4. Bubble",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the terminology used to describe the economy that falls into recession, recovers with a short period of growth, then falls back into recession before finally recovering?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "3. 더블딥",
+          "language": "ko"
+        },
+        {
+          "string": "3. Double dip",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "271",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "더블딥(Double dip) 혹은 W자형 불황(W-shaped recession)은 경제가 불황으로부터 벗어나 짧은 기간의 성장을 기록한 뒤, 얼마 지나지 않고 다시 불황에 빠지는 현상이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "고구려를 건국한 인물은 주몽이다. 맞으면 O, 틀리면 X를 말하시오.",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "고구려를 건국한 사람은 동명성왕인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "동명성왕은 고구려를 건국한 사람인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "The founder of Goguryeo is King Dongmyeong of Goguryeo. If it is correct, O, and if not, X.",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "Was King Dongmyeong the founder of Goguryeo?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "O",
+          "language": "ko"
+        },
+        {
+          "string": "O",
+          "language": "en"
+        }
+      ],
+      "qtype": "OX",
+      "id": "272",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "동명성왕(東明聖王) 또는 추모대왕(鄒牟王, 기원전 58년 ~ 기원전 19년 음력 9월)은 고구려의 개국 시조이자 초대 군주(재위: 기원전 37년 ~ 기원전 19년)이다. 부여의 금와왕 재위 시 금와왕의 아들 대소에 의해 핍박받던 주몽은 박해를 피해 남으로 내려와 고구려를 건국하였다.[1]",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 설명하고 있는 신문으로 옳은 것은? \n  - 최초의 민간 신문이다 \n  - 한글과 영문으로 발행하였다 \n  - 일반 대중에게 근대적 지식과 국권,민권 사상을 고취시켰다",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "한국 최초의 민간 신문은 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which newspaper does fit in the following descriptions? \n - It was the first civil newspaper.  \n - It was issued in Korean and English. \n - It enhanced modern knowledge and state power and civil rights among the general public.",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What was the first newspaper of Korea?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "독립신문",
+          "language": "ko"
+        },
+        {
+          "string": "Tongnip Sinmun",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "275",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "독립신문(獨立新聞)은 1896년 4월 7일에 한국에서 최초로 발간된 민간 신문이자 한글, 영문판 신문이었다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "각각에 해당하는 글자를 조합하면 어떤 단어가 되나? \n  [세계 최초의 복제동물 ‘돌리’는 ( ), 88서울올림픽의 마스코트 ( )돌이]",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "세계 최초의 복제동물 돌리로 유명한 동물과 1988년 하계 올림픽의 마스코트 호돌이의 이름 첫 글자를 조합하여 만들 수 있는 낱말은 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "When each letter in the blank are combined, what word is made? \n [The world first cloned animal ‘Dolly’ is a sheep, and a \"\"sheep\"\" is pronounced as ( ) in Korean language. The name of the 1988 Summer Olympics mascot is \u0027( )dori\u0027.]",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the word that can be drawn by combining the pronunciation of a word \"\"sheep\"\" in the Korean language and the first word of the name of the 1988 Summer Olympics mascot?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "양호",
+          "language": "ko"
+        },
+        {
+          "string": "Yangho",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "280",
+      "snippets": [
+        {
+          "type": "3-2",
+          "string": "돌리(Dolly, 1996년 7월 5일 - 2003년 2월 14일)는 세계 최초로 체세포 복제를 통해 태어난 포유류이다. 난자에서 핵을 제거하고 성숙한 양의 젖샘세포 핵을 이식하는 방식으로 탄생시켰다. 이런 과정을 통해 만들어진 양(돌리)은 핵을 제공한 양(Finn-Dorset)와 유전적으로 동일하다. \n  \n 호돌이는 제24회 1988년서울 올림픽의 공식 마스코트이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 년도와 사건이 잘못 짝지어진 것은? \n  1. 1519 - 기묘사화 \n  2. 1504 - 갑자사화 \n  3. 1498 - 무오사화 \n  4. 1497 - 을사사화",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 기묘사화가 발생한 년도는 언제인가? \n / 1519년에 발생한 사건은 무엇인가? \n / 갑자사화가 발생한 년도는 언제인가? \n / 1504년에 발생한 사건은 무엇인가? \n / 무오사화가 발생한 년도는 언제인가? \n / 1498년에 발생한 사건은 무엇인가? \n / 을사사화가 발생한 년도는 언제인가? \n / 1497년에 발생한 사건은 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "기묘사화가 발생한 년도는 1519년인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1519년은 기묘사화가 발생한 년도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1519년에 발생한 사건은 기묘사화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "기묘사화는 1519년에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "갑자사화가 발생한 년도는 1504년인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1504년은 갑자사화가 발생한 년도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1504년에 발생한 사건은 갑자사화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "갑자사화는 1504년에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "무오사화가 발생한 년도는 1498년인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1498년은 무오사화가 발생한 년도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1498년에 발생한 사건은 무오사화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "무오사화는 1498년에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "을사사화가 발생한 년도는 1497년인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1497년은 을사사화가 발생한 년도인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "1497년에 발생한 사건은 을사사화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "을사사화는 1497년에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Choose the one does NOT correctly link between the year and the related event among the following. \n 1. 1519 - Gimyosahwa(기묘사화(己卯士禍)) \n 2. 1504 - Gapjasahwa(갑자사화(甲子士禍)) \n 3. 1498 - Muosahwa(무오사화(戊午士禍)) \n 4. 1497 - Eulsasahwa(을사사화(乙巳士禍))",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ When was the year that Gimyosahwa occurred? \n / What was the event that occurred in 1519? \n / When was the year that Gapjasahwa occurred? \n / What was the event that occurred in 1504? \n / When was the year that Muosahwa occurred? \n / What was the event that occurred in 1498?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "4. 1497 - 을사사화",
+          "language": "ko"
+        },
+        {
+          "string": "4. 1497 - Eulsasahwa(을사사화(乙巳士禍))",
+          "language": "en"
+        }
+      ],
+      "qtype": "When \n \u0026 \n What",
+      "id": "292",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "기묘사화 (己卯士禍)는 1519년(중종 14) 음력 11월에 남곤(南袞), 심정(沈貞), 홍경주(洪景舟), 김전(金詮), 중종(中宗) 등이 조광조(趙光祖), 김식 등 핵심인물을 몰아내어 죽이고 혹은 귀양보낸 사건이다. \n  \n 갑자사화 (甲子士禍)는 1504년(연산군 10년) 연산군의 어머니 폐비 윤씨의 복위 문제로 인하여 일어난 사화이다. \n  \n 무오사화(戊午士禍)는 1498년 음력 7월 유자광과 연산군이 김일손 등의 신진세력인 사림파를 제거한 사화이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "스티브 잡스가 스티브워즈니악, 로널드 웨인과 함께 애플을 공동 창업한 년도는 언제인가?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "스티브 잡스와 스티브 워즈니악과 로널드 웨인이 애플을 창업한 년도는 언제인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "스티브 잡스와 스티브 워즈니악과 로널드 웨인은 몇 년도에 애플을 창업하였는가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which year did Steve Jobs, Steve Wozniak and Ronald Wayne found Apple Inc.?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "When was the year that Steve Jobs, Steve Wozniak and Ronald Wayne founded Apple Inc.?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "1976년",
+          "language": "ko"
+        },
+        {
+          "string": "1976",
+          "language": "en"
+        }
+      ],
+      "qtype": "When",
+      "id": "295",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "애플(Apple Inc.)은 스티브 잡스와 스티브 워즈니악과 론 웨인이 1976년에 설립한 컴퓨터 회사이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 노벨 문학상 수상자가 아닌 사람은?  \n  1)톨스토이 2)타고르 3)앙드레 지드 4)펄 벅 5)헤르만 헤세",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노벨 문학상 수상자는 누구인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노벨 문학상 수상자는 레프 톨스토이인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "레프 톨스토이는 노벨 문학상 수상자인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노벨 문학상 수상자는 라빈드라나트 타고르인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "라빈드라나트 타고르는 노벨 문학상 수상자인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노벨 문학상 수상자는 앙드레 지드인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "앙드레 지드는 노벨 문학상 수상자인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노벨 문학상 수상자는 펄 S. 벅 인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "펄 S. 벅은 노벨 문학상 수상자인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노벨 문학상 수상자는 헤르만 헤세인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "헤르만 헤세는 노벨 문학상 수상자인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Who is NOT a winner of Nobel Prize in Literature?  \n 1) Leo Tolstoy 2) Rabindranath Tagore 3) André Gide 4) Pearl S. Buck 5) Hermann Hesse",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "Who was the winner of the Nobel Prize in Literature?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "1) 레프 톨스토이",
+          "language": "ko"
+        },
+        {
+          "string": "1) Leo Tolstoy",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who",
+      "id": "311",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "라빈드라나트 타고르(벵골어: রবীন্দ্রনাথ ঠাকুর [ɹobin̪d̪ɾonat̪ʰ ʈʰakuɹ]듣기 (도움말·정보), 1861년 5월 7일 ~ 1941년 8월 7일)는 인도의 시인이자 철학자이다. 1913년 아시아에서는 처음으로 노벨 문학상을 수상했다. \n  \n 앙드레 지드(Andre Gide, 1869년 11월 22일 ~ 1951년 2월 19일)는 프랑스의 소설가·비평가이다. 1947년 노벨 문학상을 받았다. \n  \n 펄 사이든스트리커 벅(Pearl Sydenstricker Buck, 1892년 6월 26일 ∼ 1973년 3월 6일)은 《대지의 집》 3부작을 쓴 미국의 여류 소설가이다. 1938년에는 미국의 여성 작가로서는 처음으로 노벨 문학상을 수상하였다. \n  \n 헤르만 헤세(독일어: Hermann Hesse, 1877년 7월 2일 ~ 1962년 8월 9일)는 독일계 스위스인이며, 시인, 소설가, 화가이다. 1946년에 유리알 유희로 노벨 문학상을 수상했다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "독립운동단체와 조직 구성원이 맞지 않는 것은? \n   \n  ① 신간회 - 홍명희 \n  ② 한국국민당 - 김구 \n  ③ 자립단 – 방주익 \n  ④ 건국동맹 – 유자명",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 신간회의 구성원은 누구인가? \n / 홍명희가 구성원인 한국의 독립운동 단체는 무엇인가? \n / 한국국민당의 구성원은 누구인가? \n / 김구가 구성원인 한국의 독립운동 단체는 무엇인가? \n / 자립단의 구성원은 누구인가? \n / 방주익이 구성원인 한국의 독립운동 단체는 무엇인가? \n / 건국동맹의 구성원은 누구인가? \n / 유자명이 구성원인 한국의 독립운동 단체는 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "신간회의 구성원은 홍명희인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "홍명희는 신간회의 구성원인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "홍명희가 구성원인 한국의 독립운동 단체는 신간회인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "신간회는 홍명희가 구성원인 한국의 독립운동 단체인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "한국국민당의 구성원은 김구인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "김구는 한국국민당의 구성원인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "김구가 구성원인 한국의 독립운동 단체는 한국국민당인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "한국국민당은 김구가 구성원인 한국의 독립운동 단체인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "자립단의 구성원은 방주익인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "방주익은 자립단의 구성원인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "방주익이 구성원인 한국의 독립운동 단체는 자립단인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "자립단은 방주익이 구성원인 한국의 독립운동 단체인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "건국동맹의 구성원은 유자명인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "유자명은 건국동맹의 구성원인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "유자명이 구성원인 한국의 독립운동 단체는 건국동맹인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "건국동맹은 유자명이 구성원인 한국의 독립운동 단체인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT correctly link between National Liberation Movement and the member? \n ① Singanhoe(신간회(新幹會)) - Hong Myong-hui (홍명희(洪命熹)) \n ② Korea People\u0027s Party (한국국민당(韓國國民黨)) - Kim Gu (김구(金九)) \n ③ Jaripdan(자립단(自立團)) - Bang Ju-ik (방주익(方周翼)) \n ④ Geongukdongmaeng(건국동맹(建國同盟)) - Yu Ja-myeong (유자명(柳子明))",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ Who was the member of the Singanhoe? \n / What was the Korean nationalist organization that Hong Myong-hui belonged to? \n / Who was the member of the Korean National Party? \n / What was the Korean nationalist organization that Kim Gu belonged to? \n / Who was the member of the Jaripdan? \n / What was the Korean nationalist organization that Bang Ju-ik belonged to?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "④ 건국동맹 - 유자명",
+          "language": "ko"
+        },
+        {
+          "string": "④ Geongukdongmaeng(건국동맹(建國同盟)) - Yu Ja-myeong (유자명(柳子明))",
+          "language": "en"
+        }
+      ],
+      "qtype": "What \n \u0026 \n Who",
+      "id": "314",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "신간회(新幹會)는 1927년 2월 15일에 사회주의, 민족주의 세력들이 결집해서 창립한 항일단체로, 1931년 5월까지 지속한 한국의 좌우합작 독립운동단체이다. 당시 창립인은 소설 《임꺽정》의 작가로 유명한 사회주의 문인인 벽초 홍명희 선생이었으며 역사학자이자 언론인 안재홍, 백관수, 독립운동가 신채호선생 등 34명이 발기인으로 이름을 올렸고, 월남 이상재선생이 초대 중앙집행위원장에 추대되었다. \n  \n 한국국민당(韓國國民黨)은 대한민국의 민족주의 정당이자 한국의 독립운동단체로 1935년 김구를 중심으로 이동녕, 이시영, 조완구, 차이석, 송병조, 김봉준, 엄항섭, 조성환 등이 함께 설립하였다. \n  \n 자립단(自立團)은 일제 강점기에 민족 운동을 위해 결성된 비밀 결사 단체이다. 방주익, 강명환등의 기독교인들이 활동하였다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음은 역사적 인물과 지휘했던 전투의 연결이 옳지 않은 것은? \n  1. 권율 - 행주대첩 \n  2. 을지문덕 - 살수대첩 \n  3. 이순신 - 한산도 대첩 \n  4. 김좌진 - 봉오동 전투",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 권율이 지휘한 전투는 무엇인가? \n / 행주대첩을 지휘한 사람은 누구인가? \n / 을지문덕이 지휘한 전투는 무엇인가? \n / 살수 대첩을 지휘한 사람은 누구인가? \n / 이순신이 지휘한 전투는 무엇인가? \n / 한산도 전투를 지휘한 사람은 누구인가? \n / 김좌진이 지휘한 전투는 무엇인가? \n / 봉오동 전투를 지휘한 사람은 누구인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "권율이 지휘한 전투는 행주대첩인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "행주대첩은 권율이 지휘한 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "행주대첩을 지휘한 사람은 권율인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "권율은 행주대첩을 지휘한 사람인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "을지문덕이 지휘한 전투는 살수 대첩인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "살수 대첩은 을지문덕이 지휘한 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "살수 대첩을 지휘한 사람은 을지문덕인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "을지문덕은 살수 대첩을 지휘한 사람인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "이순신이 지휘한 전투는 한산도 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "한산도 전투는 이순신이 지휘한 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "한산도 전투를 지휘한 사람은 이순신인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "이순신은 한산도 전투를 지휘한 사람인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "김좌진이 지휘한 전투는 봉오동 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "봉오동 전투는 김좌진이 지휘한 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "봉오동 전투를 지휘한 사람은 김좌진인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "김좌진은 봉오동 전투를 지휘한 사람인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one does NOT correctly link between a figure and the related battle? \n 1. Kwon Yul - Siege of Haengju \n 2. Eulji Mundeok - Battle of Salsu \n 3. Yi Sun-sin - Battle of Hansan Island \n 4. Kim Chwa-chin - Bongoh Town Battle",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ What was the battle commanded by Kwon Yul? \n / Who was the commander of the Siege of Haengju? \n / What was the battle commanded by Eulji Mundeok? \n / Who was the commander of the Battle of Salsu? \n / What was the battle commanded by Yi Sun-sin? \n / Who was the commander of the Battle of Hansan Island?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "4. 김좌진 - 봉오동 전투",
+          "language": "ko"
+        },
+        {
+          "string": "4. Kim Chwa-chin - Bongoh Town Battle",
+          "language": "en"
+        }
+      ],
+      "qtype": "Who \n \u0026 \n What",
+      "id": "320",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "행주대첩(幸州大捷)은 임진왜란 때 행주산성에서 권율이 지휘하는 조선군과 백성들이 일본군과 싸워 크게 이긴 전투이다. \n  \n 살수 대첩(薩水大捷)은 제2차 고구려-수 전쟁을 고구려의 승리로 장식한 살수에서의 전투이다. 고구려의 수도 평양을 직공했던 수나라의 별동대가 살수에서 강을 건너 돌아오던 중 을지문덕의 습격을 받아 궤멸했다. \n  \n 한산도대첩은 임진왜란의 3대 대첩 중 하나로 1592년(선조 25) 8월 14일(음력 7월 8일) 한산도 앞바다에서 이순신 휘하의 조선 수군이 일본 수군을 크게 무찌른 해전으로, 이 전투에서 육전에서 사용하던 포위 섬멸 전술 형태인 학익진을 처음으로 펼쳤다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "IMF에 대하여 설명하시오.",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "국제 통화 기금은 무엇인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Explain about IMF.",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the International Monetary Fund?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "국제 통화 기금(國際通貨基金, International Monetary Fund, IMF)은 환율과 국제 수지를 감시함으로써 국제 금융 체계를 감독하는 것을 위임받은 국제 기구이다.",
+          "language": "ko"
+        },
+        {
+          "string": "IMF is an international organization of 188 countries, working to promote global economic co-operation and growth, trade, employment, and exchange-rate stability, including by making financial resources available to member countries to meet balance of payments needs.",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "323",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "국제 통화 기금(國際通貨基金, International Monetary Fund, IMF)은 환율과 국제 수지를 감시함으로써 국제 금융 체계를 감독하는 것을 위임받은 국제 기구이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "수애즈 운하는 지중해와 홍해를 연결해주는 운하이다. 이 운하로 인하여 아프리키 대륙을 돌아 가던 항로가 매우 단축되어 시간적, 경제적으로 많은 이득을 보고 있다. 이운하를 최초로 개통한 날은 언제인가?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "수에즈 운하가 최초로 개통된 날짜는 언제인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Suez Canal is connecting Mediterranean Sea and Red Sea. Thanks to this Canal, the sea route has been reduced and there are benefits in terms of time and economy. Previously, the sea route should have passed the African Continent. Which day did this Canal open?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "When was the date that the Suez Canal was opened?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "1869년 11월 17일",
+          "language": "ko"
+        },
+        {
+          "string": "17 November 1869",
+          "language": "en"
+        }
+      ],
+      "qtype": "When",
+      "id": "324",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "수에즈 운하(아랍어: قناة السويس)는 지중해와 홍해를 잇는 운하이다. 1869년 11월 17일에 개통되었다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "세계 교회 협의회의 결성 연도는 몇 년도이며 본부 위치는 어디인가?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "/ 세계 교회 협의회가 조직된 년도는 언제인가? \n / 세계 교회 협의회의 사령부가 위치한 도시는 어디인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "세계 교회 협의회는 몇 년도에 조직되었는가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "세계 교회 협의회의 사령부는 어느 도시에 위치하고 있는가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "What year was the World Council of Churches established, and where is its head office?",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "/ When was the year that the World Council of Churches was established? \n / What is the city in which the headquarters of the World Council of Churches is located?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "1948년 / \n 스위스 제네바",
+          "language": "ko"
+        },
+        {
+          "string": "1948 / \n Geneva, Switzerland",
+          "language": "en"
+        }
+      ],
+      "qtype": "When \n \u0026 \n Where",
+      "id": "328",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "세계 교회 협의회(World Council of Churches. 약칭 WCC)는 세계적인 에큐메니컬 운동을 목적으로 하는 기독교 단체이다. 1948년에 네덜란드의 암스테르담에서 에큐메니컬 운동의 첫 총회를 시작으로 결성되었다. 본부는 스위스 제네바에 있다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "국토 균형발전의 가치를 실현하고, 서울의 과밀화를 해결하기 위해서 혁신도시 사업과 연계하여 참여정부 시절부터 추진된 세종특별자치시는 언제 출범하였나?",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "세종특별자치시가 출범한 날짜는 언제인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "When was Sejong City founded? It had been developed from Participated Government period in connection with innovation city project to resolve overcrowded population of Seoul and realize balanced national development.",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "When was the date that Sejong City was opened?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "2012년 7월 1일",
+          "language": "ko"
+        },
+        {
+          "string": "2 July 2012",
+          "language": "en"
+        }
+      ],
+      "qtype": "When",
+      "id": "330",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "세종특별자치시(世宗特別自治市)는 대한민국 중부에 있는 특별자치시이다. 옛 충청남도 연기군 전체와 공주시 일부(현 장군면), 충청북도 청원군 일부(현 부강면)를 편입하여 2012년 7월 1일에 출범하였다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "다음 중 임진왜란(壬辰倭亂)을 계기로 조선(朝鮮)의 수도(首都)와 그 일대를 방어하기 위해 조직된 오군영(五軍營)에 속하지 않는 것은 [훈련원(訓練院), 어영청(御營廳), 금위영(禁衛營), 속오군(束伍軍), 수어청(守禦廳), 총융청(摠戎廳)]",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "오군영에 속하는 군영은 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "오군영에 속하는 군영은 훈련도감인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "훈련도감은 어느 조직에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "훈련도감은 오군영에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "오군영에 속하는 군영은 어영청인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "어영청은 어느 조직에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "어영청은 오군영에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "오군영에 속하는 군영은 금위영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "금위영은 어느 조직에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "금위영은 오군영에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "오군영에 속하는 군영은 속오군인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "속오군은 어느 조직에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "속오군은 오군영에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "오군영에 속하는 군영은 수어청인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "수어청은 어느 조직에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "수어청은 오군영에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "오군영에 속하는 군영은 총융청인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "총융청은 어느 조직에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "총융청은 오군영에 속하는 군영인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one of the following did not belong to Ohgunyoung(오군영(五軍營)) that was organized to defend the capital city(首都) of Joseon(朝鮮) after the Japanese invasions of Korea (1592–98)(壬辰倭亂)? \n [Hunryeonwon(훈련원(訓練院)), Eoyeongcheong(어영청(御營廳)), Geumwiyeong(금위영(禁衛營)), Sogogun(속오군(束伍軍)), Sueocheong(수어청(守禦廳)), Chongyungcheong(총융청(摠戎廳))]",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What was the military camp that belonged to Ohgunyoung?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "속오군",
+          "language": "ko"
+        },
+        {
+          "string": "Sogogun(속오군(束伍軍))",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "337",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "오군영(五軍營)은 임진왜란을 계기로 설치된 조선의 수도와 그 일대를 방어하기 위해 조직된 훈련도감(訓鍊都監), 어영청(御營廳), 금위영(禁衛營), 총융청(摠戎廳), 수어청(守禦廳)의 5개 군영(軍營)을 말한다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "2차 세계대전 당시 일어난 사건이 아닌 것은? (노르망디 상륙작전. 진주만 공격. 홀로코스트. 포츠담선언. 워털루 전투)",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전 당시에 발생한 사건은 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전 당시에 발생한 사건은 노르망디 상륙 작전인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노르망디 상륙 작전은 어느 전쟁 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "노르망디 상륙 작전은 제2차 세계 대전 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전 당시에 발생한 사건은 진주만 공격인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "진주만 공격은 어느 전쟁 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "진주만 공격은 제2차 세계 대전 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전 당시에 발생한 사건은 홀로코스트인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "홀로코스트는 어느 전쟁 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "홀로코스트는 제2차 세계 대전 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전 당시에 발생한 사건은 포츠담 선언인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "포츠담 선언은 어느 전쟁 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "포츠담 선언은 제2차 세계 대전 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "제2차 세계 대전 당시에 발생한 사건은 워털루 전투인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "워털루 전투는 어느 전쟁 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "워털루 전투는 제2차 세계 대전 당시에 발생한 사건인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Which one of the following events did not occur during World War II? \n (Invasion of Normandy. Attack on Pearl Harbor. Holocaust. Potsdam Declaration. Battle of Waterloo)",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What was the event that occurred during World War II?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "워털루 전투",
+          "language": "ko"
+        },
+        {
+          "string": "Battle of Waterloo",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "338",
+      "snippets": [
+        {
+          "type": "1-3",
+          "string": "제2차 세계 대전(한자: 第二次世界大戰, 영어: Second World War 또는 World War II)은 1939년 9월 1일부터 1945년 9월 2일까지 치러진, 인류 역사상 가장 많은 인명 피해와 재산 피해를 남긴 가장 파괴적인 전쟁이다. \n  \n 노르망디 상륙 작전은 1944년 6월 6일부터 1944년 7월 중순까지 이어진 전투이다. \n  \n 진주만 공격(한국 한자: 眞珠灣攻擊, 일본어: 真珠湾攻撃 しんじゅわんこうげき, 영어: Attack on Pearl Harbor)은 1941년 12월 7일 아침, 일본 제국 해군 비행기들이 미국 하와이 주의 오아후 섬 진주만에 있는 미국군 기지에 가한 기습 공격이다. \n  \n 홀로코스트(Holocaust, 그리스어 hólos(전체)+kaustós(타다)에서 유래) 또는 쇼아(히브리어: השואה, 이디시어: חורבן)는 제2차 세계 대전 중 아돌프 히틀러가 이끈 나치당이 독일 제국과 독일군 점령지 전반에 걸쳐 계획적으로 유태인과 슬라브족, 집시, 동성애자, 장애인, 정치범 등 약 1천1백만 명의 민간인과 전쟁포로를 학살한 사건을 의미한다.[1] \n  \n 포츠담 선언(Potsdam Declaration)은 1945년 7월 26일 미국, 영국, 중화민국, 소련이 독일의 포츠담에서 발표한 선언이다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "‘마릴린 먼로’가 출연하지 않은 영화는? (신사는 금발을 좋아한다. 로마의 휴일. 7년만의 외출)",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "마릴린 먼로가 출연한 영화는 무엇인가?",
+          "best": true
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "마릴린 먼로가 출연한 영화는 \u0027신사는 금발을 좋아한다\u0027인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "\u0027신사는 금발을 좋아한다\u0027는 누가 출연한 영화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "\u0027신사는 금발을 좋아한다\u0027는 마릴린 먼로가 출연한 영화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "마릴린 먼로가 출연한 영화는 \u0027로마의 휴일\u0027인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "\u0027로마의 휴일\u0027은 누가 출연한 영화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "\u0027로마의 휴일\u0027은 마릴린 먼로가 출연한 영화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "마릴린 먼로가 출연한 영화는 \u00277년만의 외출\u0027인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "\u00277년만의 외출\u0027은 누가 출연한 영화인가?",
+          "best": false
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "\u00277년만의 외출\u0027은 마릴린 먼로가 출연한 영화인가?",
+          "best": false
+        },
+        {
+          "verbosity": "verbose",
+          "string": "In which one of the following movies did Marilyn Monroe not star? \n (Gentlemen Prefer Blondes. Roman Holiday. The Seven Year Itch)",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What was the film in which Marilyn Monroe starred?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "로마의 휴일",
+          "language": "ko"
+        },
+        {
+          "string": "Roman Holiday",
+          "language": "en"
+        }
+      ],
+      "qtype": "What",
+      "id": "342",
+      "snippets": [
+        {
+          "type": "1-2",
+          "string": "마릴린 먼로(Marilyn Monroe, 1926년 6월 1일 ~ 1962년 8월 5일)는 미국의 배우 겸 모델, 가수이다. 먼로는 1953년 작 《신사는 금발을 좋아해》에서 이른바 “백치 금발 미인”의 이미지를 만들어 내었다. 이후 1950년대 동안 《백만장자와 결혼하는 방법》, 《7년만의 외출》과 같은 영화에 출연하였다.",
+          "language": "ko"
+        }
+      ]
+    },
+    {
+      "body": [
+        {
+          "verbosity": "verbose",
+          "string": "1996년 11월 개국한 아랍권의 민간 위성 텔레비전 방송 알자지라(Aljazeera) 본사가 위치한 나라는 [이라크, 카타르, 쿠웨이트]",
+          "language": "ko"
+        },
+        {
+          "language": "ko",
+          "verbosity": "simple",
+          "string": "알자지라의 본사가 위치한 국가는 어디인가?",
+          "best": true
+        },
+        {
+          "verbosity": "verbose",
+          "string": "Where is the headquarters of Aljazeera that was launched as a private satellite television network of the Arab world in November 1996? \n [Iraq, Qatar, Kuwait]",
+          "language": "en"
+        },
+        {
+          "verbosity": "simple",
+          "string": "What is the country in which the headquarters of Aljazeera is located?",
+          "language": "en"
+        }
+      ],
+      "answers": [
+        {
+          "string": "카타르",
+          "language": "ko"
+        },
+        {
+          "string": "Qatar",
+          "language": "en"
+        }
+      ],
+      "qtype": "Where",
+      "id": "358",
+      "snippets": [
+        {
+          "type": "1-1",
+          "string": "알자지라(아랍어: الجزيرة‎, Al Jazeera)는 카타르의 수도 도하에 세워진 아랍어와 영어의 텔레비전 방송사로, 현재 아랍권을 대표하는 방송사로 손꼽히고 있다.",
+          "language": "ko"
+        }
+      ]
+    }
+  ],
+  "name": "OKBQA3 - NLQ400 Benchmark"
+}

@@ -59,9 +59,14 @@ public class ParseResult {
         String tagged = "";
         
         for (int i : sentences.keySet()) {
-            for (int j : tokens.get(i).keySet()) {
-                tagged += tokens.get(i).get(j); 
-                if (pos.get(i).containsKey(j)) tagged += "/" + pos.get(i).get(j); 
+            if (tokens.containsKey(i)) {
+                for (int j : tokens.get(i).keySet()) {
+                    tagged += tokens.get(i).get(j); 
+                    if (pos.get(i).containsKey(j)) tagged += "/" + pos.get(i).get(j); 
+                    tagged += " ";
+                }
+            } else {
+                tagged += sentences.get(i);
                 tagged += " ";
             }
         }
@@ -100,7 +105,11 @@ public class ParseResult {
         for (int i : sentences.keySet()) {
              
             Graph g = interpreter.interpret(parses.get(i));
-            for (Node n : g.getNodes()) n.setPOS(pos.get(i).get(n.getId()));
+            if (pos.containsKey(i)) {
+                for (Node n : g.getNodes()) { 
+                    n.setPOS(pos.get(i).get(n.getId()));
+                }
+            }
             graph.merge(g);
         }
         
