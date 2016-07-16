@@ -35,19 +35,6 @@ public class RuleTransformer_pre extends RuleTransformer {
              }             
         }
         
-        // Collapsing edges (multiple dependencies between same nodes)
-        
-        List<Edge> del = new ArrayList<>();
-        for (Edge e1 : graph.getEdges()) {
-             if (del.contains(e1)) continue;
-             for (Edge e2 : graph.findEdgesBetween(e1.getHead(),e1.getDependent())) {
-                 if (e1 != e2 && e1.getColor() == e2.getColor()) {
-                     del.add(e2);
-                 }
-             }
-        }
-        for (Edge e : del) graph.deleteEdge(e);
-        
         // Renaming edges
         
         for (Edge e : graph.getEdges()) {
@@ -71,8 +58,6 @@ public class RuleTransformer_pre extends RuleTransformer {
                 case "NP_SBJ":    e.setLabel("ARG0"); e.setColor(Edge.Color.SEM); break;
                 case "NP_OBJ":    e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
                 case "NP_MOD":    e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
-                case "ARG0":      e.setColor(Edge.Color.SEM); break;
-                case "ARG1":      e.setColor(Edge.Color.SEM); break;
             }
         }
                 
