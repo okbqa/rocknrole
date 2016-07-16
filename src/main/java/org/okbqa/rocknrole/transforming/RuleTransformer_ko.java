@@ -29,7 +29,7 @@ public class RuleTransformer_ko extends RuleTransformer {
         
         String[] WHO   = { "누구", "누가", "누굴" };
         String[] WHERE = { "어디", "어디에", "어디에서", "어디서" };
-        String[] DTs   = { "이", "그", "저" };
+        String[] DTs   = { "이", "그", "저" }; // TODO '저' can also be 'I', in which case it should not be normalized to DT
         String[] WDTs  = { "뭐", "뭘", "무얼", "어느", "무엇", "무슨", "어떤" };
         String[] HAVE  = { "있" }; // ETRI parser already separates stem and endings
  
@@ -53,10 +53,10 @@ public class RuleTransformer_ko extends RuleTransformer {
                 case when:  n.setForm("DATETIME"); graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
                 case where: n.setForm("LOCATION"); graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
                 case why:   n.setForm("REASON");   graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
-                case "wh":  n.setForm("THING");
+                case "wh":  n.setForm("THING");    graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
             }
         }
-                
+                        
         // which NN, what NN
         
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"DP(*-1,THING-2)")) {
@@ -65,6 +65,7 @@ public class RuleTransformer_ko extends RuleTransformer {
             Map<Integer,Integer> m = subgraph.getRight();
             
             graph.addEdge(new Edge(Color.SRL,m.get(1),"SELECT",m.get(1)));
+            graph.deleteEdge(new Edge(Color.SRL,m.get(2),"SELECT",m.get(2)));
             graph.delete(g);
         }
         
@@ -74,7 +75,7 @@ public class RuleTransformer_ko extends RuleTransformer {
         
         // how many NN 
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(많-1,얼마나-2) \n MOD(*-3,많-1) \n ARG1(많-1,*-3)")) {
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(많-1,얼마나-2) \n VP_MOD(*-3,많-1)")) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
@@ -82,20 +83,20 @@ public class RuleTransformer_ko extends RuleTransformer {
             graph.addEdge(new Edge(Color.SRL,m.get(3),"SELECT_COUNT",m.get(3)));
             graph.delete(g);
         }
-        
+              
         // how JJ
                 
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(*-1,얼마나-2)")) {
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(*-1,얼마나-2) \n ARG0(*-1,*-3)")) {
             
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Color.SRL,m.get(4),graph.getNode(m.get(1)).getForm().toLowerCase(),m.get(2)));
+            graph.addEdge(new Edge(Color.SRL,m.get(3),graph.getNode(m.get(1)).getForm().toLowerCase(),m.get(2)));
             graph.addEdge(new Edge(Color.SRL,m.get(2),"SELECT",m.get(2)));
             graph.addNode(new Node(m.get(2),"LITERAL"),true);
             graph.delete(g);
         }
-
+        
         // passive 
         
         // TODO

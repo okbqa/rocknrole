@@ -143,6 +143,8 @@ public class ETRI implements Parser {
     
     public String convertToStanfordFormat(String etriResponse) {
 
+        // System.out.println(">>>>>>>> ETRI \n" + etriResponse + "\n<<<<<<<<<<<");
+        
         String stanford = "";
         
         try {
@@ -191,7 +193,7 @@ public class ETRI implements Parser {
                      int    dpnd  = dependency.getAsJsonObject().getAsJsonPrimitive("id").getAsInt()+1;
                      int    head  = dependency.getAsJsonObject().getAsJsonPrimitive("head").getAsInt()+1;
                      String label = dependency.getAsJsonObject().getAsJsonPrimitive("label").getAsString();
-                     if (label.contains("_")) label = label.split("_")[1];
+                     // if (label.contains("_")) label = label.split("_")[1];
                      
                      if (nodenames.containsKey(dpnd)) {
                          if (head == -1) { 

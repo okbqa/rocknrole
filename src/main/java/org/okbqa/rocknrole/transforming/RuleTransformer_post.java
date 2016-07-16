@@ -42,6 +42,24 @@ public class RuleTransformer_post extends RuleTransformer {
             graph.delete(g);
         }
         
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-3,*-1) \n ARG1(*-1,*-2)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
+            graph.delete(g);
+        }
+        
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2) \n ARG0(*-1,*-3)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
+            graph.delete(g);
+        }
+        
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2) \n ARGP(*-1,*-3)")) {
                         
             Graph g = subgraph.getLeft();
@@ -108,7 +126,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Map<Integer,Integer> m = subgraph.getRight();
             
             if (graph.getNode(m.get(1)).hasProperForm() && graph.getNode(m.get(2)).hasProperForm()) {
-                graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"",m.get(2)));
+                graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"REL",m.get(2)));
             }
             else if (graph.getNode(m.get(1)).hasProperForm()) {
                 graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(1)));
@@ -119,18 +137,6 @@ public class RuleTransformer_post extends RuleTransformer {
                 graph.getNode(m.get(2)).setForm("RESOURCEorLITERAL");
             }
             
-            graph.delete(g);
-        }
-        
-        // MOD (interpret modifier as restriction class)
-        
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"MOD(*-1,*-2)")) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"REL",m.get(2)));
-            graph.getNode(m.get(2)).setPOS("NNP");
             graph.delete(g);
         }
         

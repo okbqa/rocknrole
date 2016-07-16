@@ -299,6 +299,8 @@ public class Graph {
 
                         indexmap.put(head_sub,head_super);
                         indexmap.put(depd_sub,depd_super);
+                        
+                        alreadyMatched.addAll(match.getEdges());
 
                         break;
                     }
@@ -311,7 +313,6 @@ public class Graph {
             
             if (keepGoing) { // i.e. if a match was found
                 matches.add(new Pair<>(match,indexmap));
-                alreadyMatched.addAll(match.getEdges());
             }
         }
                
