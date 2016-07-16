@@ -143,7 +143,7 @@ public class ETRI implements Parser {
     
     public String convertToStanfordFormat(String etriResponse) {
 
-        // System.out.println(">>>>>>>> ETRI \n" + etriResponse + "\n<<<<<<<<<<<");
+//      System.out.println(">>>>>>>> ETRI \n" + etriResponse + "\n<<<<<<<<<<<");
         
         String stanford = "";
         

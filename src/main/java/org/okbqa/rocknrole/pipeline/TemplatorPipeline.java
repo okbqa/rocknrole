@@ -31,6 +31,9 @@ public class TemplatorPipeline {
  
     public JsonArray run(String input) {
         
+        // Preprocessing: remove all characters that are special characters for the GraphReader
+        input = input.replace("/","").replace("-","_").replace("(","").replace(")","").replace(",",";").trim();
+                
         JsonArray output = new JsonArray();
         
         // 1. Graph construction :: String -> Graph

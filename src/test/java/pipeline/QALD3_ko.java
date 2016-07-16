@@ -59,7 +59,8 @@ public class QALD3_ko {
                      JsonObject o = questionstrings.get(m).getAsJsonObject();
                      if (o.getAsJsonPrimitive("language").getAsString().equals(language)) {
                          q = o.getAsJsonPrimitive("string").getAsString();
-                         q = q.replace("-","_");
+                         // Preprocessing: remove all characters that are special characters for the GraphReader
+                         q = q.replace("/","").replace("-","_").replace("(","").replace(")","").replace(",",";").trim();
                          break;
                      }
                  }
