@@ -87,7 +87,7 @@ public class ParseResult {
             Map<Integer,String> ps = pos.get(i);
             for (int j : ts.keySet()) {
                  g.addNode(new Node(j,ts.get(j),ps.get(j)));
-                 if (ts.containsKey(j-1)) g.addEdge(new Edge(Edge.Color.LIN,j-1,"tt",j));
+                 // if (ts.containsKey(j-1)) g.addEdge(new Edge(Edge.Color.LIN,j-1,"tt",j));
             }
             
             graph.merge(g);

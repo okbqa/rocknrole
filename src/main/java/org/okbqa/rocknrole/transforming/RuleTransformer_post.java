@@ -27,7 +27,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"EQUALS",m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),"EQUALS",m.get(3)));
             graph.delete(g);
         }
         
@@ -38,7 +38,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
             graph.delete(g);
         }
         
@@ -47,7 +47,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
             graph.delete(g);
         }
         
@@ -56,7 +56,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
             graph.delete(g);
         }
         
@@ -65,7 +65,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
             graph.delete(g);
         }
         
@@ -74,7 +74,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),graph.getNode(m.get(2)).getForm(),m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),graph.getNode(m.get(2)).getForm(),m.get(3)));
             graph.delete(g);
         }
         
@@ -86,7 +86,7 @@ public class RuleTransformer_post extends RuleTransformer {
             
             int obj = graph.getMaxId()+1;
             graph.addNode(new Node(obj,"RESOURCE"));
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),obj));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),obj));
             graph.delete(g);
         }
         
@@ -98,7 +98,7 @@ public class RuleTransformer_post extends RuleTransformer {
             
             int subj = graph.getMaxId()+1;
             graph.addNode(new Node(subj,"RESOURCE"));
-            graph.addEdge(new Edge(Edge.Color.SRL,subj,graph.getNode(m.get(1)).getForm(),m.get(2)));
+            graph.addEdge(new Edge(Edge.Color.SEM,subj,graph.getNode(m.get(1)).getForm(),m.get(2)));
             graph.delete(g);
         }
         
@@ -108,7 +108,7 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"REL",m.get(2)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),"REL",m.get(2)));
             graph.delete(g);
         }
 
@@ -126,14 +126,14 @@ public class RuleTransformer_post extends RuleTransformer {
             Map<Integer,Integer> m = subgraph.getRight();
             
             if (graph.getNode(m.get(1)).hasProperForm() && graph.getNode(m.get(2)).hasProperForm()) {
-                graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"REL",m.get(2)));
+                graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),"REL",m.get(2)));
             }
             else if (graph.getNode(m.get(1)).hasProperForm()) {
-                graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(1)));
+                graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(1)));
                 graph.getNode(m.get(1)).setForm("RESOURCEorLITERAL");
             }
             else if (graph.getNode(m.get(2)).hasProperForm()) {
-                graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),graph.getNode(m.get(2)).getForm(),m.get(2)));
+                graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),graph.getNode(m.get(2)).getForm(),m.get(2)));
                 graph.getNode(m.get(2)).setForm("RESOURCEorLITERAL");
             }
             
@@ -147,8 +147,8 @@ public class RuleTransformer_post extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
 
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),"conjunct",m.get(1)));            
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(2),"conjunct",m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),"conjunct",m.get(1)));            
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),"conjunct",m.get(3)));
         }
 
         return graph;

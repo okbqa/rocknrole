@@ -21,7 +21,7 @@ public class RuleTransformer_prune extends RuleTransformer {
         // Keep only semantic edges
                 
         for (Edge e : graph.getEdges()) {
-             if (e.getColor() == Edge.Color.SRL) {
+             if (e.getColor() == Edge.Color.SEM) {
                  g.addEdge(e);
                  g.addNode(graph.getNode(e.getHead()));
                  g.addNode(graph.getNode(e.getDependent()));

@@ -49,11 +49,11 @@ public class RuleTransformer_ko extends RuleTransformer {
             
             switch (n.getForm().toLowerCase()) {
                 
-                case who:   n.setForm("AGENT");    graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
-                case when:  n.setForm("DATETIME"); graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
-                case where: n.setForm("LOCATION"); graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
-                case why:   n.setForm("REASON");   graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
-                case "wh":  n.setForm("THING");    graph.addEdge(new Edge(Color.SRL,n.getId(),"SELECT",n.getId())); break;
+                case who:   n.setForm("AGENT");    graph.addEdge(new Edge(Color.SEM,n.getId(),"SELECT",n.getId())); break;
+                case when:  n.setForm("DATETIME"); graph.addEdge(new Edge(Color.SEM,n.getId(),"SELECT",n.getId())); break;
+                case where: n.setForm("LOCATION"); graph.addEdge(new Edge(Color.SEM,n.getId(),"SELECT",n.getId())); break;
+                case why:   n.setForm("REASON");   graph.addEdge(new Edge(Color.SEM,n.getId(),"SELECT",n.getId())); break;
+                case "wh":  n.setForm("THING");    graph.addEdge(new Edge(Color.SEM,n.getId(),"SELECT",n.getId())); break;
             }
         }
                         
@@ -64,8 +64,8 @@ public class RuleTransformer_ko extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Color.SRL,m.get(1),"SELECT",m.get(1)));
-            graph.deleteEdge(new Edge(Color.SRL,m.get(2),"SELECT",m.get(2)));
+            graph.addEdge(new Edge(Color.SEM,m.get(1),"SELECT",m.get(1)));
+            graph.deleteEdge(new Edge(Color.SEM,m.get(2),"SELECT",m.get(2)));
             graph.delete(g);
         }
         
@@ -80,7 +80,7 @@ public class RuleTransformer_ko extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
 
-            graph.addEdge(new Edge(Color.SRL,m.get(3),"SELECT_COUNT",m.get(3)));
+            graph.addEdge(new Edge(Color.SEM,m.get(3),"SELECT_COUNT",m.get(3)));
             graph.delete(g);
         }
               
@@ -91,8 +91,8 @@ public class RuleTransformer_ko extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Color.SRL,m.get(3),graph.getNode(m.get(1)).getForm().toLowerCase(),m.get(2)));
-            graph.addEdge(new Edge(Color.SRL,m.get(2),"SELECT",m.get(2)));
+            graph.addEdge(new Edge(Color.SEM,m.get(3),graph.getNode(m.get(1)).getForm().toLowerCase(),m.get(2)));
+            graph.addEdge(new Edge(Color.SEM,m.get(2),"SELECT",m.get(2)));
             graph.addNode(new Node(m.get(2),"LITERAL"),true);
             graph.delete(g);
         }

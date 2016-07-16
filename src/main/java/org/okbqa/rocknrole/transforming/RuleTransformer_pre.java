@@ -56,23 +56,23 @@ public class RuleTransformer_pre extends RuleTransformer {
                 
                 // Stanford dependencies
                 
-                case "nsubj":     e.setLabel("ARG0"); e.setColor(Edge.Color.SRL); break;
-                case "dobj":      e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
-                case "iobj":      e.setLabel("ARG2"); e.setColor(Edge.Color.SRL); break;
-                case "nmod":      e.setLabel("ARG0"); e.setColor(Edge.Color.SRL); break;
-                case "rcmod":     e.setLabel("ARG0"); e.setColor(Edge.Color.SRL); break;
-                case "nsubjpass": e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
-                case "amod":      e.setLabel("MOD");  e.setColor(Edge.Color.SRL); break;
-                case "poss":      e.setLabel("REL");  e.setColor(Edge.Color.SRL); break;
+                case "nsubj":     e.setLabel("ARG0"); e.setColor(Edge.Color.SEM); break;
+                case "dobj":      e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
+                case "iobj":      e.setLabel("ARG2"); e.setColor(Edge.Color.SEM); break;
+                case "nmod":      e.setLabel("ARG0"); e.setColor(Edge.Color.SEM); break;
+                case "rcmod":     e.setLabel("ARG0"); e.setColor(Edge.Color.SEM); break;
+                case "nsubjpass": e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
+                case "amod":      e.setLabel("MOD");  e.setColor(Edge.Color.SEM); break;
+                case "poss":      e.setLabel("REL");  e.setColor(Edge.Color.SEM); break;
                   
                 // ETRI dependencies
                     
-                case "AJT":       e.setLabel("MOD");  e.setColor(Edge.Color.SRL); break;
-                case "NP_SBJ":    e.setLabel("ARG0"); e.setColor(Edge.Color.SRL); break;
-                case "NP_OBJ":    e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
-                case "NP_MOD":    e.setLabel("ARG1"); e.setColor(Edge.Color.SRL); break;
-                case "ARG0":      e.setColor(Edge.Color.SRL); break;
-                case "ARG1":      e.setColor(Edge.Color.SRL); break;
+                case "AJT":       e.setLabel("MOD");  e.setColor(Edge.Color.SEM); break;
+                case "NP_SBJ":    e.setLabel("ARG0"); e.setColor(Edge.Color.SEM); break;
+                case "NP_OBJ":    e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
+                case "NP_MOD":    e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
+                case "ARG0":      e.setColor(Edge.Color.SEM); break;
+                case "ARG1":      e.setColor(Edge.Color.SEM); break;
             }
         }
                 
@@ -81,7 +81,7 @@ public class RuleTransformer_pre extends RuleTransformer {
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
             
-            graph.addEdge(new Edge(Edge.Color.SRL,m.get(1),"ARGP",m.get(3)));
+            graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),"ARGP",m.get(3)));
             graph.delete(g);
         }
         

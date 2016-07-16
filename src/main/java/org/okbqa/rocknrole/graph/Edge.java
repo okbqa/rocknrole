@@ -9,7 +9,7 @@ import java.util.Objects;
 public class Edge {    
     
     
-    public enum Color { LIN, DEP, SEM, SRL }
+    public enum Color { SYN, SEM }
     
     
     Color  color;
