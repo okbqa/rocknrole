@@ -1,7 +1,7 @@
 package pipeline;
 
 
-import de.citec.sc.rocknrole.pipeline.TemplatorPipeline;
+import org.okbqa.rocknrole.pipeline.TemplatorPipeline;
 import java.io.IOException;
 import java.util.Scanner;
 

@@ -1,7 +1,7 @@
 package graph;
 
-import de.citec.sc.rocknrole.graph.Graph;
-import de.citec.sc.rocknrole.graph.interpreter.GraphReader;
+import org.okbqa.rocknrole.graph.Graph;
+import org.okbqa.rocknrole.graph.interpreter.GraphReader;
 
 /**
  *

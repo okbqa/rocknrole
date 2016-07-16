@@ -1,9 +1,10 @@
 package pipeline;
 
-import de.citec.sc.rocknrole.graph.Graph;
-import de.citec.sc.rocknrole.parsing.ParseResult;
-import de.citec.sc.rocknrole.parsing.Parser;
-import de.citec.sc.rocknrole.transforming.*;
+import org.okbqa.rocknrole.transforming.RuleTransformerPipeline;
+import org.okbqa.rocknrole.transforming.Transformer;
+import org.okbqa.rocknrole.graph.Graph;
+import org.okbqa.rocknrole.parsing.ParseResult;
+import org.okbqa.rocknrole.parsing.Parser;
 import java.io.File;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -14,9 +15,9 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
-import de.citec.sc.rocknrole.parsing.ETRI;
-import de.citec.sc.rocknrole.pipeline.Graph2Template;
-import de.citec.sc.rocknrole.template.Template;
+import org.okbqa.rocknrole.parsing.ETRI;
+import org.okbqa.rocknrole.pipeline.Graph2Template;
+import org.okbqa.rocknrole.template.Template;
 
 /**
  *

@@ -1,10 +1,10 @@
 package graph;
 
-import de.citec.sc.rocknrole.graph.Graph;
-import de.citec.sc.rocknrole.graph.interpreter.GraphReader;
-import de.citec.sc.rocknrole.parsing.ParseResult;
-import de.citec.sc.rocknrole.parsing.Parser;
-import de.citec.sc.rocknrole.parsing.Stanford;
+import org.okbqa.rocknrole.graph.Graph;
+import org.okbqa.rocknrole.graph.interpreter.GraphReader;
+import org.okbqa.rocknrole.parsing.ParseResult;
+import org.okbqa.rocknrole.parsing.Parser;
+import org.okbqa.rocknrole.parsing.Stanford;
 
 /**
  *

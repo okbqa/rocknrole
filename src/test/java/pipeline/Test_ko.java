@@ -2,7 +2,7 @@ package pipeline;
 
 
 import com.google.gson.JsonArray;
-import de.citec.sc.rocknrole.pipeline.TemplatorPipeline;
+import org.okbqa.rocknrole.pipeline.TemplatorPipeline;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
