@@ -1,0 +1,59 @@
+
+## RENAME NODES
+
+
+WHO   <- 누구, 누가, 누굴
+WHERE <- 어디, 어디에, 어디에서, 어디서
+DET   <- 이, 그
+WH    <- 뭐, 뭘, 무얼, 어느, 무엇, 무슨, 어떤
+
+WHEN  <- 언제
+HAVE  <- 있
+
+
+## RENAME EDGES
+
+
+ARG0  <- NP_SUBJ, nsubj
+ARG1  <- NP_OBJ, VP_MOD, dobj
+ARG2  <- iobj
+
+
+## TRANSFORM
+
+
+# WHO-1
+
++ SELECT(1,1) 
+
+
+# prep(*-1,*-2) \n pobj(*-2,*-3)
+
++ ARGP(1,3)
+
+
+# ARG2(나열-1,*-2)
+# ARG2(list-1,*-2)
+# ARG2(give-1,*-2)
+# ARG2(show-1,*-2)
+
++ SELECT(2,2)
+
+
+# ARG3(*-1,THING-2)
+
++ SELECT(1,1)
+NOT delete match
+
+
+# AP(*-1,얼마나-2) \n ARG0(*-1,*-3)
+
+v=new
++ LITERAL-v
++ 1(3,v)
++ SELECT_COUNT(4,v)
+
+
+# ARG0(*-1,*-2) \n ARG1(*-1,*-3)
+
++ 1(2,3)

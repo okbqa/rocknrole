@@ -150,11 +150,9 @@ public class Template {
         // projection variables
         for (String v : projvars) {
             query.getProject().add(Var.alloc(v));
-            vars.add(v);
         }
         for (String v : countvars) {
             query.getProject().add(Var.alloc(v+"_count"),query.allocAggregate(new AggCountVar(new ExprVar(Var.alloc(v)))));
-            vars.add(v);
         }
 
         // query type

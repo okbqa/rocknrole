@@ -1,7 +1,5 @@
 package pipeline;
 
-import org.okbqa.rocknrole.transforming.RuleTransformerPipeline;
-import org.okbqa.rocknrole.transforming.Transformer;
 import org.okbqa.rocknrole.graph.Graph;
 import org.okbqa.rocknrole.parsing.ParseResult;
 import org.okbqa.rocknrole.parsing.Parser;
@@ -18,6 +16,7 @@ import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
 import org.okbqa.rocknrole.pipeline.Graph2Template;
 import org.okbqa.rocknrole.template.Template;
+import org.okbqa.rocknrole.transforming.Transformer;
 
 /**
  *
@@ -30,17 +29,14 @@ public class QALD6_en {
         
         String language = "en";
         
-        String file_in  = "src/main/resources/qald/qald-6-train-multilingual-raw.json";
-        String file_out = "src/main/resources/qald/target/qald-6-train-multilingual-raw.json";
+        String file_in  = "src/main/resources/benchmarks/qald/qald-6-train-multilingual-raw.json";
+        String file_out = "src/main/resources/benchmarks/qald/target/qald-6-train-multilingual-raw.json";
         
         Parser stanford  = new Stanford();
         JsonParser json  = new JsonParser();
         Gson       gson  = new GsonBuilder().setPrettyPrinting().create();
         
-        Transformer transformer = new RuleTransformerPipeline();
-        transformer.setLanguage(language);
-//      transformer.setVerbose(true);
-        
+        Transformer transformer  = new Transformer(language);        
         Graph2Template templator = new Graph2Template();
                                    
         try {

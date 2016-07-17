@@ -1,0 +1,6 @@
+
+## RENAME EDGES
+
+
+ARG0  <- NP_SBJ, NP_ATJ
+ARG1  <- NP_OBJ, NP_MOD, VP_MOD

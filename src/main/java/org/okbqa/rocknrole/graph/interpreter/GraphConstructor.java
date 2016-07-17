@@ -64,7 +64,6 @@ public class GraphConstructor extends DependenciesBaseListener {
         if (ctx.dependent.STRING().size() == 2) i2 = Integer.parseInt(ctx.dependent.STRING(1).getText());
         if (ctx.dependent.STRING().size() == 3) i2 = Integer.parseInt(ctx.dependent.STRING(2).getText());
 
-        if (i1 == 0) graph.addRoot(i2);
         if (i1 > 0 && i2 > 0) graph.addEdge(new Edge(Edge.Color.SYN,i1,rel,i2));
     }
     

@@ -1,0 +1,5602 @@
+{
+  "questions": [
+    {
+      "question_id": 2613871,
+      "image_id": 261387,
+      "question": "How many cupcakes do not contain the color blue?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "12",
+      "answers": [
+        "13",
+        "17",
+        "12",
+        "5",
+        "14",
+        "10"
+      ]
+    },
+    {
+      "question_id": 4914001,
+      "image_id": 491400,
+      "question": "Why does the man need the umbrella if it's not raining?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "shade",
+      "answers": [
+        "shade",
+        "protection from sunlight",
+        "to protect him from sun",
+        "sun",
+        "for shade"
+      ]
+    },
+    {
+      "question_id": 4704720,
+      "image_id": 470472,
+      "question": "How many people are not wearing hats?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "question_id": 1337391,
+      "image_id": 133739,
+      "question": "How many people are not raising their leg?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "5"
+      ]
+    },
+    {
+      "question_id": 5334311,
+      "image_id": 533431,
+      "question": "Which item is not a fruit?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "lettuce",
+      "answers": [
+        "lettuce",
+        "broccoli",
+        "cabbage",
+        "tomatoes"
+      ]
+    },
+    {
+      "question_id": 3644551,
+      "image_id": 364455,
+      "question": "Which person is not wearing blue?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "woman",
+      "answers": [
+        "man close to blonde woman",
+        "2 women",
+        "woman on right",
+        "woman with ponytail",
+        "blonde woman",
+        "middle person",
+        "lady with ponytail",
+        "women",
+        "woman",
+        "girl"
+      ]
+    },
+    {
+      "question_id": 4756590,
+      "image_id": 475659,
+      "question": "Why should those wine bottles not be near the stove?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "heat",
+      "answers": [
+        "explode",
+        "fire hazard",
+        "heat",
+        "break",
+        "it will spoil",
+        "could explode",
+        "they might overheat and break",
+        "overheated",
+        "fire"
+      ]
+    },
+    {
+      "question_id": 2243672,
+      "image_id": 224367,
+      "question": "Why is the picture not hanging up on the wall?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "no room",
+      "answers": [
+        "outdoors",
+        "hasn't been hung up",
+        "taken down",
+        "moving in",
+        "unknown",
+        "it fell",
+        "preference",
+        "no room",
+        "fell",
+        "on ground"
+      ]
+    },
+    {
+      "question_id": 1993901,
+      "image_id": 199390,
+      "question": "If the Zebra's are not running, what are they doing?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "standing",
+      "answers": [
+        "standing",
+        "walking"
+      ]
+    },
+    {
+      "question_id": 3309230,
+      "image_id": 330923,
+      "question": "Would a driver park their car here or not based on the symbol on the sign?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no"
+      ]
+    },
+    {
+      "question_id": 2153201,
+      "image_id": 215320,
+      "question": "What indicates that these animals are not in the wild?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "road",
+      "answers": [
+        "road",
+        "ground",
+        "grass is mowed",
+        "hanging branch",
+        "dirt road",
+        "grass mowed",
+        "pathway",
+        "fence",
+        "cut grass"
+      ]
+    },
+    {
+      "question_id": 786671,
+      "image_id": 78667,
+      "question": "The wheels are not straight?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no",
+        "correct"
+      ]
+    },
+    {
+      "question_id": 5035410,
+      "image_id": 503541,
+      "question": "Which suitcase does not fit in with the rest?",
+      "question_type": "which",
+      "answer_type": "number",
+      "multiple_choice_answer": "left one",
+      "answers": [
+        "one with pattern",
+        "white one",
+        "left one",
+        "right one",
+        "left",
+        "white wicker",
+        "one on left",
+        "white and brown"
+      ]
+    },
+    {
+      "question_id": 23891,
+      "image_id": 2389,
+      "question": "Is there a light source in the photo that is not turned on?",
+      "question_type": "is there a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 1904150,
+      "image_id": 190415,
+      "question": "Which eye is not visible?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right",
+        "left",
+        "left eye",
+        "her right"
+      ]
+    },
+    {
+      "question_id": 1358151,
+      "image_id": 135815,
+      "question": "Which object is not a toy?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "bottle",
+      "answers": [
+        "wine bottle",
+        "bottle"
+      ]
+    },
+    {
+      "question_id": 878470,
+      "image_id": 87847,
+      "question": "Why should you not drop your anchor here?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "water main crossing",
+      "answers": [
+        "there's water main",
+        "water main crossing",
+        "against law",
+        "crossing",
+        "main crossing",
+        "water main"
+      ]
+    },
+    {
+      "question_id": 5260332,
+      "image_id": 526033,
+      "question": "What is the man not surfing doing?",
+      "question_type": "what is the man",
+      "answer_type": "other",
+      "multiple_choice_answer": "swimming",
+      "answers": [
+        "swimming",
+        "laying",
+        "boogie boarding",
+        "paddling",
+        "bodyboarding",
+        "paddle boarding"
+      ]
+    },
+    {
+      "question_id": 4110611,
+      "image_id": 411061,
+      "question": "Where is the man not wearing a shirt?",
+      "question_type": "where is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "on grass",
+      "answers": [
+        "grass",
+        "on grass",
+        "on grass to left",
+        "on left in rear",
+        "right of road",
+        "left center"
+      ]
+    },
+    {
+      "question_id": 235422,
+      "image_id": 23542,
+      "question": "What happens if you do not obey the sign?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "ticket",
+      "answers": [
+        "ticket",
+        "car wreck",
+        "accident",
+        "traffic violation",
+        "get ticket",
+        "wreck possibly"
+      ]
+    },
+    {
+      "question_id": 1314272,
+      "image_id": 131427,
+      "question": "Who is not wearing white pants?",
+      "question_type": "who is",
+      "answer_type": "other",
+      "multiple_choice_answer": "woman",
+      "answers": [
+        "girl",
+        "woman",
+        "man on right",
+        "man by lady",
+        "man closest to vehicle",
+        "captain",
+        "soldier"
+      ]
+    },
+    {
+      "question_id": 1630111,
+      "image_id": 163011,
+      "question": "What is visible in one photo but not the other?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "bench",
+      "answers": [
+        "box bench chair",
+        "bench",
+        "box on motorcycle",
+        "sat",
+        "door"
+      ]
+    },
+    {
+      "question_id": 2174650,
+      "image_id": 217465,
+      "question": "Which foot is not completely on the ground?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "his left",
+        "right",
+        "left",
+        "back foot"
+      ]
+    },
+    {
+      "question_id": 1014791,
+      "image_id": 101479,
+      "question": "Which items in the image are not useful for displaying media?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "chairs",
+      "answers": [
+        "chairs",
+        "paper",
+        "webpage",
+        "tv",
+        "mouse",
+        "computer",
+        "white pad"
+      ]
+    },
+    {
+      "question_id": 4752320,
+      "image_id": 475232,
+      "question": "How can you tell this is not an American bus?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "license plate",
+      "answers": [
+        "license plate",
+        "language",
+        "location that bus going is not in english",
+        "yes",
+        "by language",
+        "different language"
+      ]
+    },
+    {
+      "question_id": 5408850,
+      "image_id": 540885,
+      "question": "How can you tell this location is not in the wild?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "sign",
+      "answers": [
+        "street sign in back",
+        "stop sign",
+        "stop sign in far distance",
+        "traffic sign in background",
+        "street sign",
+        "sign",
+        "signs",
+        "road sign in background",
+        "traffic sign"
+      ]
+    },
+    {
+      "question_id": 5279070,
+      "image_id": 527907,
+      "question": "How many people are not sitting?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "question_id": 5623602,
+      "image_id": 562360,
+      "question": "What is the color of the court the woman is not standing in?",
+      "question_type": "what is the color of the",
+      "answer_type": "other",
+      "multiple_choice_answer": "green",
+      "answers": [
+        "green",
+        "red"
+      ]
+    },
+    {
+      "question_id": 58820,
+      "image_id": 5882,
+      "question": "What part of this photo does not seem to be part of the original?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "stuffed animal",
+      "answers": [
+        "animal on surfboard",
+        "stuffed animal",
+        "toy",
+        "troll",
+        "doll",
+        "sheep in clothes",
+        "cartoon",
+        "old man"
+      ]
+    },
+    {
+      "question_id": 4701721,
+      "image_id": 470172,
+      "question": "How can you tell this is not a professional team?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "no uniforms",
+      "answers": [
+        "outfits don't match",
+        "no uniforms",
+        "yes",
+        "man in shorts",
+        "uniforms",
+        "small field, wearing shorts, sloppy guys",
+        "clothing",
+        "battery has no uniform"
+      ]
+    },
+    {
+      "question_id": 3147780,
+      "image_id": 314778,
+      "question": "How does the boy want the skateboard to land so that he does not fall?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "wheels down",
+      "answers": [
+        "wheels down",
+        "on its wheels",
+        "yes",
+        "right side up",
+        "on wheels"
+      ]
+    },
+    {
+      "question_id": 1657071,
+      "image_id": 165707,
+      "question": "Which way can traffic not turn?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right",
+        "light prohibits",
+        "left"
+      ]
+    },
+    {
+      "question_id": 5435570,
+      "image_id": 543557,
+      "question": "Which way can you not turn?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left"
+      ]
+    },
+    {
+      "question_id": 2933392,
+      "image_id": 293339,
+      "question": "Is there a man in the water that is not on a surfboard?",
+      "question_type": "is there a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3913322,
+      "image_id": 391332,
+      "question": "What part of the keyboard is noticeably not in the photo?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "number pad",
+      "answers": [
+        "left",
+        "number pad",
+        "numbers",
+        "number keys",
+        "letters"
+      ]
+    },
+    {
+      "question_id": 5404571,
+      "image_id": 540457,
+      "question": "What color is the shirt of the team not batting?",
+      "question_type": "what color is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "yellow",
+      "answers": [
+        "yellow"
+      ]
+    },
+    {
+      "question_id": 3816840,
+      "image_id": 381684,
+      "question": "How many animals are not cattle?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "dogs",
+        "2"
+      ]
+    },
+    {
+      "question_id": 3258092,
+      "image_id": 325809,
+      "question": "Is this picture not blurry?",
+      "question_type": "is this",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "mo"
+      ]
+    },
+    {
+      "question_id": 2820991,
+      "image_id": 282099,
+      "question": "Which cow's head is not in the photo?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "one on left",
+      "answers": [
+        "leftmost",
+        "left one",
+        "left",
+        "one on left",
+        "far left",
+        "lefts"
+      ]
+    },
+    {
+      "question_id": 2988682,
+      "image_id": 298868,
+      "question": "Do her parents not care if she falls she will get hurt?",
+      "question_type": "do",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "yes",
+        "they do care"
+      ]
+    },
+    {
+      "question_id": 975140,
+      "image_id": 97514,
+      "question": "Why is the food not on a plate?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "it's carry out",
+      "answers": [
+        "no plates available",
+        "using bag as plate",
+        "unsure",
+        "it's on bag",
+        "on paper",
+        "it's carry out",
+        "fast food",
+        "yes",
+        "it was to go",
+        "its picnic"
+      ]
+    },
+    {
+      "question_id": 355140,
+      "image_id": 35514,
+      "question": "Of all the foods shown which are not processed by man?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "oranges",
+      "answers": [
+        "orange",
+        "oranges",
+        "top left",
+        "tangerines"
+      ]
+    },
+    {
+      "question_id": 1219490,
+      "image_id": 121949,
+      "question": "Does this configuration seem synchronized, whether or not it is?",
+      "question_type": "does this",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 5076420,
+      "image_id": 507642,
+      "question": "Why are the parents not watching their baby?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "they are eating",
+      "answers": [
+        "eating",
+        "observing",
+        "they are eating",
+        "dnt knw",
+        "busy eating"
+      ]
+    },
+    {
+      "question_id": 327781,
+      "image_id": 32778,
+      "question": "How many wheels are not touching the ground?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "question_id": 5219140,
+      "image_id": 521914,
+      "question": "Which one is not with the group?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "dog",
+      "answers": [
+        "left one",
+        "farthest left",
+        "dog",
+        "one closest to water",
+        "right",
+        "sog"
+      ]
+    },
+    {
+      "question_id": 1413821,
+      "image_id": 141382,
+      "question": "Are there people in the stands not watching the match?",
+      "question_type": "are there",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 1075850,
+      "image_id": 107585,
+      "question": "Why would you not be allowed to drive a commercial truck through this area?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "private residence",
+      "answers": [
+        "residential street",
+        "private residence",
+        "residential",
+        "it is private residence",
+        "no"
+      ]
+    },
+    {
+      "question_id": 2504431,
+      "image_id": 250443,
+      "question": "Which person does not hit the ball in this game?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "umpire",
+      "answers": [
+        "umpire",
+        "catcher/umpire",
+        "catcher"
+      ]
+    },
+    {
+      "question_id": 2984831,
+      "image_id": 298483,
+      "question": "How many people are not standing?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 3192991,
+      "image_id": 319299,
+      "question": "Why are people not on the opposite platform?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "there is no platform",
+      "answers": [
+        "train leaving",
+        "there isn't another platform",
+        "no train is coming",
+        "wrong direction",
+        "there are no people",
+        "no one waiting",
+        "they are on train",
+        "there is no opposite platform",
+        "there is no platform",
+        "weekend"
+      ]
+    },
+    {
+      "question_id": 4764680,
+      "image_id": 476468,
+      "question": "What is the motorcyclist not wearing on his head that he should be?",
+      "question_type": "what is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "helmet",
+      "answers": [
+        "helmet"
+      ]
+    },
+    {
+      "question_id": 3280880,
+      "image_id": 328088,
+      "question": "What symbol is on the box telling you not to walk?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "hand",
+      "answers": [
+        "hand",
+        "red hand"
+      ]
+    },
+    {
+      "question_id": 3652640,
+      "image_id": 365264,
+      "question": "Why do you think this child is probably not wearing a helmet?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "lazy",
+      "answers": [
+        "lazy",
+        "he doesn't know better",
+        "older",
+        "because head of picture isn't showing",
+        "shadow",
+        "going slow enough",
+        "doesn't have one",
+        "long skateboard",
+        "carelessness",
+        "no"
+      ]
+    },
+    {
+      "question_id": 2836481,
+      "image_id": 283648,
+      "question": "Why is the other controller not being used?",
+      "question_type": "why is the",
+      "answer_type": "number",
+      "multiple_choice_answer": "only 1 person is playing",
+      "answers": [
+        "single player",
+        "only 1 person is playing",
+        "only need 1 controller for game",
+        "1 person",
+        "1 person game",
+        "1 player game",
+        "laying on truck",
+        "player 2 controller",
+        "only 1 player",
+        "only 1 person"
+      ]
+    },
+    {
+      "question_id": 1703882,
+      "image_id": 170388,
+      "question": "Who does not have black in there swimsuit top?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "middle girl",
+      "answers": [
+        "girl in back",
+        "middle girl",
+        "girl in yellow",
+        "girl in background",
+        "girl in yellow top",
+        "left girl",
+        "middle",
+        "girl in middle"
+      ]
+    },
+    {
+      "question_id": 5033210,
+      "image_id": 503321,
+      "question": "Is the stag real or not real?",
+      "question_type": "is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "not real",
+      "answers": [
+        "fake",
+        "no",
+        "not real"
+      ]
+    },
+    {
+      "question_id": 5138730,
+      "image_id": 513873,
+      "question": "Is this man wearing anything that is not white?",
+      "question_type": "is this",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no"
+      ]
+    },
+    {
+      "question_id": 2681612,
+      "image_id": 268161,
+      "question": "How many train cars are in this image, not including the engine?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 1642340,
+      "image_id": 164234,
+      "question": "Is am not sure what this is but Is think it is used for eulogies and can light a room?",
+      "question_type": "is",
+      "answer_type": "other",
+      "multiple_choice_answer": "candle",
+      "answers": [
+        "no",
+        "it's bread",
+        "n/a-see q1",
+        "what",
+        "prayer candle",
+        "candle",
+        "not question"
+      ]
+    },
+    {
+      "question_id": 2198800,
+      "image_id": 219880,
+      "question": "What gender is not represented?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "male",
+      "answers": [
+        "male",
+        "older woman on left"
+      ]
+    },
+    {
+      "question_id": 423492,
+      "image_id": 42349,
+      "question": "How many people are not in the water in this picture?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "question_id": 629951,
+      "image_id": 62995,
+      "question": "Are there more people shown working or not working?",
+      "question_type": "are there",
+      "answer_type": "other",
+      "multiple_choice_answer": "not working",
+      "answers": [
+        "no",
+        "not working",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 4037230,
+      "image_id": 403723,
+      "question": "Why are they walking and not skiing?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "no snow",
+      "answers": [
+        "going home",
+        "no snow",
+        "they are walking on street not skiing down mountain",
+        "they are on road",
+        "no snow here",
+        "just arrived",
+        "they are tired and are going home",
+        "finished skiing",
+        "pavement"
+      ]
+    },
+    {
+      "question_id": 4445822,
+      "image_id": 444582,
+      "question": "Are there any animals that are not giraffes in this picture?",
+      "question_type": "are there any",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 113610,
+      "image_id": 11361,
+      "question": "What items are not allowed?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "bikes and surfboards",
+      "answers": [
+        "surfboards/bicycles",
+        "bikes and surfboards",
+        "surfboards and bikes",
+        "surfboards and bicycles",
+        "bike",
+        "does not say",
+        "bicycles and surfboards",
+        "bike and surfboard"
+      ]
+    },
+    {
+      "question_id": 4178222,
+      "image_id": 417822,
+      "question": "Why is the plane not moving?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "loading",
+      "answers": [
+        "passengers boarding",
+        "loading",
+        "boarding",
+        "passengers aren't ready",
+        "unloading",
+        "people are boarding",
+        "people getting off"
+      ]
+    },
+    {
+      "question_id": 2942382,
+      "image_id": 294238,
+      "question": "How many pizza that has not been eaten?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "2 3/4 pies"
+      ]
+    },
+    {
+      "question_id": 4008381,
+      "image_id": 400838,
+      "question": "How many of the people in the photo are not wearing shirts?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "5",
+      "answers": [
+        "18",
+        "5",
+        "all of them",
+        "0",
+        "4"
+      ]
+    },
+    {
+      "question_id": 3270320,
+      "image_id": 327032,
+      "question": "Which person is not watching the game?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "woman",
+      "answers": [
+        "woman",
+        "person in kitchen",
+        "in kitchen",
+        "person in back",
+        "guy in kitchen",
+        "man in kitchen",
+        "one behind counter in white",
+        "man"
+      ]
+    },
+    {
+      "question_id": 1346431,
+      "image_id": 134643,
+      "question": "The girl is not angry?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 4843271,
+      "image_id": 484327,
+      "question": "What way can you not turn during certain times of the day?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "to left"
+      ]
+    },
+    {
+      "question_id": 541601,
+      "image_id": 54160,
+      "question": "What is on top of the fridge not being used?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "wine rack",
+      "answers": [
+        "wine rack",
+        "crate",
+        "wine bottle shelf"
+      ]
+    },
+    {
+      "question_id": 4811650,
+      "image_id": 481165,
+      "question": "What item here is generally not for cosmetic use?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "apple",
+      "answers": [
+        "apple"
+      ]
+    },
+    {
+      "question_id": 2897672,
+      "image_id": 289767,
+      "question": "What is not allowed according to the sign?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "right turn",
+      "answers": [
+        "right turns",
+        "right turn",
+        "guns",
+        "no right turns"
+      ]
+    },
+    {
+      "question_id": 4078202,
+      "image_id": 407820,
+      "question": "What should one not do according to the sign?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "enter",
+      "answers": [
+        "no enter",
+        "enter",
+        "do not enter",
+        "not enter"
+      ]
+    },
+    {
+      "question_id": 2542500,
+      "image_id": 254250,
+      "question": "What happens if you do not put coins into the machine?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "you get fine",
+      "answers": [
+        "expires",
+        "violation",
+        "you might get ticket when you park here",
+        "receive parking ticket",
+        "you get fine",
+        "get ticket",
+        "given ticket",
+        "you will get ticket",
+        "time runs out"
+      ]
+    },
+    {
+      "question_id": 3594080,
+      "image_id": 359408,
+      "question": "Which woman is not looking at the camera?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "right",
+        "woman on right",
+        "one on right",
+        "woman on left",
+        "right one"
+      ]
+    },
+    {
+      "question_id": 580211,
+      "image_id": 58021,
+      "question": "Why are these cows not floating away?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "tied",
+      "answers": [
+        "anchored",
+        "they are tethered to sticks",
+        "tied down",
+        "they're tied up",
+        "tethered",
+        "tied",
+        "string",
+        "tied to poles",
+        "ties"
+      ]
+    },
+    {
+      "question_id": 4665302,
+      "image_id": 466530,
+      "question": "Is there anyone not smiling?",
+      "question_type": "is there",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 3153392,
+      "image_id": 315339,
+      "question": "How many people visible are not in the stands?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "lot"
+      ]
+    },
+    {
+      "question_id": 1455930,
+      "image_id": 145593,
+      "question": "What body part used to see is not covered by the glove?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "eyes",
+      "answers": [
+        "eye",
+        "eyes",
+        "mouth"
+      ]
+    },
+    {
+      "question_id": 1531422,
+      "image_id": 153142,
+      "question": "Which country represented is not in Europe?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "usa",
+      "answers": [
+        "usa",
+        "united states",
+        "america"
+      ]
+    },
+    {
+      "question_id": 1757750,
+      "image_id": 175775,
+      "question": "How is the tool stored when not in use?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "folded",
+      "answers": [
+        "pocket",
+        "folds up",
+        "folded",
+        "open",
+        "blade folded into handle"
+      ]
+    },
+    {
+      "question_id": 1682591,
+      "image_id": 168259,
+      "question": "How many people are not female?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "0",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "question_id": 1199232,
+      "image_id": 119923,
+      "question": "How many oranges that are not in the bowl?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2"
+      ]
+    },
+    {
+      "question_id": 3272052,
+      "image_id": 327205,
+      "question": "How many of the tangerines are not in the bowl?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "6",
+      "answers": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "question_id": 5012631,
+      "image_id": 501263,
+      "question": "Where behind the child has the parent probably told the child not to play?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "street",
+      "answers": [
+        "street",
+        "like",
+        "fire hydrant"
+      ]
+    },
+    {
+      "question_id": 4341180,
+      "image_id": 434118,
+      "question": "What is not right about this picture?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "plants",
+      "answers": [
+        "plants",
+        "there is tree/vine growing in bathroom",
+        "shrubs",
+        "plants in bathroom",
+        "bathroom is outdoors",
+        "plant growing inside abandoned home",
+        "plant"
+      ]
+    },
+    {
+      "question_id": 5322770,
+      "image_id": 532277,
+      "question": "What are you not allowed to do at any time?",
+      "question_type": "what are",
+      "answer_type": "other",
+      "multiple_choice_answer": "stand",
+      "answers": [
+        "stand",
+        "no standing",
+        "standing"
+      ]
+    },
+    {
+      "question_id": 2648062,
+      "image_id": 264806,
+      "question": "What direction is not allowed?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right",
+        "right turn"
+      ]
+    },
+    {
+      "question_id": 1510740,
+      "image_id": 151074,
+      "question": "How many people are not cold?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "0",
+      "answers": [
+        "0",
+        "1",
+        "3",
+        "all of them"
+      ]
+    },
+    {
+      "question_id": 4621350,
+      "image_id": 462135,
+      "question": "Does this bathroom look as it has been recently used and not cleaned up?",
+      "question_type": "does this",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "clean"
+      ]
+    },
+    {
+      "question_id": 4804542,
+      "image_id": 480454,
+      "question": "Where is the do not enter sign?",
+      "question_type": "where is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "above shrub",
+      "answers": [
+        "on wall",
+        "red",
+        "end of alley",
+        "back wall",
+        "at end of alley",
+        "on building in back",
+        "at end of street",
+        "middle back",
+        "far",
+        "above shrub"
+      ]
+    },
+    {
+      "question_id": 5068120,
+      "image_id": 506812,
+      "question": "Why is one of these not like the other ones?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "lemon",
+      "answers": [
+        "color",
+        "lemon",
+        "not ripe",
+        "it's lemon",
+        "not as ripe",
+        "pale color",
+        "yellow",
+        "one is yellow"
+      ]
+    },
+    {
+      "question_id": 307690,
+      "image_id": 30769,
+      "question": "How many slices are not same as the others?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "question_id": 3004280,
+      "image_id": 300428,
+      "question": "What would show us that this photo is not in America?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "license plate",
+      "answers": [
+        "license plates",
+        "tags",
+        "license tag",
+        "no",
+        "nothing",
+        "not sure",
+        "license plate"
+      ]
+    },
+    {
+      "question_id": 2217850,
+      "image_id": 221785,
+      "question": "How can you tell this photo is not present day?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "black and white",
+      "answers": [
+        "black and white",
+        "black & white",
+        "style of boat",
+        "looks old",
+        "clothing style",
+        "black and white color",
+        "wooden carts on right"
+      ]
+    },
+    {
+      "question_id": 5195482,
+      "image_id": 519548,
+      "question": "How many men are not wearing the team uniform?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "1",
+        "2",
+        "15"
+      ]
+    },
+    {
+      "question_id": 5254320,
+      "image_id": 525432,
+      "question": "Which is not a fruit?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "cucumber",
+      "answers": [
+        "cucumber",
+        "peach"
+      ]
+    },
+    {
+      "question_id": 1419862,
+      "image_id": 141986,
+      "question": "Which former US President said that he will not eat any of this?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "clinton",
+      "answers": [
+        "george bush father",
+        "bush",
+        "clinton",
+        "reagan",
+        "pres george bush",
+        "roosevelt"
+      ]
+    },
+    {
+      "question_id": 1882390,
+      "image_id": 188239,
+      "question": "Which person is most likely not related?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "child in lap",
+      "answers": [
+        "white child",
+        "girls",
+        "little girl",
+        "little girls",
+        "man",
+        "girl",
+        "child in lap",
+        "kids",
+        "baby"
+      ]
+    },
+    {
+      "question_id": 5020150,
+      "image_id": 502015,
+      "question": "Why are the people holding rackets if they are not playing a game?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "posing for picture",
+      "answers": [
+        "posing for photos",
+        "posing",
+        "to pose",
+        "posing for picture",
+        "posing for photograph",
+        "for photograph",
+        "taking break"
+      ]
+    },
+    {
+      "question_id": 3416280,
+      "image_id": 341628,
+      "question": "How many of these items were not grown from a plant?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "5"
+      ]
+    },
+    {
+      "question_id": 4447832,
+      "image_id": 444783,
+      "question": "What are people not permitted to do?",
+      "question_type": "what are",
+      "answer_type": "other",
+      "multiple_choice_answer": "stop",
+      "answers": [
+        "stopping anytime",
+        "stopping",
+        "stand",
+        "park here",
+        "stop",
+        "no stopping anytime",
+        "to stop"
+      ]
+    },
+    {
+      "question_id": 2858971,
+      "image_id": 285897,
+      "question": "How many toilets do not have seats?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "14",
+        "5"
+      ]
+    },
+    {
+      "question_id": 1399840,
+      "image_id": 139984,
+      "question": "Is someone, not shown, holding this person up?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 5222702,
+      "image_id": 522270,
+      "question": "Which man is not wearing a tie?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "man to left",
+        "one on right",
+        "one on left",
+        "man on left"
+      ]
+    },
+    {
+      "question_id": 1207030,
+      "image_id": 120703,
+      "question": "How many of the dog's feet are not touching the ground?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "0",
+        "2",
+        "1"
+      ]
+    },
+    {
+      "question_id": 508192,
+      "image_id": 50819,
+      "question": "Why are the doors and windows of the building not visible?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "covered by trees",
+      "answers": [
+        "behind trees",
+        "covered by trees",
+        "trees are in way",
+        "trees blocking it",
+        "trees are blocking them",
+        "trees",
+        "trees are covering them"
+      ]
+    },
+    {
+      "question_id": 3674000,
+      "image_id": 367400,
+      "question": "How many animals are not zebras?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2"
+      ]
+    },
+    {
+      "question_id": 2635741,
+      "image_id": 263574,
+      "question": "What in the picture is not a fruit or vegetable?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "popcorn",
+      "answers": [
+        "bag",
+        "rubber bands and plastic bag",
+        "popcorn",
+        "plastic",
+        "bread",
+        "pumpkin",
+        "popcorn kernels",
+        "rubber band"
+      ]
+    },
+    {
+      "question_id": 4318932,
+      "image_id": 431893,
+      "question": "Is anything not on the ground?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 1287291,
+      "image_id": 128729,
+      "question": "Why is this picture not in color?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "old",
+      "answers": [
+        "taken before colored film era",
+        "old",
+        "old photo",
+        "it's old",
+        "too old"
+      ]
+    },
+    {
+      "question_id": 1452880,
+      "image_id": 145288,
+      "question": "How many horses do not have riders?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "5",
+        "1"
+      ]
+    },
+    {
+      "question_id": 4071592,
+      "image_id": 407159,
+      "question": "What color is the teams shirts that are not wearing pink?",
+      "question_type": "what color is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "blue",
+      "answers": [
+        "blue"
+      ]
+    },
+    {
+      "question_id": 135172,
+      "image_id": 13517,
+      "question": "Are there any animals shown that are not zebras?",
+      "question_type": "are there any",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 2887231,
+      "image_id": 288723,
+      "question": "What green vegetable is not on the tray?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "broccoli",
+      "answers": [
+        "broccoli",
+        "mango",
+        "celery"
+      ]
+    },
+    {
+      "question_id": 4406950,
+      "image_id": 440695,
+      "question": "What equipment are they using that would not be used to play volleyball?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "paddles",
+      "answers": [
+        "rackets",
+        "tennis racquet",
+        "paddles",
+        "net",
+        "tennis rackets",
+        "tennis racquets",
+        "racquet"
+      ]
+    },
+    {
+      "question_id": 556292,
+      "image_id": 55629,
+      "question": "How many sheep are not in the background?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "4",
+      "answers": [
+        "15",
+        "4",
+        "2",
+        "12"
+      ]
+    },
+    {
+      "question_id": 1040981,
+      "image_id": 104098,
+      "question": "Which zebra is not moving?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "one on right",
+        "middle",
+        "left",
+        "left one",
+        "one on left",
+        "left most zebra",
+        "on left"
+      ]
+    },
+    {
+      "question_id": 3051032,
+      "image_id": 305103,
+      "question": "How can you tell she is not a professional athlete?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "clothes",
+      "answers": [
+        "her stance",
+        "clothes",
+        "shoes",
+        "her clothes",
+        "pose",
+        "clothing",
+        "her posture"
+      ]
+    },
+    {
+      "question_id": 1502860,
+      "image_id": 150286,
+      "question": "Who does not normally appear on the beach?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "santa",
+      "answers": [
+        "santa",
+        "santa claus"
+      ]
+    },
+    {
+      "question_id": 5529111,
+      "image_id": 552911,
+      "question": "Why is the man not on the horse?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "no saddle",
+      "answers": [
+        "no saddle",
+        "walking horse",
+        "cooling off in ocean",
+        "taking it for walk",
+        "he is resting horse",
+        "in water",
+        "he's walking",
+        "it is wild",
+        "to go swimming"
+      ]
+    },
+    {
+      "question_id": 3820582,
+      "image_id": 382058,
+      "question": "Will the man learn how to not wipe out?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "maybe",
+        "no"
+      ]
+    },
+    {
+      "question_id": 1334100,
+      "image_id": 133410,
+      "question": "Why is water on the camera, when it's not raining?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "near beach",
+      "answers": [
+        "i guess it is foggy",
+        "those are kites",
+        "those are kites, not water drops",
+        "it rained earlier",
+        "for effect",
+        "no",
+        "splash",
+        "near beach",
+        "beach",
+        "spray"
+      ]
+    },
+    {
+      "question_id": 2974951,
+      "image_id": 297495,
+      "question": "Is there a knife not being held?",
+      "question_type": "is there a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 1609680,
+      "image_id": 160968,
+      "question": "Which police officer is not wearing sunglasses?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "female",
+      "answers": [
+        "female",
+        "female officer",
+        "women",
+        "girl",
+        "one on right",
+        "female police officer",
+        "woman on far left",
+        "woman"
+      ]
+    },
+    {
+      "question_id": 4629012,
+      "image_id": 462901,
+      "question": "What are cars not supposed to do?",
+      "question_type": "what are",
+      "answer_type": "other",
+      "multiple_choice_answer": "turn right",
+      "answers": [
+        "turn right at times",
+        "turn right",
+        "turn"
+      ]
+    },
+    {
+      "question_id": 2034591,
+      "image_id": 203459,
+      "question": "How can you tell the animals are not allowed to roam?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "fence",
+      "answers": [
+        "fence",
+        "fenced",
+        "fenced in",
+        "in fence",
+        "fences",
+        "they're in cage"
+      ]
+    },
+    {
+      "question_id": 1488841,
+      "image_id": 148884,
+      "question": "Are any of the donuts not sugar coated?",
+      "question_type": "are",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 1110001,
+      "image_id": 111000,
+      "question": "They are not flying?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "true",
+        "yes",
+        "not question",
+        "frisbees",
+        "playing frisbee"
+      ]
+    },
+    {
+      "question_id": 3416230,
+      "image_id": 341623,
+      "question": "Where is the dog not supposed to be standing?",
+      "question_type": "where is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "water fountain",
+      "answers": [
+        "fountain",
+        "on water fountain",
+        "on fountain",
+        "on ground",
+        "water fountain",
+        "drinking fountain",
+        "on drinking fountain"
+      ]
+    },
+    {
+      "question_id": 3141392,
+      "image_id": 314139,
+      "question": "How many zebras are not standing?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "question_id": 3445780,
+      "image_id": 344578,
+      "question": "How can you tell these are not American busses?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "language",
+      "answers": [
+        "language",
+        "language of writing",
+        "writing",
+        "writing on bus",
+        "ads are not in english",
+        "sign is not in english",
+        "ads",
+        "writing on side of bus"
+      ]
+    },
+    {
+      "question_id": 3322381,
+      "image_id": 332238,
+      "question": "Why might the man not want gloves on?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "to grip board",
+      "answers": [
+        "grab surfboard",
+        "might be slippery",
+        "wet",
+        "better feel",
+        "for grip",
+        "better grip",
+        "to grip board",
+        "not cold",
+        "they'd get wet",
+        "warm"
+      ]
+    },
+    {
+      "question_id": 4020412,
+      "image_id": 402041,
+      "question": "How many elephant legs are not on a stand?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "5",
+      "answers": [
+        "5",
+        "0"
+      ]
+    },
+    {
+      "question_id": 1852870,
+      "image_id": 185287,
+      "question": "What color is the fruit being sold that is not ripe?",
+      "question_type": "what color is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "green",
+      "answers": [
+        "green",
+        "yellow",
+        "bananas"
+      ]
+    },
+    {
+      "question_id": 2500430,
+      "image_id": 250043,
+      "question": "How many fruits are not on the platter?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3"
+      ]
+    },
+    {
+      "question_id": 1680160,
+      "image_id": 168016,
+      "question": "Is this umbrella not a bit too big for this child?",
+      "question_type": "is this",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 5654462,
+      "image_id": 565446,
+      "question": "How many people are not wearing shirts?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "3"
+      ]
+    },
+    {
+      "question_id": 1240270,
+      "image_id": 124027,
+      "question": "What item is not usually found in a bathroom?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "piano",
+      "answers": [
+        "piano"
+      ]
+    },
+    {
+      "question_id": 5120680,
+      "image_id": 512068,
+      "question": "What is not allowed, according to the sign?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "ball games",
+      "answers": [
+        "ball games",
+        "no ball games",
+        "ball"
+      ]
+    },
+    {
+      "question_id": 2168511,
+      "image_id": 216851,
+      "question": "Which child is not blurred by the camera lens?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right one",
+      "answers": [
+        "older child",
+        "right one",
+        "right",
+        "both",
+        "one on right",
+        "front",
+        "younger one",
+        "kid on right"
+      ]
+    },
+    {
+      "question_id": 113321,
+      "image_id": 11332,
+      "question": "Which women does not have a name tag?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "far right one",
+        "left",
+        "right",
+        "white jacket",
+        "on right",
+        "lady on far right",
+        "left hand side",
+        "in white",
+        "right hand",
+        "woman on right"
+      ]
+    },
+    {
+      "question_id": 4439880,
+      "image_id": 443988,
+      "question": "How many clocks are not visible?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "question_id": 3926432,
+      "image_id": 392643,
+      "question": "What indicates that this sandwich was not made at home?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "paper",
+      "answers": [
+        "paper",
+        "packaging",
+        "in wrapper",
+        "bread",
+        "paper under it",
+        "pickle",
+        "plastic tray with lemons",
+        "wrapper"
+      ]
+    },
+    {
+      "question_id": 2364252,
+      "image_id": 236425,
+      "question": "What two fruits are not in the glass?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "apple and banana",
+      "answers": [
+        "apple, banana",
+        "apple banana",
+        "apple and banana",
+        "banana, apple",
+        "banana and apple"
+      ]
+    },
+    {
+      "question_id": 2433540,
+      "image_id": 243354,
+      "question": "How many skateboarders are not wearing safety equipment?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 2293560,
+      "image_id": 229356,
+      "question": "What part of the picture does not belong?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "dog",
+      "answers": [
+        "dog",
+        "dog and frisbee"
+      ]
+    },
+    {
+      "question_id": 5329260,
+      "image_id": 532926,
+      "question": "Which roll of toilet paper is not unfurled?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "middle",
+      "answers": [
+        "middle one",
+        "middle",
+        "center"
+      ]
+    },
+    {
+      "question_id": 4015530,
+      "image_id": 401553,
+      "question": "How many people are not on skateboards?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 4189642,
+      "image_id": 418964,
+      "question": "What tells you that this photo was not taken in the Northern Hemisphere?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "palm trees",
+      "answers": [
+        "palm trees",
+        "trees",
+        "nothing",
+        "bus",
+        "his lanyard says china",
+        "wording of advertisement"
+      ]
+    },
+    {
+      "question_id": 908010,
+      "image_id": 90801,
+      "question": "How can you tell this is a hotel and not a house?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "furniture",
+      "answers": [
+        "no",
+        "no person effects",
+        "ottoman",
+        "too many seats",
+        "hotel phone",
+        "furniture",
+        "you can't"
+      ]
+    },
+    {
+      "question_id": 3549210,
+      "image_id": 354921,
+      "question": "Does this type of mixed-message attire suggest that this is not in the height of summer or winter?",
+      "question_type": "does this",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no",
+        "???"
+      ]
+    },
+    {
+      "question_id": 1200770,
+      "image_id": 120077,
+      "question": "Which way can you not turn on this street?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right"
+      ]
+    },
+    {
+      "question_id": 2765590,
+      "image_id": 276559,
+      "question": "How can you tell this photo was not taken very recently?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "clothing",
+      "answers": [
+        "i can't",
+        "clothing",
+        "colors are washed out looking",
+        "no",
+        "player's age",
+        "hairstyles",
+        "by clothes",
+        "old photo quality"
+      ]
+    },
+    {
+      "question_id": 3021472,
+      "image_id": 302147,
+      "question": "Why should seasonings not be kept in this location?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "heat",
+      "answers": [
+        "heat",
+        "fire",
+        "they will be too warm",
+        "too close to oven",
+        "moisture",
+        "fire hazard",
+        "it gets hot",
+        "they will melt",
+        "grease"
+      ]
+    },
+    {
+      "question_id": 4408741,
+      "image_id": 440874,
+      "question": "Which one is not like the others?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "black sheep",
+      "answers": [
+        "black sheep",
+        "one on right",
+        "brown one",
+        "black one",
+        "black",
+        "right"
+      ]
+    },
+    {
+      "question_id": 3155042,
+      "image_id": 315504,
+      "question": "Is there a person who is not wearing a shirt?",
+      "question_type": "is there a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 4908010,
+      "image_id": 490801,
+      "question": "What sharp object should the child not point at his face?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "scissors",
+      "answers": [
+        "scissors"
+      ]
+    },
+    {
+      "question_id": 1669850,
+      "image_id": 166985,
+      "question": "How can we tell this photo is not from this century?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "black and white",
+      "answers": [
+        "hairstyles",
+        "black & white",
+        "bathing suit styles",
+        "black and white",
+        "styles",
+        "it's in black and white"
+      ]
+    },
+    {
+      "question_id": 4390602,
+      "image_id": 439060,
+      "question": "Which person is not on the sidewalk?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "person on left",
+      "answers": [
+        "person on left",
+        "one on left",
+        "left",
+        "man on far left",
+        "man to left",
+        "person in black jacket",
+        "man in black shirt",
+        "far left",
+        "black jacket"
+      ]
+    },
+    {
+      "question_id": 2060622,
+      "image_id": 206062,
+      "question": "What is the man who is not surfing doing?",
+      "question_type": "what is the man",
+      "answer_type": "other",
+      "multiple_choice_answer": "watching",
+      "answers": [
+        "watching",
+        "carrying surfboard",
+        "watching wave",
+        "standing"
+      ]
+    },
+    {
+      "question_id": 2629010,
+      "image_id": 262901,
+      "question": "Did the sheep not notice the photographer?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "yes",
+        "no",
+        "no they did noticed"
+      ]
+    },
+    {
+      "question_id": 2879200,
+      "image_id": 287920,
+      "question": "Is he doing something his mother may have told him not to?",
+      "question_type": "is he",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 1885202,
+      "image_id": 188520,
+      "question": "What animal is not a zebra?",
+      "question_type": "what animal is",
+      "answer_type": "other",
+      "multiple_choice_answer": "giraffe",
+      "answers": [
+        "giraffe",
+        "bear",
+        "cow"
+      ]
+    },
+    {
+      "question_id": 2997041,
+      "image_id": 299704,
+      "question": "What is the possibility that this location is not in USA?",
+      "question_type": "what is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "100%",
+      "answers": [
+        "75%",
+        "good",
+        "not possible",
+        "high",
+        "likely",
+        "100%",
+        "100 percent",
+        "100% not in usa"
+      ]
+    },
+    {
+      "question_id": 3380642,
+      "image_id": 338064,
+      "question": "Is the skyline not unlike the meat filling in a sandwich of two natural landscapes?",
+      "question_type": "is the",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "yes",
+        "unknown"
+      ]
+    },
+    {
+      "question_id": 1152261,
+      "image_id": 115226,
+      "question": "How many people do not have an umbrella?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 4209392,
+      "image_id": 420939,
+      "question": "How many people are not skiing?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "question_id": 2286780,
+      "image_id": 228678,
+      "question": "During what times is parking not allowed in front of this sign?",
+      "question_type": "none of the above",
+      "answer_type": "number",
+      "multiple_choice_answer": "2-6 am",
+      "answers": [
+        "2:00 am to 6:00 am",
+        "2-6 am",
+        "2:00 am-6:00am",
+        "2 to 6 am",
+        "2amto 6am",
+        "2 am to 6 am"
+      ]
+    },
+    {
+      "question_id": 2286781,
+      "image_id": 228678,
+      "question": "What type of turn is not aloud?",
+      "question_type": "what type of",
+      "answer_type": "other",
+      "multiple_choice_answer": "u turn",
+      "answers": [
+        "u turn",
+        "u"
+      ]
+    },
+    {
+      "question_id": 4907910,
+      "image_id": 490791,
+      "question": "What is on the back of the bike that does not really belong there?",
+      "question_type": "what is on the",
+      "answer_type": "other",
+      "multiple_choice_answer": "blender",
+      "answers": [
+        "blender",
+        "drink container"
+      ]
+    },
+    {
+      "question_id": 4583390,
+      "image_id": 458339,
+      "question": "Why did you not flush this toilet?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "broken",
+      "answers": [
+        "broken",
+        "i forgot",
+        "cleanliness",
+        "couldn't",
+        "no handle",
+        "lazy",
+        "in hurry",
+        "gross",
+        "rude"
+      ]
+    },
+    {
+      "question_id": 2496091,
+      "image_id": 249609,
+      "question": "How many trees are not in the fog?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "50"
+      ]
+    },
+    {
+      "question_id": 2547141,
+      "image_id": 254714,
+      "question": "Which photo is not a convenience store?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "1st",
+        "far left photo",
+        "first",
+        "far left"
+      ]
+    },
+    {
+      "question_id": 2326750,
+      "image_id": 232675,
+      "question": "What does the sign below the do not enter sign mean?",
+      "question_type": "what does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "do not feed goats",
+      "answers": [
+        "no goats",
+        "no feeding animals",
+        "no hunting",
+        "no sheep",
+        "do not feed animal",
+        "do not feed goats",
+        "don't feed goats",
+        "no rams"
+      ]
+    },
+    {
+      "question_id": 3135060,
+      "image_id": 313506,
+      "question": "Which headlight is not working?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "right",
+        "left",
+        "right side",
+        "right one",
+        "right in photo",
+        "right headlight"
+      ]
+    },
+    {
+      "question_id": 632700,
+      "image_id": 63270,
+      "question": "How many cars are not parked?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "7",
+      "answers": [
+        "more than 4",
+        "7",
+        "6",
+        "5",
+        "4",
+        "8"
+      ]
+    },
+    {
+      "question_id": 624200,
+      "image_id": 62420,
+      "question": "How can we assume this photo is not from this century?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "clothing",
+      "answers": [
+        "clothing is old",
+        "apparel",
+        "clothing and quality of picture",
+        "black and white",
+        "clothing",
+        "her outfit is old fashioned",
+        "clothing, objects, quality"
+      ]
+    },
+    {
+      "question_id": 338742,
+      "image_id": 33874,
+      "question": "What finger is not inside the pitcher's glove?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "index",
+      "answers": [
+        "forefinger",
+        "index",
+        "pointer finger",
+        "second",
+        "index finger",
+        "pointer",
+        "ring"
+      ]
+    },
+    {
+      "question_id": 2165790,
+      "image_id": 216579,
+      "question": "What does the truck say not to do?",
+      "question_type": "what does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "litter",
+      "answers": [
+        "don't litter",
+        "litter"
+      ]
+    },
+    {
+      "question_id": 5154272,
+      "image_id": 515427,
+      "question": "What does the traffic sign tell you is not allowed?",
+      "question_type": "what does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "u turn",
+      "answers": [
+        "u turns",
+        "u turn",
+        "u-turn",
+        "u-turns"
+      ]
+    },
+    {
+      "question_id": 4799570,
+      "image_id": 479957,
+      "question": "How many people appear in this photo that are not the focus?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "question_id": 4360481,
+      "image_id": 436048,
+      "question": "What days and times can you not park?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "mon-sat 8am-6pm",
+      "answers": [
+        "mon-sat, 8am to 6pm",
+        "monday through saturday 8:00 am to 6:00 pm",
+        "mon-sat 8am-6pm",
+        "mon-sat 8am - 6pm",
+        "monday - saturday 8am -6pm"
+      ]
+    },
+    {
+      "question_id": 1952960,
+      "image_id": 195296,
+      "question": "How many piles of fruit are not bananas?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "question_id": 4131151,
+      "image_id": 413115,
+      "question": "What way are you not allowed to turn?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right"
+      ]
+    },
+    {
+      "question_id": 5122630,
+      "image_id": 512263,
+      "question": "Are there any boats that are not white in this photo?",
+      "question_type": "are there any",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3483820,
+      "image_id": 348382,
+      "question": "Given that you are not supposed to feed the animals, are the rules currently being broken?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 4022350,
+      "image_id": 402235,
+      "question": "What object in the image melts in your mouth and not in your hand?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "m & ms",
+      "answers": [
+        "m&m candies",
+        "m&m",
+        "m&m's",
+        "chocolate donut",
+        "m and m's",
+        "m & ms",
+        "fruit loops",
+        "m and ms"
+      ]
+    },
+    {
+      "question_id": 2007882,
+      "image_id": 200788,
+      "question": "How can you tell this photo is not from America?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "license plate",
+      "answers": [
+        "license plate",
+        "license plates",
+        "license plate is not american",
+        "foreign cars",
+        "license plates, signage, and cars",
+        "car license plate",
+        "tags"
+      ]
+    },
+    {
+      "question_id": 2910182,
+      "image_id": 291018,
+      "question": "What can a person not do here?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "smoke",
+      "answers": [
+        "smoke",
+        "yell \"bomb\"",
+        "sleep",
+        "run",
+        "stand",
+        "pee"
+      ]
+    },
+    {
+      "question_id": 2963481,
+      "image_id": 296348,
+      "question": "Are there any hot dogs that are not wrapped in bacon?",
+      "question_type": "are there any",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 3554800,
+      "image_id": 355480,
+      "question": "How many of these people would you not expect to wear a necktie?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "0",
+        "1"
+      ]
+    },
+    {
+      "question_id": 3794481,
+      "image_id": 379448,
+      "question": "What color traffic light is not illuminated?",
+      "question_type": "what color",
+      "answer_type": "other",
+      "multiple_choice_answer": "yellow",
+      "answers": [
+        "yellow",
+        "amber",
+        "red, green"
+      ]
+    },
+    {
+      "question_id": 166652,
+      "image_id": 16665,
+      "question": "When this sort of traffic item is not saying go or stop what is it saying?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "caution",
+      "answers": [
+        "caution",
+        "yield",
+        "slow down",
+        "slow",
+        "slow down and be prepared to stop"
+      ]
+    },
+    {
+      "question_id": 796031,
+      "image_id": 79603,
+      "question": "Why is the boy not skateboarding outside?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "too cold",
+      "answers": [
+        "bad weather",
+        "it's raining",
+        "too cold",
+        "don't know",
+        "to cold",
+        "weather",
+        "he is in house"
+      ]
+    },
+    {
+      "question_id": 3956730,
+      "image_id": 395673,
+      "question": "How many people are not standing up straight?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "6"
+      ]
+    },
+    {
+      "question_id": 1008270,
+      "image_id": 100827,
+      "question": "How can we tell this is not in America?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "i can't",
+      "answers": [
+        "language",
+        "foreign writing on signs",
+        "signs",
+        "french signs",
+        "sign not in english in window",
+        "window sign",
+        "i can't",
+        "words on wall",
+        "road",
+        "we can't"
+      ]
+    },
+    {
+      "question_id": 1008271,
+      "image_id": 100827,
+      "question": "How can you tell the weather is not too cold?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "no jackets",
+      "answers": [
+        "no jackets",
+        "no",
+        "clothing",
+        "outside",
+        "people outside no coats",
+        "eating outside",
+        "clothing on people",
+        "people wearing t-shirts"
+      ]
+    },
+    {
+      "question_id": 5132141,
+      "image_id": 513214,
+      "question": "Why is the boy not in focus?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "moving",
+      "answers": [
+        "movement",
+        "he's moving",
+        "blurry photo",
+        "moving",
+        "bad photographer",
+        "it's focused on frisbee",
+        "blurred image",
+        "in motion",
+        "depth of field"
+      ]
+    },
+    {
+      "question_id": 3105730,
+      "image_id": 310573,
+      "question": "Is someone concerned that \"dog paddling\" might not be enough?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 4503182,
+      "image_id": 450318,
+      "question": "Which sign is not covered in snow?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "agnes",
+      "answers": [
+        "agnes",
+        "middle sign",
+        "agnes st",
+        "street",
+        "top sign"
+      ]
+    },
+    {
+      "question_id": 325791,
+      "image_id": 32579,
+      "question": "Which two clothing items are not black?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "coat and boots",
+      "answers": [
+        "coat and boots",
+        "jacket and boots",
+        "ski boots and jacket",
+        "sticks",
+        "jacket & gloves",
+        "jacket and hat",
+        "jacket",
+        "jacket and shoes"
+      ]
+    },
+    {
+      "question_id": 388501,
+      "image_id": 38850,
+      "question": "How many boys are not wearing shirts?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 3700450,
+      "image_id": 370045,
+      "question": "How many people are not standing?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "0",
+        "1",
+        "4"
+      ]
+    },
+    {
+      "question_id": 3100530,
+      "image_id": 310053,
+      "question": "How many trucks are not facing the camera?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3"
+      ]
+    },
+    {
+      "question_id": 996711,
+      "image_id": 99671,
+      "question": "Are there stuffed animals that are not bears?",
+      "question_type": "are there",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no"
+      ]
+    },
+    {
+      "question_id": 3692791,
+      "image_id": 369279,
+      "question": "No the dog is not touching the ground?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "yes dog is",
+        "yes",
+        "correct"
+      ]
+    },
+    {
+      "question_id": 2054861,
+      "image_id": 205486,
+      "question": "How many people are not wearing hats?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "18",
+        "2",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "question_id": 723961,
+      "image_id": 72396,
+      "question": "What does it say not to do around the computer?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "eat or drink",
+      "answers": [
+        "eat drink",
+        "eat or drink",
+        "do not eat or drink",
+        "eat"
+      ]
+    },
+    {
+      "question_id": 3835810,
+      "image_id": 383581,
+      "question": "Which object is not a tool?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "bear",
+      "answers": [
+        "bear",
+        "stuffed animal",
+        "teddy bear",
+        "stuffed bear"
+      ]
+    },
+    {
+      "question_id": 3539192,
+      "image_id": 353919,
+      "question": "What are you not supposed to feed?",
+      "question_type": "what are",
+      "answer_type": "other",
+      "multiple_choice_answer": "zombies",
+      "answers": [
+        "zombies"
+      ]
+    },
+    {
+      "question_id": 3539190,
+      "image_id": 353919,
+      "question": "What does the sign say not to feed?",
+      "question_type": "what does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "zombies",
+      "answers": [
+        "zombies"
+      ]
+    },
+    {
+      "question_id": 3653090,
+      "image_id": 365309,
+      "question": "Who is not out of focus?",
+      "question_type": "who is",
+      "answer_type": "other",
+      "multiple_choice_answer": "man",
+      "answers": [
+        "man",
+        "woman",
+        "everyone except women close to camera",
+        "everyone",
+        "old man",
+        "middle man",
+        "man in middle"
+      ]
+    },
+    {
+      "question_id": 1908051,
+      "image_id": 190805,
+      "question": "Which fruit is not on a table?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "bananas",
+      "answers": [
+        "bananas",
+        "dragon fruit",
+        "banana",
+        "apple"
+      ]
+    },
+    {
+      "question_id": 4164771,
+      "image_id": 416477,
+      "question": "How can you tell it's not very hot at the beach?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "she is wearing long sleeves",
+      "answers": [
+        "she has long sleeved shirt on",
+        "long sleeves",
+        "she is wearing long sleeves",
+        "feet not burning",
+        "shirt",
+        "long sleeved shirts",
+        "sweater",
+        "woman is playing game in her bare feet",
+        "jacket",
+        "she has on long sleeves"
+      ]
+    },
+    {
+      "question_id": 3698482,
+      "image_id": 369848,
+      "question": "Which bottle does not belong on the table?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "juice",
+      "answers": [
+        "yellow bottle",
+        "juice",
+        "plastic one",
+        "plastic bottle",
+        "small plastic one on right",
+        "right",
+        "one on right"
+      ]
+    },
+    {
+      "question_id": 5377822,
+      "image_id": 537782,
+      "question": "Yes the room is getting darker.On the candles are not lit?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "yes room is getting darker",
+        "true",
+        "no"
+      ]
+    },
+    {
+      "question_id": 2502681,
+      "image_id": 250268,
+      "question": "What might happen as a consequence of someone not using this device as required by law?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "parking ticket",
+      "answers": [
+        "they will get ticket",
+        "receive ticket",
+        "get ticket",
+        "parking ticket",
+        "ticket",
+        "ticketed"
+      ]
+    },
+    {
+      "question_id": 2002011,
+      "image_id": 200201,
+      "question": "Is there a person that is not standing still in the picture?",
+      "question_type": "is there a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3308631,
+      "image_id": 330863,
+      "question": "How many chairs are not being utilized?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "6",
+      "answers": [
+        "6",
+        "7",
+        "5",
+        "lot",
+        "4",
+        "10"
+      ]
+    },
+    {
+      "question_id": 3198550,
+      "image_id": 319855,
+      "question": "What are you not allowed to ride in this area?",
+      "question_type": "what are",
+      "answer_type": "other",
+      "multiple_choice_answer": "motorcycle",
+      "answers": [
+        "motorcycle",
+        "motorcycles",
+        "motorbike"
+      ]
+    },
+    {
+      "question_id": 4905721,
+      "image_id": 490572,
+      "question": "How is the surfer not freezing cold?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "wetsuit",
+      "answers": [
+        "wearing wetsuit",
+        "yes",
+        "wetsuit"
+      ]
+    },
+    {
+      "question_id": 2685162,
+      "image_id": 268516,
+      "question": "Is anyone not wearing a tie?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 4380552,
+      "image_id": 438055,
+      "question": "How many baseball player's are not on the field?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "7",
+      "answers": [
+        "8",
+        "5",
+        "6",
+        "7",
+        "4"
+      ]
+    },
+    {
+      "question_id": 4309340,
+      "image_id": 430934,
+      "question": "How many players are not touching the ground?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "question_id": 160841,
+      "image_id": 16084,
+      "question": "Is the man not wearing pants?",
+      "question_type": "is the man",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 2583970,
+      "image_id": 258397,
+      "question": "How many people are not wearing orange vests?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "3",
+        "12",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 5583650,
+      "image_id": 558365,
+      "question": "What bad habit is not allowed on this ship?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "smoking",
+      "answers": [
+        "smoking"
+      ]
+    },
+    {
+      "question_id": 2726320,
+      "image_id": 272632,
+      "question": "Which child is not smiling?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "bottom",
+      "answers": [
+        "little boy in red at bottom",
+        "one on lower bed",
+        "one on bottom",
+        "bottom",
+        "child in bottom bunk",
+        "bottom bunk",
+        "child in blue",
+        "youngest"
+      ]
+    },
+    {
+      "question_id": 62330,
+      "image_id": 6233,
+      "question": "How many not motorized vehicles are in the picture?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "4",
+      "answers": [
+        "6",
+        "8",
+        "4",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "question_id": 5217261,
+      "image_id": 521726,
+      "question": "Why does the snow not fall?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "summer",
+      "answers": [
+        "summer",
+        "sticks",
+        "not melted",
+        "too warm",
+        "frozen",
+        "frozen to sign",
+        "too cold",
+        "it's stuck",
+        "storm is over"
+      ]
+    },
+    {
+      "question_id": 232582,
+      "image_id": 23258,
+      "question": "How can you tell they are at a wine tasting and not meant to drink all the wine?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "spit bowl",
+      "answers": [
+        "don't know",
+        "papers",
+        "small glasses",
+        "all wine bottle around room",
+        "bottles on shelf",
+        "smelling it",
+        "spit bucket",
+        "black bucket on table",
+        "pitcher of water",
+        "spit bowl"
+      ]
+    },
+    {
+      "question_id": 5260082,
+      "image_id": 526008,
+      "question": "What can cars not do on this street?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "turn left",
+      "answers": [
+        "turn left",
+        "not faster than 35 mph",
+        "fly",
+        "turn"
+      ]
+    },
+    {
+      "question_id": 277100,
+      "image_id": 27710,
+      "question": "How many of the cattle are not white?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "4",
+        "6"
+      ]
+    },
+    {
+      "question_id": 65862,
+      "image_id": 6586,
+      "question": "Is the plane not working?",
+      "question_type": "is the",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 57402,
+      "image_id": 5740,
+      "question": "How to the boys not lose their boards?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "no",
+        "1",
+        "wave knocked them",
+        "they hold on",
+        "strap",
+        "surf leash",
+        "string tied to wrist",
+        "tied up",
+        "ankle strap"
+      ]
+    },
+    {
+      "question_id": 1967661,
+      "image_id": 196766,
+      "question": "How many people are not wearing something on their heads?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "question_id": 5261682,
+      "image_id": 526168,
+      "question": "How many animals are not standing?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3"
+      ]
+    },
+    {
+      "question_id": 4807410,
+      "image_id": 480741,
+      "question": "What is the person not engaged in conversation doing?",
+      "question_type": "what is the person",
+      "answer_type": "other",
+      "multiple_choice_answer": "looking at camera",
+      "answers": [
+        "looking at camera",
+        "taking picture",
+        "playing game",
+        "on right",
+        "looking at pictures",
+        "looking at video",
+        "last one"
+      ]
+    },
+    {
+      "question_id": 1167710,
+      "image_id": 116771,
+      "question": "Is this a dangerous machine if not used carefully?",
+      "question_type": "is this a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 3160140,
+      "image_id": 316014,
+      "question": "How many people are on the court and not playing?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2"
+      ]
+    },
+    {
+      "question_id": 2468332,
+      "image_id": 246833,
+      "question": "Is anyone not wearing a hat?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 1145211,
+      "image_id": 114521,
+      "question": "What is not allowed?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "dogs",
+      "answers": [
+        "dogs"
+      ]
+    },
+    {
+      "question_id": 4616572,
+      "image_id": 461657,
+      "question": "What is the man not wearing?",
+      "question_type": "what is the man",
+      "answer_type": "other",
+      "multiple_choice_answer": "shoes",
+      "answers": [
+        "shoes",
+        "pants",
+        "shirt"
+      ]
+    },
+    {
+      "question_id": 3993582,
+      "image_id": 399358,
+      "question": "In this scene, how many trees are not standing directly next to another tree?",
+      "question_type": "none of the above",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "3",
+        "1",
+        "0",
+        "2"
+      ]
+    },
+    {
+      "question_id": 3076032,
+      "image_id": 307603,
+      "question": "Which woman is not wearing glasses?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left one",
+        "left",
+        "left woman",
+        "neither",
+        "woman on left in white shirt",
+        "on left"
+      ]
+    },
+    {
+      "question_id": 1529800,
+      "image_id": 152980,
+      "question": "How many elephants are not adults?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "4"
+      ]
+    },
+    {
+      "question_id": 5549522,
+      "image_id": 554952,
+      "question": "What is the only clothing item that does not match?",
+      "question_type": "what is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "red shirt",
+      "answers": [
+        "red shirt",
+        "jacket",
+        "woman's shirt",
+        "her shirt",
+        "undershirt",
+        "red tank top",
+        "shirt"
+      ]
+    },
+    {
+      "question_id": 1432692,
+      "image_id": 143269,
+      "question": "Is someone not concerned about cold feet?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 5340161,
+      "image_id": 534016,
+      "question": "What should someone do if the meter does not work properly?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "call 831-420-5552",
+      "answers": [
+        "call",
+        "call 831-420-5552",
+        "add coins",
+        "call number"
+      ]
+    },
+    {
+      "question_id": 950320,
+      "image_id": 95032,
+      "question": "Is the bed not arranged?",
+      "question_type": "is the",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 636441,
+      "image_id": 63644,
+      "question": "Which direction should the driver not turn?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right",
+        "?"
+      ]
+    },
+    {
+      "question_id": 1856461,
+      "image_id": 185646,
+      "question": "How many vehicles are not trucks?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "2"
+      ]
+    },
+    {
+      "question_id": 5290361,
+      "image_id": 529036,
+      "question": "Why is the woman in the foreground not moving?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "waiting",
+      "answers": [
+        "waiting for serve",
+        "tennis",
+        "waiting",
+        "she is waiting for other player",
+        "waiting for ball",
+        "waiting for her partner to play"
+      ]
+    },
+    {
+      "question_id": 2866132,
+      "image_id": 286613,
+      "question": "What is not allowed?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "trucks",
+      "answers": [
+        "trucks",
+        "cars",
+        "collecting seashells",
+        "driving",
+        "parking",
+        "vehicles",
+        "motor vehicles"
+      ]
+    },
+    {
+      "question_id": 3698780,
+      "image_id": 369878,
+      "question": "How do you know this city is not in the United States?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "buildings",
+      "answers": [
+        "driving on left side of road",
+        "driving on left",
+        "they are driving opposite directions",
+        "architecture",
+        "buildings",
+        "asian letters",
+        "double decker buses",
+        "driving on opposite side of street",
+        "wrong way sign is not us",
+        "i don't"
+      ]
+    },
+    {
+      "question_id": 1736070,
+      "image_id": 173607,
+      "question": "What does the sign say not to do?",
+      "question_type": "what does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "dumping",
+      "answers": [
+        "no dumping",
+        "dumping",
+        "dump",
+        "risk"
+      ]
+    },
+    {
+      "question_id": 5774050,
+      "image_id": 577405,
+      "question": "Which of these is not a fruit?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "muffin",
+      "answers": [
+        "muffins",
+        "muffin"
+      ]
+    },
+    {
+      "question_id": 5528861,
+      "image_id": 552886,
+      "question": "How does this driver not see the buses meeting him head-on?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "it's not",
+      "answers": [
+        "he's distracted",
+        "those are backs of buses",
+        "they aren't",
+        "signs",
+        "it's not",
+        "don't know",
+        "no driver",
+        "he's crazy",
+        "what?",
+        "blonde"
+      ]
+    },
+    {
+      "question_id": 1670570,
+      "image_id": 167057,
+      "question": "How can you tell this is not the child's bed?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "too big",
+      "answers": [
+        "too big",
+        "it is too big",
+        "large bed",
+        "too large",
+        "big, more pillows",
+        "bed is large",
+        "size",
+        "because it is big bed"
+      ]
+    },
+    {
+      "question_id": 5060071,
+      "image_id": 506007,
+      "question": "Why does not much grass grow in front of the bench?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "dirt is hard",
+      "answers": [
+        "there's path",
+        "lots of foot traffic",
+        "feet",
+        "foot traffic",
+        "dirt is hard",
+        "walked on",
+        "pathway",
+        "dirt",
+        "because people often walk there",
+        "to much traffic"
+      ]
+    },
+    {
+      "question_id": 407962,
+      "image_id": 40796,
+      "question": "What direction can you not turn?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left"
+      ]
+    },
+    {
+      "question_id": 1323951,
+      "image_id": 132395,
+      "question": "Why is the ramp on the far left red and not white?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "visibility",
+      "answers": [
+        "visibility",
+        "different angle",
+        "red",
+        "brick",
+        "ran out of paint",
+        "it's painted",
+        "painted",
+        "easier to see",
+        "higher skill level"
+      ]
+    },
+    {
+      "question_id": 1875690,
+      "image_id": 187569,
+      "question": "How many \"do not U turn\" signs are there in this picture?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "question_id": 98461,
+      "image_id": 9846,
+      "question": "What # is the person not in white?",
+      "question_type": "what",
+      "answer_type": "number",
+      "multiple_choice_answer": "16",
+      "answers": [
+        "15",
+        "16"
+      ]
+    },
+    {
+      "question_id": 1327100,
+      "image_id": 132710,
+      "question": "Which part of the mountain is not covered with snow?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "top",
+      "answers": [
+        "top",
+        "tip top",
+        "peaks",
+        "tip",
+        "summit"
+      ]
+    },
+    {
+      "question_id": 4807552,
+      "image_id": 480755,
+      "question": "Can you be certain whether or not there is anything in the white mug?",
+      "question_type": "can you",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "not certain",
+        "no"
+      ]
+    },
+    {
+      "question_id": 4041010,
+      "image_id": 404101,
+      "question": "What is one clue that this is not a private home?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "logo on robe",
+      "answers": [
+        "tray of toiletries",
+        "towels",
+        "bathrobe",
+        "toilet flusher",
+        "logo on robe",
+        "name on bathrobe",
+        "bathrobe logo",
+        "sample sized body care items",
+        "robe",
+        "style of flusher"
+      ]
+    },
+    {
+      "question_id": 4041011,
+      "image_id": 404101,
+      "question": "How many towels are hanging not folded?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "1"
+      ]
+    },
+    {
+      "question_id": 2295521,
+      "image_id": 229552,
+      "question": "Which light is not on?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "left one",
+        "furthest one to left",
+        "left light",
+        "far left one",
+        "on far left",
+        "far left"
+      ]
+    },
+    {
+      "question_id": 392881,
+      "image_id": 39288,
+      "question": "Why would someone not like the fruit at the front?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "they don't like oranges",
+      "answers": [
+        "rotten",
+        "they don't like oranges",
+        "personal preference",
+        "they just don't",
+        "wax",
+        "too acidic",
+        "acidic",
+        "have to peel",
+        "allergic to it",
+        "to citrusy"
+      ]
+    },
+    {
+      "question_id": 786741,
+      "image_id": 78674,
+      "question": "The plane is not military?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "true",
+        "correct",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3626540,
+      "image_id": 362654,
+      "question": "Is it likely contact was just made with an item  not shown here?",
+      "question_type": "is it",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 2523592,
+      "image_id": 252359,
+      "question": "Why would it be important to not park here?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "fire hydrant",
+      "answers": [
+        "fire hydrant",
+        "so you wouldn't block driveway",
+        "get ticket",
+        "to not block fire hydrant"
+      ]
+    },
+    {
+      "question_id": 5769940,
+      "image_id": 576994,
+      "question": "Which floor lamp is not lit?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "one on left",
+        "left",
+        "on left",
+        "one in corner",
+        "left and right",
+        "left one",
+        "corner lamp"
+      ]
+    },
+    {
+      "question_id": 595561,
+      "image_id": 59556,
+      "question": "Has the pie been sliced or not sliced?",
+      "question_type": "has",
+      "answer_type": "other",
+      "multiple_choice_answer": "sliced",
+      "answers": [
+        "sliced",
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3725482,
+      "image_id": 372548,
+      "question": "How many of these animals are not elephants?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "6",
+      "answers": [
+        "4",
+        "5",
+        "6",
+        "0",
+        "several"
+      ]
+    },
+    {
+      "question_id": 3930272,
+      "image_id": 393027,
+      "question": "Why is one of the visible chalk base lines smudged and not the other?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "sliding into home plate",
+      "answers": [
+        "someone had home run and slid on base",
+        "sliding into home plate",
+        "home",
+        "it's been used more",
+        "more traffic",
+        "was walked on more than other",
+        "someone ran",
+        "worn out",
+        "got run over",
+        "somebody step on it"
+      ]
+    },
+    {
+      "question_id": 308382,
+      "image_id": 30838,
+      "question": "Which person is not skiing?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "child",
+      "answers": [
+        "person in red and blue jacket",
+        "person on far right",
+        "in red and blue jacket",
+        "person in white hat",
+        "man in blue and red jacket",
+        "on right",
+        "man",
+        "child",
+        "far right"
+      ]
+    },
+    {
+      "question_id": 3249431,
+      "image_id": 324943,
+      "question": "Why is the man throwing the ball not on the field?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "warming up",
+      "answers": [
+        "relief pitcher",
+        "warming up",
+        "practice",
+        "practicing",
+        "missed"
+      ]
+    },
+    {
+      "question_id": 699550,
+      "image_id": 69955,
+      "question": "How can you tell the animals are not in their natural habitat?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "fence",
+      "answers": [
+        "fences in background",
+        "fence in background",
+        "fence",
+        "footprint",
+        "fences",
+        "fenced"
+      ]
+    },
+    {
+      "question_id": 2483600,
+      "image_id": 248360,
+      "question": "How many birds are in this image not counting the reflection?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2"
+      ]
+    },
+    {
+      "question_id": 3619941,
+      "image_id": 361994,
+      "question": "What does the T-Shirt of the man not skateboarding say?",
+      "question_type": "what does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "check yourself",
+      "answers": [
+        "check yourself",
+        "check yourself!"
+      ]
+    },
+    {
+      "question_id": 2309161,
+      "image_id": 230916,
+      "question": "What is the woman sitting on that is normally not found outside?",
+      "question_type": "what is the woman",
+      "answer_type": "other",
+      "multiple_choice_answer": "chair",
+      "answers": [
+        "chair",
+        "tufted chair",
+        "yes",
+        "kitchen chair",
+        "dining room chair"
+      ]
+    },
+    {
+      "question_id": 3801890,
+      "image_id": 380189,
+      "question": "Would we prefer not to look at this?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 3536621,
+      "image_id": 353662,
+      "question": "What continent would this animal not be indigenous to?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "africa",
+      "answers": [
+        "north america",
+        "africa",
+        "usa",
+        "antarctica",
+        "north pole",
+        "australia"
+      ]
+    },
+    {
+      "question_id": 3337101,
+      "image_id": 333710,
+      "question": "What coinage does this parking meter not accept?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "penny",
+      "answers": [
+        "pennies",
+        "penny",
+        "half dollar",
+        "nickel, dime and quarter",
+        "none"
+      ]
+    },
+    {
+      "question_id": 4825150,
+      "image_id": 482515,
+      "question": "How many people are not standing?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "1",
+        "3"
+      ]
+    },
+    {
+      "question_id": 4825151,
+      "image_id": 482515,
+      "question": "3 people are not standing?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3432310,
+      "image_id": 343231,
+      "question": "What is the shape that says not to walk?",
+      "question_type": "what is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "hand",
+      "answers": [
+        "hand"
+      ]
+    },
+    {
+      "question_id": 3203820,
+      "image_id": 320382,
+      "question": "Is there a pall of coloring here, that is not intrinsic to this type of scene?",
+      "question_type": "is there a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3580701,
+      "image_id": 358070,
+      "question": "How many skateboards are not being ridden?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "question_id": 5139660,
+      "image_id": 513966,
+      "question": "How can you tell this photo is not from present day?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "cars",
+      "answers": [
+        "older cars",
+        "old cars",
+        "cars",
+        "style of cars",
+        "vehicles",
+        "older vehicles",
+        "make of cars"
+      ]
+    },
+    {
+      "question_id": 4993530,
+      "image_id": 499353,
+      "question": "Which way can you not turn?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left"
+      ]
+    },
+    {
+      "question_id": 3650212,
+      "image_id": 365021,
+      "question": "Is there a summer sport, not unlike this one?",
+      "question_type": "is there a",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "wakeboarding",
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 1820640,
+      "image_id": 182064,
+      "question": "How many people are not in a vehicle?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "4",
+      "answers": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "question_id": 1975851,
+      "image_id": 197585,
+      "question": "How many people are not wearing shorts?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "0",
+        "9",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 958090,
+      "image_id": 95809,
+      "question": "Why is the sun not at its brightest?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "clouds",
+      "answers": [
+        "winter",
+        "clouds",
+        "not noon",
+        "afternoon",
+        "cloudy day",
+        "overcast",
+        "because it is overcast",
+        "cloudy"
+      ]
+    },
+    {
+      "question_id": 1069170,
+      "image_id": 106917,
+      "question": "What color cow does not match the others?",
+      "question_type": "what color",
+      "answer_type": "other",
+      "multiple_choice_answer": "white",
+      "answers": [
+        "white"
+      ]
+    },
+    {
+      "question_id": 5778080,
+      "image_id": 577808,
+      "question": "Why is the bread not toasted?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "preference",
+      "answers": [
+        "because it is better with this type of lunch",
+        "cold sandwich",
+        "yes",
+        "preference",
+        "not wanted",
+        "it is toasted",
+        "sandwich",
+        "don't know",
+        "it is cold sandwich"
+      ]
+    },
+    {
+      "question_id": 1397541,
+      "image_id": 139754,
+      "question": "How many of the cattle are not grazing?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1",
+        "6"
+      ]
+    },
+    {
+      "question_id": 3056240,
+      "image_id": 305624,
+      "question": "What indicates that it is not summer?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "jackets",
+      "answers": [
+        "coats",
+        "clothes of people in picture",
+        "jackets",
+        "people wearing jackets",
+        "clouds",
+        "clothing",
+        "heavy clothing",
+        "coats people are wearing"
+      ]
+    },
+    {
+      "question_id": 4236321,
+      "image_id": 423632,
+      "question": "What direction can one not turn?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right",
+        "left"
+      ]
+    },
+    {
+      "question_id": 4236322,
+      "image_id": 423632,
+      "question": "Are any lights noticeably not working?",
+      "question_type": "are",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 164960,
+      "image_id": 16496,
+      "question": "Which way can you not go?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "forward",
+        "anyway",
+        "that way",
+        "backwards",
+        "reverse",
+        "right",
+        "left"
+      ]
+    },
+    {
+      "question_id": 2205291,
+      "image_id": 220529,
+      "question": "Why is the guy not wearing a shirt?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "he was hot",
+      "answers": [
+        "he's indoors",
+        "too hot",
+        "he was hot",
+        "hot",
+        "he's getting dressed",
+        "he is hot",
+        "rocking out",
+        "he's hot",
+        "just got up"
+      ]
+    },
+    {
+      "question_id": 5057502,
+      "image_id": 505750,
+      "question": "Is there anyone who is not wearing a white shirt?",
+      "question_type": "is there",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 1155192,
+      "image_id": 115519,
+      "question": "What beverage will not be served to the child?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "wine",
+      "answers": [
+        "wine",
+        "beer",
+        "milk"
+      ]
+    },
+    {
+      "question_id": 4866440,
+      "image_id": 486644,
+      "question": "What letters from the alphabet display on the bulletin board are not visible in this photo?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "b c d n o p",
+      "answers": [
+        "b c d",
+        "abc nop",
+        "a-p",
+        "abc on",
+        "a,b,c,d,n,o,p",
+        "b c d n o p",
+        "a,b,c,d,n, op",
+        "abcd nop"
+      ]
+    },
+    {
+      "question_id": 1034862,
+      "image_id": 103486,
+      "question": "How many men are not wearing hats?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "question_id": 3523130,
+      "image_id": 352313,
+      "question": "What item is not focused in the background?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "train",
+      "answers": [
+        "mirror",
+        "train",
+        "subway",
+        "sewing machine",
+        "subway car"
+      ]
+    },
+    {
+      "question_id": 2696500,
+      "image_id": 269650,
+      "question": "Does the animal seem eager or not eager to enter the water?",
+      "question_type": "does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "not eager",
+      "answers": [
+        "not eager",
+        "eager",
+        "no"
+      ]
+    },
+    {
+      "question_id": 2104340,
+      "image_id": 210434,
+      "question": "How does the giraffe keeper ensure that it does not escape?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "fence",
+      "answers": [
+        "fence",
+        "gate",
+        "fenced in",
+        "fencing",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 3840851,
+      "image_id": 384085,
+      "question": "Why do some of the refrigerators not have doors?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "broken",
+      "answers": [
+        "they're broken",
+        "they are broken",
+        "broken",
+        "they are old and broken",
+        "trash",
+        "they're old"
+      ]
+    },
+    {
+      "question_id": 2567601,
+      "image_id": 256760,
+      "question": "Which direction should you not go?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "right",
+        "backwards"
+      ]
+    },
+    {
+      "question_id": 4894002,
+      "image_id": 489400,
+      "question": "Which item does not belong in a soup?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "oranges",
+      "answers": [
+        "orange",
+        "salad",
+        "oranges",
+        "plastic wrappers",
+        "lettuce"
+      ]
+    },
+    {
+      "question_id": 5079040,
+      "image_id": 507904,
+      "question": "Why does this toilet not have a lid?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "broken",
+      "answers": [
+        "broken",
+        "not finished",
+        "it broke",
+        "it is handicapped unit",
+        "no",
+        "men",
+        "specimens collected"
+      ]
+    },
+    {
+      "question_id": 882102,
+      "image_id": 88210,
+      "question": "Is anyone not at home plate visible?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no"
+      ]
+    },
+    {
+      "question_id": 5391802,
+      "image_id": 539180,
+      "question": "Where are the other players that are not playing?",
+      "question_type": "where are the",
+      "answer_type": "other",
+      "multiple_choice_answer": "dugout",
+      "answers": [
+        "on bench",
+        "sitting",
+        "in dugout",
+        "dugout",
+        "stands",
+        "benches"
+      ]
+    },
+    {
+      "question_id": 1163160,
+      "image_id": 116316,
+      "question": "Did someone not finish his pizza?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 5360451,
+      "image_id": 536045,
+      "question": "Which leg does the elephant not have weight on?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "back right",
+      "answers": [
+        "left front",
+        "back right",
+        "back",
+        "rear right",
+        "right rear"
+      ]
+    },
+    {
+      "question_id": 1041910,
+      "image_id": 104191,
+      "question": "Why would you not want to sit on the bench right now?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "snow",
+      "answers": [
+        "snow on it",
+        "it has snow on it",
+        "snow",
+        "snow is cold",
+        "covered in snow",
+        "covered with snow",
+        "it is covered with snow"
+      ]
+    },
+    {
+      "question_id": 4982700,
+      "image_id": 498270,
+      "question": "Describe the shape of that portion of the image not taken up by \"goat hill\"?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "triangle",
+      "answers": [
+        "sloped",
+        "triangle",
+        "pyramid",
+        "steep",
+        "crescent",
+        "don't know",
+        "trees",
+        "rocky",
+        "mountain"
+      ]
+    },
+    {
+      "question_id": 1154420,
+      "image_id": 115442,
+      "question": "Why would this man not be able to access the web like most people with phones?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "no wifi",
+      "answers": [
+        "no wifi",
+        "it's not smartphone",
+        "phone is old",
+        "he doesn't have smartphone",
+        "it doesn't have that function",
+        "didn't pay for time",
+        "not smartphone",
+        "it's broke",
+        "wrong kind of phone"
+      ]
+    },
+    {
+      "question_id": 3367830,
+      "image_id": 336783,
+      "question": "How many kites are there that are not dragons?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "4",
+        "2",
+        "3",
+        "6"
+      ]
+    },
+    {
+      "question_id": 5194820,
+      "image_id": 519482,
+      "question": "Did someone not finish his sandwich?",
+      "question_type": "none of the above",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes"
+      ]
+    },
+    {
+      "question_id": 121380,
+      "image_id": 12138,
+      "question": "It's not a bird, and it's not superman, so it must be a what?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "plane",
+      "answers": [
+        "airplane",
+        "plane"
+      ]
+    },
+    {
+      "question_id": 3468120,
+      "image_id": 346812,
+      "question": "How many baseball bats are not being used?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "4",
+      "answers": [
+        "4",
+        "5",
+        "1"
+      ]
+    },
+    {
+      "question_id": 107161,
+      "image_id": 10716,
+      "question": "What day of the week is the sign not applicable?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "sunday",
+      "answers": [
+        "sunday",
+        "mon - sat",
+        "mon-sat",
+        "sun"
+      ]
+    },
+    {
+      "question_id": 2223830,
+      "image_id": 222383,
+      "question": "Which way can you not turn?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "no right",
+        "right"
+      ]
+    },
+    {
+      "question_id": 5196392,
+      "image_id": 519639,
+      "question": "Are they not tiring the elephant?",
+      "question_type": "are they",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 4114780,
+      "image_id": 411478,
+      "question": "How many of these objects are not electronic?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "3",
+        "1"
+      ]
+    },
+    {
+      "question_id": 1856631,
+      "image_id": 185663,
+      "question": "Which umbrella is not solid colored?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "maroon and white one",
+        "one that is dual colored",
+        "right",
+        "red",
+        "on left",
+        "left",
+        "left one"
+      ]
+    },
+    {
+      "question_id": 4867142,
+      "image_id": 486714,
+      "question": "Why is the bottle not made of clear glass?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "beer bottle",
+      "answers": [
+        "beer bottle",
+        "because it's beer",
+        "made of plastic",
+        "plastic",
+        "i don't know",
+        "keep out light",
+        "safety",
+        "beer inside",
+        "beer"
+      ]
+    },
+    {
+      "question_id": 5095640,
+      "image_id": 509564,
+      "question": "How many people pictured are not on the truck?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "2",
+        "16"
+      ]
+    },
+    {
+      "question_id": 5193760,
+      "image_id": 519376,
+      "question": "What object does not belong?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "fish",
+      "answers": [
+        "fish",
+        "toy fish",
+        "toy"
+      ]
+    },
+    {
+      "question_id": 5193761,
+      "image_id": 519376,
+      "question": "Which one of these items should not be eaten?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "fish",
+      "answers": [
+        "fish",
+        "toy fish",
+        "fish toy"
+      ]
+    },
+    {
+      "question_id": 408741,
+      "image_id": 40874,
+      "question": "Which child has not taken a bite?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "girl on left",
+      "answers": [
+        "girl on left",
+        "left",
+        "center",
+        "one on left",
+        "on left",
+        "middle"
+      ]
+    },
+    {
+      "question_id": 1412042,
+      "image_id": 141204,
+      "question": "What kind of turn can you not make at this intersection?",
+      "question_type": "what kind of",
+      "answer_type": "other",
+      "multiple_choice_answer": "left",
+      "answers": [
+        "left",
+        "left or right",
+        "left/right",
+        "none",
+        "any",
+        "no right or left turn"
+      ]
+    },
+    {
+      "question_id": 4648541,
+      "image_id": 464854,
+      "question": "Why is only one person not facing the camera?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "eating",
+      "answers": [
+        "posing",
+        "eating",
+        "not paying attention",
+        "i don't know",
+        "he is eating",
+        "distracted",
+        "he is distracted"
+      ]
+    },
+    {
+      "question_id": 5492310,
+      "image_id": 549231,
+      "question": "Which animal is not alive?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "turtle",
+      "answers": [
+        "turtle",
+        "none",
+        "dodo"
+      ]
+    },
+    {
+      "question_id": 894852,
+      "image_id": 89485,
+      "question": "Which direction can you not turn?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "right",
+      "answers": [
+        "right"
+      ]
+    },
+    {
+      "question_id": 2902652,
+      "image_id": 290265,
+      "question": "How many of the horses are not white?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "3",
+      "answers": [
+        "3",
+        "1"
+      ]
+    },
+    {
+      "question_id": 2128641,
+      "image_id": 212864,
+      "question": "How many boys are not wearing shirts?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "question_id": 3783120,
+      "image_id": 378312,
+      "question": "How many people in this scene are not on bicycles?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "2",
+        "10",
+        "6"
+      ]
+    },
+    {
+      "question_id": 4348200,
+      "image_id": 434820,
+      "question": "What does this sign ask you not to do?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "drive",
+      "answers": [
+        "blow up",
+        "not drive through fire",
+        "carry explosives",
+        "backfire",
+        "burn cars",
+        "drive",
+        "no fires",
+        "crash",
+        "park"
+      ]
+    },
+    {
+      "question_id": 4117920,
+      "image_id": 411792,
+      "question": "What does the sign say not to do?",
+      "question_type": "what does the",
+      "answer_type": "other",
+      "multiple_choice_answer": "turn right",
+      "answers": [
+        "don't turn on red",
+        "turn right",
+        "turn right on red",
+        "not go",
+        "turn on red",
+        "no right turn on red"
+      ]
+    },
+    {
+      "question_id": 3032131,
+      "image_id": 303213,
+      "question": "What are the umbrellas used for when it's not raining?",
+      "question_type": "what are the",
+      "answer_type": "other",
+      "multiple_choice_answer": "shade",
+      "answers": [
+        "shade",
+        "sun",
+        "block sun"
+      ]
+    },
+    {
+      "question_id": 1193530,
+      "image_id": 119353,
+      "question": "Why is one piece of fruit not whole?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "eaten",
+      "answers": [
+        "bird ate it",
+        "bird has eaten it",
+        "bird is eating",
+        "eaten",
+        "it was eaten",
+        "bird",
+        "eaten by bird"
+      ]
+    },
+    {
+      "question_id": 3195220,
+      "image_id": 319522,
+      "question": "Which creature is not like the other ones?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "black one",
+      "answers": [
+        "black one",
+        "black",
+        "black horse",
+        "cow",
+        "dark horse",
+        "elephant"
+      ]
+    },
+    {
+      "question_id": 88072,
+      "image_id": 8807,
+      "question": "What is the other color strip that is not white?",
+      "question_type": "what is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "blue",
+      "answers": [
+        "blue"
+      ]
+    },
+    {
+      "question_id": 3916860,
+      "image_id": 391686,
+      "question": "How many people in image are not actively surfing?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "4",
+      "answers": [
+        "4"
+      ]
+    },
+    {
+      "question_id": 4042542,
+      "image_id": 404254,
+      "question": "What two items do not belong?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "toothbrushes",
+      "answers": [
+        "toothbrushes",
+        "yes"
+      ]
+    },
+    {
+      "question_id": 1449710,
+      "image_id": 144971,
+      "question": "What body part is not in the frame?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "head",
+      "answers": [
+        "head",
+        "her head"
+      ]
+    },
+    {
+      "question_id": 1846640,
+      "image_id": 184664,
+      "question": "What food does not have protein on the plate?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "toast",
+      "answers": [
+        "?",
+        "toast",
+        "none",
+        "bread",
+        "tomato"
+      ]
+    },
+    {
+      "question_id": 5745621,
+      "image_id": 574562,
+      "question": "What is in the lady's hand which is not holding an umbrella?",
+      "question_type": "what is in the",
+      "answer_type": "other",
+      "multiple_choice_answer": "suitcase",
+      "answers": [
+        "suitcase",
+        "purse",
+        "left",
+        "phone",
+        "right",
+        "luggage"
+      ]
+    },
+    {
+      "question_id": 5691772,
+      "image_id": 569177,
+      "question": "How many people are not in the bus?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "2",
+      "answers": [
+        "4",
+        "2"
+      ]
+    },
+    {
+      "question_id": 3683560,
+      "image_id": 368356,
+      "question": "Why does he not have ski poles?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "snowboarding",
+      "answers": [
+        "snowboarding",
+        "he's snowboarding",
+        "don't know",
+        "unknown",
+        "he's snowboarding instead",
+        "going inside",
+        "standing still",
+        "he is waiting for them"
+      ]
+    },
+    {
+      "question_id": 2298332,
+      "image_id": 229833,
+      "question": "Why is there a red/orange jacket not being worn?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "to hot",
+      "answers": [
+        "inside",
+        "to hot",
+        "unsure",
+        "left behind",
+        "it's too warm",
+        "warm",
+        "it's not cold",
+        "room is hot",
+        "they are inside",
+        "it's hot"
+      ]
+    },
+    {
+      "question_id": 4339270,
+      "image_id": 433927,
+      "question": "Are any of the leaves not green?",
+      "question_type": "are",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3171020,
+      "image_id": 317102,
+      "question": "Is there anyone in the room who is not a senior citizen?",
+      "question_type": "is there",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 4403141,
+      "image_id": 440314,
+      "question": "What part of his body is not covered?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "head, hands, feet",
+      "answers": [
+        "feet, head, hands",
+        "hands and feet",
+        "hands, feet, head",
+        "feet",
+        "head, feet, hands",
+        "head, hands, feet",
+        "face hands and feet",
+        "head"
+      ]
+    },
+    {
+      "question_id": 4603260,
+      "image_id": 460326,
+      "question": "How many people are not wearing costumes?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "6",
+      "answers": [
+        "6",
+        "5",
+        "3",
+        "7",
+        "all but 7"
+      ]
+    },
+    {
+      "question_id": 4445460,
+      "image_id": 444546,
+      "question": "Which utensil is not shown?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "knife",
+      "answers": [
+        "knife",
+        "fork and spoon"
+      ]
+    },
+    {
+      "question_id": 2513350,
+      "image_id": 251335,
+      "question": "What are you not allowed to do on this lake?",
+      "question_type": "what are",
+      "answer_type": "other",
+      "multiple_choice_answer": "swim",
+      "answers": [
+        "swim",
+        "swim waterski or scuba diving",
+        "swim, ski, scuba dive",
+        "swim,ski,scuba dive",
+        "swim ski dive",
+        "swim, ski, or dive",
+        "swim, water ski,dive"
+      ]
+    },
+    {
+      "question_id": 5005852,
+      "image_id": 500585,
+      "question": "Is someone not at all concerned about heartburn?",
+      "question_type": "is",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3472700,
+      "image_id": 347270,
+      "question": "Are these guard-railed areas not unlike the herding areas used for cows?",
+      "question_type": "are these",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "yes",
+      "answers": [
+        "yes",
+        "no"
+      ]
+    },
+    {
+      "question_id": 3026660,
+      "image_id": 302666,
+      "question": "Is the photo not disgusting?",
+      "question_type": "is the",
+      "answer_type": "yes/no",
+      "multiple_choice_answer": "no",
+      "answers": [
+        "no",
+        "photo is not really disgusting",
+        "yes",
+        "???"
+      ]
+    },
+    {
+      "question_id": 2381842,
+      "image_id": 238184,
+      "question": "Why are the numbers not in order?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "mistake",
+      "answers": [
+        "backward",
+        "mistake",
+        "11:55",
+        "abnormal building",
+        "unknown",
+        "to see if you're paying attention",
+        "insane clockmaker",
+        "broken",
+        "someone rearranged it"
+      ]
+    },
+    {
+      "question_id": 2376672,
+      "image_id": 237667,
+      "question": "Which item seems not to be prepared?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "potato",
+      "answers": [
+        "carrots",
+        "potato",
+        "cranberry"
+      ]
+    },
+    {
+      "question_id": 2376671,
+      "image_id": 237667,
+      "question": "Name one thing on this plate that is not a vegetable?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "gravy",
+      "answers": [
+        "gravy",
+        "steak",
+        "meat",
+        "cranberry sauce",
+        "hamburger",
+        "cranberries",
+        "meatball"
+      ]
+    },
+    {
+      "question_id": 2058450,
+      "image_id": 205845,
+      "question": "What sort of protective gear has the man in the blue vest not put on yet?",
+      "question_type": "what",
+      "answer_type": "other",
+      "multiple_choice_answer": "helmet",
+      "answers": [
+        "helmet",
+        "cycling",
+        "helmut"
+      ]
+    },
+    {
+      "question_id": 888702,
+      "image_id": 88870,
+      "question": "How many of these are not pictures?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "0",
+      "answers": [
+        "0",
+        "3",
+        "13",
+        "1",
+        "4",
+        "33"
+      ]
+    },
+    {
+      "question_id": 2828030,
+      "image_id": 282803,
+      "question": "How many people are not wearing white?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "4",
+      "answers": [
+        "4",
+        "13",
+        "2",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "question_id": 1385071,
+      "image_id": 138507,
+      "question": "The fruit that is not sliced are called what?",
+      "question_type": "none of the above",
+      "answer_type": "other",
+      "multiple_choice_answer": "bananas",
+      "answers": [
+        "bananas",
+        "plantain",
+        "banana",
+        "plantains"
+      ]
+    },
+    {
+      "question_id": 3450202,
+      "image_id": 345020,
+      "question": "How many people who are not police officers are in the picture?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "3",
+        "4",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "question_id": 4111092,
+      "image_id": 411109,
+      "question": "How many players, not including the umpire, are on the field?",
+      "question_type": "how many",
+      "answer_type": "number",
+      "multiple_choice_answer": "4",
+      "answers": [
+        "18",
+        "4"
+      ]
+    },
+    {
+      "question_id": 3384030,
+      "image_id": 338403,
+      "question": "How do you know this is not a unisex bathroom?",
+      "question_type": "how",
+      "answer_type": "other",
+      "multiple_choice_answer": "urinals",
+      "answers": [
+        "urinals only",
+        "urinals",
+        "because they are all urinals",
+        "there are no stalls",
+        "all urinals"
+      ]
+    },
+    {
+      "question_id": 2985121,
+      "image_id": 298512,
+      "question": "Why not use a spoon?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "because",
+      "answers": [
+        "he prefers fork",
+        "it would be hard to pick it up with spoon",
+        "typically eaten with fork",
+        "prefers fork",
+        "mess",
+        "it is not runny",
+        "easier to cut",
+        "you eat less with fork?",
+        "because",
+        "unknown"
+      ]
+    },
+    {
+      "question_id": 2221012,
+      "image_id": 222101,
+      "question": "Why is the man not touching the ground?",
+      "question_type": "why is the",
+      "answer_type": "other",
+      "multiple_choice_answer": "jumping",
+      "answers": [
+        "jumping",
+        "he's trying to hit ball",
+        "he jumped",
+        "no",
+        "jumped",
+        "he is jumping to serve"
+      ]
+    },
+    {
+      "question_id": 2650232,
+      "image_id": 265023,
+      "question": "How many people are not wearing goggles?",
+      "question_type": "how many people are",
+      "answer_type": "number",
+      "multiple_choice_answer": "1",
+      "answers": [
+        "1"
+      ]
+    },
+    {
+      "question_id": 3686290,
+      "image_id": 368629,
+      "question": "Which item does not belong in a bathroom?",
+      "question_type": "which",
+      "answer_type": "other",
+      "multiple_choice_answer": "orange",
+      "answers": [
+        "orange",
+        "tomato"
+      ]
+    },
+    {
+      "question_id": 4971231,
+      "image_id": 497123,
+      "question": "What is not allowed on the street?",
+      "question_type": "what is",
+      "answer_type": "other",
+      "multiple_choice_answer": "bottles or glass",
+      "answers": [
+        "bottles or glass",
+        "bottles",
+        "bottles, glass"
+      ]
+    },
+    {
+      "question_id": 1543590,
+      "image_id": 154359,
+      "question": "Why is one not wrapped?",
+      "question_type": "why",
+      "answer_type": "other",
+      "multiple_choice_answer": "about to be eaten",
+      "answers": [
+        "about to be eaten",
+        "going to be eaten",
+        "1",
+        "being eaten",
+        "it is getting ready for consumption",
+        "to eat",
+        "because it is going to be eaten immediately",
+        "being prepared to be eaten",
+        "display"
+      ]
+    }
+  ]
+}

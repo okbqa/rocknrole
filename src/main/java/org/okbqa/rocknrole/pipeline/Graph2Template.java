@@ -46,7 +46,7 @@ public class Graph2Template {
                 continue;
             } 
             
-            if (e.getLabel().equals("SELECT_COUNT")) {
+            if (e.getLabel().equals("COUNT")) {
                 Graph remainder = graph.copy();
                 remainder.deleteEdge(e);
                 if (remainder.isConnected(s.getId())) {

@@ -19,7 +19,7 @@ public class GraphReader {
     }
     
     public Graph interpret(String dependency) {
-        
+                
         if (dependency.isEmpty()) return new Graph();
         
         try {

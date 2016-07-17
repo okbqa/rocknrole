@@ -1,0 +1,15 @@
+
+## RENAME EDGES
+
+
+ARG0 <- nsubj
+ARG1 <- dobj, nsubjpass
+ARG2 <- iobj
+
+
+## TRANSFORM
+
+
+# prep(*-1,*-2) \n pobj(*-2,*-3)
+
++ ARGP(1,3)

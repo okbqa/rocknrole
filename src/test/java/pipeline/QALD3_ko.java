@@ -1,7 +1,5 @@
 package pipeline;
 
-import org.okbqa.rocknrole.transforming.RuleTransformerPipeline;
-import org.okbqa.rocknrole.transforming.Transformer;
 import org.okbqa.rocknrole.graph.Graph;
 import org.okbqa.rocknrole.parsing.ParseResult;
 import org.okbqa.rocknrole.parsing.Parser;
@@ -18,6 +16,7 @@ import com.google.gson.JsonPrimitive;
 import org.okbqa.rocknrole.parsing.ETRI;
 import org.okbqa.rocknrole.pipeline.Graph2Template;
 import org.okbqa.rocknrole.template.Template;
+import org.okbqa.rocknrole.transforming.Transformer;
 
 /**
  *
@@ -30,17 +29,14 @@ public class QALD3_ko {
         
         String language = "ko";
         
-        String file_in  = "src/main/resources/qald/qald-3-korean.json";
-        String file_out = "src/main/resources/qald/target/qald-3-korean.json";
+        String file_in  = "src/main/resources/benchmarks/qald/qald-3-korean.json";
+        String file_out = "src/main/resources/becnhmarks/qald/target/qald-3-korean.json";
         
         Parser     etri = new ETRI();
         JsonParser json = new JsonParser();
         Gson       gson = new GsonBuilder().setPrettyPrinting().create();
         
-        Transformer transformer = new RuleTransformerPipeline();
-        transformer.setLanguage(language);
-//      transformer.setVerbose(true);
-        
+        Transformer transformer  = new Transformer(language);        
         Graph2Template templator = new Graph2Template();
                                    
         try {

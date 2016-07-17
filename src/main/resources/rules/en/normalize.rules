@@ -1,0 +1,31 @@
+
+## RENAME NODES
+
+
+AGENT    <- who
+DATETIME <- when
+LOCATION <- where
+REASON   <- why
+THING    <- what, which
+
+BE       <- be, is, was, are, were, being
+HAVE     <- have, has, had, having
+
+THIS     <- the, this, these, those, that
+
+
+## RENAME EDGES
+
+
+DET <- det
+MOD <- amod, advmod
+
+
+## TRANSFORM
+
+
+# MOD(many-1,how-2) \n MOD(*-3,many-1)
++ COUNT(3,3)
+
+# MOD(*-1,how-2) \n dep(BE-3,*-1) \n ARG0(BE-3,*-4)
++ HOW(1,4)

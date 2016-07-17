@@ -6,7 +6,6 @@ import org.okbqa.rocknrole.parsing.ETRI;
 import org.okbqa.rocknrole.parsing.ParseResult;
 import org.okbqa.rocknrole.parsing.Parser;
 import org.okbqa.rocknrole.parsing.Stanford;
-import org.okbqa.rocknrole.transforming.RuleTransformerPipeline;
 import org.okbqa.rocknrole.transforming.Transformer;
 
 /**
@@ -22,12 +21,14 @@ public class NL2Graph {
     Transformer transformer;
     
     JsonParser json;
-    
-    boolean verbose = false;
+        
+    boolean verbose;
     
 
     public NL2Graph(String l) {
-        
+
+        verbose = false;
+
         language = l;
                 
         switch (language) {
@@ -35,9 +36,7 @@ public class NL2Graph {
             case "ko": parser = new ETRI(); break;
         }
         
-        transformer = new RuleTransformerPipeline();
-        transformer.setLanguage(language);
-        transformer.setVerbose(verbose);
+        transformer = new Transformer(language);
         
         json  = new JsonParser();
         
@@ -45,13 +44,13 @@ public class NL2Graph {
     
     public void debugMode() {
         verbose = true;
-        transformer.setVerbose(true);
+        transformer.debugMode();
     }
     
     public Graph constructGraph(String input) {
         
         if (verbose) {
-            System.out.println("\n------ INPUT ------\n");
+            System.out.println("\n\n------ INPUT ------\n");
             System.out.println(input);
         }
         

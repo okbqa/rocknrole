@@ -1,0 +1,62 @@
+
+## TRANSFORM
+
+
+# AGENT-1
+# DATETIME-1
+# LOCATION-1
+# REASON-1
+# THING-1
+
++ SELECT(1,1)
+
+
+# DET(*-1,THING-2)
+
++ SELECT(1,1)
+- SELECT(2,2)
+
+
+# HOW(*-1,*-2)
+
+v=new
++ 1(2,v)
++ LITERAL-v
+
+
+# ARG0(BE-2,*-1) \n ARG1(BE-2,*-3)
++ EQUALS(1,3)
+
+
+# ARG0(*-1,*-2) \n ARG1(*-1,*-3)
+# ARG0(*-3,*-1) \n ARG1(*-1,*-2)
+# ARG0(*-1,*-2) \n ARG1(*-3,*-1)
+# ARG0(*-1,*-2) \n ARG0(*-1,*-3)
+# ARG1(*-1,*-2) \n ARG1(*-1,*-3)
+# ARG0(*-1,*-2) \n ARGP(*-1,*-3)
+# ARG0(*-2,*-1) \n ARGP(*-1,*-3)
+
++ 1(2,3)
+
+# ARG0(*-1,*-2)
+
+v=new
++ RESOURCE-v
++ 1(2,v)
+
+# ARG1(*-1,*-2)
+
+v=new
++ RESOURCE-v
++ 1(v,2)
+
+# ARGP(*-1,*-2)
+
++ REL(1,2)
+
+
+# HAVE(1,2)
+
+v=new
++ 2(1,v)
++ RESOURCEorLITERAL-v

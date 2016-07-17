@@ -13,12 +13,10 @@ public class Graph {
    
     List<Node> nodes;
     List<Edge> edges;
-    List<Integer> roots;
         
     public Graph() {
         nodes   = new ArrayList<>();
         edges   = new ArrayList<>();
-        roots   = new ArrayList<>();
     }
     
 
@@ -29,9 +27,6 @@ public class Graph {
     }
     public List<Node> getNodes() {
         return nodes;
-    }
-    public List<Integer> getRoots() {
-        return roots;
     }
       
     public Node getNode(int i) {
@@ -120,15 +115,8 @@ public class Graph {
     public void addEdge(Edge e) {
         edges.add(e);
     }
-    public void addRoot(int i) {
-        roots.add(i);
-    }
         
     // Manipulate graph 
-    
-    public void initRoots() {
-        roots = new ArrayList<>();
-    }
     
     public void deleteNode(Node n) {
         nodes.remove(n);
@@ -148,7 +136,6 @@ public class Graph {
              ids.add(e.head);
              ids.add(e.dependent);
         }
-        ids.addAll(this.roots);
         
         for (Node n : g.getNodes()) {
             if (!ids.contains(n.id)) {
@@ -170,7 +157,6 @@ public class Graph {
              renaming.put(i,max);
              n.setId(max);
              this.addNode(n);
-             if (other.getRoots().contains(i)) this.addRoot(max);
              max++;
         }
         for (Edge e : other.getEdges()) {
@@ -326,9 +312,6 @@ public class Graph {
         
         Graph copy = new Graph();
         
-        for (int i  : this.roots) {
-             copy.addRoot(i);
-        }
         for (Node n : this.nodes) {
              copy.addNode(n.copy());
         }
@@ -350,10 +333,6 @@ public class Graph {
     public String toString(boolean full) {
                 
         String out = "";
-
-        if (full) {
-            out += "Root nodes: " + roots + "\n";
-        }
         
         for (Edge e : edges) {
             String head = "";
