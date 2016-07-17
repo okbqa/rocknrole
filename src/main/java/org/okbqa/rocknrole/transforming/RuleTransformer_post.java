@@ -33,7 +33,19 @@ public class RuleTransformer_post extends RuleTransformer {
         
         // Argument structure
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2) \n ARG1(*-1,*-3)")) {
+        // Case where there are two arguments (ARG0+ARG1 or ARG0+ARGP)
+        // *-1 = verb 
+        // *-2 = subject 
+        // *-3 = object
+        String[] args = { "ARG0(*-1,*-2) \n ARG1(*-1,*-3)",
+                          "ARG0(*-3,*-1) \n ARG1(*-1,*-2)",
+                          "ARG0(*-1,*-2) \n ARG1(*-3,*-1)",
+                          "ARG0(*-1,*-2) \n ARG0(*-1,*-3)",
+                          "ARG1(*-1,*-2) \n ARG1(*-1,*-3)",
+                          "ARG0(*-1,*-2) \n ARGP(*-1,*-3)", 
+                          "ARG0(*-2,*-1) \n ARGP(*-1,*-3)" 
+                        };
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,args)) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();
@@ -42,43 +54,7 @@ public class RuleTransformer_post extends RuleTransformer {
             graph.delete(g);
         }
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-3,*-1) \n ARG1(*-1,*-2)")) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
-            graph.delete(g);
-        }
-        
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2) \n ARG0(*-1,*-3)")) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
-            graph.delete(g);
-        }
-        
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2) \n ARGP(*-1,*-3)")) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Edge.Color.SEM,m.get(2),graph.getNode(m.get(1)).getForm(),m.get(3)));
-            graph.delete(g);
-        }
-        
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2) \n ARGP(*-2,*-3)")) {
-                        
-            Graph g = subgraph.getLeft();
-            Map<Integer,Integer> m = subgraph.getRight();
-            
-            graph.addEdge(new Edge(Edge.Color.SEM,m.get(1),graph.getNode(m.get(2)).getForm(),m.get(3)));
-            graph.delete(g);
-        }
-        
-        // case where there is only an ARG0, but no ARG1 or ARGP
+        // Case where there is only an ARG0, but no ARG1 or ARGP
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG0(*-1,*-2)")) {
             
             Graph g = subgraph.getLeft();
@@ -90,7 +66,7 @@ public class RuleTransformer_post extends RuleTransformer {
             graph.delete(g);
         }
         
-        // case where there is only an ARG1, but no ARG0 
+        // Case where there is only an ARG1, but no ARG0 
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG1(*-1,*-2)")) {
             
             Graph g = subgraph.getLeft();

@@ -42,7 +42,6 @@ public class Graph2Template {
                 remainder.deleteEdge(e);
                 if (remainder.isConnected(s.getId())) {
                     template.addProjVar(varString(s.getId()));
-                    template.addToBlackList(varString(s.getId()));
                 }
                 continue;
             } 
@@ -52,7 +51,6 @@ public class Graph2Template {
                 remainder.deleteEdge(e);
                 if (remainder.isConnected(s.getId())) {
                     template.addCountVar(varString(s.getId()));
-                    template.addToBlackList(varString(s.getId()));
                 }
                 continue;
             } 

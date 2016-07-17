@@ -28,16 +28,16 @@ public class Test_ko {
         
         List<String> test = Arrays.asList(
              
-            "한국의 수도는 무엇인가?", // what is the capital of korea
-            "카이스트는 얼마나 많은 학생이 있는가?", // how many students does kaist have? (얼마나 많은 = how many)
-            "어떤 강이 군산을 흐르는가?", // which rivers flow through gunsan
-            "군산에 흐르는 강은 무엇인가?", // which rivers flow through gunsan          
-            "구글의 설립자는 누구인가?", // who is the founder of google 
-            "대한민국에 있는 도시를 나열하라", // list cities in korea 
-            "대한민국의 도시를 나열하라", // list cities in korea
-            "한라산은 얼마나 높은가?" // how high is hallasan?
+            "한국의 수도는 무엇인가?", // What is the capital of Korea?
+            "카이스트는 얼마나 많은 학생이 있는가?", // How many students does KAIST have? 
+            "어떤 강이 군산을 흐르는가?", // Which rivers flow through Gunsan?
+            "군산에 흐르는 강은 무엇인가?", // Which rivers flow through Gunsan?          
+            "구글의 설립자는 누구인가?", // Who is the founder of Google?
+            "대한민국에 있는 도시를 나열하라", // List cities in Korea.
+            "대한민국의 도시를 나열하라", // List cities in Korea.
+            "한라산은 얼마나 높은가?" // How high is Hallasan?
         ); 
-                
+        
         TemplatorPipeline pipeline = new TemplatorPipeline("ko");
         pipeline.debugMode();
         Scanner scanner = new Scanner(System.in);

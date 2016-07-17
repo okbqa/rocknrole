@@ -54,10 +54,11 @@ public class RuleTransformer_pre extends RuleTransformer {
                   
                 // ETRI dependencies
                     
-                case "AJT":       e.setLabel("MOD");  e.setColor(Edge.Color.SEM); break;
+                case "NP_AJT":    e.setLabel("ARG0"); e.setColor(Edge.Color.SEM); break;
                 case "NP_SBJ":    e.setLabel("ARG0"); e.setColor(Edge.Color.SEM); break;
                 case "NP_OBJ":    e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
                 case "NP_MOD":    e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
+                case "VP_MOD":    e.setLabel("ARG1"); e.setColor(Edge.Color.SEM); break;
             }
         }
                 

@@ -59,6 +59,7 @@ public class RuleTransformer_ko extends RuleTransformer {
                         
         // which NN, what NN
         
+        // String[] whichNN = { "DP(*-1,THING-2)", "ARG0(*-1,THING-2)", "ARG0(THING-2,*-1)" };
         for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"DP(*-1,THING-2)")) {
                         
             Graph g = subgraph.getLeft();
@@ -71,11 +72,18 @@ public class RuleTransformer_ko extends RuleTransformer {
         
         // give me, show me, list all NN
         
-        // TODO
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"ARG1(나열-1,*-2)")) {
+                        
+            Graph g = subgraph.getLeft();
+            Map<Integer,Integer> m = subgraph.getRight();
+            
+            graph.addEdge(new Edge(Color.SEM,m.get(2),"SELECT",m.get(2)));
+            graph.delete(g);
+        }
         
         // how many NN 
         
-        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(많-1,얼마나-2) \n VP_MOD(*-3,많-1)")) {
+        for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,"AP(많-1,얼마나-2) \n ARG1(*-3,많-1)")) {
                         
             Graph g = subgraph.getLeft();
             Map<Integer,Integer> m = subgraph.getRight();

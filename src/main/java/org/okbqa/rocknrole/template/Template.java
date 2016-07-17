@@ -28,7 +28,6 @@ public class Template {
 
     Set<Triple>  triples;
     Set<Slot>    slots;
-    Set<String>  blacklist;
     
     ElementGroup body;
     
@@ -41,7 +40,6 @@ public class Template {
         countvars  = new HashSet<>();
         triples    = new HashSet<>();
         slots      = new HashSet<>();
-        blacklist  = new HashSet<>();
         body       = new ElementGroup();        
     }
     
@@ -71,9 +69,6 @@ public class Template {
     public Set<Slot> getSlots() {
         return slots;
     }
-    public Set<String> getBlacklist() {
-        return blacklist;
-    }
     public double getScore() {
         return score;
     }
@@ -99,10 +94,6 @@ public class Template {
     }
     public void addCountVar(String var) {
         countvars.add(var);
-    }
-    
-    public void addToBlackList(String var) {
-        blacklist.add(var);
     }
     
     
@@ -138,10 +129,18 @@ public class Template {
         
         query = QueryFactory.make();
         
+        Set<String> vars = new HashSet<>();
+        
         // query body
         ElementGroup queryBody = new ElementGroup();
+       
         for (Triple t : triples) {
+            
             queryBody.addTriplePattern(t);
+            
+            if (t.getSubject().isVariable())   vars.add(t.getSubject().toString());
+            if (t.getPredicate().isVariable()) vars.add(t.getPredicate().toString());
+            if (t.getObject().isVariable())    vars.add(t.getObject().toString());
         }
         for (Element e : body.getElements()) {
             queryBody.addElement(e);
@@ -151,9 +150,11 @@ public class Template {
         // projection variables
         for (String v : projvars) {
             query.getProject().add(Var.alloc(v));
+            vars.add(v);
         }
         for (String v : countvars) {
             query.getProject().add(Var.alloc(v+"_count"),query.allocAggregate(new AggCountVar(new ExprVar(Var.alloc(v)))));
+            vars.add(v);
         }
 
         // query type
@@ -164,10 +165,10 @@ public class Template {
             query.setQuerySelectType();
         }
                 
-        // delete slots that are on the blacklist
+        // delete slots that are not used in the query
         List<Slot> blacklisted = new ArrayList<>();
         for (Slot s : slots) {
-            if (blacklist.contains(s.getVar())) {
+            if (!vars.contains("?"+s.getVar())) {
                 blacklisted.add(s);
             }
         }
@@ -277,10 +278,6 @@ public class Template {
         for (Slot s : slots) {
             new_slots.add(s.clone());
         }
-        Set<String> new_blacklist = new HashSet<>();
-        for (String s : blacklist) {
-            new_blacklist.add(s);
-        }
         
         Template clone = new Template();
         
@@ -288,7 +285,6 @@ public class Template {
         clone.countvars = new_countvars;
         clone.triples = new_triples;
         clone.slots = new_slots;
-        clone.blacklist = new_blacklist;
         clone.body = body;
         clone.query = null;
         clone.score = score;

@@ -1,5 +1,6 @@
 package org.okbqa.rocknrole.transforming;
 
+import java.util.ArrayList;
 import org.okbqa.rocknrole.graph.Edge;
 import org.okbqa.rocknrole.graph.Pair;
 import org.okbqa.rocknrole.graph.Graph;
@@ -27,6 +28,18 @@ public class RuleTransformer_prune extends RuleTransformer {
                  g.addNode(graph.getNode(e.getDependent()));
              }
         }
+        
+        // Get rid of edges that don't make sense 
+        
+        List<Edge> del = new ArrayList<>();
+        for (Edge e : graph.getEdges()) {
+            if (e.getLabel().equals("THING")) {
+                del.add(e);
+            }
+        }
+        for (Edge e : del) g.deleteEdge(e);
+        
+        // Done
         
         return g;
     }

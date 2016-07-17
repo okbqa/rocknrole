@@ -25,7 +25,7 @@ public class Interactive_ko {
         
         TemplatorPipeline pipeline = new TemplatorPipeline("ko");
         pipeline.debugMode();
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in,"UTF-8");
         
         String input;
         
