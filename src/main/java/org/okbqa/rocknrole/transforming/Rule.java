@@ -78,7 +78,7 @@ public class Rule {
                 String new_form = actions.get(0);
                 for (Node n : graph.getNodes()) {
                 for (String m : matches) {
-                    if (n.getForm().equals(m)) {
+                    if (n.getForm().toLowerCase().equals(m)) {
                         n.setForm(new_form);
                     }
                 }}
@@ -92,7 +92,7 @@ public class Rule {
                 String new_label = actions.get(0);
                 for (Edge e : graph.getEdges()) {
                 for (String m : matches) {
-                    if (e.getLabel().equals(m)) {
+                    if (e.getLabel().toLowerCase().equals(m)) {
                         e.setLabel(new_label);
                     }
                 }}

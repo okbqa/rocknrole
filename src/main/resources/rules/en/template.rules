@@ -3,9 +3,9 @@
 ## TRANSFORM
 
 
-# ARG2(give-1,me-2) \n ARG1(give-1,*-3)
-# ARG2(show-1,me-2) \n ARG1(show-1,*-3)
-# ARG2(give-1,me-2) \n DET(list-4,a-5) \n ARG1(give-1,list-4) \n ARGP(list-4,*-3)
-# ARG1(list-1,*-3)
+# ARG(give-1,me-2) \n ARG(give-1,*-3)
+# ARG(show-1,me-2) \n ARG(show-1,*-3)
+# ARG(give-1,me-2) \n DET(list-4,a-5) \n ARG(give-1,list-4) \n ARG(list-4,*-3)
+# ARG(list-1,*-3)
 
 + SELECT(3,3)
