@@ -150,11 +150,9 @@ public class Template {
         // projection variables
         for (String v : projvars) {
             query.getProject().add(Var.alloc(v));
-            vars.remove(v);
         }
         for (String v : countvars) {
             query.getProject().add(Var.alloc(v+"_count"),query.allocAggregate(new AggCountVar(new ExprVar(Var.alloc(v)))));
-            vars.remove(v);
         }
 
         // query type
@@ -168,7 +166,7 @@ public class Template {
         // delete slots that are not used in the query
         List<Slot> blacklisted = new ArrayList<>();
         for (Slot s : slots) {
-            if (!vars.contains(s.getVar()) && !vars.contains("?"+s.getVar())) {
+            if (!vars.contains("?"+s.getVar())) {
                 blacklisted.add(s);
             }
         }
