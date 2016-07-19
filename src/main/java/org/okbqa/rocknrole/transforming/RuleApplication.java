@@ -175,17 +175,24 @@ public class RuleApplication {
     
     public void execute(Graph graph) {
         
-        for (Rule rule : rules) {
+        if (verbose) {
+            System.out.println("\n========== RULES ===========");
+            System.out.println("Input graph:\n" + graph.toString(true));
+        } 
+        
+        for (Rule r : rules) {
+
+            r.apply(graph);
             
-            if (verbose) {
-                System.out.println("===== RULE ====");
-                System.out.println("IF\n" + rule.matches.toString() + "\nTHEN\n" + rule.actions.toString());
+            if (verbose && r.wasMatched) {
+                System.out.println("-------------");
+                System.out.println("Matches:\n" + r.matches.toString() 
+                               + "\nActions:\n" + r.actions.toString());
+                System.out.println("\nResult:\n" + graph.toString(true));
             }
-            
-            rule.apply(graph);
-            
-            if (verbose) System.out.println("Result:\n" + graph.toString(true));
         }
+        
+        if (verbose) System.out.println("============================");
     }
     
     

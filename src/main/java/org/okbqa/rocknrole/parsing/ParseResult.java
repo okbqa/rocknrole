@@ -1,10 +1,10 @@
 package org.okbqa.rocknrole.parsing;
 
-import org.okbqa.rocknrole.graph.Edge;
-import org.okbqa.rocknrole.graph.Graph;
-import org.okbqa.rocknrole.graph.Node;
+import java.util.ArrayList;
+import org.okbqa.rocknrole.graph.*;
 import org.okbqa.rocknrole.graph.interpreter.GraphReader;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -18,6 +18,7 @@ public class ParseResult {
     Map<Integer,Map<Integer,String>> tokens;
     Map<Integer,String> parses;
     Map<Integer,Map<Integer,String>> pos;
+    Map<Integer,List<NamedEntity>> namedentities;
     
     GraphReader interpreter;
 
@@ -43,13 +44,18 @@ public class ParseResult {
     }
     
     public void addToken(int i, int j, String l) {
-        if (!tokens.containsKey(i)) tokens.put(i,new TreeMap<Integer,String>());
+        if (!tokens.containsKey(i)) tokens.put(i,new TreeMap<>());
         tokens.get(i).put(j,l);
     }
     
     public void addPOS(int i, int j, String p) {
-        if (!pos.containsKey(i)) pos.put(i,new TreeMap<Integer,String>());
+        if (!pos.containsKey(i)) pos.put(i,new TreeMap<>());
         pos.get(i).put(j,p);
+    }
+    
+    public void addNE(int i, String text, int begin, int end) {
+        if (!namedentities.containsKey(i)) namedentities.put(i,new ArrayList<>());
+        namedentities.get(i).add(new NamedEntity(text,begin,end));
     }
     
     // Show 

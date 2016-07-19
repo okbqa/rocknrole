@@ -1,5 +1,6 @@
 package org.okbqa.rocknrole.parsing;
 
+import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.TokensAnnotation;
@@ -9,7 +10,6 @@ import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.semgraph.SemanticGraph;
 import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.BasicDependenciesAnnotation;
 import edu.stanford.nlp.util.CoreMap;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -58,29 +58,5 @@ public class Stanford implements Parser {
         
         return result;
     }
-    
-//    
-//    private String preprocess(String sentence) {
-//                
-//        sentence = sentence.toLowerCase();
-//        
-//        List<String> prefixes = new ArrayList();
-//        prefixes.add("give me a list of");
-//        prefixes.add("show me a list of");
-//        prefixes.add("give me");
-//        prefixes.add("show me");
-//        prefixes.add("list");
-//        
-//        String qprefix = "give me";
-//        
-//        for (String prefix : prefixes) {
-//            if (sentence.startsWith(prefix)) {
-//                sentence = sentence.replace(prefix,qprefix);
-//                break;
-//            }
-//        }
-//        
-//        return sentence;
-//    }
 
 }

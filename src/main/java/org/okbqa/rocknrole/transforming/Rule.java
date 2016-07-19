@@ -26,6 +26,7 @@ public class Rule {
     Map<String,Integer> assignments;
     
     boolean deleteMatch;
+    boolean wasMatched;
     
     GraphReader reader;
     
@@ -69,6 +70,8 @@ public class Rule {
     
     public void apply(Graph graph) {
         
+        wasMatched = false;
+        
         switch (mode) {
             
             case RENAME_NODE: {
@@ -80,6 +83,7 @@ public class Rule {
                 for (String m : matches) {
                     if (n.getForm().toLowerCase().equals(m)) {
                         n.setForm(new_form);
+                        wasMatched = true;
                     }
                 }}
                 break;
@@ -94,6 +98,7 @@ public class Rule {
                 for (String m : matches) {
                     if (e.getLabel().toLowerCase().equals(m)) {
                         e.setLabel(new_label);
+                        wasMatched = true;
                     }
                 }}
                 break;
@@ -124,6 +129,7 @@ public class Rule {
                             if (n.matches(node)) {
                                 Map<Integer,Integer> m = new HashMap<>();
                                 m.put(i_id,n.getId());
+                                wasMatched = true;
                                 for (String action : actions) {
                                       applyAction(graph,m,action);
                                 }
@@ -138,6 +144,8 @@ public class Rule {
 
                         Graph g = subgraph.getLeft();
                         Map<Integer,Integer> m = subgraph.getRight();
+
+                        wasMatched = true;
 
                         for (String action : actions) {
                              applyAction(graph,m,action);
