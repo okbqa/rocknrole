@@ -8,7 +8,7 @@ Currently works for English and Korean.
 
 ## REST service
 
-Target: `http://ws.okbqa.org/templategeneration/rocknrole`
+Target: `http://ws.okbqa.org:1515/templategeneration/rocknrole`
 
 The repository contains two examples files (`src/test/test_en.json` and `src/test/test_ko.json`) that can be used for testing:
 
