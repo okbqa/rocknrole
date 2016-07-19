@@ -25,7 +25,7 @@ public class Stanford implements Parser {
     public Stanford() {
         
         Properties props = new Properties();
-        props.put("annotators", "tokenize, ssplit, pos, lemma, parse");
+        props.put("annotators", "tokenize, ssplit, pos, lemma, parse, ner");
         pipeline = new StanfordCoreNLP(props);
     }
    
@@ -48,8 +48,11 @@ public class Stanford implements Parser {
             // Tokens and POS tags
             for (CoreLabel token: s.get(TokensAnnotation.class)) {
             result.addToken(i,token.index(),token.originalText());
-            result.addPOS(i,token.index(),token.getString(PartOfSpeechAnnotation.class));
-            }
+            if (!token.get(NamedEntityTagAnnotation.class).equals("O")) {
+                result.addPOS(i,token.index(),"NE");
+            } else {
+                result.addPOS(i,token.index(),token.getString(PartOfSpeechAnnotation.class));
+            }}
             
             // Dependency parse
             SemanticGraph dependencies = s.get(BasicDependenciesAnnotation.class);

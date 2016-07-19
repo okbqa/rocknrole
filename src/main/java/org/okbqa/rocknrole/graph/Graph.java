@@ -144,6 +144,21 @@ public class Graph {
         }        
     }
     
+    // Other manipulations 
+    
+    public void collapseEdges(List<Edge> edges) {
+        
+        for (Edge e : edges) {
+             Node head = getNode(e.getHead());
+             Node dpnd = getNode(e.getDependent());
+             head.setForm(dpnd.getForm() + " " + head.getForm());
+             // TODO The order of forms should be determined correctly!!
+             deleteNode(dpnd);
+             deleteEdge(e);
+             renameNode(dpnd.getId(),head.getId());
+        } 
+    }
+    
     // Merging with another graph 
     
     public void merge(Graph other) {

@@ -13,7 +13,9 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -143,7 +145,7 @@ public class ETRI implements Parser {
     
     public String convertToStanfordFormat(String etriResponse) {
 
-//      System.out.println(">>>>>>>> ETRI \n" + etriResponse + "\n<<<<<<<<<<<");
+ //     System.out.println(">>>>>>>> ETRI \n" + etriResponse + "\n<<<<<<<<<<<");
         
         String stanford = "";
         
@@ -153,6 +155,17 @@ public class ETRI implements Parser {
             JsonArray sentences = json.getAsJsonArray("sentence");
 
             for (JsonElement sentence : sentences) {
+                
+                // NE indexes
+                
+                List<Integer> nes = new ArrayList<>();
+                for (JsonElement ne : sentence.getAsJsonObject().getAsJsonArray("NE")) {
+                     int begin = ne.getAsJsonObject().getAsJsonPrimitive("begin").getAsInt();
+                     int end   = ne.getAsJsonObject().getAsJsonPrimitive("end").getAsInt();
+                     for(int i = begin; i <= end; i++) {
+                         nes.add(i);
+                     }
+                }
                             
                 // Word stems with POS
                
@@ -161,8 +174,13 @@ public class ETRI implements Parser {
                 Map<String,String> lemmas = new HashMap<>();
                 JsonArray morps = sentence.getAsJsonObject().getAsJsonArray("morp");
                 for (JsonElement morp : morps) {
-                     lemmas.put( morp.getAsJsonObject().getAsJsonPrimitive("lemma").getAsString(),
-                                 morp.getAsJsonObject().getAsJsonPrimitive("type").getAsString() );
+                     String pos;
+                     if (nes.contains(morp.getAsJsonObject().getAsJsonPrimitive("id").getAsInt())) {
+                         pos = "NE";
+                     } else {
+                         pos = morp.getAsJsonObject().getAsJsonPrimitive("type").getAsString();
+                     }
+                     lemmas.put(morp.getAsJsonObject().getAsJsonPrimitive("lemma").getAsString(),pos);
                 }
                
                 JsonArray words = sentence.getAsJsonObject().getAsJsonArray("word");
