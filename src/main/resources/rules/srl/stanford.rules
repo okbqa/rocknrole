@@ -9,5 +9,4 @@ ARG <- nsubj, dobj, nsubjpass, iobj
 
 
 # prep(*-1,*-2) \n pobj(*-2,*-3)
-
 + ARG(1,3)

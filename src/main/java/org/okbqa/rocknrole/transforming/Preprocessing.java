@@ -1,6 +1,7 @@
 package org.okbqa.rocknrole.transforming;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.okbqa.rocknrole.graph.*;
 
@@ -12,6 +13,26 @@ public class Preprocessing {
     
     
     public void apply(Graph graph) {
+        
+        // Normalizing POS tags 
+        String[] nouns = { "NN", "NNS", "NP", "NNG" }; // --> NN
+        String[] verbs = { "VBZ", "VBN", "VBP" };      // --> VV
+        String[] whs   = { "WP" };                     // --> WH
+        
+        for (Node n : graph.getNodes()) {
+             String pos = n.getPOS();
+             if (pos != null && Arrays.asList(nouns).contains(pos)) {
+                 n.setPOS("NN");
+                 continue;
+             }
+             if (pos != null && Arrays.asList(verbs).contains(pos)) {
+                 n.setPOS("VV");
+                 continue;
+             }
+             if (pos != null && Arrays.asList(whs).contains(pos)) {
+                 n.setPOS("WH");
+             }
+        }
         
         // Collapsing nodes: compounds
         

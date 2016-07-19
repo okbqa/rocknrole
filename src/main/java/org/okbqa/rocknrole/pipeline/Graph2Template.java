@@ -55,9 +55,6 @@ public class Graph2Template {
                 continue;
             } 
             
-            coveredNodes.add(s.getId());
-            coveredNodes.add(o.getId());
-            
             String vs = varString(e.getHead());
             String vp = varString(fresh());
             String vo = varString(e.getDependent());
@@ -70,11 +67,17 @@ public class Graph2Template {
             template.addTriple(new Triple(Var.alloc(vs),Var.alloc(vp),Var.alloc(vo)));
             
             // subject
-            add(template,s);
+            if (!coveredNodes.contains(s.getId())) {
+                add(template,s);
+                coveredNodes.add(s.getId());
+            }
             
             // object
-            add(template,o); 
-            
+            if (!coveredNodes.contains(o.getId())) {
+                add(template,o);
+                coveredNodes.add(o.getId());
+            } 
+
             // poperty 
             String label = e.getLabel();
             if (label.equals("REL")) label = "";
@@ -113,11 +116,11 @@ public class Graph2Template {
             type = SlotType.CLASSorRESOURCE; 
         }
     
-        if (n.getPOS() != null && n.getPOS().startsWith("NNP")) { 
+        if (n.getPOS() != null && n.getPOS().equals("NE")) { 
             type = SlotType.RESOURCE;
         }
 
-        if (n.getPOS() != null && (n.getPOS().equals("NN") || n.getPOS().equals("NNS"))) {
+        if (n.getPOS() != null && n.getPOS().equals("NN")) {
             String vs = varString(n.getId());
             String vc = varString(fresh());
             String vp = varString(fresh());
