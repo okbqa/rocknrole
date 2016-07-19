@@ -208,8 +208,8 @@ public class ETRI implements Parser {
                 
                 JsonArray dependencies = sentence.getAsJsonObject().getAsJsonArray("dependency");
                 for (JsonElement dependency : dependencies) {
-                     int    dpnd  = dependency.getAsJsonObject().getAsJsonPrimitive("id").getAsInt()+1;
-                     int    head  = dependency.getAsJsonObject().getAsJsonPrimitive("head").getAsInt()+1;
+                     int    dpnd  = dependency.getAsJsonObject().getAsJsonPrimitive("head").getAsInt()+1;
+                     int    head  = dependency.getAsJsonObject().getAsJsonPrimitive("id").getAsInt()+1;
                      String label = dependency.getAsJsonObject().getAsJsonPrimitive("label").getAsString();
                      // if (label.contains("_")) label = label.split("_")[1];
                      

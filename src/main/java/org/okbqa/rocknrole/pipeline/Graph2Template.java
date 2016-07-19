@@ -119,18 +119,11 @@ public class Graph2Template {
         if (n.getPOS() != null && n.getPOS().equals("NE")) { 
             type = SlotType.RESOURCE;
         }
-
         if (n.getPOS() != null && n.getPOS().equals("NN")) {
-            String vs = varString(n.getId());
-            String vc = varString(fresh());
-            String vp = varString(fresh());
-            template.addTriple(new Triple(Var.alloc(vs),Var.alloc(vp),Var.alloc(vc)));
-            template.addSlot(new Slot(vc,form,SlotType.CLASS));
-            template.addSlot(new Slot(vp,"",SlotType.SORTAL));
+            type = SlotType.CLASS;
         }
-        else {
-            template.addSlot(new Slot(varString(n.getId()),form,type));
-        }
+
+        template.addSlot(new Slot(varString(n.getId()),form,type));
     }
     
     
