@@ -26,10 +26,10 @@ public class ProcessRequest extends ServerResource {
     @Post
     public String process(Representation entity) throws Exception {
           
+        JsonParser json  = new JsonParser();
         JsonArray output = new JsonArray();
         
         try {
-            JsonParser json  = new JsonParser();
             JsonObject input = (JsonObject) json.parse(entity.getText());
                     
             String str  = (String) input.get("string").getAsString();
@@ -42,14 +42,18 @@ public class ProcessRequest extends ServerResource {
             }
                   
             if (output == null) {
-                throw new Exception("Oops, something went wrong...");
+                // TODO send a warning 
+                output = new JsonArray();
             }
+            
+            input.add("templates",output);
+            return input.toString();
                   
         } catch (Exception ex) {
+            ex.printStackTrace();
         }
     
-        if (output == null) return "[]";
-        else return output.toString();
+        return entity.getText();
     }
     
 }

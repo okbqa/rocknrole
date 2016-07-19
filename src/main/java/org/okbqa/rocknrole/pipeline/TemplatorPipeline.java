@@ -13,8 +13,7 @@ public class TemplatorPipeline {
         
     NL2Graph       nl2graph; 
     Graph2Template graph2template;
-    // TemplateRewriting rewriter;
-    
+        
     boolean verbose = false;
     
     public TemplatorPipeline(String language) {
