@@ -60,6 +60,7 @@ v=new
 v=new
 + LITERAL-v
 + 2(1,v)
++ FIRST(v,v)
 
 # MOD(*-1,*-2)
 

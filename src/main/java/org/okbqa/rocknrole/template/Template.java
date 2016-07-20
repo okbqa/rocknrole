@@ -25,6 +25,9 @@ public class Template {
        
     Set<String>  projvars;
     Set<String>  countvars;
+    Set<String>  solutionModifiers; 
+    // currently only covering "DEC_FIRST:v1"
+    // TODO something less ad hoc
 
     Set<Triple>  triples;
     Set<Slot>    slots;
@@ -36,11 +39,12 @@ public class Template {
     double       score;
         
     public Template() {
-        projvars   = new HashSet<>();
-        countvars  = new HashSet<>();
-        triples    = new HashSet<>();
-        slots      = new HashSet<>();
-        body       = new ElementGroup();        
+        projvars  = new HashSet<>();
+        countvars = new HashSet<>();
+        triples   = new HashSet<>();
+        slots     = new HashSet<>();
+        body      = new ElementGroup();        
+        solutionModifiers = new HashSet<>();
     }
     
     public Template(Query q, Set<Slot> s) {
@@ -94,6 +98,9 @@ public class Template {
     }
     public void addCountVar(String var) {
         countvars.add(var);
+    }
+    public void addSolutionModifier(String s) {
+        solutionModifiers.add(s);
     }
     
     
@@ -162,6 +169,15 @@ public class Template {
         else {
             query.setQuerySelectType();
         }
+        
+        for (String solmod : solutionModifiers) {
+            if (solmod.startsWith("FIRST:")) {
+                String v = solmod.split(":")[1];
+                query.addOrderBy(v,-1);
+                query.setOffset(0);
+                query.setLimit(1);
+            }
+        }
                 
         // delete slots that are not used in the query
         List<Slot> blacklisted = new ArrayList<>();
@@ -171,7 +187,7 @@ public class Template {
             }
         }
         slots.removeAll(blacklisted);
-        
+                
         score();
     }
     

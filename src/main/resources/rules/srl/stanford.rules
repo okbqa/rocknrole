@@ -3,6 +3,7 @@
 
 
 ARG <- nsubj, dobj, nsubjpass, iobj, xcomp
+COP <- cop
 
 
 ## TRANSFORM

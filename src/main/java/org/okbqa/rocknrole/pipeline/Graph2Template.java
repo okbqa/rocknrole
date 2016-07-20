@@ -55,6 +55,14 @@ public class Graph2Template {
                 template.addCountVar(varString(s.getId()));
                 coveredNodes.add(s.getId());
                 dels.add(e);
+                continue;
+            } 
+            
+            if (e.getLabel().equals("FIRST")) {
+                String var = varString(s.getId());
+                template.addSolutionModifier("FIRST:"+var);
+                coveredNodes.add(s.getId());
+                dels.add(e);
             } 
         }
         
