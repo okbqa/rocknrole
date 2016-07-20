@@ -14,11 +14,13 @@ import org.restlet.resource.ServerResource;
  */
 public class ProcessRequest extends ServerResource {
     
+    boolean oldInterface = true;
+    
     public TemplatorPipeline pipeline_en;
     public TemplatorPipeline pipeline_ko;
             
     public ProcessRequest() {
-
+        
         pipeline_en = new TemplatorPipeline("en");
         pipeline_ko = new TemplatorPipeline("ko");
     }
@@ -47,13 +49,16 @@ public class ProcessRequest extends ServerResource {
             }
             
             input.add("templates",output);
-            return input.toString();
+            
+            if (oldInterface) return output.toString();
+            else return input.toString();
                   
         } catch (Exception ex) {
             ex.printStackTrace();
         }
     
-        return entity.getText();
+        if (oldInterface) return "[]"; 
+        else return entity.getText();
     }
     
 }

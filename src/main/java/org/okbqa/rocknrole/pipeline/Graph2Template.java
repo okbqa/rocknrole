@@ -32,7 +32,11 @@ public class Graph2Template {
         
         // SELECT and SELECT COUNT variables
         
+        List<Edge> dels = new ArrayList<>();
+        
         for (Edge e : graph.getEdges()) {
+            
+            boolean del = false;
             
             Node s = graph.getNode(e.getHead());
             Node o = graph.getNode(e.getDependent());
@@ -45,7 +49,7 @@ public class Graph2Template {
                     addClassTriple(template,s);
                 }
                 coveredNodes.add(s.getId());
-                graph.deleteEdge(e);
+                dels.add(e);
                 continue;
             } 
             
@@ -56,9 +60,11 @@ public class Graph2Template {
                     template.addCountVar(varString(s.getId()));
                 }
                 coveredNodes.add(s.getId());
-                graph.deleteEdge(e);
+                dels.add(e);
             } 
         }
+        
+        for (Edge e : dels) graph.deleteEdge(e);
         
         // Triples
         
