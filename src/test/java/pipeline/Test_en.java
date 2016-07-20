@@ -28,12 +28,20 @@ public class Test_en {
         
         List<String> test = Arrays.asList(
              
+            "Which mountains are in Seoul?",
+            "What is the tallest mountain in the world?",
             "What is the capital of Korea?",
+            "Which countries are known for wine production?",
+            "What is the national flower of South Korea ?",
+            "Who was the 16th President of South Korea?",
             "Which rivers flow through Gunsan?",
             "Who is the founder of Google?",
             "List all cities in Korea.",
             "How high is Hallasan?",
-            "How many students does KAIST have?" );
+            "How many students does KAIST have?",
+            "Who was the Russian physiologist that won the Nobel Prize for Physiology or Medicine in 1904?",
+            "Who are the parents of Jesus?"
+        );
             
 //          // OKBQA sample questions
 //                "What is the name of national high educational organization in the Goryeo Dynasty?",

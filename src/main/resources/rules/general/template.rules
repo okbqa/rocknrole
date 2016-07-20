@@ -50,11 +50,19 @@ v=new
 + REL(1,2)
 
 
-# MOD(*-1,*-2)
+# MOD(*-1,*/NE-2)
+
++ REL(1,2)
+
+# MOD(*-1,*/JJS-2) 
 
 v=new
 + LITERAL-v
 + 2(1,v)
+
+# MOD(*-1,*-2)
+
+1 << 2
 
 
 # HAVE(1,2)

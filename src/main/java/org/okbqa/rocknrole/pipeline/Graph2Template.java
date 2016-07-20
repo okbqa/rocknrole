@@ -42,23 +42,15 @@ public class Graph2Template {
             Node o = graph.getNode(e.getDependent());
             
             if (e.getLabel().equals("SELECT")) {
-                Graph remainder = graph.copy();
-                remainder.deleteEdge(e);
-                if (remainder.isConnected(s.getId())) {
-                    template.addProjVar(varString(s.getId()));
-                    addClassTriple(template,s);
-                }
+                template.addProjVar(varString(s.getId()));
+                addClassTriple(template,s);
                 coveredNodes.add(s.getId());
                 dels.add(e);
                 continue;
             } 
             
             if (e.getLabel().equals("COUNT")) {
-                Graph remainder = graph.copy();
-                remainder.deleteEdge(e);
-                if (remainder.isConnected(s.getId())) {
-                    template.addCountVar(varString(s.getId()));
-                }
+                template.addCountVar(varString(s.getId()));
                 coveredNodes.add(s.getId());
                 dels.add(e);
             } 
@@ -114,7 +106,7 @@ public class Graph2Template {
                 add(template,n);
             }
         }
-        
+                
         template.assemble();
         
         return template;

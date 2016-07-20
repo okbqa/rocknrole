@@ -150,13 +150,9 @@ public class RuleApplication {
                    rule.addMatch(line.replace("#","").replace("\\n","\n").trim());
                    
                    stage_last = stage_current;
-                   continue;
                }
                
-               if (line.startsWith("+") 
-                || line.startsWith("-") 
-                || line.startsWith("NOT") 
-                || line.contains("=")) {
+               else {
                    
                    stage_current = 2;
                    
