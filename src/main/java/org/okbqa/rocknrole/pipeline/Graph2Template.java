@@ -43,7 +43,9 @@ public class Graph2Template {
             
             if (e.getLabel().equals("SELECT")) {
                 template.addProjVar(varString(s.getId()));
-                addClassTriple(template,s);
+                if (!s.getForm().equals("LITERAL")) {
+                    addClassTriple(template,s);
+                }
                 coveredNodes.add(s.getId());
                 dels.add(e);
                 continue;

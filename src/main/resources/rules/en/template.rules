@@ -9,3 +9,9 @@
 # ARG(list-1,*-3)
 
 + SELECT(3,3)
+
+# MOD(many-1,how-2) \n MOD(*-3,many-1)
++ COUNT(3,3)
+
+# MOD(*-1,how-2) \n dep(BE-3,*-1) \n ARG(BE-3,*-4)
++ HOW(1,4)

@@ -22,6 +22,7 @@
 v=new
 + 1(2,v)
 + LITERAL-v
++ SELECT(v,v)
 
 
 # ARG(BE-2,*-1) \n ARG(BE-2,*-3)

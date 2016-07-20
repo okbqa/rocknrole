@@ -111,7 +111,7 @@ public class Rule {
                 Matcher matcher;
                 
                 for (String match : matches) {
-                
+                                    
                 // If it is a node...
                 if (match.matches("("+label+")\\s*(/"+label+")?\\s*\\-\\s*("+label+")")) {
                 
