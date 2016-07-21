@@ -4,14 +4,15 @@ package pipeline;
 import org.okbqa.rocknrole.pipeline.TemplatorPipeline;
 import java.io.IOException;
 import java.util.HashSet;
-import java.util.Scanner;
+import java.util.Set;
+import org.okbqa.rocknrole.graph.Pair;
 
 
 /**
  *
  * @author cunger
  */
-public class Interactive_en {
+public class Test_NE {
     
     /**
      * @param args the command line arguments
@@ -24,23 +25,17 @@ public class Interactive_en {
     
     public static void test() throws IOException {
         
+        String question = "who was the 16th President of south korea?";
+        
+        Set<Pair<Integer,Integer>> entities = new HashSet<>();
+        entities.add(new Pair(30,41));
+
         TemplatorPipeline pipeline = new TemplatorPipeline("en");
         pipeline.debugMode();
-        Scanner scanner = new Scanner(System.in);
         
-        String input;
-        
-        while (true) {
-            
-            System.out.print("\n> ");
-            input = scanner.nextLine();
-                        
-            if (input.isEmpty()) {
-                System.exit(0);
-            }
-            
-            pipeline.run(input,new HashSet<>());
-        }
+        pipeline.run(question,entities); // NEs = from input : [south korea]
+
+        pipeline.run(question,null); // NEs = from Stanford : [16th]
     }
     
 }

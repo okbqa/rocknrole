@@ -1,0 +1,12 @@
+{
+  "string": "Which river flows through south korea?",
+  "language": "en",
+  "entities": [
+    {
+      "offset_end": 37,
+      "score": 0.9,
+      "offset_start": 26,
+      "uri": "http://dbpedia.org/resource/South_Korea"
+    }
+  ]
+}

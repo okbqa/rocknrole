@@ -1,8 +1,12 @@
 package org.okbqa.rocknrole.main;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import java.util.HashSet;
+import java.util.Set;
+import org.okbqa.rocknrole.graph.Pair;
 import org.okbqa.rocknrole.pipeline.TemplatorPipeline;
 import org.restlet.representation.Representation;
 import org.restlet.resource.Post;
@@ -32,17 +36,32 @@ public class ProcessRequest extends ServerResource {
         JsonArray output = new JsonArray();
         
         try {
-            JsonObject input = (JsonObject) json.parse(entity.getText());
+            JsonObject input = json.parse(entity.getText()).getAsJsonObject();
                     
-            String str  = (String) input.get("string").getAsString();
-            String lang = (String) input.get("language").getAsString();
-                             
+            String str  = input.get("string").getAsString();
+            String lang = input.get("language").getAsString();
+            
+            Set<Pair<Integer,Integer>> entities = new HashSet<>();
+            if (!input.has("entities")) {
+                oldInterface = true;
+            }
+            else {
+                oldInterface = false;
+                JsonArray nes = input.getAsJsonArray("entities");
+                for (JsonElement ne : nes) {
+                     int start = ne.getAsJsonObject().get("offset_start").getAsInt();
+                     int end   = ne.getAsJsonObject().get("offset_end").getAsInt();
+                     entities.add(new Pair(start,end));
+                }
+            }
+
+            if (!oldInterface) entities = null;
             switch (lang) {
-                case "en": output = pipeline_en.run(str); break;
-                case "ko": output = pipeline_ko.run(str); break;
+                case "en": output = pipeline_en.run(str,entities); break;
+                case "ko": output = pipeline_ko.run(str,entities); break;
                 default: throw new IllegalArgumentException("Unknown language: " + lang + " (currently supported: en, ko)");
             }
-                  
+            
             if (output == null) {
                 // TODO send a warning 
                 output = new JsonArray();

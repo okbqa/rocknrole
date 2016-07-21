@@ -2,7 +2,9 @@ package org.okbqa.rocknrole.transforming;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import org.okbqa.rocknrole.graph.*;
 
 /**
@@ -43,7 +45,7 @@ public class Preprocessing {
         
         // Collapsing nodes: Named Entities 
         
-        List<Edge> toCollapse = new ArrayList<Edge>();
+        List<Edge> toCollapse = new ArrayList<>();
         
         for (Node n : graph.getNodes()) {
         

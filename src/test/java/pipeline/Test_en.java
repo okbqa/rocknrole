@@ -5,6 +5,7 @@ import com.google.gson.JsonArray;
 import org.okbqa.rocknrole.pipeline.TemplatorPipeline;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
 
@@ -70,7 +71,7 @@ public class Test_en {
         
         for (String question : test) {
             
-            JsonArray output = pipeline.run(question);
+            JsonArray output = pipeline.run(question,null);
                         
             System.out.println("\n\nContinue? y/n");
             String response = scanner.nextLine();

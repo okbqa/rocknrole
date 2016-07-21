@@ -14,6 +14,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.JsonPrimitive;
+import java.util.HashSet;
 import org.okbqa.rocknrole.pipeline.Graph2Template;
 import org.okbqa.rocknrole.template.Template;
 import org.okbqa.rocknrole.transforming.Transformer;
@@ -61,7 +62,7 @@ public class QALD6_en {
                      }
                  }
                  
-                 ParseResult parse = stanford.parse(q);
+                 ParseResult parse = stanford.parse(q,new HashSet<>());
                  
                  try {
                     String   postagged = parse.toString_withPOS();

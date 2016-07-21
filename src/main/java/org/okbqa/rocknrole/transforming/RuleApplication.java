@@ -171,10 +171,7 @@ public class RuleApplication {
     
     public void execute(Graph graph) {
         
-        if (verbose) {
-            System.out.println("\n========== RULES ===========");
-            System.out.println("Input graph:\n" + graph.toString(true));
-        } 
+        if (verbose) System.out.println("\n========== RULES ===========");
         
         for (Rule r : rules) {
 

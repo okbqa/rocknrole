@@ -1,7 +1,9 @@
 package org.okbqa.rocknrole.pipeline;
 
 import com.google.gson.JsonParser;
+import java.util.Set;
 import org.okbqa.rocknrole.graph.Graph;
+import org.okbqa.rocknrole.graph.Pair;
 import org.okbqa.rocknrole.parsing.ETRI;
 import org.okbqa.rocknrole.parsing.ParseResult;
 import org.okbqa.rocknrole.parsing.Parser;
@@ -47,25 +49,26 @@ public class NL2Graph {
         transformer.debugMode();
     }
     
-    public Graph constructGraph(String input) {
+    public Graph constructGraph(String input, Set<Pair<Integer,Integer>> entities) {
         
         if (verbose) {
             System.out.println("\n\n------ INPUT ------\n");
             System.out.println(input);
         }
         
-        ParseResult parse = parser.parse(input);
+        ParseResult parse = parser.parse(input,entities);
                  
-        try {
-            String postagged = parse.toString_withPOS();
-            Graph  synGraph  = parse.toDependencyGraph();
-            Graph  semGraph  = transformer.transform(synGraph);
+        try {            
+            Graph synGraph = parse.toDependencyGraph();
             
             if (verbose) {
-                System.out.println("\n------ POS ------\n");
-                System.out.println(postagged);
                 System.out.println("\n------ SYN ------\n");
-                System.out.println(synGraph.toString(true));
+                System.out.println(synGraph.toString(true));            
+            }
+            
+            Graph semGraph = transformer.transform(synGraph);
+            
+            if (verbose) {
                 System.out.println("\n------ SEM ------\n");
                 System.out.println(semGraph.toString(true));
             }

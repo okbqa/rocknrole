@@ -2,6 +2,7 @@ package org.okbqa.rocknrole.graph;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
@@ -147,8 +148,8 @@ public class Graph {
     // Other manipulations 
     
     public void collapseEdges(List<Edge> edges) {
-        
-        for (Edge e : edges) {
+                
+        for (Edge e : new HashSet<>(edges)) {
              Node head = getNode(e.getHead());
              Node dpnd = getNode(e.getDependent());
              head.setForm(dpnd.getForm() + " " + head.getForm());
