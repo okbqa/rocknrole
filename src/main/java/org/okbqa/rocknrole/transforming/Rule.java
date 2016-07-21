@@ -244,16 +244,20 @@ public class Rule {
         // - FORM-1
         // - FORM/POS-1
         
-        regex   = "(\\+|-)\\s*("+label+")\\s*(/"+label+")?\\s*\\-\\s*("+label+")";
+        regex   = "(\\+|-)\\s*("+label+")\\s*(/("+label+"))?\\s*\\-\\s*("+label+")";
         pattern = Pattern.compile(regex); 
         matcher = pattern.matcher(action);
-        
+                
         while (matcher.find()) {
-            
+                        
             String op = matcher.group(1);
             String f  = matcher.group(2);
-            String p  = matcher.group(3);
-            String i  = matcher.group(4);
+            String p  = matcher.group(4);
+            String i  = matcher.group(5);
+            
+            if (isId(f)) {
+                f = graph.getNode(m.get(Integer.valueOf(f))).getForm();
+            }
             
             int i_id = getId(graph,i);
             
@@ -262,7 +266,7 @@ public class Rule {
                 if (m.containsKey(i_id)) i_id = m.get(i_id);
                 Node node = new Node(i_id,f);
                 if (p != null) node.setPOS(p);
-
+                
                 if (op.equals("+")) graph.addNode(node,true);
                 if (op.equals("-")) graph.deleteNode(node);
             }

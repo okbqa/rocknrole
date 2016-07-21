@@ -12,6 +12,10 @@
 
 
 # DET(*-1,THING-2)
+# ARG(*/NN-1,THING-2)
+# ARG(*/NN-1,AGENT-2)
+# ARG(*/NN-1,LOCATION-2)
+# ARG(*/NN-1,DATETIME-2)
 
 + SELECT(1,1)
 - SELECT(2,2)
@@ -45,6 +49,12 @@ v=new
 
 + 1(2,3)
 
+
+# ARG(*-1,*-2) \n SELECT(*-2,*-2)
+
++ 2(1,2)
++ THING/NN-2
++ SELECT(2,2)
 
 # ARG(*-1,*-2) 
 
