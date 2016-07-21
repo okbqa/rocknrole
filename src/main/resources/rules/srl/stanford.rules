@@ -2,7 +2,8 @@
 ## RENAME EDGES
 
 
-ARG <- nsubj, dobj, nsubjpass, iobj
+ARG <- nsubj, dobj, nsubjpass, iobj, xcomp
+COP <- cop
 
 
 ## TRANSFORM

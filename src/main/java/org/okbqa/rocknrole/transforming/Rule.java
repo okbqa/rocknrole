@@ -106,14 +106,18 @@ public class Rule {
             
             case TRANSFORM: {
                 
-                for (String match : matches) {
+                String  regex;
+                Pattern pattern;
+                Matcher matcher;
                 
+                for (String match : matches) {
+                                    
                 // If it is a node...
                 if (match.matches("("+label+")\\s*(/"+label+")?\\s*\\-\\s*("+label+")")) {
                 
-                    String  regex   = "("+label+")\\s*(/"+label+")?\\s*\\-\\s*("+label+")";
-                    Pattern pattern = Pattern.compile(regex);
-                    Matcher matcher = pattern.matcher(match);
+                    regex   = "("+label+")\\s*(/"+label+")?\\s*\\-\\s*("+label+")";
+                    pattern = Pattern.compile(regex);
+                    matcher = pattern.matcher(match);
 
                     while (matcher.find()) {
 
@@ -139,7 +143,7 @@ public class Rule {
                 }
                 
                 // If it is an edge...
-                else {
+                else {      
                     for (Pair<Graph,Map<Integer,Integer>> subgraph : getSubgraphs(graph,match)) {
 
                         Graph g = subgraph.getLeft();
@@ -163,10 +167,25 @@ public class Rule {
     
     private void applyAction(Graph graph, Map<Integer,Integer> m, String action) {
                 
-        
         String  regex; 
         Pattern pattern;
         Matcher matcher;
+        
+        // Collapsing nodes
+        // 1 << 2
+                    
+        regex   = "("+label+")\\s*<<\\s*("+label+")";
+        pattern = Pattern.compile(regex);
+        matcher = pattern.matcher(action);
+
+        while (matcher.find()) {
+                                    
+            int i1 = m.get(getId(graph,matcher.group(1)));
+            int i2 = m.get(getId(graph,matcher.group(2)));
+                                    
+            Node n1 = graph.getNode(i1);
+            n1.setForm(graph.getNode(i2).getForm() + " " + n1.getForm());
+        }
         
         // Declaring a variable
         // v = 1

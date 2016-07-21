@@ -3,6 +3,7 @@ package pipeline;
 
 import org.okbqa.rocknrole.pipeline.TemplatorPipeline;
 import java.io.IOException;
+import java.util.HashSet;
 import java.util.Scanner;
 
 
@@ -38,7 +39,7 @@ public class Interactive_ko {
                 System.exit(0);
             }
             
-            pipeline.run(input);
+            pipeline.run(input,new HashSet<>());
         }
     }
     

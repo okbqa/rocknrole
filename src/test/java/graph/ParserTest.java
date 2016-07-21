@@ -1,5 +1,6 @@
 package graph;
 
+import java.util.HashSet;
 import org.okbqa.rocknrole.graph.Graph;
 import org.okbqa.rocknrole.graph.interpreter.GraphReader;
 import org.okbqa.rocknrole.parsing.ParseResult;
@@ -20,7 +21,7 @@ public class ParserTest {
 
         String test = "What is the color of the bus?";
         
-        ParseResult parse = stanford.parse(test);
+        ParseResult parse = stanford.parse(test,new HashSet<>());
         
         System.out.println("\nStanford:\n" + parse.getParses().values().toString());
         

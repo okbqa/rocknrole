@@ -12,6 +12,8 @@ import edu.stanford.nlp.semgraph.SemanticGraphCoreAnnotations.BasicDependenciesA
 import edu.stanford.nlp.util.CoreMap;
 import java.util.List;
 import java.util.Properties;
+import java.util.Set;
+import org.okbqa.rocknrole.graph.Pair;
 
 
 /**
@@ -30,7 +32,7 @@ public class Stanford implements Parser {
     }
    
     @Override
-    public ParseResult parse(String text) {
+    public ParseResult parse(String text, Set<Pair<Integer,Integer>> entities) {
         
         ParseResult result = new ParseResult();
 
@@ -48,10 +50,20 @@ public class Stanford implements Parser {
             // Tokens and POS tags
             for (CoreLabel token: s.get(TokensAnnotation.class)) {
             result.addToken(i,token.index(),token.originalText());
-            if (!token.get(NamedEntityTagAnnotation.class).equals("O")) {
-                result.addPOS(i,token.index(),"NE");
+            result.addPOS(i,token.index(),token.getString(PartOfSpeechAnnotation.class));
+            // Mark named entities
+            if (entities == null) {
+                // Use Stanford NEs
+                if (!token.get(NamedEntityTagAnnotation.class).equals("O")) {
+                    result.addPOS(i,token.index(),"NE");
+                }
             } else {
-                result.addPOS(i,token.index(),token.getString(PartOfSpeechAnnotation.class));
+                // Use NEs provided in input
+                for (Pair<Integer,Integer> entity : entities) {
+                    if (entity.getLeft()  <= token.beginPosition() 
+                     && entity.getRight() >= token.endPosition())
+                        result.addPOS(i,token.index(),"NE");
+                }
             }}
             
             // Dependency parse

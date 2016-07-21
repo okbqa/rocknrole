@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -25,6 +26,7 @@ import org.apache.http.entity.ByteArrayEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
+import org.okbqa.rocknrole.graph.Pair;
 
 /**
  *
@@ -51,7 +53,7 @@ public class ETRI implements Parser {
 
     
     @Override
-    public ParseResult parse(String text) {
+    public ParseResult parse(String text, Set<Pair<Integer,Integer>> entities) {
         
         ParseResult result = new ParseResult();
         
@@ -65,7 +67,7 @@ public class ETRI implements Parser {
             try {
                 //parse = request(url,sentence);
                 parse = socket(sentence);
-                result.addParse(i,convertToStanfordFormat(parse));
+                result.addParse(i,convertToStanfordFormat(parse,entities));
             }
             catch (Exception e) {
             }
@@ -143,9 +145,9 @@ public class ETRI implements Parser {
         return sb.toString();
     }
     
-    public String convertToStanfordFormat(String etriResponse) {
+    public String convertToStanfordFormat(String etriResponse, Set<Pair<Integer,Integer>> entities) {
 
- //     System.out.println(">>>>>>>> ETRI \n" + etriResponse + "\n<<<<<<<<<<<");
+//      System.out.println(">>>>>>>> ETRI \n" + etriResponse + "\n<<<<<<<<<<<");
         
         String stanford = "";
         
@@ -174,11 +176,18 @@ public class ETRI implements Parser {
                 Map<String,String> lemmas = new HashMap<>();
                 JsonArray morps = sentence.getAsJsonObject().getAsJsonArray("morp");
                 for (JsonElement morp : morps) {
-                     String pos;
-                     if (nes.contains(morp.getAsJsonObject().getAsJsonPrimitive("id").getAsInt())) {
-                         pos = "NE";
-                     } else {
-                         pos = morp.getAsJsonObject().getAsJsonPrimitive("type").getAsString();
+                     String pos = morp.getAsJsonObject().getAsJsonPrimitive("type").getAsString();
+                     if (entities == null) { 
+                       if (nes.contains(morp.getAsJsonObject().getAsJsonPrimitive("id").getAsInt())) {
+                           pos = "NE";
+                     }}
+                     else {
+                        int i = morp.getAsJsonObject().getAsJsonPrimitive("position").getAsInt();
+                        for (Pair<Integer,Integer> entity : entities) {
+                            if (i >= entity.getLeft() && i <= entity.getRight()) {
+                                pos = "NE";
+                            }
+                        }
                      }
                      lemmas.put(morp.getAsJsonObject().getAsJsonPrimitive("lemma").getAsString(),pos);
                 }

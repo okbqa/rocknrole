@@ -1,7 +1,9 @@
 package org.okbqa.rocknrole.pipeline;
 
 import com.google.gson.JsonArray;
+import java.util.Set;
 import org.okbqa.rocknrole.graph.Graph;
+import org.okbqa.rocknrole.graph.Pair;
 import org.okbqa.rocknrole.template.Template;
 
 
@@ -13,8 +15,7 @@ public class TemplatorPipeline {
         
     NL2Graph       nl2graph; 
     Graph2Template graph2template;
-    // TemplateRewriting rewriter;
-    
+        
     boolean verbose = false;
     
     public TemplatorPipeline(String language) {
@@ -29,16 +30,16 @@ public class TemplatorPipeline {
     }
     
  
-    public JsonArray run(String input) {
+    public JsonArray run(String input, Set<Pair<Integer,Integer>> entities) {
         
-        // Preprocessing: remove all characters that are special characters for the GraphReader
+        // Preprocessing: remove all characters that are reserved characters in the GraphReader grammar
         input = input.replace("/","").replace("-","_").replace("(","").replace(")","").replace(",",";").trim();
                 
         JsonArray output = new JsonArray();
         
         // 1. Graph construction :: String -> Graph
         
-        Graph g = nl2graph.constructGraph(input);
+        Graph g = nl2graph.constructGraph(input,entities);
         
         // 2. Mapping :: Graph -> Template 
 

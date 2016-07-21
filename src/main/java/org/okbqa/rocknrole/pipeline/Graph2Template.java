@@ -27,33 +27,53 @@ public class Graph2Template {
         i = graph.getMaxId()+1;
         
         Template template = new Template();
-        
-        // triples
-        
+                
         List<Integer> coveredNodes = new ArrayList<>();
         
+        // SELECT and SELECT COUNT variables
+        
+        List<Edge> dels = new ArrayList<>();
+        
         for (Edge e : graph.getEdges()) {
+            
+            boolean del = false;
             
             Node s = graph.getNode(e.getHead());
             Node o = graph.getNode(e.getDependent());
             
             if (e.getLabel().equals("SELECT")) {
-                Graph remainder = graph.copy();
-                remainder.deleteEdge(e);
-                if (remainder.isConnected(s.getId())) {
-                    template.addProjVar(varString(s.getId()));
+                template.addProjVar(varString(s.getId()));
+                if (!s.getForm().equals("LITERAL")) {
+                    addClassTriple(template,s);
                 }
+                coveredNodes.add(s.getId());
+                dels.add(e);
                 continue;
             } 
             
             if (e.getLabel().equals("COUNT")) {
-                Graph remainder = graph.copy();
-                remainder.deleteEdge(e);
-                if (remainder.isConnected(s.getId())) {
-                    template.addCountVar(varString(s.getId()));
-                }
+                template.addCountVar(varString(s.getId()));
+                coveredNodes.add(s.getId());
+                dels.add(e);
                 continue;
             } 
+            
+            if (e.getLabel().equals("FIRST")) {
+                String var = varString(s.getId());
+                template.addSolutionModifier("FIRST:"+var);
+                coveredNodes.add(s.getId());
+                dels.add(e);
+            } 
+        }
+        
+        for (Edge e : dels) graph.deleteEdge(e);
+        
+        // Triples
+        
+        for (Edge e : graph.getEdges()) {
+                        
+            Node s = graph.getNode(e.getHead());
+            Node o = graph.getNode(e.getDependent());
             
             String vs = varString(e.getHead());
             String vp = varString(fresh());
@@ -96,7 +116,7 @@ public class Graph2Template {
                 add(template,n);
             }
         }
-        
+                
         template.assemble();
         
         return template;
@@ -105,25 +125,35 @@ public class Graph2Template {
     
     private void add(Template template, Node n) {
         
-        String   form;
-        SlotType type;
+        String   form = n.getForm();
+        SlotType type = SlotType.CLASSorRESOURCE;
         
         if (!n.hasProperForm()) {
             form = "";
             type = SlotType.valueOf(n.getForm());
-        } else {
+        } 
+        else if (n.getPOS() != null && n.getPOS().equals("NE")) { 
             form = n.getForm();
-            type = SlotType.CLASSorRESOURCE; 
-        }
-    
-        if (n.getPOS() != null && n.getPOS().equals("NE")) { 
             type = SlotType.RESOURCE;
-        }
-        if (n.getPOS() != null && n.getPOS().equals("NN")) {
+        } 
+        else if (n.getPOS() != null && n.getPOS().equals("NN")) { 
             type = SlotType.CLASS;
         }
-
-        template.addSlot(new Slot(varString(n.getId()),form,type));
+        
+        if (!template.containsSlotFor(varString(n.getId()))) {
+             template.addSlot(new Slot(varString(n.getId()),form,type));
+        }
+    }
+    
+    private void addClassTriple(Template template, Node n) {
+            
+            String vs = varString(n.getId());
+            String vc = varString(fresh());
+            String vp = varString(fresh());
+            
+            template.addTriple(new Triple(Var.alloc(vs),Var.alloc(vp),Var.alloc(vc)));
+            template.addSlot(new Slot(vc,n.getForm(),SlotType.CLASS));
+            template.addSlot(new Slot(vp,"",SlotType.SORTAL));
     }
     
     

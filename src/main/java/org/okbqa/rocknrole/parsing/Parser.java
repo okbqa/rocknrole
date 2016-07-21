@@ -1,5 +1,8 @@
 package org.okbqa.rocknrole.parsing;
 
+import java.util.Set;
+import org.okbqa.rocknrole.graph.Pair;
+
 /**
  *
  * @author cunger
@@ -7,6 +10,6 @@ package org.okbqa.rocknrole.parsing;
 
 public interface Parser {
     
-    ParseResult parse(String text);
+    ParseResult parse(String text, Set<Pair<Integer,Integer>> entities);
             
 }

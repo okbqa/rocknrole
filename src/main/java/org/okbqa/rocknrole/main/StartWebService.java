@@ -9,7 +9,7 @@ public class StartWebService {
       
         Component component = new Component();
 
-        component.getServers().add(Protocol.HTTP,1555);
+        component.getServers().add(Protocol.HTTP,1515);
 	component.getDefaultHost().attach("/templategeneration/rocknrole",new RestletApp());  
         component.start();
   }
