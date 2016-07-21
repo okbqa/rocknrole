@@ -1,7 +1,7 @@
 
 ## Organization of files
 
-The config files (`en.config` for English and `ko.config` for Korean) specify in which rule files are used and in which order they are loaded. In the end, the rules are applied in the order in which they are specified in the files. Order matters, because we will do things like renaming very specific edge labels `nsubj` and `dobj` to a more general label `ARG`, and later have a rule that matches this general label `ARG`.
+The config files (`en.config` for English and `ko.config` for Korean) specify which rule files are used and in which order they are loaded. In the end, the rules are applied in the order in which they are specified in the files. Order matters, because we will do things like renaming very specific edge labels `nsubj` and `dobj` to a more general label `ARG`, and later have a rule that matches this general label `ARG`.
 
 The files are currently organized in three different folders:
 
@@ -51,7 +51,6 @@ Order and number of subsections don't matter, so it could also look like this:
 ## RENAME EDGES
 
 ...
-
 ```
 
 Or this:
@@ -60,7 +59,6 @@ Or this:
 ## RENAME NODES
 
 ...
-
 ```
 
 ## Rules
@@ -117,7 +115,7 @@ Empty lines are ignored, so it doesn't matter whether there are any and how many
 
 Subgraphs are specified in the same way as the graphs are displayed: they are a set of edges separated by a line break. Each edge has the form `<label>(<head_node>,<dependent_node>)` and nodes are either written as `<form>/<POS>-<integer>` or `<form>-<integer>`.
 
-Example:
+_Example:_
 ```
 ARG(hello-1,world/NN-2)
 punct(world/NN-2,!-3)
@@ -127,7 +125,7 @@ POS tags are optional, so `hello-1` matches all nodes that have form `hello`, no
 
 Instead of a form, you can also use the place holder `*`, which matches any form.
 
-Example:
+_Example:_
 ```
 ARG(hello-1,*/NN-2)
 punct(*/NN-2,!-3)
@@ -135,27 +133,28 @@ punct(*/NN-2,!-3)
 
 #### Format of action specifications
 
-_Collapsing nodes_
+##### Collapsing nodes
 
-Example:
+_Example:_
 * `1 << 2`
-Result: The form of node 2 will be prefixed to the form of node 1.
 
-_Declaring a variable_
+The form of node 2 will be prefixed to the form of node 1.
+
+##### Declaring a variable
 
 The left-hand side string of `=` is assigned the value of the right-hand side, and can be used in later rules.
 
-Example:
+_Example:_
 * `v = 1`
 
 Once you declared a variable, you can use that variable instead of integers as node identifiers (e.g. `v`, which will be replaced with its value `1`).
 
-_Adding and removing edges_
+##### Adding and removing edges
 
 Adding and removing edges is done by prefixing a `+` (for adding) or `-` (for removing) to an edge specification.
 The specified edge is added to or removed from the graph.
 
-Examples:
+_Examples:_
 * `+ REL(1,2)`
 * `- MOD(v,2)`
 * `+ 1(2,3)`
@@ -164,12 +163,12 @@ If you don't specify a string as edge label but an integer, it will use the form
 
 In all actions, white spaces are ignored, so it doesn't matter whether you write `+REL(1,2)` or ` + REL ( 1 , 2 )`.
 
-_Adding and removing nodes_
+##### Adding and removing nodes
 
 Adding and removing nodes is done by prefixing a `+` (for adding) or `-` (for removing) to a node specification.
 The specified edge is added to or removed from the graph.
 
-Examples:
+_Examples:_
 * `+ LITERAL-2`
 * `- mountain/NN-1`
 * `+ 1/NN-2`
@@ -178,7 +177,7 @@ If you don't specify a string as node form but an integer, it will use the form 
 
 Node adding is destructive, so if you add a node with an identifier that is already used by some other node in the graph, the latter will be overwritten.
 
-_Fresh node identifiers_
+##### Fresh node identifiers
 
 The node identifier `new` will create a fresh variable that so far is not used in the graph. It will do so every time it is used, so
 `+ REL(new,new)` will add an edge like `REL(1,2)`. If you want to create a new identifier and use it several times, you have to assign it to a variable and use that variable, e.g.
@@ -188,7 +187,7 @@ v = new
 ```
 will add an edge like `REL(1,1)`.
 
-_Deleting or not deleting matched subgraphs_
+##### Deleting or not deleting matched subgraphs
 
 The default is that any subgraph that was matched is deleted.
 For example, the rule
