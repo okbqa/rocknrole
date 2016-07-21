@@ -10,6 +10,7 @@ import org.okbqa.rocknrole.template.Slot;
 import org.okbqa.rocknrole.template.SlotType;
 import org.okbqa.rocknrole.template.Template;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -17,6 +18,8 @@ import java.util.List;
  * @author cunger
  */
 public class Graph2Template {
+    
+    List<String> specialTypes = Arrays.asList("THING","AGENT","LOCATION","DATETIME","REASON");
     
     int i; // for fresh variable supply
     
@@ -146,6 +149,8 @@ public class Graph2Template {
     }
     
     private void addClassTriple(Template template, Node n) {
+        
+        if (n.hasProperForm() && !specialTypes.contains(n.getForm())) {
             
             String vs = varString(n.getId());
             String vc = varString(fresh());
@@ -154,6 +159,7 @@ public class Graph2Template {
             template.addTriple(new Triple(Var.alloc(vs),Var.alloc(vp),Var.alloc(vc)));
             template.addSlot(new Slot(vc,n.getForm(),SlotType.CLASS));
             template.addSlot(new Slot(vp,"",SlotType.SORTAL));
+        }
     }
     
     
