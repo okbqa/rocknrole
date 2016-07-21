@@ -39,9 +39,7 @@
 # ARG(*/NN-2 ,*-3) \n REL(THING-4 ,*-3)
 + 2(1,4)
 
-# ARG(*-1 ,*/NN-2) \n ARG(*/NN-2 ,*-3)
-# ARG(*/NN-2,*-3) \n REL(AGENT-4,*-3)
-+ 2(1,4)
+
 
 # ARG(*-1 ,*/NN-2) \n ARG(*/NN-2 ,*-3)
 # ARG(*/NN-2,*-3) \n REL(LOCATION-4,*-3)
