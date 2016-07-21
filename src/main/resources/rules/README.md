@@ -207,3 +207,59 @@ For example, the rule
 NOT delete match
 ```
 will result in a graph that has both the edge `REL(1,2)` and the matched edge `ARG(1,2)`.
+
+#### Example
+
+Consider the following two rules:  
+
+```
+# MOD(many-1,how-2) \n MOD(*-3,many-1)
+
+v=new
++ LITERAL-v
++ SELECT(v,v)
+
+# ARG(*-1,*-2) \n ARG(*-1,*-3)
+# ARG(*-2,*-1) \n ARG(*-1,*-3)
+
++ 1(2,3)
+```
+
+And assume we start with the following graph:
+
+```
+MOD(many/JJ-2,how/WRB-3)
+MOD(universities/NNS-4,many/JJ-2)
+ARG(HAVE/VB-1,universities/NN-4)
+ARG(HAVE/VB-1,Seoul/NNP-6)
+```
+
+The first rule matches the subgraph:
+```
+MOD(many/JJ-2,how/WRB-3)
+MOD(universities/NNS-4,many/JJ-2)
+```
+It creates a new variable, in this case `7`, and adds the node `LITERAL-7` and the edge `SELECT(LITERAL-7,LITERAL-7)`.
+Finally, it deletes the matched subgraph.
+So we get the following graph:
+
+```
+SELECT(LITERAL-7,LITERAL-7)
+ARG(HAVE/VB-1,universities/NN-4)
+ARG(HAVE/VB-1,Seoul/NNP-6)
+```
+
+The second rule now matches the subgraph:
+```
+ARG(HAVE/VB-1,universities/NN-4)
+ARG(HAVE/VB-1,Seoul/NNP-6)
+```
+Note that the identifier `2` in the rule is `4` in the actual subgraph, and the identifier `3` in the rule is `6` in the subgraph.
+The rule will delete this subgraph and add the edge `HAVE(universities/NN-4,Seoul/NNP-6)`.
+So we get the graph:
+```
+SELECT(LITERAL-7,LITERAL-7)
+HAVE(universities/NN-4,Seoul/NNP-6)
+```
+
+The `SELECT` and `COUNT` edges in the graphs built by `rocknrole` are always edges between the same node; they specify that this node will be a projection variable (i.e. will end up in the `SELECT` clause of the query, e.g. as `?v7` or as `COUNT(?v7)`).
