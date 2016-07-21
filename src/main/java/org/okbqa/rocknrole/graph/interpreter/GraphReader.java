@@ -19,6 +19,8 @@ public class GraphReader {
     }
     
     public Graph interpret(String dependency) {
+        
+//      System.out.println(".........." + dependency); 
                 
         if (dependency.isEmpty()) return new Graph();
         

@@ -306,8 +306,15 @@ public class Rule {
     private List<Pair<Graph,Map<Integer,Integer>>> getSubgraphs(Graph graph, String regex) {
                
         Graph subgraph = reader.interpret(regex);
-                
+        
         return subgraph.subGraphMatches(graph);
     }
 
+    
+    @Override
+    public String toString() {
+        
+        return mode + ": " + matches.toString() + " ==> " + actions.toString();
+    }
+    
 }

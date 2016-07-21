@@ -89,7 +89,7 @@ public class RuleApplication {
            line = line.trim();
            
            if (line.isEmpty()) continue;
-                       
+                                  
            if (line.startsWith("##")) {
                if (line.contains("RENAME NODE")) {
                    mode = Mode.RENAME_NODE;
@@ -108,7 +108,9 @@ public class RuleApplication {
            if (mode == null) continue;
 
            if (mode == Mode.RENAME_NODE || mode == Mode.RENAME_EDGE) {
-               
+
+               if (rule != null && !rules.contains(rule)) rules.add(rule);
+
                stage_current = 0;
                
                rule = new Rule();
@@ -162,6 +164,8 @@ public class RuleApplication {
                }
            }
 	}
+        
+        if (!rules.contains(rule)) rules.add(rule);
  
 	reader.close();
         
