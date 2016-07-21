@@ -116,7 +116,7 @@ public class RuleApplication {
                rule = new Rule();
                rule.setMode(mode);
                rule.resetDeleteMatch();
-               
+                              
                String left  = line.split("<-")[0].trim();
                String right = line.split("<-")[1].trim();
                
