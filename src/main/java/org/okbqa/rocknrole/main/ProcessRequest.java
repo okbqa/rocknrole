@@ -67,10 +67,12 @@ public class ProcessRequest extends ServerResource {
                 output = new JsonArray();
             }
             
-            input.add("templates",output);
+//            input.add("templates",output);
+//            
+//            if (oldInterface) return output.toString();
+//            else return input.toString();
             
-            if (oldInterface) return output.toString();
-            else return input.toString();
+            return output.toString();
                   
         } catch (Exception ex) {
             ex.printStackTrace();
