@@ -78,8 +78,10 @@ public class ProcessRequest extends ServerResource {
             ex.printStackTrace();
         }
     
-        if (oldInterface) return "[]"; 
-        else return entity.getText();
+//        if (oldInterface) return "[]"; 
+//        else return entity.getText();
+        
+        return "[]";
     }
     
 }
